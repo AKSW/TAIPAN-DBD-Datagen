@@ -1,7 +1,8 @@
 import random
+import os
 
 from .QueryExecutor import QueryExecutor
-from .config import RANDOM_CLASS_SELECTION
+from .config import RANDOM_CLASS_SELECTION, DATA_FOLDER
 
 class ClassSelector(object):
     def __init__(self):
@@ -24,7 +25,7 @@ class ClassSelector(object):
         """
             Random, generates sequence of indexes
         """
-        classes = self.getClasses()
+        classes = self.getClassesWithEntities()
         randomSample = random.sample(classes, n)
         indexes = []
         for item in randomSample:
@@ -38,7 +39,7 @@ class ClassSelector(object):
             Which is 12.6% of overall classes (out of 791)
             Measured on 12.04.2016
         """
-        classes = self.getClasses()
+        classes = self.getClassesWithEntities()
         randomIndexes = eval(RANDOM_CLASS_SELECTION)
         randomClasses = []
         for index in randomIndexes:
@@ -51,3 +52,25 @@ class ClassSelector(object):
             WHERE {?class rdf:type owl:Class}
         """)
         return int(results["results"]["bindings"][0]["callret-0"]["value"])
+
+    def getEmptyClasses(self):
+        emptyClasses = []
+        f = open(os.path.join(DATA_FOLDER, "ClassesEntitiesCount.csv"))
+        for line in f.readlines():
+            (_class, count) = line.split(",")
+            if(int(count) == 0):
+                emptyClasses.append(_class)
+        return emptyClasses
+
+    def getClassesWithEntities(self):
+        """
+            Only get classes with more than 100 entities
+            --> we will generate 5 tables with 20 rows per class 
+        """
+        classes = []
+        f = open(os.path.join(DATA_FOLDER, "ClassesEntitiesCount.csv"))
+        for line in f.readlines():
+            (_class, count) = line.split(",")
+            if(int(count) > 100):
+                classes.append(_class)
+        return classes
