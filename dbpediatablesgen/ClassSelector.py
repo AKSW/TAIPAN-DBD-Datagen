@@ -1,17 +1,14 @@
 import random
 
-from SPARQLWrapper import SPARQLWrapper, JSON
-
-from .config import DBPEDIA_SPARQL_ENDPOINT, DBPEDIA_DEFAULT_GRAPH, RANDOM_CLASS_SELECTION
+from .QueryExecutor import QueryExecutor
+from .config import RANDOM_CLASS_SELECTION
 
 class ClassSelector(object):
     def __init__(self):
-        self.dbpediaEndpoint = SPARQLWrapper(DBPEDIA_SPARQL_ENDPOINT)
-        self.dbpediaEndpoint.setReturnFormat(JSON)
-        self.dbpediaEndpoint.addDefaultGraph(DBPEDIA_DEFAULT_GRAPH)
+        self.queryExecutor = QueryExecutor()
 
     def getClasses(self):
-        results = self.executeQuery(u"""
+        results = self.queryExecutor.executeQuery(u"""
             SELECT DISTINCT ?class
             WHERE {?class rdf:type owl:Class}
         """)
@@ -49,13 +46,8 @@ class ClassSelector(object):
         return randomClasses
 
     def getClassCount(self):
-        results = self.executeQuery(u"""
+        results = self.queryExecutor.executeQuery(u"""
             SELECT DISTINCT COUNT(?class)
             WHERE {?class rdf:type owl:Class}
         """)
         return int(results["results"]["bindings"][0]["callret-0"]["value"])
-
-    def executeQuery(self, query):
-        self.dbpediaEndpoint.setQuery(query)
-        results = self.dbpediaEndpoint.query().convert()
-        return results
