@@ -74,6 +74,7 @@ class TableGenerator(object):
         """
             "http://dbpedia.org/ontology/genre","","False","1"
             "http://dbpedia.org/ontology/computingPlatform","","False","2"
+            "http://www.w3.org/2000/01/rdf-schema#label","","True","3"
         """
         (entity, cells) = entityRowTuple
         properties = []
