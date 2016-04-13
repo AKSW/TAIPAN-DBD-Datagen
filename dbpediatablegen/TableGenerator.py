@@ -1,6 +1,8 @@
 import csv
 import uuid
 import os
+import itertools
+import random
 
 from .QueryExecutor import QueryExecutor
 from .CsvWriter import CsvWriter
@@ -14,7 +16,7 @@ class TableGenerator(object):
         numberOfEntities = len(entities)
         for i in range(0, numberOfEntities, n):
             #i gives a lower limit
-            self.generateTable(_class, entities[i:n])
+            self.generateTable(_class, entities[i:n+i])
 
     def generateTable(self, _class, entities):
         rows = self.getRows(entities)
@@ -22,6 +24,10 @@ class TableGenerator(object):
         tableId = self.generateRandomTableId()
         csvFilename = str(tableId) + ".csv"
         csvFilepath = os.path.join(TABLE_FOLDER, csvFilename)
+
+        self.generatePropertyAnnotation(csvFilename, rows[0])
+        self.generateSubjectColumnAnnotation(csvFilename, rows[0])
+
         csvWriter = CsvWriter(csvFilepath)
         csvWriter.writeheader(header)
 
@@ -65,24 +71,53 @@ class TableGenerator(object):
             header.append(cell['label'])
         return header
 
-    def generatePropertyAnnotation(self, rows):
+    def generatePropertyAnnotation(self, csvFilename, entityRowTuple):
         """
             "http://dbpedia.org/ontology/genre","","False","1"
             "http://dbpedia.org/ontology/computingPlatform","","False","2"
         """
-        pass
+        (entity, cells) = entityRowTuple
+        properties = []
+        for cell in cells:
+            properties.append(cell['property'])
 
-    def generateSubjectColumnAnnotation(self, rows):
+        propertyAnnotationFilepath = os.path.join(PROPERTIES_FOLDER, csvFilename)
+        csvWriter = CsvWriter(propertyAnnotationFilepath)
+        for num, _property in enumerate(properties):
+            row = [_property, "", "False", str(num+1)]
+            csvWriter.writerow(row)
+
+    def generateSubjectColumnAnnotation(self, csvFilename, entityRowTuple):
         """
             id_of_table_csv_file.csv, 5
             id_of_table_csv_file2.csv, 0
+
+            in our case subject column is always 0
+            for proper testing, column shuffling is necessary
         """
-        pass
+        (entity, cells) = entityRowTuple
+        subjectColumnIndex = 0
+
+        properties = []
+        #TODO: I am here
+        for cell in cells:
+            properties.append(cell['property'])
+
+        propertyAnnotationFilepath = os.path.join(PROPERTIES_FOLDER, csvFilename)
+        csvWriter = CsvWriter(propertyAnnotationFilepath)
+        for num, _property in enumerate(properties):
+            row = [_property, "", "False", str(num+1)]
+            csvWriter.writerow(row)
 
     def getRows(self, entities):
         rows = []
-        for entity in entities:
+        for num, entity in enumerate(entities):
             entityRowTuple = self.getRow(entity)
+            #permutate first row to have a random header sequence
+            if num == 0:
+                (entity, row) = entityRowTuple
+                permutatedRow = self.permutateRow(row)
+                entityRowTuple = (entity, permutatedRow)
             rows.append(entityRowTuple)
         return rows
 
@@ -93,6 +128,14 @@ class TableGenerator(object):
         """ %(entity,))
         results = results["results"]["bindings"]
         row = []
+
+        #append entity label as the first item
+        row.append({
+            "property": "http://www.w3.org/2000/01/rdf-schema#label",
+            "label": "label",
+            "value": self.getLabel(entity)
+        })
+
         properties = []
         for _result in results:
             _property = _result["p"]["value"]
@@ -105,7 +148,13 @@ class TableGenerator(object):
                     "value": object
                 })
                 properties.append(_property)
+
         return (entity, row)
+
+    def permutateRow(self, row):
+        rowPermutations = list(itertools.permutations(row))
+        permutatedRow = random.choice(rowPermutations)
+        return permutatedRow
 
     def getLabel(self, s):
         results = self.queryExecutor.executeQuery(u"""
