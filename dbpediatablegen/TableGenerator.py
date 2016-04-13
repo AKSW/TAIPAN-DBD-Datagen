@@ -10,10 +10,16 @@ class TableGenerator(object):
     def __init__(self):
         self.queryExecutor = QueryExecutor()
 
+    def generateTableOfLengthN(self, _class, entities, n):
+        numberOfEntities = len(entities)
+        for i in range(0, numberOfEntities, n):
+            #i gives a lower limit
+            self.generateTable(_class, entities[i:n])
+
     def generateTable(self, _class, entities):
         rows = self.getRows(entities)
         header = self.generateHeader(rows[0])
-        tableId = self.generateTableId(_class)
+        tableId = self.generateRandomTableId()
         csvFilename = str(tableId) + ".csv"
         csvFilepath = os.path.join(TABLE_FOLDER, csvFilename)
         csvWriter = CsvWriter(csvFilepath)
@@ -22,23 +28,32 @@ class TableGenerator(object):
         for rowEntityTuple in rows:
             (entity, row) = rowEntityTuple
             row = self.unpackRow(row)
-            import ipdb; ipdb.set_trace()
+            row = self.alignRowWithHeader(row, header)
             csvWriter.writerow(row)
 
-        csvFile.close()
-        import ipdb; ipdb.set_trace()
+        csvWriter.close()
 
     def unpackRow(self, row):
         unpackedRow = {}
         for cell in row:
-            unpackedRow[cell['label']] = cell['value'].decode("utf-8")
+            unpackedRow[cell['label']] = cell['value']
+
         return unpackedRow
+
+    def alignRowWithHeader(self, unpackedRow, header):
+        alignedRow = []
+        for item in header:
+            alignedRow.append(unpackedRow.get(item, ""))
+        return alignedRow
 
     def generateTableId(self, _class):
         """
             Create a unique deterministic ID from a class URI
         """
         return uuid.uuid5(uuid.NAMESPACE_URL, _class)
+
+    def generateRandomTableId(self):
+        return uuid.uuid4()
 
     def generateHeader(self, rowEntityTuple):
         """

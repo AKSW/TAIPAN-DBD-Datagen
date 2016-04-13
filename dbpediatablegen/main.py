@@ -10,11 +10,12 @@ if __name__ == "__main__":
     randomClasses = classSelector.getRandomClasses()
 
     entitySelector = EntitySelector()
+    #We get 100 entities because of LIMIT in the SPARQL query
     entities = entitySelector.getEntities(randomClasses[0])
 
     tableGenerator = TableGenerator()
     #5 columns
-    tableGenerator.generateTable(randomClasses[0], entities[:5])
+    tableGenerator.generateTableOfLengthN(randomClasses[0], 20)
 
 
 

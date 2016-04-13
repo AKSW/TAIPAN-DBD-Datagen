@@ -6,13 +6,18 @@ class CsvWriter(object):
         self.csvFile = codecs.open(csvFilepath, "w", "utf-8")
 
     def writeheader(self, header):
-        quotedHeader = []
-        for item in header:
-            quotedHeader.append(u'"%s"'%(item,))
-
-        rowToWrite = ",".join()
-        self.csvFile.write()
-        import ipdb; ipdb.set_trace()
+        self.writerow(header)
 
     def writerow(self, row):
-        pass
+        quotedRow = []
+        for item in row:
+            quotedRow.append(u'"%s"'%(item,))
+
+        rowToWrite = ",".join(quotedRow)
+        try:
+            self.csvFile.write(u"%s\n"%(rowToWrite,))
+        except IOError as e:
+            print "Failed to write to file: %s" % (str(e),)
+
+    def close(self):
+        self.csvFile.close()
