@@ -16,7 +16,3 @@ if __name__ == "__main__":
     tableGenerator = TableGenerator()
     #5 columns
     tableGenerator.generateTableOfLengthN(randomClasses[0], entities, 20)
-
-
-
-    import ipdb; ipdb.set_trace()

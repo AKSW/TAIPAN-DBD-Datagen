@@ -1,7 +1,6 @@
 import csv
 import uuid
 import os
-import itertools
 import random
 
 from .QueryExecutor import QueryExecutor
@@ -84,7 +83,10 @@ class TableGenerator(object):
         propertyAnnotationFilepath = os.path.join(PROPERTIES_FOLDER, csvFilename)
         csvWriter = CsvWriter(propertyAnnotationFilepath)
         for num, _property in enumerate(properties):
-            row = [_property, "", "False", str(num+1)]
+            if _property == u"http://www.w3.org/2000/01/rdf-schema#label":
+                row = [_property, "", "True", str(num+1)]
+            else:
+                row = [_property, "", "False", str(num+1)]
             csvWriter.writerow(row)
 
     def generateSubjectColumnAnnotation(self, csvFilename, entityRowTuple):
@@ -99,15 +101,15 @@ class TableGenerator(object):
         subjectColumnIndex = 0
 
         properties = []
-        #TODO: I am here
         for cell in cells:
             properties.append(cell['property'])
 
-        propertyAnnotationFilepath = os.path.join(PROPERTIES_FOLDER, csvFilename)
-        csvWriter = CsvWriter(propertyAnnotationFilepath)
-        for num, _property in enumerate(properties):
-            row = [_property, "", "False", str(num+1)]
-            csvWriter.writerow(row)
+        subjectColumnIndex = properties.index("http://www.w3.org/2000/01/rdf-schema#label")
+
+        subjectColumnAnnotationFilepath = os.path.join(SUBJECT_COLUMN_FOLDER, csvFilename)
+        csvWriter = CsvWriter(subjectColumnAnnotationFilepath)
+        row = [csvFilename, str(subjectColumnIndex + 1)]
+        csvWriter.writerow(row)
 
     def getRows(self, entities):
         rows = []
@@ -152,9 +154,16 @@ class TableGenerator(object):
         return (entity, row)
 
     def permutateRow(self, row):
-        rowPermutations = list(itertools.permutations(row))
-        permutatedRow = random.choice(rowPermutations)
-        return permutatedRow
+        numberOfCols = len(row)
+        for i in range(0, 1000):
+            colA = random.randint(0, numberOfCols - 1)
+            colB = colA
+            while colB == colA:
+                colB = random.randint(0, numberOfCols - 1)
+            temp = row[colA]
+            row[colA] = row[colB]
+            row[colB] = temp
+        return row
 
     def getLabel(self, s):
         results = self.queryExecutor.executeQuery(u"""
