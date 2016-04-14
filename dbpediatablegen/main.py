@@ -16,14 +16,9 @@ if __name__ == "__main__":
     entitySelector = EntitySelector()
     tableGenerator = TableGenerator()
 
-    _class = randomClasses[0]
-    entities = entitySelector.getEntities(_class)
-    tableGenerator.generateTableOfLengthN(_class, entities, 20)
-
     path, dirs, files = os.walk(TABLE_FOLDER).next()
     generatedTablesCount = len(files)
     classesToSkip = int(float(generatedTablesCount) / 5)
-    import ipdb; ipdb.set_trace()
 
     for num, _class in enumerate(randomClasses):
         if num < classesToSkip:
