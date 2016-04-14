@@ -1,4 +1,5 @@
 default:
+	cp dbpediatablegen/config.py-example dbpediatablegen/config.py
 	python dbpediatablegen/main.py
 
 folders:
