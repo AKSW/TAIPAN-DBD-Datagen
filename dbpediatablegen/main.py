@@ -25,6 +25,8 @@ if __name__ == "__main__":
     for num, _class in enumerate(randomClasses):
         if _class == "http://dbpedia.org/ontology/OrganisationMember":
             skip = False
+        if skip:
+             continue
         #if num < classesToSkip:
         #    continue
         print "Processing (%s out of %s): %s" %(num, len(randomClasses), _class,)
