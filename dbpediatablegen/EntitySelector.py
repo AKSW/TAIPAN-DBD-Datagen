@@ -8,6 +8,7 @@ class EntitySelector(object):
         """
             Request 100 entities for a given _class
         """
+        print "Getting entities for %s" %(_class,)
         results = self.queryExecutor.executeQuery(u"""
             SELECT DISTINCT ?entity
             WHERE {

@@ -5,7 +5,7 @@ import random
 
 from .QueryExecutor import QueryExecutor
 from .CsvWriter import CsvWriter
-from .config import TABLE_FOLDER, PROPERTIES_FOLDER, SUBJECT_COLUMN_FOLDER
+from .config import TABLE_FOLDER, PROPERTIES_FOLDER, SUBJECT_COLUMN_FOLDER, CLASSES_FOLDER
 
 class TableGenerator(object):
     def __init__(self):
@@ -18,14 +18,20 @@ class TableGenerator(object):
             self.generateTable(_class, entities[i:n+i])
 
     def generateTable(self, _class, entities):
+        print "Getting rows for %s" %(_class,)
         rows = self.getRows(entities)
+        print "Getting header for %s" %(_class,)
         header = self.generateHeader(rows[0])
         tableId = self.generateRandomTableId()
         csvFilename = str(tableId) + ".csv"
         csvFilepath = os.path.join(TABLE_FOLDER, csvFilename)
 
+        print "Generating property annotation for %s" %(_class,)
         self.generatePropertyAnnotation(csvFilename, rows[0])
+        print "Generating subject column annotation for %s" %(_class,)
         self.generateSubjectColumnAnnotation(csvFilename, rows[0])
+        print "Generating class annotation for %s" %(_class,)
+        self.generateClassAnnotation(csvFilename, rows[0])
 
         csvWriter = CsvWriter(csvFilepath)
         csvWriter.writeheader(header)
@@ -90,6 +96,8 @@ class TableGenerator(object):
                 row = [_property, "", "False", str(num+1)]
             csvWriter.writerow(row)
 
+        csvWriter.close()
+
     def generateSubjectColumnAnnotation(self, csvFilename, entityRowTuple):
         """
             id_of_table_csv_file.csv, 5
@@ -111,6 +119,18 @@ class TableGenerator(object):
         csvWriter = CsvWriter(subjectColumnAnnotationFilepath)
         row = [csvFilename, str(subjectColumnIndex + 1)]
         csvWriter.writerow(row)
+        csvWriter.close()
+
+    def generateClassAnnotation(self, csvFilename, entityRowTuple):
+        """
+            id_of_table_csv_file.csv, dbpediaClassLabel, dbpediaClassUri, headerRowIndex (always 1)
+        """
+        (entity, cells) = entityRowTuple
+        classAnnotationFilepath = os.path.join(CLASSES_FOLDER, csvFilename)
+        csvWriter = CsvWriter(classAnnotationFilepath)
+        row = [csvFilename, self.getLabel(entity), entity, 1]
+        csvWriter.writerow(row)
+        csvWriter.close()
 
     def getRows(self, entities):
         rows = []
