@@ -31,7 +31,7 @@ class TableGenerator(object):
         print "Generating subject column annotation for %s" %(_class,)
         self.generateSubjectColumnAnnotation(csvFilename, rows[0])
         print "Generating class annotation for %s" %(_class,)
-        self.generateClassAnnotation(csvFilename, rows[0])
+        self.generateClassAnnotation(csvFilename, _class)
 
         csvWriter = CsvWriter(csvFilepath)
         csvWriter.writeheader(header)
@@ -121,20 +121,20 @@ class TableGenerator(object):
         csvWriter.writerow(row)
         csvWriter.close()
 
-    def generateClassAnnotation(self, csvFilename, entityRowTuple):
+    def generateClassAnnotation(self, csvFilename, _class):
         """
             id_of_table_csv_file.csv, dbpediaClassLabel, dbpediaClassUri, headerRowIndex (always 1)
         """
-        (entity, cells) = entityRowTuple
         classAnnotationFilepath = os.path.join(CLASSES_FOLDER, csvFilename)
         csvWriter = CsvWriter(classAnnotationFilepath)
-        row = [csvFilename, self.getLabel(entity), entity, 1]
+        row = [csvFilename, self.getLabel(_class), _class, 1]
         csvWriter.writerow(row)
         csvWriter.close()
 
     def getRows(self, entities):
         rows = []
         for num, entity in enumerate(entities):
+            print "Getting row %s out of %s" % (num, len(entities),)
             entityRowTuple = self.getRow(entity)
             #permutate first row to have a random header sequence
             if num == 0:
@@ -145,10 +145,12 @@ class TableGenerator(object):
         return rows
 
     def getRow(self, entity):
-        results = self.queryExecutor.executeQuery(u"""
+        query = u"""
             SELECT DISTINCT ?p ?o
             WHERE {<%s> ?p ?o}
-        """ %(entity,))
+            LIMIT 15
+        """ %(entity,)
+        results = self.queryExecutor.executeQuery(query)
         results = results["results"]["bindings"]
         row = []
 
@@ -176,6 +178,9 @@ class TableGenerator(object):
 
     def permutateRow(self, row):
         numberOfCols = len(row)
+        if(numberOfCols == 1):
+            return row
+
         for i in range(0, 1000):
             colA = random.randint(0, numberOfCols - 1)
             colB = colA
@@ -190,6 +195,7 @@ class TableGenerator(object):
         results = self.queryExecutor.executeQuery(u"""
             SELECT DISTINCT ?label
             WHERE {<%s> rdfs:label ?label}
+            LIMIT 1
         """ %(s,))
         results = results["results"]["bindings"]
         if len(results) == 0:
