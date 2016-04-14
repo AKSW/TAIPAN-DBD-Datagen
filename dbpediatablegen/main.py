@@ -23,7 +23,7 @@ if __name__ == "__main__":
     for num, _class in enumerate(randomClasses):
         if num < classesToSkip:
             continue
-        print "Processing: %s" %(_class,)
+        print "Processing (%s out of %s): %s" %(num, len(randomClasses), _class,)
         #We get 100 entities because of LIMIT in the SPARQL query
         entities = entitySelector.getEntities(_class)
         #20 entities per table --> 20 rows
