@@ -20,15 +20,8 @@ if __name__ == "__main__":
     generatedTablesCount = len(files)
     #Can have more than 5 tables per class!
     classesToSkip = int(float(generatedTablesCount) / 5)
-    skip = True
 
     for num, _class in enumerate(randomClasses):
-        if _class == "http://dbpedia.org/ontology/OrganisationMember":
-            skip = False
-        if skip:
-             continue
-        #if num < classesToSkip:
-        #    continue
         print "Processing (%s out of %s): %s" %(num, len(randomClasses), _class,)
         #We get 100 entities because of LIMIT in the SPARQL query
         entities = entitySelector.getEntities(_class)

@@ -63,4 +63,3 @@ target/
 
 #ignore config
 dbpediatablegen/config.py
-dbpediatablegen/generated
