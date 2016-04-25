@@ -3,6 +3,8 @@ import os
 DBPEDIA_SPARQL_ENDPOINT = "http://dbpedia.org/sparql"
 DBPEDIA_DEFAULT_GRAPH = "http://dbpedia.org"
 RANDOM_CLASS_SELECTION = "[234, 152, 122, 402, 150, 404, 379, 264, 95, 147, 284, 108, 348, 190, 219, 94, 27, 83, 179, 17, 267, 183, 347, 381, 290, 126, 240, 276, 262, 239, 314, 184, 125, 63, 154, 4, 288, 157, 400, 256, 238, 109, 338, 136, 210, 50, 144, 33, 217, 337, 377, 65, 106, 139, 70, 287, 119, 335, 199, 308, 15, 103, 127, 89, 19, 102, 272, 360, 0, 222, 399, 132, 365, 242, 151, 170, 128, 367, 169, 231, 241, 261, 253, 14, 165, 40, 364, 117, 56, 291, 211, 271, 35, 374, 67, 87, 91, 81, 395, 178, 129, 161, 98, 293, 255, 24, 362, 185, 294, 398, 188, 257, 34, 280, 160, 340, 21, 114, 60, 372, 3, 43, 389, 221, 301, 326, 2, 5, 201, 142, 153, 148, 252, 260, 268, 68, 72, 390, 220, 158, 307, 302, 23, 354, 69, 233, 214, 333, 107, 331, 249, 116, 7, 357, 359, 195, 41, 22, 134, 121, 248, 281, 29, 54, 386, 42, 341, 48, 44, 209, 385, 401, 85, 47, 53, 373, 289, 330, 282, 313, 251, 104, 86, 186, 175, 237, 278, 80, 245, 344, 332, 90, 46, 84, 26, 329, 123, 247, 120, 355]"
+# as per https://github.com/AKSW/AGDISTIS/blob/master/src/main/resources/config/whiteList.txt
+AGDISTIS_WHITELISTED_CLASSES = ["http://dbpedia.org/ontology/Place", "http://dbpedia.org/ontology/Person", "http://dbpedia.org/ontology/Organisation", "http://dbpedia.org/class/yago/YagoGeoEntity", "http://xmlns.com/foaf/0.1/Person", "http://dbpedia.org/ontology/WrittenWork"]
 PROJECT_ROOT = os.path.dirname(os.path.realpath(__file__))
 DATA_FOLDER = os.path.join(PROJECT_ROOT, "data")
 TABLE_FOLDER = os.path.join(PROJECT_ROOT, "generated", "tables")
