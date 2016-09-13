@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
-from setuptools import setup, find_packages
+"""setup.py for the opentablebench project."""
+from setuptools import find_packages, setup
 
 setup(
     name='opentablebench',

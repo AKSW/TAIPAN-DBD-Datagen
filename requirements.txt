@@ -1,2 +1,3 @@
 SPARQLWrapper
 tox
+flake8

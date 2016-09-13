@@ -1,202 +1,237 @@
-import csv
-import uuid
+# -*- coding: utf-8 -*-
+"""TableGenerator -- generate the tables out of RDF from a SPARQL endpoint."""
+
 import os
 import random
+import uuid
 
-from .QueryExecutor import QueryExecutor
+from .config import CLASSES_FOLDER, PROPERTIES_FOLDER, \
+    SUBJECT_COLUMN_FOLDER, TABLE_FOLDER
 from .CsvWriter import CsvWriter
-from .config import TABLE_FOLDER, PROPERTIES_FOLDER, SUBJECT_COLUMN_FOLDER, CLASSES_FOLDER
+from .QueryExecutor import QueryExecutor
+
 
 class TableGenerator(object):
+    """
+    TableGenerator.
+
+    Generate the tables out of RDF from a SPARQL endpoint.
+    """
+
     def __init__(self):
-        self.queryExecutor = QueryExecutor()
+        """Initialize TableGenerator with QueryExecutor."""
+        self.query_executor = QueryExecutor()
 
-    def generateTableOfLengthN(self, _class, entities, n):
-        numberOfEntities = len(entities)
-        for i in range(0, numberOfEntities, n):
-            #i gives a lower limit
-            self.generateTable(_class, entities[i:n+i])
+    def generate_table_of_length(self, _class, entities, table_length_rows):
+        """Generate entities/table_length_rows number of tables for _class."""
+        number_of_entities = len(entities)
+        for i in range(0, number_of_entities, table_length_rows):
+            # i gives a lower limit
+            self.generate_table(_class, entities[i:table_length_rows + i])
 
-    def generateTable(self, _class, entities):
-        print "Getting rows for %s" %(_class,)
-        rows = self.getRows(entities)
-        print "Getting header for %s" %(_class,)
-        header = self.generateHeader(rows[0])
-        tableId = self.generateRandomTableId()
-        csvFilename = str(tableId) + ".csv"
-        csvFilepath = os.path.join(TABLE_FOLDER, csvFilename)
+    def generate_table(self, _class, entities):
+        """Generate a table for _class from entities."""
+        print("Getting rows for %s" % (_class,))
+        rows = self._get_rows(entities)
+        print("Getting header for %s" % (_class,))
+        header = self.generate_header(rows[0])
+        table_id = self._generate_random_table_id()
+        csv_filename = str(table_id) + ".csv"
+        csv_filepath = os.path.join(TABLE_FOLDER, csv_filename)
 
-        print "Generating property annotation for %s" %(_class,)
-        self.generatePropertyAnnotation(csvFilename, rows[0])
-        print "Generating subject column annotation for %s" %(_class,)
-        self.generateSubjectColumnAnnotation(csvFilename, rows[0])
-        print "Generating class annotation for %s" %(_class,)
-        self.generateClassAnnotation(csvFilename, _class)
+        print("Generating property annotation for %s" % (_class,))
+        self.generate_property_annotation(csv_filename, rows[0])
+        print("Generating subject column annotation for %s" % (_class,))
+        self.generate_subject_column_annotation(csv_filename, rows[0])
+        print("Generating class annotation for %s" % (_class,))
+        self.generate_class_annotation(csv_filename, _class)
 
-        csvWriter = CsvWriter(csvFilepath)
-        csvWriter.writeheader(header)
+        csv_writer = CsvWriter(csv_filepath)
+        csv_writer.write_header(header)
 
-        for rowEntityTuple in rows:
-            (entity, row) = rowEntityTuple
-            row = self.unpackRow(row)
-            row = self.alignRowWithHeader(row, header)
-            csvWriter.writerow(row)
+        for row_entity_tuple in rows:
+            (_, row) = row_entity_tuple
+            row = self._unpack_row(row)
+            row = self._align_row_with_header(row, header)
+            csv_writer.write_row(row)
 
-        csvWriter.close()
+        csv_writer.close()
 
-    def unpackRow(self, row):
-        unpackedRow = {}
+    @staticmethod
+    def _unpack_row(row):
+        unpacked_row = {}
         for cell in row:
-            unpackedRow[cell['label']] = cell['value']
+            unpacked_row[cell['label']] = cell['value']
 
-        return unpackedRow
+        return unpacked_row
 
-    def alignRowWithHeader(self, unpackedRow, header):
-        alignedRow = []
+    @staticmethod
+    def _align_row_with_header(unpacked_row, header):
+        aligned_row = []
         for item in header:
-            alignedRow.append(unpackedRow.get(item, ""))
-        return alignedRow
+            aligned_row.append(unpacked_row.get(item, ""))
+        return aligned_row
 
-    def generateTableId(self, _class):
-        """
-            Create a unique deterministic ID from a class URI
-        """
+    @staticmethod
+    def generate_table_id(_class):
+        """Create a unique deterministic ID from a class URI."""
         return uuid.uuid5(uuid.NAMESPACE_URL, _class)
 
-    def generateRandomTableId(self):
+    @staticmethod
+    def _generate_random_table_id():
         return uuid.uuid4()
 
-    def generateHeader(self, rowEntityTuple):
-        """
-            Generate CSV header
-        """
-        (entity, cells) = rowEntityTuple
+    @staticmethod
+    def generate_header(row_entity_tuple):
+        """Generate CSV header."""
+        (_, cells) = row_entity_tuple
         header = []
         for cell in cells:
             header.append(cell['label'])
         return header
 
-    def generatePropertyAnnotation(self, csvFilename, entityRowTuple):
+    @staticmethod
+    def generate_property_annotation(csv_filename, row_entity_tuple):
         """
-            "http://dbpedia.org/ontology/genre","","False","1"
-            "http://dbpedia.org/ontology/computingPlatform","","False","2"
-            "http://www.w3.org/2000/01/rdf-schema#label","","True","3"
+        Generate the property annotation as csv file.
+
+        Example:
+        "http://dbpedia.org/ontology/genre","","False","1"
+        "http://dbpedia.org/ontology/computingPlatform","","False","2"
+        "http://www.w3.org/2000/01/rdf-schema#label","","True","3"
         """
-        (entity, cells) = entityRowTuple
+        (_, cells) = row_entity_tuple
         properties = []
         for cell in cells:
             properties.append(cell['property'])
 
-        propertyAnnotationFilepath = os.path.join(PROPERTIES_FOLDER, csvFilename)
-        csvWriter = CsvWriter(propertyAnnotationFilepath)
+        property_annotation_filepath = os.path.join(
+            PROPERTIES_FOLDER,
+            csv_filename
+        )
+        csv_writer = CsvWriter(property_annotation_filepath)
         for num, _property in enumerate(properties):
             if _property == u"http://www.w3.org/2000/01/rdf-schema#label":
-                row = [_property, "", "True", str(num+1)]
+                row = [_property, "", "True", str(num + 1)]
             else:
-                row = [_property, "", "False", str(num+1)]
-            csvWriter.writerow(row)
+                row = [_property, "", "False", str(num + 1)]
+            csv_writer.write_row(row)
 
-        csvWriter.close()
+        csv_writer.close()
 
-    def generateSubjectColumnAnnotation(self, csvFilename, entityRowTuple):
+    @staticmethod
+    def generate_subject_column_annotation(csv_filename, row_entity_tuple):
         """
-            id_of_table_csv_file.csv, 5
-            id_of_table_csv_file2.csv, 0
+        Generate the subject column annotation as csv file.
+
+        Example:
+        id_of_table_csv_file.csv, 5
+        id_of_table_csv_file2.csv, 0
 
             in our case subject column is always 0
             for proper testing, column shuffling is necessary
         """
-        (entity, cells) = entityRowTuple
-        subjectColumnIndex = 0
+        (_, cells) = row_entity_tuple
+        subject_column_index = 0
 
         properties = []
         for cell in cells:
             properties.append(cell['property'])
 
-        subjectColumnIndex = properties.index("http://www.w3.org/2000/01/rdf-schema#label")
+        subject_column_index = properties.index(
+            "http://www.w3.org/2000/01/rdf-schema#label"
+        )
 
-        subjectColumnAnnotationFilepath = os.path.join(SUBJECT_COLUMN_FOLDER, csvFilename)
-        csvWriter = CsvWriter(subjectColumnAnnotationFilepath)
-        row = [csvFilename, str(subjectColumnIndex + 1)]
-        csvWriter.writerow(row)
-        csvWriter.close()
+        subject_column_annotation_filepath = os.path.join(
+            SUBJECT_COLUMN_FOLDER,
+            csv_filename
+        )
+        csv_writer = CsvWriter(subject_column_annotation_filepath)
+        row = [csv_filename, str(subject_column_index + 1)]
+        csv_writer.write_row(row)
+        csv_writer.close()
 
-    def generateClassAnnotation(self, csvFilename, _class):
+    def generate_class_annotation(self, csv_filename, _class):
         """
-            id_of_table_csv_file.csv, dbpediaClassLabel, dbpediaClassUri, headerRowIndex (always 1)
-        """
-        classAnnotationFilepath = os.path.join(CLASSES_FOLDER, csvFilename)
-        csvWriter = CsvWriter(classAnnotationFilepath)
-        row = [csvFilename, self.getLabel(_class), _class, 1]
-        csvWriter.writerow(row)
-        csvWriter.close()
+        Generate class annotation in csv format.
 
-    def getRows(self, entities):
+        Header is:
+        id_of_table_csv_file.csv, dbpediaClassLabel,
+        dbpediaClassUri, headerRowIndex (always 1)
+        """
+        class_annotation_filepath = os.path.join(CLASSES_FOLDER, csv_filename)
+        csv_writer = CsvWriter(class_annotation_filepath)
+        row = [csv_filename, self._get_label(_class), _class, 1]
+        csv_writer.write_row(row)
+        csv_writer.close()
+
+    def _get_rows(self, entities):
         rows = []
         for num, entity in enumerate(entities):
-            print "Getting row %s out of %s" % (num, len(entities),)
-            entityRowTuple = self.getRow(entity)
-            #permutate first row to have a random header sequence
+            print("Getting row %s out of %s" % (num, len(entities),))
+            row_entity_tuple = self._get_row(entity)
+            # permutate first row to have a random header sequence
             if num == 0:
-                (entity, row) = entityRowTuple
-                permutatedRow = self.permutateRow(row)
-                entityRowTuple = (entity, permutatedRow)
-            rows.append(entityRowTuple)
+                (entity, row) = row_entity_tuple
+                permutated_row = self._permutate_row(row)
+                row_entity_tuple = (entity, permutated_row)
+            rows.append(row_entity_tuple)
         return rows
 
-    def getRow(self, entity):
+    def _get_row(self, entity):
         query = u"""
             SELECT DISTINCT ?p ?o
             WHERE {<%s> ?p ?o}
             LIMIT 15
-        """ %(entity,)
-        results = self.queryExecutor.executeQuery(query)
+        """ % (entity,)
+        results = self.query_executor.execute_query(query)
         results = results["results"]["bindings"]
         row = []
 
-        #append entity label as the first item
+        # append entity label as the first item
         row.append({
             "property": "http://www.w3.org/2000/01/rdf-schema#label",
             "label": "label",
-            "value": self.getLabel(entity)
+            "value": self._get_label(entity)
         })
 
         properties = []
         for _result in results:
             _property = _result["p"]["value"]
-            object = _result["o"]["value"]
-            _propertyLabel = self.getLabel(_property)
-            if _propertyLabel != "" and (not _property in properties):
+            _object = _result["o"]["value"]
+            _property_label = self._get_label(_property)
+            if _property_label != "" and (_property not in properties):
                 row.append({
                     "property": _property,
-                    "label": _propertyLabel,
-                    "value": object
+                    "label": _property_label,
+                    "value": _object
                 })
                 properties.append(_property)
 
         return (entity, row)
 
-    def permutateRow(self, row):
-        numberOfCols = len(row)
-        if(numberOfCols == 1):
+    @staticmethod
+    def _permutate_row(row):
+        number_of_cols = len(row)
+        if number_of_cols == 1:
             return row
 
-        for i in range(0, 1000):
-            colA = random.randint(0, numberOfCols - 1)
-            colB = colA
-            while colB == colA:
-                colB = random.randint(0, numberOfCols - 1)
-            temp = row[colA]
-            row[colA] = row[colB]
-            row[colB] = temp
+        for _ in range(0, 1000):
+            col_a = random.randint(0, number_of_cols - 1)
+            col_b = col_a
+            while col_b == col_a:
+                col_b = random.randint(0, number_of_cols - 1)
+            temp = row[col_a]
+            row[col_a] = row[col_b]
+            row[col_b] = temp
         return row
 
-    def getLabel(self, s):
-        results = self.queryExecutor.executeQuery(u"""
+    def _get_label(self, subject_string):
+        results = self.query_executor.execute_query(u"""
             SELECT DISTINCT ?label
             WHERE {<%s> rdfs:label ?label}
             LIMIT 1
-        """ %(s,))
+        """ % (subject_string,))
         results = results["results"]["bindings"]
         if len(results) == 0:
             return ""

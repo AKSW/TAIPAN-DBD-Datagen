@@ -1,23 +1,36 @@
+# -*- coding: utf-8 -*-
+"""CsvWriter for writing csv to files in utf-8."""
+
 import codecs
 
 
 class CsvWriter(object):
+    """CsvWriter for writing csv to files in utf-8."""
+
     def __init__(self, csvFilepath):
-        self.csvFile = codecs.open(csvFilepath, "w", "utf-8")
+        """
+        Initialize CsvWriter with csvFilepath.
 
-    def writeheader(self, header):
-        self.writerow(header)
+        Will write to the file located at csvFilepath.
+        """
+        self.csv_file = codecs.open(csvFilepath, "w", "utf-8")
 
-    def writerow(self, row):
-        quotedRow = []
+    def write_header(self, header):
+        """Write header to the file."""
+        self.write_row(header)
+
+    def write_row(self, row):
+        """Write row to the file."""
+        quoted_row = []
         for item in row:
-            quotedRow.append(u'"%s"'%(item,))
+            quoted_row.append(u'"%s"' % (item,))
 
-        rowToWrite = ",".join(quotedRow)
+        row_to_write = ",".join(quoted_row)
         try:
-            self.csvFile.write(u"%s\n"%(rowToWrite,))
-        except IOError as e:
-            print "Failed to write to file: %s" % (str(e),)
+            self.csv_file.write(u"%s\n" % (row_to_write,))
+        except IOError as exception:
+            print(u"Failed to write to file: %s" % (str(exception),))
 
     def close(self):
-        self.csvFile.close()
+        """Close the csv file."""
+        self.csv_file.close()
