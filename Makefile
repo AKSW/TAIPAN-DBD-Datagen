@@ -14,3 +14,5 @@ clean:
 	rm -rf dbpediatablegen/generated/subject_columns/*
 	rm -rf dbpediatablegen/generated/classes/*
 
+install:
+	pip install -r requirements.txt
