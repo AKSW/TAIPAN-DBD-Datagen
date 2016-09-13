@@ -18,7 +18,8 @@ class EntitySelector(object):
         results = results["results"]["bindings"]
         entities = []
         for _result in results:
-            entities.append(_result["entity"]["value"])
+            entity = _result["entity"]["value"]
+            entities.append(entity)
         return entities
 
     def countEntities(self, _class):

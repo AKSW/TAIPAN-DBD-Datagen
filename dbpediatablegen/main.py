@@ -8,10 +8,7 @@ from dbpediatablegen.TableGenerator import TableGenerator
 
 if __name__ == "__main__":
     classSelector = ClassSelector()
-    classCount = classSelector.getClassCount()
     classes = classSelector.getClasses()
-    randomSelection = classSelector.generateRandomSelection(200)
-    randomClasses = classSelector.getRandomClasses()
 
     entitySelector = EntitySelector()
     tableGenerator = TableGenerator()
@@ -21,9 +18,10 @@ if __name__ == "__main__":
     #Can have more than 5 tables per class!
     classesToSkip = int(float(generatedTablesCount) / 5)
 
-    for num, _class in enumerate(randomClasses):
-        print "Processing (%s out of %s): %s" %(num, len(randomClasses), _class,)
+    for num, _class in enumerate(classes):
+        print "Processing (%s out of %s): %s" %(num, len(classes), _class,)
         #We get 100 entities because of LIMIT in the SPARQL query
         entities = entitySelector.getEntities(_class)
+
         #20 entities per table --> 20 rows
         tableGenerator.generateTableOfLengthN(_class, entities, 20)

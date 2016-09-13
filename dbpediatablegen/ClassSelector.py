@@ -65,12 +65,12 @@ class ClassSelector(object):
     def getClassesWithEntities(self):
         """
             Only get classes with more than 100 entities
-            --> we will generate 5 tables with 20 rows per class 
+            --> we will generate 5 tables with 20 rows per class
         """
         classes = []
         f = open(os.path.join(DATA_FOLDER, "ClassesEntitiesCount.csv"))
         for line in f.readlines():
             (_class, count) = line.split(",")
-            if(int(count) > 100):
+            if(int(count) > 20):
                 classes.append(_class)
         return classes
