@@ -1,10 +1,10 @@
 import os
 
-from dbpediatablegen.config import TABLE_FOLDER
+from .config import TABLE_FOLDER
 
-from dbpediatablegen.ClassSelector import ClassSelector
-from dbpediatablegen.EntitySelector import EntitySelector
-from dbpediatablegen.TableGenerator import TableGenerator
+from .ClassSelector import ClassSelector
+from .EntitySelector import EntitySelector
+from .TableGenerator import TableGenerator
 
 if __name__ == "__main__":
     classSelector = ClassSelector()
