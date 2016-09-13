@@ -1,2 +1,2 @@
-# dbpedia-tables-generator
-Generates tables out of DBpedia entities for TAIPAN/T2K algorithms evaluation.
+# Open Table Benchmark Generator
+Generates data for open table extraction benchmarking.
