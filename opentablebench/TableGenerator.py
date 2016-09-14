@@ -8,7 +8,7 @@ import uuid
 from .config import CLASSES_FOLDER, PROPERTIES_FOLDER, \
     SUBJECT_COLUMN_FOLDER, TABLE_FOLDER
 from .CsvWriter import CsvWriter
-from .QueryExecutor import QueryExecutor
+from .QueryExecutor import execute_query
 
 
 class TableGenerator(object):
@@ -17,10 +17,6 @@ class TableGenerator(object):
 
     Generate the tables out of RDF from a SPARQL endpoint.
     """
-
-    def __init__(self):
-        """Initialize TableGenerator with QueryExecutor."""
-        self.query_executor = QueryExecutor()
 
     def generate_table_of_length(self, _class, entities, table_length_rows):
         """Generate entities/table_length_rows number of tables for _class."""
@@ -42,7 +38,7 @@ class TableGenerator(object):
         print("Generating property annotation for %s" % (_class,))
         self.generate_property_annotation(csv_filename, rows[0])
         print("Generating subject column annotation for %s" % (_class,))
-        self.generate_subject_column_annotation(csv_filename, rows[0])
+        self.generate_subj_col_annotation(csv_filename, rows[0])
         print("Generating class annotation for %s" % (_class,))
         self.generate_class_annotation(csv_filename, _class)
 
@@ -52,8 +48,8 @@ class TableGenerator(object):
         for row_entity_tuple in rows:
             (_, row) = row_entity_tuple
             row = self._unpack_row(row)
-            row = self._align_row_with_header(row, header)
-            csv_writer.write_row(row)
+            aligned_row = self._align_row_with_header(row, header)
+            csv_writer.write_row(aligned_row)
 
         csv_writer.close()
 
@@ -120,7 +116,7 @@ class TableGenerator(object):
         csv_writer.close()
 
     @staticmethod
-    def generate_subject_column_annotation(csv_filename, row_entity_tuple):
+    def generate_subj_col_annotation(csv_filename, row_entity_tuple):
         """
         Generate the subject column annotation as csv file.
 
@@ -142,11 +138,11 @@ class TableGenerator(object):
             "http://www.w3.org/2000/01/rdf-schema#label"
         )
 
-        subject_column_annotation_filepath = os.path.join(
+        subj_col_annotation_filepath = os.path.join(
             SUBJECT_COLUMN_FOLDER,
             csv_filename
         )
-        csv_writer = CsvWriter(subject_column_annotation_filepath)
+        csv_writer = CsvWriter(subj_col_annotation_filepath)
         row = [csv_filename, str(subject_column_index + 1)]
         csv_writer.write_row(row)
         csv_writer.close()
@@ -184,7 +180,7 @@ class TableGenerator(object):
             WHERE {<%s> ?p ?o}
             LIMIT 15
         """ % (entity,)
-        results = self.query_executor.execute_query(query)
+        results = execute_query(query)
         results = results["results"]["bindings"]
         row = []
 
@@ -226,8 +222,9 @@ class TableGenerator(object):
             row[col_b] = temp
         return row
 
-    def _get_label(self, subject_string):
-        results = self.query_executor.execute_query(u"""
+    @staticmethod
+    def _get_label(subject_string):
+        results = execute_query(u"""
             SELECT DISTINCT ?label
             WHERE {<%s> rdfs:label ?label}
             LIMIT 1

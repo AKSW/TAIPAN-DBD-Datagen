@@ -1,20 +1,17 @@
 # -*- coding: utf-8 -*-
 """EntitySelector -- getting entities from a SPARQL endpoint."""
 
-from .QueryExecutor import QueryExecutor
+from .QueryExecutor import execute_query
 
 
 class EntitySelector(object):
     """EntitySelector -- getting entities from a SPARQL endpoint."""
 
-    def __init__(self):
-        """Initialize EntitySelector with QueryExecutor."""
-        self.query_executor = QueryExecutor()
-
-    def get_entities(self, _class):
+    @staticmethod
+    def get_entities(_class):
         """Request 100 entities for a given _class."""
         print("Getting entities for %s" % (_class,))
-        results = self.query_executor.execute_query(u"""
+        results = execute_query(u"""
             SELECT DISTINCT ?entity
             WHERE {
                 ?entity rdf:type <%s>
@@ -27,9 +24,10 @@ class EntitySelector(object):
             entities.append(entity)
         return entities
 
-    def count_entities(self, _class):
+    @staticmethod
+    def count_entities(_class):
         """Request number of entities for a given _class."""
-        results = self.query_executor.execute_query(u"""
+        results = execute_query(u"""
             SELECT DISTINCT COUNT(?entity)
             WHERE {
                 ?entity rdf:type <%s>

@@ -4,19 +4,16 @@ import os
 import random
 
 from .config import DATA_FOLDER, RANDOM_CLASS_SELECTION
-from .QueryExecutor import QueryExecutor
+from .QueryExecutor import execute_query
 
 
 class ClassSelector(object):
     """ClassSelector selects owl:Class from SPARQL endpoint."""
 
-    def __init__(self):
-        """Initialize ClassSelector with QueryExecutor."""
-        self.query_executor = QueryExecutor()
-
-    def get_classes(self):
+    @staticmethod
+    def get_classes():
         """Get all classes from SPARQL endpoint."""
-        results = self.query_executor.execute_query(u"""
+        results = execute_query(u"""
             SELECT DISTINCT ?class
             WHERE {?class rdf:type owl:Class}
         """)
@@ -46,9 +43,10 @@ class ClassSelector(object):
             random_classes.append(classes[index])
         return random_classes
 
-    def get_class_count(self):
+    @staticmethod
+    def get_class_count():
         """Get number of classes in a SPARQL endpoint."""
-        results = self.query_executor.execute_query(u"""
+        results = execute_query(u"""
             SELECT DISTINCT COUNT(?class)
             WHERE {?class rdf:type owl:Class}
         """)
