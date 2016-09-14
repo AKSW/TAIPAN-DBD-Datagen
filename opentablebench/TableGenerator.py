@@ -9,6 +9,7 @@ from .config import CLASSES_FOLDER, PROPERTIES_FOLDER, \
     SUBJECT_COLUMN_FOLDER, TABLE_FOLDER
 from .CsvWriter import CsvWriter
 from .QueryExecutor import execute_query
+from .RDFGenerator import convert_json_to_rdf, save_rdf
 
 
 class TableGenerator(object):
@@ -42,6 +43,11 @@ class TableGenerator(object):
         table_id = self._generate_random_table_id()
         csv_filename = str(table_id) + ".csv"
         csv_filepath = os.path.join(TABLE_FOLDER, csv_filename)
+
+        print("Saving RDF for %s" % (_class,))
+        ntriples = convert_json_to_rdf(triples_tuples_json)
+        ntriples_filename = str(table_id) + ".nt"
+        save_rdf(ntriples, ntriples_filename)
 
         print("Generating property annotation for %s" % (_class,))
         self.generate_property_annotation(csv_filename, rows[0])

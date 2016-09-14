@@ -7,12 +7,14 @@ folders:
 	mkdir -p generated/properties
 	mkdir -p generated/subject_columns
 	mkdir -p generated/classes
+	mkdir -p generated/rdf
 
 clean:
 	rm -rf generated/tables/*
 	rm -rf generated/properties/*
 	rm -rf generated/subject_columns/*
 	rm -rf generated/classes/*
+	rm -rf generated/rdf/*
 
 install:
 	pip install -r requirements.txt

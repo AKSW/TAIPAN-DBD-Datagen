@@ -1,5 +1,9 @@
 """RDFGenerator fetches and permutate RDF."""
 
+import os
+
+from .config import RDF_FOLDER
+from .FileWriter import FileWriter
 from .QueryExecutor import execute_query, execute_query_rdf
 
 NUMBER_OF_TRIPLES_FOR_ENTITY = 15
@@ -115,3 +119,11 @@ def convert_json_to_rdf(triple_tuples_json):
                 "%s %s %s ." % (_subject, _property, _object)
             )
     return "\n".join(triples)
+
+
+def save_rdf(ntriples_string, filename):
+    """Write triples to the generated/rdf/ folder."""
+    rdf_filepath = os.path.join(RDF_FOLDER, filename)
+    file_writer = FileWriter(rdf_filepath)
+    file_writer.write(ntriples_string)
+    file_writer.close()

@@ -79,3 +79,4 @@ SUBJECT_COLUMN_FOLDER = os.path.join(
     "subject_columns"
 )
 CLASSES_FOLDER = os.path.join(PROJECT_ROOT, "generated", "classes")
+RDF_FOLDER = os.path.join(PROJECT_ROOT, "generated", "rdf")
