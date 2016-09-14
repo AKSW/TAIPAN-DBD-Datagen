@@ -1,18 +1,18 @@
 default:
-	cp dbpediatablegen/config.py-example dbpediatablegen/config.py
-	python dbpediatablegen/main.py
+	cp opentablebench/config.py-example opentablebench/config.py
+	python run.py
 
 folders:
-	mkdir -p dbpediatablegen/generated/tables
-	mkdir -p dbpediatablegen/generated/properties
-	mkdir -p dbpediatablegen/generated/subject_columns
-	mkdir -p dbpediatablegen/generated/classes
+	mkdir -p generated/tables
+	mkdir -p generated/properties
+	mkdir -p generated/subject_columns
+	mkdir -p generated/classes
 
 clean:
-	rm -rf dbpediatablegen/generated/tables/*
-	rm -rf dbpediatablegen/generated/properties/*
-	rm -rf dbpediatablegen/generated/subject_columns/*
-	rm -rf dbpediatablegen/generated/classes/*
+	rm -rf generated/tables/*
+	rm -rf generated/properties/*
+	rm -rf generated/subject_columns/*
+	rm -rf generated/classes/*
 
 install:
 	pip install -r requirements.txt

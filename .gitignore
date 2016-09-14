@@ -63,3 +63,4 @@ target/
 
 #ignore config
 opentablebench/config.py
+generated/

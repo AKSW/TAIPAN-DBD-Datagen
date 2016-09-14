@@ -64,7 +64,12 @@ AGDISTIS_WHITELISTED_CLASSES = [
     "http://xmlns.com/foaf/0.1/Person",
     "http://dbpedia.org/ontology/WrittenWork"
 ]
-PROJECT_ROOT = os.path.dirname(os.path.realpath(__file__))
+PROJECT_ROOT = os.path.join(
+    os.path.dirname(
+        os.path.realpath(__file__)
+    ),
+    ".."
+)
 DATA_FOLDER = os.path.join(PROJECT_ROOT, "data")
 TABLE_FOLDER = os.path.join(PROJECT_ROOT, "generated", "tables")
 PROPERTIES_FOLDER = os.path.join(PROJECT_ROOT, "generated", "properties")

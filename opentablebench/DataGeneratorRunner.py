@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-"""main.py -- the entrypoint for the benchmark data generator."""
+"""DataGeneratorRunner.py -- entrypoint for the benchmark data generator."""
 
 import os
 
@@ -23,19 +23,19 @@ class DataGeneratorRunner(object):
         self.table_generator = TableGenerator()
 
     @staticmethod
-    def get_classes_to_skip(table_per_class):
+    def get_classes_to_skip(tables_per_class):
         """Get amount of classes to skip."""
         _, _, files = next(os.walk(TABLE_FOLDER))
         generated_tables_count = len(files)
-        classes_to_skip = int(float(generated_tables_count) / table_per_class)
+        classes_to_skip = int(float(generated_tables_count) / tables_per_class)
         return classes_to_skip
 
     def run(self):
         """Run the data generator."""
         classes = self.class_selector.get_classes()
 
-        table_per_class = 20
-        classes_to_skip = self.get_classes_to_skip(table_per_class)
+        tables_per_class = 20
+        classes_to_skip = self.get_classes_to_skip(tables_per_class)
         print("Skipping first %s classes" % (classes_to_skip,))
 
         for num, _class in enumerate(classes):
@@ -48,8 +48,3 @@ class DataGeneratorRunner(object):
 
             # 20 entities per table --> 20 rows
             self.table_generator.generate_table_of_length(_class, entities, 20)
-
-
-if __name__ == "__main__":
-    RUNNER = DataGeneratorRunner()
-    RUNNER.run()

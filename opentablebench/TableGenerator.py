@@ -9,6 +9,7 @@ from .config import CLASSES_FOLDER, PROPERTIES_FOLDER, \
     SUBJECT_COLUMN_FOLDER, TABLE_FOLDER
 from .CsvWriter import CsvWriter
 from .QueryExecutor import execute_query
+from .RDFGenerator import fetch_triples_for_entity
 
 
 class TableGenerator(object):
@@ -175,15 +176,9 @@ class TableGenerator(object):
         return rows
 
     def _get_row(self, entity):
-        query = u"""
-            SELECT DISTINCT ?p ?o
-            WHERE {<%s> ?p ?o}
-            LIMIT 15
-        """ % (entity,)
-        results = execute_query(query)
-        results = results["results"]["bindings"]
-        row = []
+        triples = fetch_triples_for_entity(entity)
 
+        row = []
         # append entity label as the first item
         row.append({
             "property": "http://www.w3.org/2000/01/rdf-schema#label",
@@ -192,9 +187,9 @@ class TableGenerator(object):
         })
 
         properties = []
-        for _result in results:
-            _property = _result["p"]["value"]
-            _object = _result["o"]["value"]
+        for _triple in triples:
+            _property = _triple["p"]["value"]
+            _object = _triple["o"]["value"]
             _property_label = self._get_label(_property)
             if _property_label != "" and (_property not in properties):
                 row.append({
