@@ -8,15 +8,15 @@ class EntitySelector(object):
     """EntitySelector -- getting entities from a SPARQL endpoint."""
 
     @staticmethod
-    def get_entities(_class):
+    def get_entities(_class, number_of_entities):
         """Request 100 entities for a given _class."""
         print("Getting entities for %s" % (_class,))
         results = execute_query(u"""
             SELECT DISTINCT ?entity
             WHERE {
                 ?entity rdf:type <%s>
-            } LIMIT 100
-        """ % (_class, ))
+            } LIMIT %s
+        """ % (_class, number_of_entities,))
         results = results["results"]["bindings"]
         entities = []
         for _result in results:

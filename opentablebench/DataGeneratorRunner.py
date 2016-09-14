@@ -6,6 +6,7 @@ import os
 from .ClassSelector import ClassSelector
 from .config import TABLE_FOLDER
 from .EntitySelector import EntitySelector
+from .RDFGenerator import convert_json_to_rdf, fetch_triples_for_entities
 from .TableGenerator import TableGenerator
 
 
@@ -44,7 +45,19 @@ class DataGeneratorRunner(object):
                 % (num, len(classes), _class,)
             )
             # We get 100 entities because of LIMIT in the SPARQL query
-            entities = self.entity_selector.get_entities(_class)
+            number_of_entities = 5
+            entities = self.entity_selector.get_entities(
+                _class,
+                number_of_entities
+            )
+
+            triples_tuples_json = fetch_triples_for_entities(entities)
+            triples_tuples_rdf = convert_json_to_rdf(triples_tuples_json)
+            print("Triple length is %s" % len(triples_tuples_rdf))
 
             # 20 entities per table --> 20 rows
-            self.table_generator.generate_table_of_length(_class, entities, 20)
+            self.table_generator.generate_table_of_length(
+                _class,
+                triples_tuples_json,
+                20
+            )

@@ -9,7 +9,6 @@ from .config import CLASSES_FOLDER, PROPERTIES_FOLDER, \
     SUBJECT_COLUMN_FOLDER, TABLE_FOLDER
 from .CsvWriter import CsvWriter
 from .QueryExecutor import execute_query
-from .RDFGenerator import fetch_triples_for_entity
 
 
 class TableGenerator(object):
@@ -19,17 +18,25 @@ class TableGenerator(object):
     Generate the tables out of RDF from a SPARQL endpoint.
     """
 
-    def generate_table_of_length(self, _class, entities, table_length_rows):
+    def generate_table_of_length(
+            self,
+            _class,
+            triples_tuples_json,
+            table_length_rows
+    ):
         """Generate entities/table_length_rows number of tables for _class."""
-        number_of_entities = len(entities)
+        number_of_entities = len(triples_tuples_json)
         for i in range(0, number_of_entities, table_length_rows):
             # i gives a lower limit
-            self.generate_table(_class, entities[i:table_length_rows + i])
+            self.generate_table(
+                _class,
+                triples_tuples_json[i:table_length_rows + i]
+            )
 
-    def generate_table(self, _class, entities):
+    def generate_table(self, _class, triples_tuples_json):
         """Generate a table for _class from entities."""
         print("Getting rows for %s" % (_class,))
-        rows = self._get_rows(entities)
+        rows = self._get_rows(triples_tuples_json)
         print("Getting header for %s" % (_class,))
         header = self.generate_header(rows[0])
         table_id = self._generate_random_table_id()
@@ -162,11 +169,15 @@ class TableGenerator(object):
         csv_writer.write_row(row)
         csv_writer.close()
 
-    def _get_rows(self, entities):
+    def _get_rows(self, triples_tuples_json):
         rows = []
-        for num, entity in enumerate(entities):
-            print("Getting row %s out of %s" % (num, len(entities),))
-            row_entity_tuple = self._get_row(entity)
+        for num, triples_tuple in enumerate(triples_tuples_json):
+            (entity, triples) = triples_tuple
+            print(
+                "Getting row %s out of %s" %
+                (num, len(triples_tuples_json),)
+            )
+            row_entity_tuple = self._get_row(entity, triples)
             # permutate first row to have a random header sequence
             if num == 0:
                 (entity, row) = row_entity_tuple
@@ -175,9 +186,7 @@ class TableGenerator(object):
             rows.append(row_entity_tuple)
         return rows
 
-    def _get_row(self, entity):
-        triples = fetch_triples_for_entity(entity)
-
+    def _get_row(self, entity, triples):
         row = []
         # append entity label as the first item
         row.append({
