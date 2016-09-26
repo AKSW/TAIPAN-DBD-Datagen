@@ -84,4 +84,5 @@ CLASSES_ENTITIES_FILE = os.path.join(
     DATA_FOLDER,
     "ClassesEntitiesCount.csv"
 )
-CACHE_FOLDER = os.path.join(PROJECT_ROOT, "data", "cache")
+CACHE_FOLDER_LABELS = os.path.join(PROJECT_ROOT, "data", "cache", "labels")
+CACHE_FOLDER_ENTITIES = os.path.join(PROJECT_ROOT, "data", "cache", "entities")

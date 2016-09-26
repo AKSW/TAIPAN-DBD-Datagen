@@ -12,13 +12,15 @@ folders:
 	mkdir -p generated/rdf
 
 clean:
-	rm -rf data/*
-	rm -rf data/cache/*
 	rm -rf generated/tables/*
 	rm -rf generated/properties/*
 	rm -rf generated/subject_columns/*
 	rm -rf generated/classes/*
 	rm -rf generated/rdf/*
+
+clean_cache:
+	rm -rf data/cache/entities/*
+	rm -rf data/cache/labels/*
 
 install:
 	pip install -r requirements.txt

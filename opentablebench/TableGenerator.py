@@ -4,13 +4,12 @@
 import os
 import random
 import uuid
-import cPickle as pickle
 
-from .config import CACHE_FOLDER, CLASSES_FOLDER, \
-    PROPERTIES_FOLDER, SUBJECT_COLUMN_FOLDER, TABLE_FOLDER
+from .config import CLASSES_FOLDER, PROPERTIES_FOLDER, \
+    SUBJECT_COLUMN_FOLDER, TABLE_FOLDER
 from .CsvWriter import CsvWriter
-from .QueryExecutor import execute_query
 from .RDFGenerator import convert_json_to_rdf, save_rdf
+from .RDFQuery import get_label
 
 
 class TableGenerator(object):
@@ -162,7 +161,8 @@ class TableGenerator(object):
         csv_writer.write_row(row)
         csv_writer.close()
 
-    def generate_class_annotation(self, csv_filename, _class):
+    @staticmethod
+    def generate_class_annotation(csv_filename, _class):
         """
         Generate class annotation in csv format.
 
@@ -172,7 +172,7 @@ class TableGenerator(object):
         """
         class_annotation_filepath = os.path.join(CLASSES_FOLDER, csv_filename)
         csv_writer = CsvWriter(class_annotation_filepath)
-        row = [csv_filename, self._get_label(_class), _class, 1]
+        row = [csv_filename, get_label(_class), _class, 1]
         csv_writer.write_row(row)
         csv_writer.close()
 
@@ -193,20 +193,21 @@ class TableGenerator(object):
             rows.append(row_entity_tuple)
         return rows
 
-    def _get_row(self, entity, triples):
+    @staticmethod
+    def _get_row(entity, triples):
         row = []
         # append entity label as the first item
         row.append({
             "property": "http://www.w3.org/2000/01/rdf-schema#label",
             "label": "label",
-            "value": self._get_label(entity)
+            "value": get_label(entity)
         })
 
         properties = []
         for _triple in triples:
             _property = _triple["p"]["value"]
             _object = _triple["o"]["value"]
-            _property_label = self._get_label(_property)
+            _property_label = get_label(_property)
             if _property_label != "" and (_property not in properties):
                 row.append({
                     "property": _property,
@@ -232,32 +233,3 @@ class TableGenerator(object):
             row[col_a] = row[col_b]
             row[col_b] = temp
         return row
-
-    @staticmethod
-    def _get_label(subject_string):
-        subject_string_hash = uuid.uuid5(
-            uuid.NAMESPACE_URL,
-            subject_string.encode("utf-8")
-        )
-        cached_label_file = os.path.join(
-            CACHE_FOLDER,
-            str(subject_string_hash)
-        )
-        if os.path.exists(cached_label_file):
-            pickle.load(open(cached_label_file, "rb"))
-        else:
-            results = execute_query(u"""
-                SELECT DISTINCT ?label
-                WHERE {<%s> rdfs:label ?label}
-                LIMIT 1
-            """ % (subject_string,))
-            results = results["results"]["bindings"]
-            if len(results) == 0:
-                label_uri = ""
-            else:
-                label_uri = results[0]["label"]["value"]
-            pickle.dump(
-                label_uri,
-                open(cached_label_file, "wb")
-            )
-            return label_uri

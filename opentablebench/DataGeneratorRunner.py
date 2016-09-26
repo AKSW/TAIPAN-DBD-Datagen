@@ -6,7 +6,9 @@ import os
 from .ClassSelector import ClassSelector
 from .config import TABLE_FOLDER
 from .EntitySelector import EntitySelector
-from .RDFGenerator import convert_json_to_rdf, fetch_triples_for_entities
+from .RDFFilter import get_distinct_properties_triples, \
+    get_labels_for_all_objects
+from .RDFGenerator import fetch_triples_for_entities
 from .TableGenerator import TableGenerator
 
 
@@ -32,6 +34,7 @@ class DataGeneratorRunner(object):
 
     @staticmethod
     def get_number_of_tables():
+        """Get number of tables from TABLE_FOLDER."""
         _, _, files = next(os.walk(TABLE_FOLDER))
         return len(files)
 
@@ -57,11 +60,17 @@ class DataGeneratorRunner(object):
                 number_of_entities
             )
             triples_tuples_json = fetch_triples_for_entities(entities)
+            triples_tuples_filtered = get_distinct_properties_triples(
+                triples_tuples_json
+            )
+            triples_tuples_with_labels = get_labels_for_all_objects(
+                triples_tuples_filtered
+            )
 
             # 20 entities per table --> 20 rows
             self.table_generator.generate_table_of_length(
                 _class,
-                triples_tuples_json,
+                triples_tuples_with_labels,
                 rows_per_table
             )
             print(

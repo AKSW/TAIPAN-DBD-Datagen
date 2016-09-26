@@ -51,7 +51,6 @@ class ClassSelector(object):
             SELECT DISTINCT COUNT(?class)
             WHERE {?class rdf:type owl:Class}
         """)
-        import ipdb; ipdb.set_trace()
         return int(results["results"]["bindings"][0]["callret-0"]["value"])
 
     @staticmethod
