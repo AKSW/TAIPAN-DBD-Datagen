@@ -80,3 +80,8 @@ SUBJECT_COLUMN_FOLDER = os.path.join(
 )
 CLASSES_FOLDER = os.path.join(PROJECT_ROOT, "generated", "classes")
 RDF_FOLDER = os.path.join(PROJECT_ROOT, "generated", "rdf")
+CLASSES_ENTITIES_FILE = os.path.join(
+    DATA_FOLDER,
+    "ClassesEntitiesCount.csv"
+)
+CACHE_FOLDER = os.path.join(PROJECT_ROOT, "data", "cache")

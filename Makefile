@@ -3,6 +3,8 @@ default:
 	python run.py
 
 folders:
+	mkdir -p data/
+	mkdir -p data/cache
 	mkdir -p generated/tables
 	mkdir -p generated/properties
 	mkdir -p generated/subject_columns
@@ -10,6 +12,8 @@ folders:
 	mkdir -p generated/rdf
 
 clean:
+	rm -rf data/*
+	rm -rf data/cache/*
 	rm -rf generated/tables/*
 	rm -rf generated/properties/*
 	rm -rf generated/subject_columns/*

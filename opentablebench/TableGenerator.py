@@ -4,9 +4,10 @@
 import os
 import random
 import uuid
+import cPickle as pickle
 
-from .config import CLASSES_FOLDER, PROPERTIES_FOLDER, \
-    SUBJECT_COLUMN_FOLDER, TABLE_FOLDER
+from .config import CACHE_FOLDER, CLASSES_FOLDER, \
+    PROPERTIES_FOLDER, SUBJECT_COLUMN_FOLDER, TABLE_FOLDER
 from .CsvWriter import CsvWriter
 from .QueryExecutor import execute_query
 from .RDFGenerator import convert_json_to_rdf, save_rdf
@@ -234,13 +235,29 @@ class TableGenerator(object):
 
     @staticmethod
     def _get_label(subject_string):
-        results = execute_query(u"""
-            SELECT DISTINCT ?label
-            WHERE {<%s> rdfs:label ?label}
-            LIMIT 1
-        """ % (subject_string,))
-        results = results["results"]["bindings"]
-        if len(results) == 0:
-            return ""
+        subject_string_hash = uuid.uuid5(
+            uuid.NAMESPACE_URL,
+            subject_string.encode("utf-8")
+        )
+        cached_label_file = os.path.join(
+            CACHE_FOLDER,
+            str(subject_string_hash)
+        )
+        if os.path.exists(cached_label_file):
+            pickle.load(open(cached_label_file, "rb"))
         else:
-            return results[0]["label"]["value"]
+            results = execute_query(u"""
+                SELECT DISTINCT ?label
+                WHERE {<%s> rdfs:label ?label}
+                LIMIT 1
+            """ % (subject_string,))
+            results = results["results"]["bindings"]
+            if len(results) == 0:
+                label_uri = ""
+            else:
+                label_uri = results[0]["label"]["value"]
+            pickle.dump(
+                label_uri,
+                open(cached_label_file, "wb")
+            )
+            return label_uri

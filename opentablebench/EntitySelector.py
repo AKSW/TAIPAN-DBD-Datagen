@@ -9,7 +9,7 @@ class EntitySelector(object):
 
     @staticmethod
     def get_entities(_class, number_of_entities):
-        """Request 100 entities for a given _class."""
+        """Request number_of_entities entities for a given _class."""
         print("Getting entities for %s" % (_class,))
         results = execute_query(u"""
             SELECT DISTINCT ?entity

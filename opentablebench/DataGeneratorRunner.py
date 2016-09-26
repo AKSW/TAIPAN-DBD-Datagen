@@ -26,16 +26,24 @@ class DataGeneratorRunner(object):
     @staticmethod
     def get_classes_to_skip(tables_per_class):
         """Get amount of classes to skip."""
-        _, _, files = next(os.walk(TABLE_FOLDER))
-        generated_tables_count = len(files)
+        generated_tables_count = DataGeneratorRunner.get_number_of_tables()
         classes_to_skip = int(float(generated_tables_count) / tables_per_class)
         return classes_to_skip
 
+    @staticmethod
+    def get_number_of_tables():
+        _, _, files = next(os.walk(TABLE_FOLDER))
+        return len(files)
+
     def run(self):
         """Run the data generator."""
-        classes = self.class_selector.get_classes()
-
+        number_of_entities = 100
         tables_per_class = 20
+        rows_per_table = number_of_entities / tables_per_class
+
+        classes = self.class_selector.get_classes_with_entities(
+            number_of_entities=number_of_entities
+        )
         classes_to_skip = self.get_classes_to_skip(tables_per_class)
         print("Skipping first %s classes" % (classes_to_skip,))
 
@@ -44,20 +52,19 @@ class DataGeneratorRunner(object):
                 "Processing (%s out of %s): %s"
                 % (num, len(classes), _class,)
             )
-            # We get 100 entities because of LIMIT in the SPARQL query
-            number_of_entities = 5
             entities = self.entity_selector.get_entities(
                 _class,
                 number_of_entities
             )
-
             triples_tuples_json = fetch_triples_for_entities(entities)
-            triples_tuples_rdf = convert_json_to_rdf(triples_tuples_json)
-            print("Triple length is %s" % len(triples_tuples_rdf))
 
             # 20 entities per table --> 20 rows
             self.table_generator.generate_table_of_length(
                 _class,
                 triples_tuples_json,
-                20
+                rows_per_table
+            )
+            print(
+                "Generated table count: %s"
+                % (DataGeneratorRunner.get_number_of_tables(),)
             )

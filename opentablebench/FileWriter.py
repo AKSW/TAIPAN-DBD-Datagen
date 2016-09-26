@@ -16,7 +16,7 @@ class FileWriter(object):
         self.file = codecs.open(filepath, "w", "utf-8")
 
     def write(self, string):
-        """Write header to the file."""
+        """Write string to the file."""
         try:
             self.file.write(string)
         except IOError as exception:

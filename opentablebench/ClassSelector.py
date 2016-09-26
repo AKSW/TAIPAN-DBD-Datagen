@@ -3,7 +3,8 @@
 import os
 import random
 
-from .config import DATA_FOLDER, RANDOM_CLASS_SELECTION
+from .config import CLASSES_ENTITIES_FILE, RANDOM_CLASS_SELECTION
+from .FileWriter import FileWriter
 from .QueryExecutor import execute_query
 
 
@@ -50,6 +51,7 @@ class ClassSelector(object):
             SELECT DISTINCT COUNT(?class)
             WHERE {?class rdf:type owl:Class}
         """)
+        import ipdb; ipdb.set_trace()
         return int(results["results"]["bindings"][0]["callret-0"]["value"])
 
     @staticmethod
@@ -60,7 +62,7 @@ class ClassSelector(object):
         Fetches the data from ClassesEntitiesCount.csv file.
         """
         empty_classes = []
-        _file = open(os.path.join(DATA_FOLDER, "ClassesEntitiesCount.csv"))
+        _file = open(CLASSES_ENTITIES_FILE)
         for line in _file.readlines():
             (_class, count) = line.split(",")
             if int(count) == 0:
@@ -68,16 +70,42 @@ class ClassSelector(object):
         return empty_classes
 
     @staticmethod
-    def get_classes_with_entities():
+    def get_classes_with_entities(number_of_entities=100):
         """
         Get classes with >20 entities from a SPARQL endpoint.
 
         Fetches the data from ClassesEntitiesCount.csv file.
         """
+        if not os.path.exists(CLASSES_ENTITIES_FILE):
+            ClassSelector.fetch_classes_entities()
+
         classes = []
-        _file = open(os.path.join(DATA_FOLDER, "ClassesEntitiesCount.csv"))
+        _file = open(CLASSES_ENTITIES_FILE)
         for line in _file.readlines():
             (_class, count) = line.split(",")
-            if int(count) > 20:
+            if int(count) > number_of_entities:
                 classes.append(_class)
         return classes
+
+    @staticmethod
+    def fetch_classes_entities():
+        """Update ClassesEntitiesCount.csv file."""
+        if os.path.exists(CLASSES_ENTITIES_FILE):
+            return
+
+        _file = FileWriter(CLASSES_ENTITIES_FILE)
+        classes = ClassSelector.get_classes()
+        for _class in classes:
+            if not _class.startswith("http"):
+                continue
+            results = execute_query(u"""
+                SELECT DISTINCT COUNT(?s)
+                WHERE {
+                    ?s ?p ?o .
+                    ?s ?p <%s> .
+                }
+            """ % (_class))
+            count = results["results"]["bindings"][0]["callret-0"]["value"]
+            csv_string = "%s, %s\n" % (_class, count)
+            _file.write(csv_string)
+        _file.close()
