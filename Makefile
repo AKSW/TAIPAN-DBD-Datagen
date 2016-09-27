@@ -11,7 +11,7 @@ folders:
 	mkdir -p generated/classes
 	mkdir -p generated/rdf
 
-clean:
+clean_generated:
 	rm -rf generated/tables/*
 	rm -rf generated/properties/*
 	rm -rf generated/subject_columns/*

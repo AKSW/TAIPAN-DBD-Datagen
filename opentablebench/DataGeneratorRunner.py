@@ -63,19 +63,18 @@ class DataGeneratorRunner(object):
             triples_tuples_filtered = get_distinct_properties_triples(
                 triples_tuples_json
             )
-            triples_tuples_with_labels = get_labels_for_all_objects(
-                triples_tuples_filtered
-            )
-
-            import ipdb; ipdb.set_trace()
+            #triples_tuples_with_labels = get_labels_for_all_objects(
+            #    triples_tuples_filtered
+            #)
 
             # 20 entities per table --> 20 rows
-            self.table_generator.generate_table_of_length(
+            self.table_generator.generate_tables_of_length(
                 _class,
-                triples_tuples_with_labels,
+                triples_tuples_filtered,
                 rows_per_table
             )
             print(
                 "Generated table count: %s"
                 % (DataGeneratorRunner.get_number_of_tables(),)
             )
+            break

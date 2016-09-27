@@ -4,6 +4,7 @@ import os
 
 from .config import RDF_FOLDER
 from .FileWriter import FileWriter
+from .RDFQuery import get_label
 from .QueryExecutor import execute_query, execute_query_rdf
 
 NUMBER_OF_TRIPLES_FOR_ENTITY = 15
@@ -118,6 +119,32 @@ def convert_json_to_rdf(triple_tuples_json):
             triples.append(
                 "%s %s %s ." % (_subject, _property, _object)
             )
+    return "\n".join(triples)
+
+
+def convert_dict_to_rdf(triple_tuples):
+    """Convert triples in JSON to Ntriples."""
+    triples = []
+    for triple_tuple in triple_tuples:
+        _subject = "<%s>" % (triple_tuple[0],)
+        for _triple in triple_tuple[1]:
+            # property is always uri, no need to check
+            _property = "<%s>" % (_triple,)
+
+            _object = triple_tuple[1][_triple]
+            if _object.startswith("http"):
+                _object = "<%s>" % (_object,)
+            else:
+                _object = '"%s"' % (_object,)
+
+            triples.append(
+                "%s %s %s ." % (_subject, _property, _object)
+            )
+        label_triple = '%s <http://www.w3.org/2000/01/rdf-schema#label> "%s" .' % (
+            _subject,
+            get_label(triple_tuple[0])
+        )
+        triples.append(label_triple)
     return "\n".join(triples)
 
 

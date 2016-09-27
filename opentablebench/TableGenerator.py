@@ -8,7 +8,8 @@ import uuid
 from .config import CLASSES_FOLDER, PROPERTIES_FOLDER, \
     SUBJECT_COLUMN_FOLDER, TABLE_FOLDER
 from .CsvWriter import CsvWriter
-from .RDFGenerator import convert_json_to_rdf, save_rdf
+from .RDFFilter import get_labels_for_all_objects
+from .RDFGenerator import convert_dict_to_rdf, save_rdf
 from .RDFQuery import get_label
 
 
@@ -19,35 +20,36 @@ class TableGenerator(object):
     Generate the tables out of RDF from a SPARQL endpoint.
     """
 
-    def generate_table_of_length(
+    def generate_tables_of_length(
             self,
             _class,
-            triples_tuples_json,
+            triples_tuples,
             table_length_rows
     ):
         """Generate entities/table_length_rows number of tables for _class."""
-        number_of_entities = len(triples_tuples_json)
+        number_of_entities = len(triples_tuples)
         for i in range(0, number_of_entities, table_length_rows):
             # i gives a lower limit
             self.generate_table(
                 _class,
-                triples_tuples_json[i:table_length_rows + i]
+                triples_tuples[i:table_length_rows + i]
             )
 
-    def generate_table(self, _class, triples_tuples_json):
+    def generate_table(self, _class, triples_tuples):
         """Generate a table for _class from entities."""
-        print("Getting rows for %s" % (_class,))
-        rows = self._get_rows(triples_tuples_json)
-        print("Getting header for %s" % (_class,))
-        header = self.generate_header(rows[0])
         table_id = self._generate_random_table_id()
-        csv_filename = str(table_id) + ".csv"
-        csv_filepath = os.path.join(TABLE_FOLDER, csv_filename)
 
         print("Saving RDF for %s" % (_class,))
-        ntriples = convert_json_to_rdf(triples_tuples_json)
+        ntriples = convert_dict_to_rdf(triples_tuples)
         ntriples_filename = str(table_id) + ".nt"
         save_rdf(ntriples, ntriples_filename)
+
+        print("Getting rows for %s" % (_class,))
+        rows = self._get_rows(triples_tuples)
+        print("Getting header for %s" % (_class,))
+        header = self.generate_header(rows[0])
+        csv_filename = str(table_id) + ".csv"
+        csv_filepath = os.path.join(TABLE_FOLDER, csv_filename)
 
         print("Generating property annotation for %s" % (_class,))
         self.generate_property_annotation(csv_filename, rows[0])
@@ -176,13 +178,15 @@ class TableGenerator(object):
         csv_writer.write_row(row)
         csv_writer.close()
 
-    def _get_rows(self, triples_tuples_json):
+    def _get_rows(self, triples_tuples):
+        labeled_tuples = get_labels_for_all_objects(triples_tuples)
+
         rows = []
-        for num, triples_tuple in enumerate(triples_tuples_json):
+        for num, triples_tuple in enumerate(labeled_tuples):
             (entity, triples) = triples_tuple
             print(
                 "Getting row %s out of %s" %
-                (num, len(triples_tuples_json),)
+                (num, len(triples_tuples),)
             )
             row_entity_tuple = self._get_row(entity, triples)
             # permutate first row to have a random header sequence
@@ -205,8 +209,8 @@ class TableGenerator(object):
 
         properties = []
         for _triple in triples:
-            _property = _triple["p"]["value"]
-            _object = _triple["o"]["value"]
+            _property = _triple
+            _object = triples[_triple]
             _property_label = get_label(_property)
             if _property_label != "" and (_property not in properties):
                 row.append({
