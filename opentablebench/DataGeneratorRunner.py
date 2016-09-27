@@ -67,6 +67,8 @@ class DataGeneratorRunner(object):
                 triples_tuples_filtered
             )
 
+            import ipdb; ipdb.set_trace()
+
             # 20 entities per table --> 20 rows
             self.table_generator.generate_table_of_length(
                 _class,

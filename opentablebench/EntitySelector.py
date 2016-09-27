@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 """EntitySelector -- getting entities from a SPARQL endpoint."""
 
-import cPickle as pickle
+import cPickle as pickle  # pylint: disable=import-error
 import os
 import uuid
 

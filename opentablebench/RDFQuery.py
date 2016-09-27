@@ -1,6 +1,6 @@
 """RDFQuery queries the SPARQL endpoint."""
 
-import cPickle as pickle
+import cPickle as pickle  # pylint: disable=import-error
 import os
 import uuid
 
