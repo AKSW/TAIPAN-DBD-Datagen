@@ -6,8 +6,7 @@ import os
 from .ClassSelector import ClassSelector
 from .config import TABLE_FOLDER
 from .EntitySelector import EntitySelector
-from .RDFFilter import get_distinct_properties_triples, \
-    get_labels_for_all_objects
+from .RDFFilter import get_distinct_properties_triples
 from .RDFGenerator import fetch_triples_for_entities
 from .TableGenerator import TableGenerator
 
@@ -63,9 +62,9 @@ class DataGeneratorRunner(object):
             triples_tuples_filtered = get_distinct_properties_triples(
                 triples_tuples_json
             )
-            #triples_tuples_with_labels = get_labels_for_all_objects(
+            # triples_tuples_with_labels = get_labels_for_all_objects(
             #    triples_tuples_filtered
-            #)
+            # )
 
             # 20 entities per table --> 20 rows
             self.table_generator.generate_tables_of_length(

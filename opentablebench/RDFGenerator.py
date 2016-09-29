@@ -4,8 +4,8 @@ import os
 
 from .config import RDF_FOLDER
 from .FileWriter import FileWriter
-from .RDFQuery import get_label
 from .QueryExecutor import execute_query, execute_query_rdf
+from .RDFQuery import get_label
 
 NUMBER_OF_TRIPLES_FOR_ENTITY = 15
 
@@ -140,10 +140,8 @@ def convert_dict_to_rdf(triple_tuples):
             triples.append(
                 "%s %s %s ." % (_subject, _property, _object)
             )
-        label_triple = '%s <http://www.w3.org/2000/01/rdf-schema#label> "%s" .' % (
-            _subject,
-            get_label(triple_tuple[0])
-        )
+        label_triple = '%s <http://www.w3.org/2000/01/rdf-schema#label>\
+"%s" .' % (_subject, get_label(triple_tuple[0]),)
         triples.append(label_triple)
     return "\n".join(triples)
 
