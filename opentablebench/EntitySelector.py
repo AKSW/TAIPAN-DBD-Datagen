@@ -15,7 +15,6 @@ class EntitySelector(object):
     @staticmethod
     def get_entities(_class, number_of_entities):
         """Request number_of_entities entities for a given _class."""
-        print("Getting entities for %s" % (_class,))
         _class_hash = uuid.uuid5(
             uuid.NAMESPACE_URL,
             _class.encode("utf-8")

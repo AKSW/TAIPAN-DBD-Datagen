@@ -25,7 +25,10 @@ def get_label(subject_string):
     else:
         results = execute_query(u"""
             SELECT DISTINCT ?label
-            WHERE {<%s> rdfs:label ?label}
+            WHERE {
+                <%s> rdfs:label ?label .
+                FILTER( lang(?label) = "en")
+            }
             LIMIT 1
         """ % (subject_string,))
         results = results["results"]["bindings"]
@@ -43,4 +46,7 @@ def get_label(subject_string):
 
 def generate_label_for_uri(uri):
     """Generate label for uri."""
-    return uri.split("/")[-1]
+    label = uri.split("/")[-1]
+    if "#" in label:
+        return label.split("#")[-1]
+    return label

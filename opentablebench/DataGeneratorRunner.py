@@ -6,9 +6,12 @@ import os
 from .ClassSelector import ClassSelector
 from .config import TABLE_FOLDER
 from .EntitySelector import EntitySelector
+from .Logger import get_logger
 from .RDFFilter import get_distinct_properties_triples
 from .RDFGenerator import fetch_triples_for_entities
 from .TableGenerator import TableGenerator
+
+LOGGER = get_logger(__name__)
 
 
 class DataGeneratorRunner(object):
@@ -47,12 +50,14 @@ class DataGeneratorRunner(object):
             number_of_entities=number_of_entities
         )
         classes_to_skip = self.get_classes_to_skip(tables_per_class)
-        print("Skipping first %s classes" % (classes_to_skip,))
+        LOGGER.info("Skipping first %s classes", classes_to_skip)
 
-        for num, _class in enumerate(classes):
-            print(
-                "Processing (%s out of %s): %s"
-                % (num, len(classes), _class,)
+        for num, _class in enumerate(classes[1:]):
+            LOGGER.info(
+                "Processing (%s out of %s): %s",
+                num,
+                len(classes),
+                _class,
             )
             entities = self.entity_selector.get_entities(
                 _class,
@@ -72,8 +77,8 @@ class DataGeneratorRunner(object):
                 triples_tuples_filtered,
                 rows_per_table
             )
-            print(
-                "Generated table count: %s"
-                % (DataGeneratorRunner.get_number_of_tables(),)
+            LOGGER.info(
+                "Generated table count: %s",
+                DataGeneratorRunner.get_number_of_tables()
             )
             break

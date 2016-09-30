@@ -8,6 +8,7 @@ import uuid
 from .config import CLASSES_FOLDER, PROPERTIES_FOLDER, \
     SUBJECT_COLUMN_FOLDER, TABLE_FOLDER
 from .CsvWriter import CsvWriter
+from .NLTKInterface import verbalize_header
 from .RDFFilter import get_labels_for_all_objects
 from .RDFGenerator import convert_dict_to_rdf, save_rdf
 from .RDFQuery import get_label
@@ -39,27 +40,22 @@ class TableGenerator(object):
         """Generate a table for _class from entities."""
         table_id = self._generate_random_table_id()
 
-        print("Saving RDF for %s" % (_class,))
         ntriples = convert_dict_to_rdf(triples_tuples)
         ntriples_filename = str(table_id) + ".nt"
         save_rdf(ntriples, ntriples_filename)
 
-        print("Getting rows for %s" % (_class,))
         rows = self._get_rows(triples_tuples)
-        print("Getting header for %s" % (_class,))
         header = self.generate_header(rows[0])
+        verbalized_header = verbalize_header(header)
         csv_filename = str(table_id) + ".csv"
         csv_filepath = os.path.join(TABLE_FOLDER, csv_filename)
 
-        print("Generating property annotation for %s" % (_class,))
         self.generate_property_annotation(csv_filename, rows[0])
-        print("Generating subject column annotation for %s" % (_class,))
         self.generate_subj_col_annotation(csv_filename, rows[0])
-        print("Generating class annotation for %s" % (_class,))
         self.generate_class_annotation(csv_filename, _class)
 
         csv_writer = CsvWriter(csv_filepath)
-        csv_writer.write_header(header)
+        csv_writer.write_header(verbalized_header)
 
         for row_entity_tuple in rows:
             (_, row) = row_entity_tuple
@@ -184,10 +180,6 @@ class TableGenerator(object):
         rows = []
         for num, triples_tuple in enumerate(labeled_tuples):
             (entity, triples) = triples_tuple
-            print(
-                "Getting row %s out of %s" %
-                (num, len(triples_tuples),)
-            )
             row_entity_tuple = self._get_row(entity, triples)
             # permutate first row to have a random header sequence
             if num == 0:

@@ -1,4 +1,6 @@
 SPARQLWrapper
 requests
+nltk
+numpy
 tox
 flake8

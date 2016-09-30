@@ -3,6 +3,10 @@
 
 import codecs
 
+from .Logger import get_logger
+
+LOGGER = get_logger(__name__)
+
 
 class CsvWriter(object):
     """CsvWriter for writing csv to files in utf-8."""
@@ -29,7 +33,7 @@ class CsvWriter(object):
         try:
             self.csv_file.write(u"%s\n" % (row_to_write,))
         except IOError as exception:
-            print(u"Failed to write to file: %s" % (str(exception),))
+            LOGGER.error(u"Failed to write to file: %s", str(exception))
 
     def close(self):
         """Close the csv file."""

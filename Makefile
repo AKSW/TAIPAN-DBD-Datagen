@@ -5,6 +5,8 @@ default:
 folders:
 	mkdir -p data/
 	mkdir -p data/cache
+	mkdir -p data/cache/entities
+	mkdir -p data/cache/labels
 	mkdir -p generated/tables
 	mkdir -p generated/properties
 	mkdir -p generated/subject_columns

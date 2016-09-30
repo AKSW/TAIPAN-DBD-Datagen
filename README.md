@@ -3,7 +3,17 @@ Generates data for open table extraction benchmarking.
 
 ## Installing NLTK
 
-TODO
+Install all project dependencies:
+```
+pip install -r requirements.txt
+```
+
+Then run python and open interactive corpora installer (follow instructions of the interface):
+```
+python
+import nltk
+nltk.download()
+```
 
 ## Dev setup
 
