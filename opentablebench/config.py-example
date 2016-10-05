@@ -86,3 +86,4 @@ CLASSES_ENTITIES_FILE = os.path.join(
 )
 CACHE_FOLDER_LABELS = os.path.join(PROJECT_ROOT, "data", "cache", "labels")
 CACHE_FOLDER_ENTITIES = os.path.join(PROJECT_ROOT, "data", "cache", "entities")
+LOG_FILE = os.path.join(PROJECT_ROOT, "logs", "log.out")

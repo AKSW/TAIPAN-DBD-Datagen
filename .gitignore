@@ -65,3 +65,4 @@ target/
 opentablebench/config.py
 generated/
 data/
+logs/

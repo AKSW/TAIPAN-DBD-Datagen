@@ -7,6 +7,7 @@ folders:
 	mkdir -p data/cache
 	mkdir -p data/cache/entities
 	mkdir -p data/cache/labels
+	mkdir -p logs/
 	mkdir -p generated/tables
 	mkdir -p generated/properties
 	mkdir -p generated/subject_columns

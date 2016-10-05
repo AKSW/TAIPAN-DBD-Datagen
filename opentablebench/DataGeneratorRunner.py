@@ -52,7 +52,7 @@ class DataGeneratorRunner(object):
         classes_to_skip = self.get_classes_to_skip(tables_per_class)
         LOGGER.info("Skipping first %s classes", classes_to_skip)
 
-        for num, _class in enumerate(classes[1:]):
+        for num, _class in enumerate(classes):
             LOGGER.info(
                 "Processing (%s out of %s): %s",
                 num,
@@ -67,9 +67,6 @@ class DataGeneratorRunner(object):
             triples_tuples_filtered = get_distinct_properties_triples(
                 triples_tuples_json
             )
-            # triples_tuples_with_labels = get_labels_for_all_objects(
-            #    triples_tuples_filtered
-            # )
 
             # 20 entities per table --> 20 rows
             self.table_generator.generate_tables_of_length(
@@ -81,4 +78,3 @@ class DataGeneratorRunner(object):
                 "Generated table count: %s",
                 DataGeneratorRunner.get_number_of_tables()
             )
-            break

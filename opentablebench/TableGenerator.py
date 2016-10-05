@@ -44,7 +44,7 @@ class TableGenerator(object):
         ntriples_filename = str(table_id) + ".nt"
         save_rdf(ntriples, ntriples_filename)
 
-        rows = self._get_rows(triples_tuples)
+        rows = self._get_rows(triples_tuples, permutate_columns=False)
         header = self.generate_header(rows[0])
         verbalized_header = verbalize_header(header)
         csv_filename = str(table_id) + ".csv"
@@ -174,7 +174,7 @@ class TableGenerator(object):
         csv_writer.write_row(row)
         csv_writer.close()
 
-    def _get_rows(self, triples_tuples):
+    def _get_rows(self, triples_tuples, permutate_columns=True):
         labeled_tuples = get_labels_for_all_objects(triples_tuples)
 
         rows = []
@@ -182,7 +182,7 @@ class TableGenerator(object):
             (entity, triples) = triples_tuple
             row_entity_tuple = self._get_row(entity, triples)
             # permutate first row to have a random header sequence
-            if num == 0:
+            if num == 0 and permutate_columns:
                 (entity, row) = row_entity_tuple
                 permutated_row = self._permutate_row(row)
                 row_entity_tuple = (entity, permutated_row)
