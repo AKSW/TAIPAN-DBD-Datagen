@@ -5,3 +5,4 @@ numpy
 tox
 flake8
 pytest
+pdbpp

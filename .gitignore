@@ -65,4 +65,4 @@ target/
 opentablebench/config.py
 generated/
 data/cache
-log/log.out
+logs/log.out

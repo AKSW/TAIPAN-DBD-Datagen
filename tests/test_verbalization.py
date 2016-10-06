@@ -10,6 +10,7 @@ def test_data():
     return nltk.load_test_data()
 
 def test_verbalize(test_data, capsys):
+    max_complexity = 1
     for header in test_data:
         print("Original header")
         print(header)
@@ -17,4 +18,4 @@ def test_verbalize(test_data, capsys):
         verbalized_header = nltk.verbalize_header(header)
         print("Verbalized header")
         print(verbalized_header)
-        break
+        pytest.set_trace()
