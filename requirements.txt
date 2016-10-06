@@ -4,3 +4,4 @@ nltk
 numpy
 tox
 flake8
+pytest

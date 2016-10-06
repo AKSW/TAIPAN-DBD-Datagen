@@ -13,7 +13,7 @@ class FileWriter(object):
 
     def __init__(self, filepath):
         """
-        Initialize FileWrtier with filepath.
+        Initialize FileWriter with filepath.
 
         Will write to the file located at filepath.
         """

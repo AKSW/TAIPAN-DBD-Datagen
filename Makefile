@@ -27,3 +27,6 @@ clean_cache:
 
 install:
 	pip install -r requirements.txt
+
+test:
+	pytest --capture=no

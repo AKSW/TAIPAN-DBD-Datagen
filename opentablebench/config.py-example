@@ -84,6 +84,14 @@ CLASSES_ENTITIES_FILE = os.path.join(
     DATA_FOLDER,
     "ClassesEntitiesCount.csv"
 )
+HEADER_ITEMS_STOP_LIST_FILE = os.path.join(
+    DATA_FOLDER,
+    "HeaderItemsStopList.txt"
+)
+TABLE_HEADERS_FILE = os.path.join(
+    DATA_FOLDER,
+    "TableHeaders.txt"
+)
 CACHE_FOLDER_LABELS = os.path.join(PROJECT_ROOT, "data", "cache", "labels")
 CACHE_FOLDER_ENTITIES = os.path.join(PROJECT_ROOT, "data", "cache", "entities")
 LOG_FILE = os.path.join(PROJECT_ROOT, "logs", "log.out")
