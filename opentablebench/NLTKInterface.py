@@ -1,15 +1,17 @@
 """NLTKInterface for NLP related tasks."""
 
-from nltk.corpus import wordnet as wn  # pylint: disable=import-error
-from nltk.corpus import wordnet_ic
 import operator
 import re
+from nltk.corpus import wordnet as wn  # pylint: disable=import-error
 
 from .config import TABLE_HEADERS_FILE
 from .FileReader import FileReader
 from .Logger import get_logger
 
 LOGGER = get_logger(__name__)
+
+# TODO: https://goo.gl/wdm2Zd
+# TODO: https://goo.gl/a7DDKl
 
 
 def get_header_synsets(header):
@@ -20,12 +22,13 @@ def get_header_synsets(header):
     """
     synsets_header_pack = []
     for item in header:
-        #if item is several words -- get synsets for all of those
+        # if item is several words -- get synsets for all of those
         synsets = []
         for subitem in _split_header_item(item):
             synsets.extend(wn.synsets(subitem))
         synsets_header_pack.append((item, synsets))
     return synsets_header_pack
+
 
 def _split_header_item(string):
     """Clean and split header into an array of strings."""
@@ -36,9 +39,11 @@ def _split_header_item(string):
         header_items
     )
 
+
 def _filter_non_printable_characters(string):
     pattern = re.compile('[\W_]+')
     return pattern.sub('', string)
+
 
 def cluster_header(synsets_header_pack):
     """
@@ -53,6 +58,7 @@ def cluster_header(synsets_header_pack):
     and just attached to the resulting cluster at the end of calculation.
     """
     pass
+
 
 def cluster_header_naive(header):
     """
@@ -69,17 +75,17 @@ def cluster_header_naive(header):
     for index, synset_pack in enumerate(synsets_pack):
         (item, synsets) = synset_pack
         if len(synsets) > 0\
-            and len(synsets) < minimum_synsets:
+                and len(synsets) < minimum_synsets:
             minimum_synsets = len(synsets)
             minimal_column = index
 
-    #Fix the minimum column
+    # fix the minimum column
     verbalized_headers = []
     for minimal_column_item in range(0, minimum_synsets):
         (_item, _synsets) = synsets_pack[minimal_column]
         _synset = _synsets[minimal_column_item]
 
-        #Find the shortest path to each column
+        # find the shortest path to each column
         shortest_path = []
         shortest_path.append(
             (_convert_synset_to_header_item(_synset), minimal_column)
@@ -95,7 +101,7 @@ def cluster_header_naive(header):
                 if index in evaluated_columns:
                     continue
                 (item, synsets) = synset_pack
-                closest_pair = find_closest_synsets(
+                closest_pair = _find_closest_synsets(
                     [next_synset],
                     synsets,
                     index
@@ -112,7 +118,7 @@ def cluster_header_naive(header):
 
             if closest_pair == ():
                 for index in range(0, len(header)):
-                    if not index in evaluated_columns:
+                    if index not in evaluated_columns:
                         shortest_path.append((header[index], index))
                 break
 
@@ -143,29 +149,30 @@ def _convert_synset_to_header_item(synset):
 
 def verbalize_header(header):
     """Verbalize header items."""
-    verbalized_header = []
-
     verbalized_headers = cluster_header_naive(header)
-    top_header = sorted(verbalized_headers, key=operator.itemgetter(1, 2))[0][0]
+    top_header = sorted(
+        verbalized_headers,
+        key=operator.itemgetter(1, 2)
+    )[0][0]
 
     return top_header
 
 
-def find_closest_synsets(synsets_1, synsets_2, index):
+def _find_closest_synsets(synsets_1, synsets_2, index):
     closest_pair = ()
     max_similarity = 0
     if synsets_1 == [] or synsets_2 == []:
         return (closest_pair, 0, index)
     for _synset_1 in synsets_1:
         for _synset_2 in synsets_2:
-            similarity = calculate_similarity(_synset_1, _synset_2)
+            similarity = _calculate_similarity(_synset_1, _synset_2)
             if similarity > max_similarity:
                 max_similarity = similarity
                 closest_pair = (_synset_1, _synset_2)
     return (closest_pair, similarity, index)
 
 
-def calculate_similarity(synset_1, synset_2):
+def _calculate_similarity(synset_1, synset_2):
     similarity = synset_1.path_similarity(synset_2)
     if similarity is None:
         return 0
@@ -174,6 +181,7 @@ def calculate_similarity(synset_1, synset_2):
 
 
 def load_test_data():
+    """Load test headers from CSV file."""
     table_headers_file = FileReader(TABLE_HEADERS_FILE)
     table_headers = table_headers_file.readlines()
     table_headers = map(lambda x: x.strip(), table_headers)
