@@ -1,0 +1,2391 @@
+['label', 'type', 'subject', 'homepage', 'foundation']
+['label', 'type', 'subject', 'home page', 'foundation']
+
+['label', 'type', 'subject', 'founder', 'foundation', 'area served']
+['label', 'type', 'subject', 'founder', 'foundation', 'area']
+
+['label', 'type', 'subject', 'assets']
+['label', 'type', 'subject', 'assets']
+
+['label', 'type', 'subject']
+['label', 'type', 'topic']
+
+['label', 'players', 'type', 'subject', 'manufacturer', 'image caption', 'ages']
+['label', 'player', 'character', 'subject', 'manufacturer', 'double', 'age']
+
+['label', 'type', 'subject', 'designer', 'ages']
+['label', 'character', 'subject', 'interior designer', 'age']
+
+['label', 'start year of sales', 'end year of sales', 'model', 'type']
+['label', 'start year of sales', 'end year of sales', 'exemplary', 'type']
+
+['label', 'start year of sales', 'model', 'type']
+['label', 'start', 'model', 'type']
+
+['label', 'type', 'year']
+['label', 'type', 'year']
+
+['label', 'type']
+['label', 'type']
+
+['label', 'region', 'type', 'subject', 'Name', 'language', 'name', 'gender', 'label']
+['label', 'region', 'type', 'subject', 'name', 'language', 'name', 'gender', 'label']
+
+['label', 'type', 'subject', 'comment', 'has abstract', 'label']
+['label', 'type', 'subject', 'remark', 'outline', 'label']
+
+['label', 'origin', 'region', 'type', 'subject', 'name', 'gender', 'label', 'related names']
+['label', 'origin', 'region', 'type', 'subject', 'name', 'sex', 'label', 'name calling']
+
+['label', 'origin', 'region', 'type', 'footnotes', 'gender', 'meaning', 'pronunciation']
+['label', 'origin', 'region', 'type', 'footnote', 'gender', 'meaning', 'pronunciation']
+
+['label', 'p', 'type', 'subject', 'hangul', 'mr', 'C', 'rr']
+['label', 'phosphorus', 'character', 'subject', 'hangul', 'mister', 'C', 'rr']
+
+['label', 'origin', 'type', 'subject', 'gender', 'meaning', 'related names']
+['label', 'origin', 'type', 'subject', 'sex', 'meaning', 'name calling']
+
+['label', 'type', 'subject', 'language', 'gender']
+['label', 'type', 'subject', 'language', 'gender']
+
+['label', 'region', 'type', 'subject', 'meaning', 'label']
+['label', 'region', 'character', 'subject', 'meaning', 'label']
+
+['label', 'type', 'subject', 'gender', 'meaning', 'imagesize']
+['label', 'type', 'subject', 'gender', 'meaning', 'imagesize']
+
+['label', 'type', 'subject', 'C']
+['label', 'type', 'topic', 'speed of light']
+
+['label', 'type', 'birth place', 'birth place', 'birth date']
+['label', 'type', 'position', 'position', 'birth']
+
+['label', 'birth place', 'type', 'death place', 'death date', 'death place']
+['label', 'position', 'type', 'position', 'death', 'death']
+
+['label', 'birth place', 'type', 'subject', 'birth place', 'birth date']
+['label', 'position', 'type', 'topic', 'place', 'birth']
+
+['label', 'birth place', 'type', 'birth place', 'birth date']
+['label', 'position', 'type', 'position', 'birth']
+
+['label', 'birth place', 'type', 'subject', 'birth place']
+['label', 'position', 'type', 'topic', 'place']
+
+['label', 'type', 'subject', 'birth date']
+['label', 'type', 'topic', 'birth']
+
+['label', 'birth place', 'type', 'birth date']
+['label', 'position', 'type', 'birth']
+
+['label', 'birth place', 'type', 'subject']
+['label', 'position', 'type', 'topic']
+
+['label', 'birth place', 'type']
+['label', 'position', 'type']
+
+['label', 'birth place', 'type', 'birth place']
+['label', 'position', 'type', 'position']
+
+['label', 'type', 'death place']
+['label', 'type', 'position']
+
+['label', 'country', 'type']
+['label', 'state', 'type']
+
+['label', 'type', 'subject', 'image caption', 'entered service', 'decay date']
+['label', 'type', 'topic', 'image', 'service', 'date']
+
+['label', 'construction cost', 'type', 'built', 'capacity']
+['label', 'construction', 'type', 'built', 'capacity']
+
+['label', 'type', 'subject', 'wind site elevation']
+['label', 'type', 'subject', 'wind instrument']
+
+['label', 'type', 'subject', 'founder', 'founded', 'country']
+['label', 'type', 'capable', 'founder', 'establish', 'country']
+
+['label', 'color', 'type', 'subject', 'instruments', 'bgcolor']
+['label', 'color', 'type', 'subject', 'legal document', 'bgcolor']
+
+['label', 'type', 'subject', 'familycolor', 'fam', 'glotto', 'isoexception']
+['label', 'type', 'topic', 'familycolor', 'fam', 'glotto', 'isoexception']
+
+['label', 'type', 'subject', 'familycolor', 'fam']
+['label', 'type', 'topic', 'familycolor', 'fam']
+
+['label', 'type', 'subject', 'fam']
+['label', 'type', 'topic', 'fam']
+
+['label', 'latest release version', 'type', 'subject', 'family', 'logo', 'package manager', 'kernel type']
+['label', 'adaptation', 'type', 'subject', 'class', 'logo', 'package', 'type']
+
+['label', 'type', 'subject', 'developer', 'language', 'genre', 'license']
+['label', 'type', 'subject', 'developer', 'language', 'genre', 'license']
+
+['label', 'type', 'subject', 'developer', 'genre']
+['label', 'type', 'subject', 'developer', 'writing style']
+
+['label', 'type', 'subject', 'genre']
+['label', 'type', 'subject', 'genre']
+
+['label', 'area code', 'elevation max', 'type', 'subject']
+['label', 'code', 'acme', 'type', 'subject']
+
+['label', 'area code', 'type', 'subject', 'elevation']
+['label', 'area', 'type', 'subject', 'natural elevation']
+
+['label', 'type', 'subject', 'province', 'label']
+['label', 'character', 'subject', 'state', 'label']
+
+['label', 'type', 'subject', 'comment', 'label']
+['label', 'type', 'subject', 'remark', 'label']
+
+['label', 'type', 'subject', 'area served']
+['label', 'type', 'topic', 'area']
+
+['label', 'type', 'subject', 'manufacturer', 'length m', 'eng1 number', 'endurance', 'national origin', 'crew']
+['label', 'type', 'subject', 'manufacturer', 'length', 'number', 'endurance', 'origin', 'crowd']
+
+['label', 'type', 'subject', 'first flight', 'designer', 'eng1 name', 'eng1 type', 'eng1 number', 'crew']
+['label', 'character', 'subject', 'beginning', 'interior designer', 'name', 'type', 'number', 'crowd']
+
+['label', 'type', 'subject', 'cruise speed note', 'eng1 name', 'eng1 number', 'capacity', 'crew']
+['label', 'type', 'subject', 'note', 'name', 'phone number', 'capacity', 'crew']
+
+['label', 'type', 'subject', 'cruise speed note', 'designer', 'eng1 name', 'capacity', 'crew']
+['label', 'type', 'subject', 'note', 'interior designer', 'name', 'capacity', 'crowd']
+
+['label', 'type', 'subject', 'developed from', 'eng1 name', 'capacity', 'crew']
+['label', 'type', 'subject', 'developed from', 'eng1 name', 'capacity', 'crew']
+
+['label', 'type', 'subject', 'cruise speed kts', 'eng1 number', 'capacity', 'crew']
+['label', 'type', 'capable', 'cruise speed kts', 'eng1 number', 'capacity', 'crew']
+
+['label', 'type', 'subject', 'introduced', 'manufacturer', 'developed from', 'designer']
+['label', 'character', 'subject', 'introduced', 'manufacturer', 'developed from', 'architect']
+
+['label', 'type', 'subject', 'capacity', 'upper span note', 'lower span note']
+['label', 'type', 'topic', 'capacity', 'note', 'note']
+
+['label', 'type', 'subject', 'designer', 'crew']
+['label', 'character', 'subject', 'interior designer', 'crowd']
+
+['label', 'type', 'subject', 'eng1 name', 'eng1 number', 'crew']
+['label', 'type', 'subject', 'name', 'phone number', 'crew']
+
+['label', 'type', 'subject', 'ceiling ft', 'empty weight lb', 'crew']
+['label', 'type', 'subject', 'ceiling', 'system of weights', 'crowd']
+
+['label', 'type', 'subject', 'bombs', 'crew']
+['label', 'character', 'subject', 'bomb', 'crowd']
+
+['label', 'type', 'subject', 'capacity', 'crew']
+['label', 'type', 'subject', 'capacity', 'crew']
+
+['label', 'type', 'subject', 'crew']
+['label', 'type', 'subject', 'crew']
+
+['label', 'type', 'subject', 'airline', 'commenced']
+['label', 'character', 'subject', 'airline', 'commenced']
+
+['label', 'type', 'subject', 'Artist']
+['label', 'character', 'subject', 'artist']
+
+['label', 'birth date', 'birth place', 'type', 'birth place', 'death date']
+['label', 'birth', 'birth', 'type', 'birth', 'death']
+
+['label', 'birth place', 'type', 'birth place', 'death date']
+['label', 'position', 'type', 'position', 'death']
+
+['label', 'wordnet_type', 'type', 'subject']
+['label', 'wordnet_type', 'type', 'subject']
+
+['label', 'type', 'death place', 'death place']
+['label', 'type', 'position', 'position']
+
+['label', 'status', 'type', 'subject', 'manufacturer', 'type', 'section', 'designer', 'opened']
+['label', 'status', 'character', 'subject', 'manufacturer', 'character', 'section', 'architect', 'opened']
+
+['label', 'type', 'cost', 'duration', 'capacity']
+['label', 'type', 'cost', 'duration', 'capacity']
+
+['label', 'type', 'subject', 'manufacturer', 'designer', 'opened']
+['label', 'character', 'subject', 'manufacturer', 'architect', 'opened']
+
+['label', 'type', 'subject', 'manufacturer', 'height ft']
+['label', 'type', 'subject', 'manufacturer', 'acme']
+
+['label', 'type', 'subject', 'comment', 'has abstract', 'Latin', 'Name', 'name', 'label']
+['label', 'type', 'subject', 'remark', 'outline', 'latin', 'name', 'name', 'label']
+
+['label', 'BranchFrom', 'type', 'subject', 'comment', 'Latin', 'name', 'Caption', 'label']
+['label', 'BranchFrom', 'type', 'subject', 'comment', 'Latin', 'name', 'caption', 'label']
+
+['label', 'type', 'subject', 'GraySubject', 'Latin', 'GrayPage']
+['label', 'type', 'subject', 'GraySubject', 'latin', 'GrayPage']
+
+['label', 'type', 'subject', 'Latin', 'Caption']
+['label', 'type', 'subject', 'latin', 'caption']
+
+['label', 'type', 'subject', 'wordnet_type']
+['label', 'type', 'topic', 'wordnet_type']
+
+['label', 'type', 'subject', 'genus', 'ordo', 'familia', 'classis']
+['label', 'type', 'subject', 'genus', 'ordo', 'familia', 'classis']
+
+['label', 'type', 'subject', 'binomial']
+['label', 'type', 'subject', 'binomial']
+
+['label', 'type', 'ja kanji', 'genre', 'first', 'director']
+['label', 'character', 'ja kanji', 'genre', 'first', 'director']
+
+['label', 'film director', 'music composer', 'type', 'network', 'producer']
+['label', 'movie', 'music', 'type', 'network', 'producer']
+
+['label', 'film director', 'music composer', 'type', 'network']
+['label', 'movie', 'music', 'type', 'network']
+
+['label', 'film director', 'type', 'network']
+['label', 'film', 'character', 'network']
+
+['label', 'name', 'type', 'network']
+['label', 'name', 'type', 'network']
+
+['label', 'name', 'film director', 'type']
+['label', 'name', 'movie', 'type']
+
+['label', 'type', 'network']
+['label', 'type', 'network']
+
+['label', 'film director', 'type']
+['label', 'movie', 'type']
+
+['label', 'type', 'type']
+['label', 'type', 'type']
+
+['label', 'type', 'subject', 'genus', 'binomial', 'classis', 'familia', 'binomial authority']
+['label', 'type', 'subject', 'genus', 'binomial', 'classis', 'familia', 'binomial']
+
+['label', 'type', 'subject', 'binomial', 'classis', 'binomial authority']
+['label', 'type', 'subject', 'binomial', 'classis', 'binomial authority']
+
+['label', 'type', 'subject', 'domain', 'binomial', 'classis', 'binomial authority']
+['label', 'type', 'subject', 'domain', 'binomial', 'classis', 'binomial authority']
+
+['label', 'type', 'subject', 'binomial', 'classis', 'familia', 'binomial authority']
+['label', 'type', 'subject', 'binomial', 'classis', 'familia', 'binomial authority']
+
+['label', 'type', 'subject', 'familia', 'classis']
+['label', 'type', 'topic', 'familia', 'classis']
+
+['label', 'type', 'subject', 'binomial', 'binomial authority']
+['label', 'type', 'subject', 'binomial', 'binomial authority']
+
+['label', 'type', 'subject', 'domain', 'binomial', 'classis', 'familia', 'binomial authority']
+['label', 'type', 'subject', 'domain', 'binomial', 'classis', 'familia', 'binomial authority']
+
+['label', 'type', 'subject', 'genus', 'domain', 'binomial', 'classis', 'familia', 'binomial authority']
+['label', 'type', 'subject', 'genus', 'domain', 'binomial', 'classis', 'familia', 'authority']
+
+['label', 'color', 'type', 'subject', 'domain', 'familia', 'classis']
+['label', 'color', 'type', 'subject', 'sphere', 'familia', 'classis']
+
+['label', 'type', 'subject', 'birth place', 'birth place', 'death date', 'birth date']
+['label', 'type', 'topic', 'place', 'place', 'death', 'birth']
+
+['label', 'type', 'death place', 'death date', 'death place']
+['label', 'type', 'position', 'death', 'death']
+
+['label', 'type', 'subject', 'owner', 'opened']
+['label', 'character', 'subject', 'owner', 'opened']
+
+['label', 'affiliation', 'type', 'subject']
+['label', 'affiliation', 'type', 'subject']
+
+['label', 'type', 'subject', 'former names']
+['label', 'type', 'topic', 'name']
+
+['label', 'BranchFrom', 'type', 'subject', 'GraySubject', 'Latin', 'GrayPage']
+['label', 'BranchFrom', 'type', 'subject', 'GraySubject', 'latin', 'GrayPage']
+
+['label', 'type', 'subject', 'dimensions', 'launch mass', 'launch date']
+['label', 'type', 'subject', 'dimension', 'multitude', 'date']
+
+['label', 'type', 'subject', 'apsis']
+['label', 'character', 'subject', 'apse']
+
+['label', 'apsis', 'type', 'subject']
+['label', 'apse', 'character', 'subject']
+
+['label', 'type', 'subject', 'Artist', 'Singles', 'studio', 'Compilation']
+['label', 'character', 'subject', 'artist', 'one', 'studio', 'compilation']
+
+['label', 'type', 'subject', 'Compilation Album', 'Artist', 'Singles', 'HeadStyle', 'studio']
+['label', 'character', 'subject', 'album', 'artist', 'one', 'HeadStyle', 'studio apartment']
+
+['label', 'Live', 'type', 'subject', 'Artist', 'studio', 'Compilation', 'label']
+['label', 'Live', 'type', 'subject', 'artist', 'studio', 'compilation', 'label']
+
+['label', 'type', 'studio', 'comment', 'Artist', 'label']
+['label', 'character', 'studio', 'remark', 'artist', 'label']
+
+['label', 'Live', 'type', 'subject', 'Artist']
+['label', 'Live', 'type', 'subject', 'artist']
+
+['label', 'Caption', 'type', 'subject', 'Artist', 'Singles', 'studio']
+['label', 'caption', 'type', 'subject', 'artist', 'one', 'studio']
+
+['label', 'type', 'subject', 'Artist', 'Singles', 'studio', 'label']
+['label', 'character', 'subject', 'artist', 'one', 'studio', 'label']
+
+['label', 'type', 'subject', 'comment', 'Artist', 'Singles', 'label']
+['label', 'character', 'subject', 'remark', 'artist', 'one', 'label']
+
+['label', 'type', 'subject', 'id', 'Artist']
+['label', 'character', 'subject', 'idaho', 'artist']
+
+['label', 'type', 'subject', 'Artist', 'Singles']
+['label', 'character', 'subject', 'artist', 'one']
+
+['label', 'type', 'subject', 'Artist', 'Compilation']
+['label', 'character', 'subject', 'artist', 'compilation']
+
+['label', 'type', 'subject', 'id', 'Artist', 'Compilation']
+['label', 'character', 'subject', 'idaho', 'artist', 'compilation']
+
+['label', 'type', 'subject', 'comment', 'Artist', 'label']
+['label', 'character', 'subject', 'remark', 'artist', 'label']
+
+['label', 'type', 'subject', 'comment', 'city', 'material', 'title', 'Artist', 'label', 'year']
+['label', 'type', 'subject', 'remark', 'city', 'material', 'title', 'artist', 'label', 'year']
+
+['label', 'type', 'subject', 'type', 'image file', 'title', 'Artist', 'label', 'year']
+['label', 'type', 'subject', 'type', 'image', 'title', 'artist', 'label', 'year']
+
+['label', 'type', 'subject', 'align', 'Artist', 'headerimage']
+['label', 'character', 'subject', 'align', 'artist', 'headerimage']
+
+['label', 'type', 'subject', 'type', 'Artist', 'year']
+['label', 'type', 'subject', 'type', 'artist', 'year']
+
+['label', 'type', 'subject', 'type', 'city', 'Artist', 'label', 'title']
+['label', 'character', 'subject', 'character', 'city', 'artist', 'label', 'title']
+
+['label', 'type', 'subject', 'city', 'Artist', 'image size']
+['label', 'character', 'subject', 'city', 'artist', 'double']
+
+['label', 'type', 'subject', 'city', 'Artist']
+['label', 'character', 'subject', 'city', 'artist']
+
+['label', 'type', 'subject', 'birth date', 'death date']
+['label', 'type', 'topic', 'birth', 'death']
+
+['label', 'production', 'type', 'subject', 'manufacturer', 'comment', 'class', 'name', 'predecessor', 'label']
+['label', 'product', 'character', 'subject', 'manufacturer', 'remark', 'class', 'name', 'predecessor', 'label']
+
+['label', 'engine', 'type', 'subject', 'assembly', 'body style', 'class']
+['label', 'engine', 'character', 'subject', 'assembly', 'body', 'class']
+
+['label', 'type', 'subject', 'assembly', 'body style', 'class']
+['label', 'character', 'subject', 'assembly', 'body', 'class']
+
+['label', 'type', 'subject', 'body style', 'class', 'designer']
+['label', 'character', 'subject', 'body', 'class', 'interior designer']
+
+['label', 'type', 'subject', 'body style', 'assembly', 'AKA']
+['label', 'character', 'subject', 'body', 'assembly', 'AKA']
+
+['label', 'cylinder bore (\u03bc)', 'cylinder bore (mm)', 'type', 'fuel type', 'cooling system', 'power output (kW)', 'configuration', 'piston stroke (mm)', 'name', 'displacement (\u03bc\xb3)', 'displacement (cc)']
+['label', 'cylinder', 'cylinder', 'type', 'type', 'arrangement', 'power', 'configuration', 'accident', 'name', 'displacement', 'displacement']
+
+['label', 'type', 'configuration', 'end year of insertion', 'power output (W)', 'automobile model', 'start year of insertion', 'displacement (\u03bc\xb3)']
+['label', 'type', 'configuration', 'goal', 'ability', 'model', 'start', 'displacement']
+
+['label', 'type', 'end year of insertion', 'configuration', 'automobile model', 'start year of insertion', 'displacement (\u03bc\xb3)']
+['label', 'type', 'goal', 'configuration', 'model', 'start', 'displacement']
+
+['label', 'torque output (Nm)', 'top speed (kmh)', 'type', 'power output (W)', 'start year of insertion']
+['label', 'end product', 'acme', 'character', 'end product', 'beginning']
+
+['label', 'type', 'power output (W)', 'displacement (\u03bc\xb3)']
+['label', 'type', 'ability', 'supplanting']
+
+['label', 'type', 'displacement (\u03bc\xb3)', 'configuration']
+['label', 'type', 'displacement', 'configuration']
+
+['label', 'type', 'displacement (\u03bc\xb3)']
+['label', 'type', 'supplanting']
+
+['label', 'type', 'configuration']
+['label', 'type', 'configuration']
+
+['label', 'Website', 'type', 'subject', 'Description', 'comment', 'presenter', 'label', 'image size', 'year']
+['label', 'web site', 'type', 'subject', 'description', 'remark', 'presenter', 'label', 'image', 'year']
+
+['label', 'type', 'subject', 'Description', 'presenter', 'country', 'holder', 'imagesize', 'year']
+['label', 'character', 'subject', 'description', 'presenter', 'nation', 'holder', 'imagesize', 'year']
+
+['label', 'Website', 'type', 'subject', 'Description', 'presenter', 'country', 'year']
+['label', 'web site', 'type', 'subject', 'description', 'presenter', 'area', 'year']
+
+['label', 'reason', 'type', 'subject', 'Description', 'presenter', 'First Awarded', 'country']
+['label', 'reason', 'type', 'subject', 'description', 'presenter', 'beginning', 'nation']
+
+['label', 'type', 'subject', 'Description', 'presenter', 'country', 'holder']
+['label', 'character', 'subject', 'description', 'presenter', 'nation', 'holder']
+
+['label', 'Website', 'type', 'subject', 'Description', 'presenter', 'label', 'sponsor']
+['label', 'web site', 'type', 'subject', 'description', 'presenter', 'label', 'presenter']
+
+['label', 'Website', 'type', 'subject', 'next', 'previous']
+['label', 'web site', 'character', 'subject', 'next', 'previous']
+
+['label', 'type', 'subject', 'Description', 'presenter', 'holder']
+['label', 'character', 'subject', 'description', 'presenter', 'holder']
+
+['label', 'type', 'subject', 'presenter', 'country', 'imagesize']
+['label', 'character', 'subject', 'donor', 'area', 'imagesize']
+
+['label', 'type', 'subject', 'network', 'country']
+['label', 'type', 'subject', 'network', 'state']
+
+['label', 'type', 'subject', 'current awards', 'country']
+['label', 'type', 'subject', 'award', 'state']
+
+['label', 'type', 'subject', 'network']
+['label', 'type', 'subject', 'network']
+
+['label', 'Website', 'type', 'subject', 'current awards']
+['label', 'web site', 'character', 'subject', 'current']
+
+['label', 'type', 'subject', 'genus', 'domain', 'binomial', 'ordo', 'classis', 'phylum', 'familia', 'binomial authority']
+['label', 'type', 'subject', 'genus', 'knowledge domain', 'binomial', 'ordo', 'classis', 'phylum', 'familia', 'agency']
+
+['label', 'color', 'type', 'subject', 'genus', 'domain', 'binomial', 'familia', 'binomial authority']
+['label', 'color', 'type', 'subject', 'genus', 'domain', 'binomial', 'familia', 'authority']
+
+['label', 'color', 'type', 'subject', 'domain', 'binomial', 'classis', 'binomial authority']
+['label', 'color', 'type', 'subject', 'domain', 'binomial', 'classis', 'binomial authority']
+
+['label', 'color', 'type', 'subject', 'domain', 'binomial', 'classis', 'familia', 'binomial authority']
+['label', 'color', 'type', 'subject', 'domain', 'binomial', 'classis', 'familia', 'binomial authority']
+
+['label', 'type', 'subject', 'domain', 'ordo', 'phylum', 'classis']
+['label', 'type', 'subject', 'domain', 'ordo', 'phylum', 'classis']
+
+['label', 'type', 'subject', 'domain', 'genus', 'familia', 'classis']
+['label', 'type', 'subject', 'domain', 'genus', 'familia', 'classis']
+
+['label', 'birth place', 'type', 'subject', 'birth date']
+['label', 'position', 'type', 'topic', 'birth']
+
+['label', 'type', 'area served']
+['label', 'type', 'area']
+
+['label', 'type', 'subject', 'death place', 'death date']
+['label', 'type', 'topic', 'place', 'death']
+
+['label', 'type', 'subject', 'death date']
+['label', 'type', 'topic', 'death']
+
+['label', 'type', 'champion']
+['label', 'type', 'champion']
+
+['label', 'type', 'subject', 'y', 'season', 'city', 'ballpark', 'current league']
+['label', 'character', 'subject', 'yttrium', 'season', 'city', 'ballpark', 'league']
+
+['label', 'type', 'subject', 'season', 'city', 'ballpark', 'owners', 'current league']
+['label', 'character', 'subject', 'season', 'city', 'approximate range', 'owner', 'league']
+
+['label', 'type', 'subject', 'city', 'ballpark', 'owners', 'current league']
+['label', 'character', 'subject', 'city', 'approximate range', 'owner', 'current']
+
+['label', 'type', 'subject', 'season', 'city', 'ballpark', 'current league']
+['label', 'character', 'subject', 'season', 'city', 'ballpark', 'league']
+
+['label', 'type', 'subject', 'city', 'ballpark', 'misc', 'current league']
+['label', 'character', 'subject', 'city', 'ballpark', 'misc', 'current league']
+
+['label', 'type', 'subject', 'city', 'ballpark', 'current league']
+['label', 'character', 'subject', 'city', 'ballpark', 'current']
+
+['label', 'type', 'subject', 'comment', 'homepage', 'label']
+['label', 'type', 'subject', 'remark', 'home page', 'label']
+
+['label', 'type', 'subject', 'city', 'ballpark']
+['label', 'character', 'subject', 'city', 'ballpark']
+
+['label', 'type', 'subject', 'conf']
+['label', 'type', 'topic', 'conf']
+
+['label', 'type', 'subject', 'ceo']
+['label', 'character', 'subject', 'chief executive officer']
+
+['label', 'arena', 'type', 'subject']
+['label', 'sphere', 'type', 'subject']
+
+['label', 'color', 'type', 'subject', 'comment', 'type', 'ingredients', 'name', 'Caption', 'label']
+['label', 'coloring material', 'character', 'subject', 'remark', 'type', 'ingredient', 'name', 'caption', 'label']
+
+['label', 'origin', 'type', 'subject', 'founder', 'introduced']
+['label', 'beginning', 'character', 'subject', 'founder', 'introduced']
+
+['label', 'origin', 'type', 'subject', 'introduced']
+['label', 'beginning', 'character', 'subject', 'introduced']
+
+['label', 'color', 'type', 'subject', 'flavor', 'introduced']
+['label', 'color', 'type', 'subject', 'spirit', 'introduced']
+
+['label', 'type', 'subject', 'distributor']
+['label', 'character', 'subject', 'distributor']
+
+['label', 'type', 'subject', 'Description']
+['label', 'type', 'subject', 'description']
+
+['label', 'type', 'Center']
+['label', 'type', 'center']
+
+['label', 'type', 'subject', 'comment', 'Pfam', 'symbol', 'InterPro', 'Name', 'label']
+['label', 'type', 'subject', 'remark', 'Pfam', 'symbol', 'InterPro', 'Name', 'label']
+
+['label', 'type', 'comment', 'has abstract', 'EntrezGene', 'label']
+['label', 'type', 'remark', 'outline', 'EntrezGene', 'label']
+
+['label', 'type', 'subject', 'EC number', 'IUBMB EC number', 'name', 'label']
+['label', 'type', 'topic', 'number', 'number', 'name', 'label']
+
+['label', 'type', 'comment', 'has abstract', 'label']
+['label', 'type', 'remark', 'outline', 'label']
+
+['label', 'type', 'subject', 'OPM protein', 'symbol', 'OPM family']
+['label', 'type', 'subject', 'protein', 'symbol', 'kin']
+
+['label', 'type', 'UniProt', 'EntrezGene', 'refseq protein', 'Gene Location', 'refseq mRNA', 'ensemble']
+['label', 'type', 'UniProt', 'EntrezGene', 'protein', 'location', 'messenger rna', 'ensemble']
+
+['label', 'type', 'subject', 'Band', 'Arm']
+['label', 'type', 'topic', 'set', 'branch']
+
+['label', 'type', 'subject', 'label']
+['label', 'type', 'topic', 'label']
+
+['label', 'type', 'subject', 'genus', 'binomial', 'ordo', 'familia', 'classis']
+['label', 'type', 'subject', 'genus', 'binomial', 'ordo', 'familia', 'classis']
+
+['label', 'type', 'subject', 'binomial', 'classis']
+['label', 'type', 'subject', 'binomial', 'classis']
+
+['label', 'type', 'subject', 'basin countries']
+['label', 'type', 'subject', 'nation']
+
+['label', 'name', 'volume (\u03bc\xb3)', 'type', 'area (m2)']
+['label', 'name', 'volume', 'type', 'area']
+
+['label', 'type', 'subject', 'GraySubject', 'Latin', 'image', 'Caption', 'GrayPage']
+['label', 'type', 'subject', 'GraySubject', 'Latin', 'image', 'caption', 'GrayPage']
+
+['label', 'type', 'subject', 'GraySubject', 'GrayPage']
+['label', 'type', 'topic', 'GraySubject', 'GrayPage']
+
+['label', 'type', 'subject', 'country']
+['label', 'type', 'subject', 'state']
+
+['label', 'birth place', 'type', 'subject', 'birth place', 'death date']
+['label', 'position', 'type', 'topic', 'place', 'death']
+
+['label', 'type', 'subject', 'death place', 'birth date', 'death place']
+['label', 'type', 'topic', 'place', 'birth', 'death']
+
+['label', 'type', 'subject', 'comment', 'Latin', 'Name', 'name', 'label']
+['label', 'type', 'subject', 'remark', 'latin', 'name', 'name', 'label']
+
+['label', 'type', 'subject', 'BrainInfoType', 'acronym', 'BrainInfoNumber']
+['label', 'type', 'subject', 'BrainInfoType', 'acronym', 'BrainInfoNumber']
+
+['label', 'Artery', 'type', 'subject']
+['label', 'artery', 'character', 'subject']
+
+['label', 'type', 'subject', 'key people']
+['label', 'type', 'topic', 'people']
+
+['label', 'type', 'subject', 'lat', 'crosses', 'coordinates display']
+['label', 'character', 'subject', 'latissimus dorsi', 'hybrid', 'display']
+
+['label', 'established', 'type']
+['label', 'established', 'type']
+
+['label', 'type', 'subject', 'building type', 'architect']
+['label', 'character', 'subject', 'character', 'architect']
+
+['label', 'type', 'headquarters', 'category', 'image caption']
+['label', 'type', 'headquarters', 'class', 'image']
+
+['label', 'type', 'birth place', 'death place', 'birth place', 'death place', 'birth date']
+['label', 'type', 'position', 'position', 'position', 'position', 'birth']
+
+['label', 'label', 'type', 'subject']
+['label', 'label', 'type', 'topic']
+
+['label', 'nationality', 'type']
+['label', 'nationality', 'type']
+
+['label', 'years', 'number of goals scored', 'type', 'number of matches or caps', 'team']
+['label', 'class', 'numeral', 'type', 'numeral', 'team']
+
+['label', 'years', 'type', 'team']
+['label', 'class', 'type', 'team']
+
+['label', 'type', 'team']
+['label', 'type', 'team']
+
+['label', 'type', 'producer', 'distributor', 'release date', 'language', 'director', 'country']
+['label', 'character', 'producer', 'allocator', 'date', 'language', 'director', 'nation']
+
+['label', 'name', 'music composer', 'type', 'type', 'writer']
+['label', 'name', 'composer', 'type', 'type', 'writer']
+
+['label', 'type', 'type', 'network', 'producer']
+['label', 'character', 'character', 'net', 'manufacturer']
+
+['label', 'name', 'type', 'type']
+['label', 'name', 'type', 'type']
+
+['label', 'type', 'subject', 'reporter', 'page', 'majority', 'Fullname', 'reporter-volume']
+['label', 'type', 'subject', 'reporter', 'page', 'majority', 'Fullname', 'reporter-volume']
+
+['label', 'type', 'subject', 'majority', 'ArgueDate', 'Fullname', 'ArgueYear']
+['label', 'type', 'subject', 'majority', 'ArgueDate', 'Fullname', 'ArgueYear']
+
+['label', 'type', 'subject', 'majority', 'ArgueDate', 'Fullname']
+['label', 'type', 'subject', 'majority', 'ArgueDate', 'Fullname']
+
+['label', 'type', 'subject', 'citation']
+['label', 'type', 'subject', 'citation']
+
+['label', 'type', 'subject', 'built', 'condition', 'builder']
+['label', 'character', 'subject', 'built', 'condition', 'builder']
+
+['label', 'type', 'subject', 'type', 'Caption']
+['label', 'type', 'subject', 'type', 'caption']
+
+['label', 'lat d', 'type', 'subject', 'lat m', 'features']
+['label', 'five hundred', 'type', 'subject', 'lat m', 'features']
+
+['label', 'type', 'subject', 'bcra grad']
+['label', 'type', 'subject', 'grad']
+
+['label', 'name', 'depth (\u03bc)', 'type', 'length (\u03bc)', 'location']
+['label', 'name', 'depth', 'type', 'length', 'localization']
+
+['label', 'type', 'subject', 'class', 'constell', 'luminosity', 'epoch', 'appmag v', 'p error']
+['label', 'type', 'subject', 'class', 'constell', 'luminosity', 'epoch', 'appmag v', 'erroneousness']
+
+['label', 'type', 'subject', 'class', 'constell', 'epoch', 'appmag v', 'p error']
+['label', 'type', 'subject', 'class', 'constell', 'epoch', 'appmag v', 'erroneousness']
+
+['label', 'type', 'subject', 'class', 'constell', 'epoch', 'appmag v', 'equinox']
+['label', 'type', 'subject', 'class', 'constell', 'era', 'appmag v', 'equinoctial point']
+
+['label', 'type', 'type', 'epoch', 'appmag v', 'names', 'size', 'Caption']
+['label', 'type', 'type', 'era', 'v', 'name calling', 'size', 'caption']
+
+['label', 'COSPAR ID', 'type', 'subject', 'suborbital apogee', 'disposal type', 'decay date']
+['label', 'id', 'type', 'subject', 'apogee', 'type', 'date']
+
+['label', 'type', 'subject', 'launch date', 'mission type']
+['label', 'type', 'topic', 'launching', 'mission']
+
+['label', 'type', 'subject', 'dec', 'base']
+['label', 'type', 'subject', 'december', 'basis']
+
+['label', 'type', 'subject', 'operator', 'launch date', 'mission type']
+['label', 'type', 'subject', 'operator', 'date', 'deputation']
+
+['label', 'type', 'subject', 'dist ly', 'appmag v', 'names']
+['label', 'type', 'subject', 'dist ly', 'five', 'names']
+
+['label', 'type', 'subject', 'epoch', 'appmag v', 'absmag v']
+['label', 'type', 'subject', 'era', 'v', 'v']
+
+['label', 'type', 'subject', 'base']
+['label', 'type', 'topic', 'basis']
+
+['label', 'type', 'subject', 'launch rocket', 'launch date']
+['label', 'type', 'topic', 'launching', 'launching']
+
+['label', 'type', 'birth date', 'death date']
+['label', 'type', 'birth', 'death']
+
+['label', 'type', 'subject', 'comment', 'has abstract', 'depiction', 'label', 'thumbnail']
+['label', 'type', 'subject', 'remark', 'outline', 'word picture', 'label', 'thumbnail']
+
+['label', 'IUPACName', 'type', 'subject', 'comment', 'depiction', 'ImageFile', 'othernames', 'label', 'imagesize']
+['label', 'IUPACName', 'type', 'subject', 'comment', 'word picture', 'ImageFile', 'othernames', 'label', 'imagesize']
+
+['label', 'IUPACName', 'type', 'subject', 'comment', 'depiction', 'ImageFile', 'label', 'imagesize']
+['label', 'IUPACName', 'type', 'subject', 'comment', 'word picture', 'ImageFile', 'label', 'imagesize']
+
+['label', 'type', 'subject', 'comment', 'depiction', 'ImageFile', 'label', 'imagesize', 'thumbnail']
+['label', 'type', 'subject', 'remark', 'word picture', 'ImageFile', 'label', 'imagesize', 'thumbnail']
+
+['label', 'IUPACName', 'type', 'subject', 'comment', 'has abstract', 'othernames', 'label']
+['label', 'IUPACName', 'type', 'subject', 'remark', 'has abstract', 'othernames', 'label']
+
+['label', 'IUPACName', 'type', 'subject', 'comment', 'depiction', 'SystematicName', 'ImageFile', 'verifiedrevid', 'label']
+['label', 'IUPACName', 'type', 'subject', 'comment', 'word picture', 'SystematicName', 'ImageFile', 'verifiedrevid', 'label']
+
+['label', 'IUPACName', 'type', 'subject', 'comment', 'ImageFile', 'othernames', 'label', 'imagesize']
+['label', 'IUPACName', 'type', 'subject', 'remark', 'ImageFile', 'othernames', 'label', 'imagesize']
+
+['label', 'type', 'subject', 'comment', 'depiction', 'ImageFile', 'label', 'thumbnail']
+['label', 'type', 'subject', 'remark', 'word picture', 'ImageFile', 'label', 'thumbnail']
+
+['label', 'IUPACName', 'type', 'subject', 'comment', 'ImageFile', 'othernames', 'label']
+['label', 'IUPACName', 'type', 'subject', 'remark', 'ImageFile', 'othernames', 'label']
+
+['label', 'IUPACName', 'type', 'subject', 'ImageFile', 'othernames', 'label', 'imagesize']
+['label', 'IUPACName', 'type', 'subject', 'ImageFile', 'othernames', 'label', 'imagesize']
+
+['label', 'type', 'subject', 'pin', 'ImageFile', 'othernames', 'imagesize']
+['label', 'type', 'topic', 'fall', 'ImageFile', 'othernames', 'imagesize']
+
+['label', 'IUPACName', 'type', 'subject', 'ImageFile', 'othernames', 'imagesize']
+['label', 'IUPACName', 'type', 'subject', 'ImageFile', 'othernames', 'imagesize']
+
+['label', 'IUPACName', 'type', 'subject', 'imagecaption', 'ImageFile', 'imagesize']
+['label', 'IUPACName', 'type', 'subject', 'imagecaption', 'ImageFile', 'imagesize']
+
+['label', 'IUPACName', 'type', 'subject', 'ImageFile', 'othernames', 'label']
+['label', 'IUPACName', 'type', 'subject', 'ImageFile', 'othernames', 'label']
+
+['label', 'type', 'subject', 'ImageFile', 'ImageName', 'imagesize']
+['label', 'type', 'topic', 'ImageFile', 'ImageName', 'imagesize']
+
+['label', 'type', 'subject', 'ImageFile', 'ImageAlt']
+['label', 'type', 'topic', 'ImageFile', 'ImageAlt']
+
+['label', 'type', 'subject', 'InChI', 'C', 'ChemSpiderID', 'CAS number', 'H', 'Cl']
+['label', 'type', 'subject', 'InChI', 'C', 'ChemSpiderID', 'CAS number', 'H', 'one hundred fifty']
+
+['label', 'IUPACName', 'type', 'subject', 'comment', 'ImageFile', 'label', 'imagesize']
+['label', 'IUPACName', 'type', 'subject', 'remark', 'ImageFile', 'label', 'imagesize']
+
+['label', 'type', 'subject', 'ImageFile', 'ImageAlt', 'imagesize']
+['label', 'type', 'topic', 'ImageFile', 'ImageAlt', 'imagesize']
+
+['label', 'IUPAC name', 'type', 'subject', 'C', 'H', 'molecular weight']
+['label', 'name', 'type', 'subject', 'c', 'hydrogen', 'system of weights']
+
+['label', 'IUPAC name', 'type', 'subject', 'C', 'CAS number', 'H']
+['label', 'name', 'type', 'subject', 'c', 'phone number', 'hydrogen']
+
+['label', 'type', 'subject', 'C', 'F', 'H']
+['label', 'type', 'subject', 'c', 'f', 'h']
+
+['label', 'type', 'subject', 'C', 'Cl']
+['label', 'type', 'subject', 'C', 'one hundred fifty']
+
+['label', 'type', 'subject', 'C', 'CAS number']
+['label', 'type', 'topic', 'speed of light', 'number']
+
+['label', 'birth date', 'birth place', 'type', 'death place', 'death date']
+['label', 'birth', 'birth', 'type', 'death', 'death']
+
+['label', 'birth place', 'type', 'subject', 'death place', 'death date']
+['label', 'position', 'type', 'topic', 'place', 'death']
+
+['label', 'birth place', 'type', 'subject', 'death place']
+['label', 'position', 'type', 'topic', 'place']
+
+['label', 'birth place', 'type', 'death place', 'death date']
+['label', 'position', 'type', 'position', 'death']
+
+['label', 'birth place', 'type', 'death place']
+['label', 'position', 'type', 'position']
+
+['label', 'type', 'subject', 'demographics1 info', 'coordinates display']
+['label', 'type', 'subject', 'information', 'display']
+
+['label', 'type', 'birth date']
+['label', 'type', 'birth']
+
+['label', 'type', 'subject', 'cname']
+['label', 'type', 'topic', 'cname']
+
+['label', 'type', 'subject', 'genus', 'classis', 'genus authority']
+['label', 'type', 'subject', 'genus', 'classis', 'genus']
+
+['label', 'birth place', 'type', 'death place', 'death date', 'birth place']
+['label', 'position', 'type', 'position', 'death', 'birth']
+
+['label', 'type', 'alma mater', 'birth date']
+['label', 'type', 'flat', 'birth date']
+
+['label', 'type', 'subject', 'death place']
+['label', 'type', 'topic', 'place']
+
+['label', 'value coordinate in the HSV colour space', 'type', 'red coordinate in the RGB space', 'hue coordinate in the HSV colour space', 'black coordinate in the CMYK space', 'yellow coordinate in the CMYK space', 'bluecoordinate in the RGB space', 'magenta coordinate in the CMYK space', 'colour hex code', 'green coordinate in the RGB space', 'name', 'saturation coordinate in the HSV colour space', 'variant or variation', 'cyanic coordinate in the CMYK space']
+['label', 'coloring material', 'type', 'indium', 'indium', 'indium', 'indium', 'indium', 'indium', 'coloring material', 'indium', 'name', 'coloring material', 'variation', 'indium']
+
+['label', 'type', 'subject', 'm', 'C', 'R', 'g', 'H', 'k', 'hex']
+['label', 'type', 'subject', 'm', 'C', 'R', 'g', 'H', 'k', 'hexadecimal']
+
+['label', 'value coordinate in the HSV colour space', 'type', 'red coordinate in the RGB space', 'hue coordinate in the HSV colour space', 'bluecoordinate in the RGB space', 'colour hex code', 'green coordinate in the RGB space', 'name', 'saturation coordinate in the HSV colour space', 'variant or variation']
+['label', 'coloring material', 'type', 'indium', 'indium', 'indium', 'coloring material', 'indium', 'name', 'coloring material', 'variation']
+
+['label', 'type', 'subject', 'C', 'g']
+['label', 'type', 'subject', 'c', 'g']
+
+['label', 'type', 'subject', 'quote', 'bgcolor', 'format', 'ongoing', 'issues']
+['label', 'type', 'subject', 'quote', 'bgcolor', 'format', 'ongoing', 'issues']
+
+['label', 'type', 'director', 'demographic']
+['label', 'type', 'director', 'demographic']
+
+['label', 'genre', 'type', 'subject']
+['label', 'genre', 'type', 'subject']
+
+['label', 'type', 'subject', 'extinct', 'binomial', 'classis', 'binomial authority']
+['label', 'type', 'subject', 'extinct', 'binomial', 'classis', 'binomial authority']
+
+['label', 'type', 'subject', 'area']
+['label', 'character', 'subject', 'area']
+
+['label', 'Website', 'type', 'subject', 'genre', 'founded', 'dates']
+['label', 'web site', 'character', 'subject', 'genre', 'founded', 'dates']
+
+['label', 'type', 'subject', 'frequency', 'years active', 'first', 'country', 'label']
+['label', 'type', 'subject', 'frequency', 'long time', 'beginning', 'nation', 'label']
+
+['label', 'type', 'subject', 'frequency', 'attendance']
+['label', 'type', 'subject', 'frequency', 'attendance']
+
+['label', 'type', 'subject', 'attendance', 'first', 'country']
+['label', 'type', 'subject', 'attendance', 'beginning', 'nation']
+
+['label', 'type', 'subject', 'location', 'years active', 'genre', 'dates']
+['label', 'type', 'subject', 'localization', 'long time', 'writing style', 'date']
+
+['label', 'type', 'subject', 'attendance']
+['label', 'type', 'subject', 'attendance']
+
+['label', 'type', 'subject', 'area', 'begins']
+['label', 'character', 'subject', 'area', 'begin']
+
+['label', 'type', 'subject', 'Capital', 'common languages', 'common name']
+['label', 'type', 'topic', 'capital', 'linguistic process', 'name']
+
+['label', 'Latitude', 'type', 'subject', 'Longitude', 'comment', 'Caption', 'label']
+['label', 'latitude', 'character', 'subject', 'longitude', 'remark', 'subtitle', 'label']
+
+['label', 'Latitude', 'diameter', 'type', 'subject', 'Longitude']
+['label', 'latitude', 'diameter', 'character', 'subject', 'longitude']
+
+['label', 'type', 'subject', 'chairman', 'label']
+['label', 'character', 'subject', 'president', 'label']
+
+['label', 'subject', 'type', 'death', 'birth']
+['label', 'subject', 'character', 'death', 'parturition']
+
+['label', 'type', 'subject', 'infraordo', 'genus', 'familia', 'classis', 'genus authority']
+['label', 'type', 'subject', 'infraordo', 'genus', 'familia', 'classis', 'genus']
+
+['label', 'type', 'subject', 'genus', 'familia', 'classis']
+['label', 'type', 'subject', 'genus', 'familia', 'classis']
+
+['label', 'type', 'subject', 'classis']
+['label', 'type', 'topic', 'classis']
+
+['label', 'origin', 'type', 'subject']
+['label', 'beginning', 'character', 'subject']
+
+['label', 'type', 'subject', 'printer', 'issuing authority']
+['label', 'character', 'subject', 'printer', 'authority']
+
+['label', 'birth place', 'type', 'birth place', 'death place', 'death place']
+['label', 'position', 'type', 'position', 'position', 'position']
+
+['label', 'type', 'subject', 'dimensions', 'manufacturer', 'camera', 'announced', 'available', 'Input', 'USB', 'os', 'compatible network', 'Bluetooth']
+['label', 'character', 'subject', 'dimension', 'manufacturer', 'camera', 'announced', 'available', 'Input', 'USB', 'oxygen', 'compatible network', 'Bluetooth']
+
+['label', 'type', 'subject', 'comment', 'type', 'Name', 'developer', 'name', 'releasedate', 'label']
+['label', 'character', 'subject', 'remark', 'type', 'name', 'developer', 'name', 'releasedate', 'label']
+
+['label', 'connectivity', 'type', 'subject', 'display', 'manufacturer', 'logo', 'memory', 'gp', 'cp']
+['label', 'connectivity', 'character', 'subject', 'display', 'manufacturer', 'logo', 'memory', 'gp', 'central processing unit']
+
+['label', 'type', 'subject', 'display', 'manufacturer', 'Form', 'memory', 'gp', 'cp']
+['label', 'character', 'subject', 'display', 'manufacturer', 'shape', 'memory', 'gp', 'central processing unit']
+
+['label', 'origin', 'type', 'subject', 'range', 'designer', 'used by', 'crew']
+['label', 'beginning', 'character', 'subject', 'range', 'interior designer', 'used by', 'crew']
+
+['label', 'type', 'subject', 'display', 'after', 'cp']
+['label', 'character', 'subject', 'display', 'after', 'central processing unit']
+
+['label', 'origin', 'type', 'design date', 'detonation', 'is explosive', 'subject', 'filling']
+['label', 'origin', 'type', 'date', 'detonation', 'explosive', 'subject', 'filling']
+
+['label', 'engine', 'type', 'subject', 'manufacturer', 'is vehicle', 'designer']
+['label', 'engine', 'character', 'subject', 'manufacturer', 'fomite', 'architect']
+
+['label', 'type', 'subject', 'before', 'cp']
+['label', 'character', 'subject', 'before', 'central processing unit']
+
+['label', 'connectivity', 'type', 'subject', 'display', 'available', 'cp']
+['label', 'connectivity', 'character', 'subject', 'display', 'available', 'central processing unit']
+
+['label', 'connectivity', 'type', 'subject', 'Root Access']
+['label', 'connectivity', 'type', 'subject', 'solution']
+
+['label', 'type', 'subject', 'supported']
+['label', 'type', 'topic', 'supported']
+
+['label', 'connectivity', 'type', 'subject']
+['label', 'connectivity', 'type', 'subject']
+
+['label', 'type', 'subject', 'after']
+['label', 'type', 'subject', 'after']
+
+['label', 'field', 'type', 'subject', 'comment', 'has abstract', 'Name', 'name', 'label', 'ICD']
+['label', 'field', 'type', 'subject', 'remark', 'outline', 'name', 'name', 'label', 'ICD']
+
+['label', 'seeAlso', 'field', 'type', 'subject', 'comment', 'Name', 'name', 'label']
+['label', 'seeAlso', 'field', 'type', 'subject', 'remark', 'Name', 'name', 'label']
+
+['label', 'type', 'subject', 'comment', 'depiction', 'Name', 'name', 'Caption', 'label', 'ICD']
+['label', 'type', 'subject', 'remark', 'word picture', 'name', 'name', 'subtitle', 'label', 'ICD']
+
+['label', 'type', 'subject', 'eMedicineTopic', 'DiseasesDB', 'Caption', 'eMedicineSubj', 'ICD']
+['label', 'type', 'subject', 'eMedicineTopic', 'DiseasesDB', 'caption', 'eMedicineSubj', 'ICD']
+
+['label', 'type', 'subject', 'ICDO', 'wordnet_type']
+['label', 'type', 'topic', 'ICDO', 'wordnet_type']
+
+['label', 'filename', 'type', 'description', 'title', 'type']
+['label', 'filename', 'type', 'description', 'title', 'type']
+
+['label', 'type', 'description', 'title', 'filename']
+['label', 'type', 'description', 'title', 'filename']
+
+['label', 'IUPAC name', 'type', 'subject', 'F', 'legal status', 'C', 'drug name', 'H', 'molecular weight']
+['label', 'name', 'type', 'subject', 'f', 'status', 'c', 'name', 'heat content', 'system of weights']
+
+['label', 'IUPAC name', 'type', 'subject', 'legal UK', 'C', 'CAS number', 'H', 'Cl']
+['label', 'IUPAC name', 'type', 'subject', 'legal UK', 'C', 'CAS number', 'H', 'one hundred fifty']
+
+['label', 'IUPAC name', 'type', 'subject', 'InChI', 'C', 'ChemSpiderID', 'H', 'InChIKey']
+['label', 'name', 'type', 'subject', 'InChI', 'C', 'ChemSpiderID', 'hydrogen', 'InChIKey']
+
+['label', 'IUPAC name', 'type', 'subject', 'legal UK', 'C', 'CAS number', 'H']
+['label', 'name', 'type', 'subject', 'united kingdom', 'c', 'phone number', 'h']
+
+['label', 'IUPAC name', 'type', 'subject', 'C', 'ChemSpiderID', 'H', 'molecular weight']
+['label', 'name', 'type', 'subject', 'c', 'ChemSpiderID', 'hydrogen', 'molecular weight']
+
+['label', 'type', 'subject', 'C', 'CAS number', 'F']
+['label', 'type', 'subject', 'c', 'phone number', 'degree fahrenheit']
+
+['label', 'type', 'subject', 'C', 'CAS number', 'F', 'H']
+['label', 'type', 'subject', 'c', 'phone number', 'f', 'h']
+
+['label', 'type', 'subject', 'C', 'ChemSpiderID', 'F', 'H']
+['label', 'type', 'subject', 'c', 'ChemSpiderID', 'f', 'h']
+
+['label', 'type', 'subject', 'C', 'ATC prefix', 'CAS number', 'F']
+['label', 'character', 'subject', 'carbon', 'prefix', 'calcium', 'fluorine']
+
+['label', 'type', 'subject', 'ATC suffix', 'class', 'ATC prefix', 'component']
+['label', 'type', 'subject', 'suffix', 'class', 'prefix', 'part']
+
+['label', 'type', 'subject', 'C', 'F']
+['label', 'type', 'subject', 'c', 'degree fahrenheit']
+
+['label', 'type', 'subject', 'C', 'CAS number', 'Cl']
+['label', 'type', 'subject', 'C', 'CAS number', 'one hundred fifty']
+
+['label', 'type', 'subject', 'casualties', 'date', 'label']
+['label', 'character', 'subject', 'casualty', 'date', 'label']
+
+['label', 'type', 'subject', 'candidate']
+['label', 'character', 'subject', 'campaigner']
+
+['label', 'before election', 'type', 'subject', 'after election']
+['label', 'earlier', 'type', 'subject', 'after election']
+
+['label', 'after party', 'type', 'subject', 'after election']
+['label', 'after party', 'type', 'subject', 'after']
+
+['label', 'after party', 'before election', 'type', 'subject', 'after election']
+['label', 'after party', 'earlier', 'type', 'subject', 'after election']
+
+['label', 'type', 'subject', 'after election']
+['label', 'type', 'subject', 'after']
+
+['label', 'before election', 'type', 'subject']
+['label', 'earlier', 'type', 'subject']
+
+['label', 'alliance', 'type', 'subject']
+['label', 'alliance', 'type', 'subject']
+
+['label', 'code', 'subject', 'GraySubject', 'image', 'type', 'GrayPage']
+['label', 'code', 'subject', 'GraySubject', 'image', 'type', 'GrayPage']
+
+['label', 'type', 'subject', 'EC number', 'IUBMB EC number', 'Name', 'name', 'label']
+['label', 'type', 'topic', 'number', 'number', 'name', 'name', 'label']
+
+['label', 'type', 'subject', 'EC number', 'IUBMB EC number', 'CAS number', 'label']
+['label', 'type', 'topic', 'number', 'number', 'number', 'label']
+
+['label', 'type', 'subject', 'EC number', 'IUBMB EC number', 'CAS number', 'Caption']
+['label', 'type', 'subject', 'phone number', 'phone number', 'phone number', 'caption']
+
+['label', 'type', 'subject', 'EC number', 'IUBMB EC number', 'CAS number']
+['label', 'type', 'topic', 'number', 'number', 'number']
+
+['label', 'type', 'subject', 'EC number', 'GO code', 'CAS number']
+['label', 'type', 'topic', 'number', 'code', 'phone number']
+
+['label', 'type', 'subject', 'EC number', 'GO code']
+['label', 'type', 'topic', 'number', 'code']
+
+['label', 'related-c', 'type', 'subject', 'comment', 'popplace', 'langs', 'group', 'name', 'label', 'poptime']
+['label', 'related-c', 'type', 'subject', 'comment', 'popplace', 'langs', 'group', 'name', 'label', 'poptime']
+
+['label', 'Languages', 'type', 'subject', 'comment', 'population', 'group', 'name', 'religions', 'label']
+['label', 'linguistic process', 'type', 'subject', 'remark', 'population', 'group', 'name', 'religion', 'label']
+
+['label', 'rels', 'type', 'subject', 'comment', 'popplace', 'depiction', 'langs', 'group', 'name', 'label']
+['label', 'rels', 'type', 'subject', 'comment', 'popplace', 'word picture', 'langs', 'group', 'name', 'label']
+
+['label', 'rels', 'type', 'subject', 'related', 'population', 'langs', 'group']
+['label', 'rels', 'type', 'subject', 'related', 'population', 'langs', 'group']
+
+['label', 'type', 'subject', 'popplace', 'related', 'langs', 'group', 'poptime']
+['label', 'type', 'subject', 'popplace', 'related', 'langs', 'group', 'poptime']
+
+['label', 'rels', 'type', 'subject', 'population', 'langs', 'group']
+['label', 'rels', 'type', 'subject', 'population', 'langs', 'group']
+
+['label', 'type', 'subject', 'related', 'langs', 'group', 'poptime']
+['label', 'type', 'subject', 'related', 'langs', 'group', 'poptime']
+
+['label', 'rels', 'type', 'subject', 'popplace', 'related', 'langs', 'group']
+['label', 'rels', 'type', 'subject', 'popplace', 'related', 'langs', 'group']
+
+['label', 'Languages', 'type', 'subject', 'popplace', 'group', 'pop']
+['label', 'language', 'type', 'subject', 'popplace', 'group', 'pop']
+
+['label', 'type', 'subject', 'popplace', 'langs', 'group', 'poptime']
+['label', 'type', 'subject', 'popplace', 'langs', 'group', 'poptime']
+
+['label', 'rels', 'type', 'subject', 'related', 'langs', 'group']
+['label', 'rels', 'type', 'subject', 'related', 'langs', 'group']
+
+['label', 'type', 'subject', 'popplace', 'langs', 'group']
+['label', 'type', 'subject', 'popplace', 'langs', 'group']
+
+['label', 'type', 'subject', 'group']
+['label', 'type', 'subject', 'group']
+
+['label', 'type', 'subject', 'next', 'genre', 'country']
+['label', 'type', 'subject', 'following', 'genre', 'country']
+
+['label', 'type', 'subject', 'comment', 'depiction', 'label']
+['label', 'type', 'subject', 'remark', 'word picture', 'label']
+
+['label', 'foes', 'type', 'subject']
+['label', 'enemy', 'character', 'subject']
+
+['label', 'type', 'subject', 'alias']
+['label', 'type', 'subject', 'alias']
+
+['label', 'type', 'subject', 'cinematography', 'distributor', 'director', 'country']
+['label', 'character', 'subject', 'filming', 'allocator', 'director', 'nation']
+
+['label', 'type', 'subject', 'distributor', 'runtime', 'director']
+['label', 'character', 'subject', 'distributor', 'runtime', 'director']
+
+['label', 'type', 'subject', 'founded', 'Caption']
+['label', 'type', 'capable', 'establish', 'Caption']
+
+['label', 'type', 'subject', 'films']
+['label', 'type', 'subject', 'movie']
+
+['label', 'name', 'homepage', 'type', 'location']
+['label', 'name', 'home page', 'type', 'location']
+
+['label', 'type', 'subject', 'image caption', 'familia', 'classis', 'familia authority']
+['label', 'type', 'subject', 'image', 'familia', 'classis', 'authority']
+
+['label', 'type', 'subject', 'binomial', 'familia', 'classis']
+['label', 'type', 'subject', 'binomial', 'familia', 'classis']
+
+['label', 'type', 'subject', 'accessdate']
+['label', 'type', 'topic', 'accessdate']
+
+['label', 'classis', 'type', 'subject']
+['label', 'classis', 'type', 'subject']
+
+['label', 'type', 'subject', 'comment', 'label', 'depiction', 'Name', 'name', 'Caption', 'serving size', 'national cuisine']
+['label', 'character', 'subject', 'remark', 'label', 'delineation', 'name', 'name', 'caption', 'service', 'national']
+
+['label', 'region', 'type', 'subject', 'comment', 'type', 'Caption', 'country', 'label']
+['label', 'region', 'type', 'subject', 'remark', 'type', 'caption', 'nation', 'label']
+
+['label', 'type', 'subject', 'course', 'creator', 'country']
+['label', 'type', 'subject', 'class', 'godhead', 'nation']
+
+['label', 'region', 'type', 'subject', 'type', 'main ingredient', 'Caption', 'country']
+['label', 'region', 'type', 'capable', 'type', 'main ingredient', 'caption', 'country']
+
+['label', 'region', 'type', 'subject', 'course', 'main ingredient']
+['label', 'region', 'type', 'subject', 'class', 'component']
+
+['label', 'type', 'subject', 'comment', 'season', 'homepage', 'label']
+['label', 'type', 'subject', 'remark', 'season', 'home page', 'label']
+
+['label', 'type', 'subject', 'comment', 'season', 'label']
+['label', 'type', 'subject', 'remark', 'season', 'label']
+
+['label', 'type', 'subject', 'referee', 'matches', 'score', 'round']
+['label', 'character', 'subject', 'referee', 'peer', 'score', 'cycle']
+
+['label', 'type', 'subject', 'referee', 'matches']
+['label', 'character', 'subject', 'referee', 'peer']
+
+['label', 'p', 'type', 'subject', 'BC', 'l']
+['label', 'p', 'type', 'subject', 'bc', 'l']
+
+['label', 'type', 'subject', 'BC']
+['label', 'type', 'subject', 'bc']
+
+['label', 'type', 'subject', 'city', 'attendance']
+['label', 'type', 'subject', 'city', 'attendance']
+
+['label', 'regnum', 'type', 'subject', 'genus', 'ordo', 'species', 'familia', 'classis']
+['label', 'regnum', 'type', 'subject', 'genus', 'ordo', 'species', 'familia', 'classis']
+
+['label', 'type', 'subject', 'genus', 'binomial', 'class', 'familia', 'image width']
+['label', 'type', 'subject', 'genus', 'binomial', 'class', 'familia', 'image']
+
+['label', 'type', 'subject', 'binomial', 'class', 'familia', 'binomial authority']
+['label', 'type', 'subject', 'binomial', 'class', 'familia', 'binomial authority']
+
+['label', 'type', 'subject', 'genus', 'familia', 'classis', 'genus authority']
+['label', 'type', 'subject', 'genus', 'familia', 'classis', 'genus']
+
+['label', 'type', 'subject', 'type', 'epoch', 'appmag v']
+['label', 'type', 'subject', 'type', 'era', 'v']
+
+['label', 'complexity', 'type', 'subject', 'bggid']
+['label', 'complexity', 'type', 'subject', 'bggid']
+
+['label', 'OMIM', 'type', 'comment', 'path', 'symbol', 'HGNCid', 'name', 'label']
+['label', 'OMIM', 'type', 'comment', 'way', 'symbol', 'HGNCid', 'name', 'label']
+
+['label', 'type', 'comment', 'path', 'symbol', 'HGNCid', 'MGIid', 'label']
+['label', 'type', 'remark', 'way', 'symbol', 'HGNCid', 'MGIid', 'label']
+
+['label', 'OMIM', 'type', 'ECnumber', 'path', 'symbol', 'HGNCid', 'label']
+['label', 'OMIM', 'type', 'ECnumber', 'way', 'symbol', 'HGNCid', 'label']
+
+['label', 'OMIM', 'type', 'subject', 'symbol', 'HGNCid']
+['label', 'OMIM', 'type', 'subject', 'symbol', 'HGNCid']
+
+['label', 'type', 'ECnumber', 'function', 'MGIid']
+['label', 'type', 'ECnumber', 'function', 'MGIid']
+
+['label', 'type', 'path', 'symbol', 'HGNCid', 'label']
+['label', 'type', 'way', 'symbol', 'HGNCid', 'label']
+
+['label', 'EntrezGene', 'type', 'UniProt', 'Gene Location', 'ensemble']
+['label', 'EntrezGene', 'type', 'UniProt', 'gene', 'ensemble']
+
+['label', 'gene location start', 'type', 'Genome DB', 'gene location end', 'on chromosome']
+['label', 'location', 'type', 'decibel', 'location', 'chromosome']
+
+['label', 'gene location start', 'type', 'Genome DB', 'gene location end']
+['label', 'starting signal', 'type', 'genome', 'end']
+
+['label', 'gene location start', 'type', 'gene location end', 'on chromosome']
+['label', 'gene location start', 'type', 'gene location end', 'on']
+
+['label', 'region', 'type', 'subject', 'Name', 'name', 'gender', 'label']
+['label', 'region', 'type', 'subject', 'name', 'name', 'gender', 'label']
+
+['label', 'type', 'subject', 'Name', 'name', 'gender', 'label']
+['label', 'type', 'subject', 'name', 'name', 'gender', 'label']
+
+['label', 'origin', 'region', 'type', 'subject', 'name', 'gender', 'label']
+['label', 'origin', 'region', 'type', 'subject', 'name', 'sex', 'label']
+
+['label', 'region', 'type', 'subject', 'name', 'gender', 'label']
+['label', 'region', 'type', 'subject', 'name', 'gender', 'label']
+
+['label', 'origin', 'region', 'type', 'subject', 'gender', 'related names']
+['label', 'origin', 'region', 'type', 'subject', 'sex', 'name calling']
+
+['label', 'type', 'subject', 'language', 'gender', 'image size']
+['label', 'type', 'subject', 'language', 'gender', 'image']
+
+['label', 'type', 'gender', 'meaning', 'label', 'related names']
+['label', 'type', 'gender', 'meaning', 'label', 'name calling']
+
+['label', 'type', 'footnotes', 'gender']
+['label', 'type', 'footnote', 'gender']
+
+['label', 'type', 'subject', 'gender', 'meaning']
+['label', 'type', 'subject', 'gender', 'meaning']
+
+['label', 'type', 'subject', 'gender']
+['label', 'type', 'subject', 'gender']
+
+['label', 'type', 'subject', 'label position']
+['label', 'type', 'topic', 'position']
+
+['label', 'type', 'subject', 'agency name', 'chief1 name']
+['label', 'type', 'topic', 'representation', 'name']
+
+['label', 'type', 'subject', 'federal agency']
+['label', 'type', 'subject', 'federal']
+
+['label', 'type', 'subject', 'headquarters', 'agency name']
+['label', 'character', 'subject', 'headquarters', 'name']
+
+['label', 'alias', 'type']
+['label', 'alias', 'type']
+
+['label', 'type', 'subject', 'denomination', 'diocese']
+['label', 'type', 'subject', 'denomination', 'diocese']
+
+['label', 'Latitude', 'type', 'subject', 'Longitude', 'locmapin', 'designation1 free1name', 'designation1 free1value']
+['label', 'latitude', 'character', 'subject', 'longitude', 'locmapin', 'designation1 free1name', 'designation1 free1value']
+
+['label', 'type', 'subject', 'governing body', 'added', 'architecture']
+['label', 'character', 'subject', 'body', 'added', 'architecture']
+
+['label', 'type', 'subject', 'added']
+['label', 'type', 'capable', 'add']
+
+['label', 'type', 'subject', 'type', 'observances', 'frequency', 'holiday name', 'official name', 'imagesize']
+['label', 'type', 'subject', 'type', 'ceremony', 'frequency', 'name', 'name', 'imagesize']
+
+['label', 'type', 'subject', 'type', 'longtype', 'relatedto', 'observedby', 'holiday name']
+['label', 'type', 'topic', 'type', 'longtype', 'relatedto', 'observedby', 'holiday name']
+
+['label', 'type', 'subject', 'frequency', 'duration', 'celebrations']
+['label', 'type', 'subject', 'frequency', 'duration', 'celebration']
+
+['label', 'type', 'subject', 'frequency', 'duration']
+['label', 'type', 'subject', 'frequency', 'duration']
+
+['label', 'type', 'subject', 'class']
+['label', 'type', 'topic', 'class']
+
+['label', 'type', 'subject', 'symbol', 'HGNCid']
+['label', 'type', 'subject', 'symbol', 'HGNCid']
+
+['label', 'type', 'subject', 'mestari']
+['label', 'type', 'topic', 'mestari']
+
+['label', 'type', 'rights']
+['label', 'type', 'right']
+
+['label', 'photo', 'type', 'os', 'page', 'day', 'developer', 'help', 'month', 'predecessor']
+['label', 'photograph', 'type', 'operating system', 'page', 'day', 'developer', 'assistant', 'month', 'harbinger']
+
+['label', 'type', 'subject', 'camera', 'before', 'after']
+['label', 'character', 'subject', 'camera', 'before', 'after']
+
+['label', 'connectivity', 'type', 'subject', 'controllers', 'cp']
+['label', 'connectivity', 'character', 'subject', 'control', 'central processing unit']
+
+['label', 'type', 'subject', 'camera']
+['label', 'character', 'subject', 'camera']
+
+['label', 'type', 'subject', 'address', 'code', 'coordinates']
+['label', 'type', 'subject', 'address', 'code', 'coordinate']
+
+['label', 'code', 'subject', 'address', 'type', 'line', 'native name']
+['label', 'code', 'subject', 'address', 'type', 'line', 'name']
+
+['label', 'type', 'subject', 'comment', 'label', 'Former']
+['label', 'type', 'subject', 'comment', 'label', 'former']
+
+['label', 'type', 'subject', 'address', 'code']
+['label', 'type', 'subject', 'address', 'code']
+
+['label', 'type', 'subject', 'address']
+['label', 'type', 'topic', 'address']
+
+['label', 'type', 'subject', 'address', 'image width']
+['label', 'type', 'topic', 'address', 'image']
+
+['label', 'type', 'subject', 'coordinates region', 'country', 'coordinates format', 'coordinates display']
+['label', 'character', 'subject', 'region', 'country', 'coordinate', 'coordinate']
+
+['label', 'death date', 'type', 'birth date']
+['label', 'death', 'type', 'birth']
+
+['label', 'type', 'subject', 'champion']
+['label', 'type', 'subject', 'champion']
+
+['label', 'basin countries', 'type', 'subject', 'area']
+['label', 'nation', 'type', 'subject', 'area']
+
+['label', 'type', 'subject', 'area km']
+['label', 'character', 'subject', 'area']
+
+['label', 'name', 'type', 'watershed (m2)']
+['label', 'name', 'type', 'watershed']
+
+['label', 'type', 'subject', 'operator']
+['label', 'type', 'subject', 'operator']
+
+['label', 'type', 'subject', 'coa caption', 'coa pic', 'foundation']
+['label', 'character', 'subject', 'caption', 'photograph', 'foundation']
+
+['label', 'type', 'subject', 'coa pic']
+['label', 'type', 'subject', 'movie']
+
+['label', 'type', 'subject', 'leader']
+['label', 'character', 'subject', 'leader']
+
+['label', 'type', 'subject', 'election']
+['label', 'type', 'subject', 'election']
+
+['label', 'type', 'subject', 'GraySubject', 'Latin', 'image', 'GrayPage']
+['label', 'type', 'subject', 'GraySubject', 'latin', 'image', 'GrayPage']
+
+['label', 'type', 'subject', 'background']
+['label', 'type', 'topic', 'background']
+
+['label', 'locale', 'type', 'subject', 'trucks', 'currentowner', 'operator', 'builder']
+['label', 'venue', 'character', 'subject', 'hand truck', 'currentowner', 'operator', 'builder']
+
+['label', 'type', 'subject', 'builder']
+['label', 'character', 'subject', 'builder']
+
+['label', 'type', 'subject', 'operator', 'builder']
+['label', 'character', 'subject', 'operator', 'builder']
+
+['label', 'type', 'subject', 'vavlegear']
+['label', 'type', 'topic', 'vavlegear']
+
+['label', 'type', 'subject', 'comment', 'Latin', 'name', 'Caption', 'label']
+['label', 'type', 'subject', 'remark', 'latin', 'name', 'caption', 'label']
+
+['label', 'type', 'subject', 'category', 'country']
+['label', 'type', 'subject', 'category', 'nation']
+
+['label', 'type', 'genus', 'ordo', 'phylum', 'familia', 'classis']
+['label', 'type', 'genus', 'ordo', 'phylum', 'familia', 'classis']
+
+['label', 'publisher', 'number of volumes', 'type', 'author', 'magazine', 'illustrator', 'name']
+['label', 'publisher', 'volume', 'character', 'writer', 'magazine', 'illustrator', 'name']
+
+['label', 'publisher', 'magazine', 'type', 'number of volumes', 'author']
+['label', 'publisher', 'magazine', 'type', 'number', 'writer']
+
+['label', 'publisher', 'type', 'type', 'author']
+['label', 'publisher', 'type', 'type', 'writer']
+
+['label', 'type', 'subject', 'manufacturer', 'assembly', 'body style', 'class', 'Layout']
+['label', 'type', 'subject', 'manufacturer', 'assembly', 'body', 'class', 'layout']
+
+['label', 'type', 'subject', 'Ship country', 'Ship fate', 'Ship builder', 'Ship flag']
+['label', 'type', 'capable', 'Ship country', 'Ship fate', 'Ship builder', 'Ship flag']
+
+['label', 'type', 'subject', 'Ship caption', 'Ship builder']
+['label', 'type', 'subject', 'ship', 'builder']
+
+['label', 'type', 'subject', 'Ship builder']
+['label', 'type', 'subject', 'builder']
+
+['label', 'type', 'subject', 'body style']
+['label', 'type', 'topic', 'expressive style']
+
+['label', 'type', 'subject', 'aspect ratio']
+['label', 'type', 'subject', 'aspect']
+
+['label', 'birth place', 'type', 'death date']
+['label', 'position', 'type', 'death']
+
+['label', 'type', 'subject', 'casualties', 'combatant']
+['label', 'type', 'subject', 'casualties', 'combatant']
+
+['label', 'type', 'subject', 'commander', 'combatant', 'conflict']
+['label', 'type', 'subject', 'commander', 'combatant', 'conflict']
+
+['label', 'type', 'subject', 'casualties']
+['label', 'character', 'subject', 'casualty']
+
+['label', 'combatant', 'type', 'subject']
+['label', 'combatant', 'type', 'subject']
+
+['label', 'casualties', 'type', 'subject']
+['label', 'casualty', 'character', 'subject']
+
+['label', 'type', 'birth place', 'death place', 'birth place', 'death date', 'death place']
+['label', 'type', 'position', 'position', 'position', 'death', 'death']
+
+['label', 'type', 'subject', 'allegiance']
+['label', 'type', 'subject', 'commitment']
+
+['label', 'Latitude', 'map caption', 'type', 'subject', 'Longitude', 'map size']
+['label', 'latitude', 'function', 'type', 'subject', 'longitude', 'function']
+
+['label', 'type', 'subject', 'built', 'battles', 'builder']
+['label', 'character', 'subject', 'built', 'battles', 'builder']
+
+['label', 'type', 'subject', 'battles', 'builder']
+['label', 'character', 'subject', 'conflict', 'builder']
+
+['label', 'builder', 'type', 'subject']
+['label', 'builder', 'character', 'subject']
+
+['label', 'type', 'subject', 'command structure', 'branch']
+['label', 'type', 'topic', 'structure', 'branch']
+
+['label', 'type', 'commander1 label', 'commander2 label', 'subject', 'branch']
+['label', 'type', 'label', 'label', 'topic', 'branch']
+
+['label', 'type', 'subject', 'battles']
+['label', 'type', 'subject', 'battle']
+
+['label', 'type', 'subject', 'branch']
+['label', 'type', 'topic', 'branch']
+
+['label', 'type', 'subject', 'total events']
+['label', 'type', 'topic', 'sum']
+
+['label', 'date', 'type', 'location', 'previous event', 'following event', 'name']
+['label', 'date', 'type', 'localization', 'event', 'event', 'name']
+
+['label', 'type', 'subject', 'familia', 'classis', 'fossil range']
+['label', 'type', 'topic', 'familia', 'classis', 'fossil range']
+
+['label', 'type', 'subject', 'genus', 'binomial', 'familia', 'classis']
+['label', 'type', 'subject', 'genus', 'binomial', 'familia', 'classis']
+
+['label', 'type', 'subject', 'death place', 'death date', 'death place']
+['label', 'type', 'topic', 'place', 'death', 'death']
+
+['label', 'latd', 'type', 'subject', 'latm', 'latNS', 'complete', 'architect']
+['label', 'latd', 'type', 'subject', 'latm', 'latNS', 'complete', 'architect']
+
+['label', 'type', 'subject', 'designer', 'complete']
+['label', 'character', 'subject', 'interior designer', 'complete']
+
+['label', 'type', 'subject', 'familia', 'classis', 'familia authority']
+['label', 'type', 'subject', 'familia', 'classis', 'authority']
+
+['label', 'engine', 'production', 'type', 'subject', 'manufacturer', 'class', 'transmission', 'predecessor']
+['label', 'engine', 'production', 'type', 'subject', 'manufacturer', 'class', 'transmission', 'harbinger']
+
+['label', 'engine', 'type', 'subject', 'assembly', 'class']
+['label', 'engine', 'character', 'subject', 'assembly', 'class']
+
+['label', 'engine', 'type', 'subject', 'class', 'AKA']
+['label', 'engine', 'character', 'subject', 'class', 'AKA']
+
+['label', 'engine', 'type', 'subject', 'manufacturer', 'class']
+['label', 'engine', 'character', 'subject', 'manufacturer', 'class']
+
+['label', 'type', 'subject', 'AKA']
+['label', 'type', 'topic', 'AKA']
+
+['label', 'type', 'death place', 'death date']
+['label', 'type', 'position', 'death']
+
+['label', 'type', 'subject', 'comment', 'has abstract', 'link', 'title', 'nextlink', 'label', 'year']
+['label', 'type', 'subject', 'remark', 'outline', 'connection', 'championship', 'nextlink', 'label', 'year']
+
+['label', 'series', 'type', 'subject', 'comment', 'link', 'homepage', 'label', 'year']
+['label', 'series', 'type', 'subject', 'remark', 'connection', 'home page', 'label', 'year']
+
+['label', 'series', 'type', 'subject', 'comment', 'title', 'label', 'year']
+['label', 'series', 'type', 'subject', 'remark', 'title', 'label', 'year']
+
+['label', 'series', 'type', 'subject', 'comment', 'nextlink', 'label', 'year']
+['label', 'series', 'type', 'subject', 'remark', 'nextlink', 'label', 'year']
+
+['label', 'series', 'type', 'subject', 'comment', 'homepage', 'label', 'year']
+['label', 'series', 'type', 'subject', 'remark', 'home page', 'label', 'year']
+
+['label', 'series', 'type', 'subject', 'next', 'previous', 'previouslink', 'year']
+['label', 'series', 'type', 'subject', 'next', 'previous', 'previouslink', 'year']
+
+['label', 'seeAlso', 'series', 'type', 'subject', 'comment', 'title', 'label', 'year']
+['label', 'seeAlso', 'series', 'type', 'subject', 'comment', 'title', 'label', 'year']
+
+['label', 'series', 'type', 'subject', 'comment', 'link', 'label', 'year']
+['label', 'series', 'type', 'subject', 'remark', 'connection', 'label', 'year']
+
+['label', 'series', 'type', 'subject', 'next', 'previous', 'title', 'year']
+['label', 'series', 'type', 'subject', 'next', 'previous', 'title', 'year']
+
+['label', 'series', 'type', 'subject', 'label', 'year']
+['label', 'series', 'type', 'subject', 'label', 'year']
+
+['label', 'series', 'type', 'subject', 'year', 'label', 'footer']
+['label', 'series', 'type', 'subject', 'year', 'label', 'pedestrian']
+
+['label', 'series', 'type', 'subject', 'comment', 'label', 'year']
+['label', 'series', 'type', 'subject', 'remark', 'label', 'year']
+
+['label', 'series', 'type', 'subject', 'year']
+['label', 'series', 'type', 'subject', 'year']
+
+['label', 'series', 'type', 'subject', 'previous', 'footer']
+['label', 'series', 'type', 'subject', 'previous', 'footer']
+
+['label', 'type', 'subject', 'link', 'year']
+['label', 'type', 'subject', 'connection', 'year']
+
+['label', 'type', 'subject', 'footer']
+['label', 'type', 'subject', 'footer']
+
+['label', 'photo', 'type', 'subject', 'language', 'listing']
+['label', 'photograph', 'type', 'subject', 'language', 'list']
+
+['label', 'type', 'subject', 'elevation m']
+['label', 'type', 'topic', 'acme']
+
+['label', 'type', 'subject', 'float', 'highest', 'elevation m', 'coordinates format']
+['label', 'type', 'subject', 'float', 'high', 'elevation m', 'coordinates format']
+
+['label', 'type', 'subject', 'coordinates format']
+['label', 'type', 'topic', 'coordinate']
+
+['label', 'type', 'EntrezGene', 'refseq protein', 'Gene Location', 'refseq mRNA', 'ensemble']
+['label', 'type', 'EntrezGene', 'protein', 'location', 'messenger rna', 'ensemble']
+
+['label', 'type', 'on chromosome']
+['label', 'type', 'on']
+
+['label', 'origin', 'type', 'subject', 'Latin', 'GraySubject', 'Nerve', 'image', 'Caption', 'GrayPage']
+['label', 'beginning', 'character', 'subject', 'latin', 'GraySubject', 'nerve', 'image', 'Caption', 'GrayPage']
+
+['label', 'Website', 'type', 'type', 'established']
+['label', 'web site', 'character', 'character', 'established']
+
+['label', 'type', 'subject', 'established']
+['label', 'type', 'topic', 'established']
+
+['label', 'type', 'subject', 'comment', 'first', 'label']
+['label', 'type', 'subject', 'remark', 'beginning', 'label']
+
+['label', 'type', 'subject', 'first']
+['label', 'type', 'topic', 'beginning']
+
+['label', 'color', 'type', 'subject', 'instruments', 'other topics', 'bgcolor', 'cultural origins']
+['label', 'color', 'type', 'subject', 'instruments', 'other', 'bgcolor', 'cultural origins']
+
+['label', 'type', 'music', 'book', 'lyrics']
+['label', 'type', 'music', 'ledger', 'lyric']
+
+['label', 'Length', 'type', 'subject', 'Artist', 'Album']
+['label', 'length', 'character', 'subject', 'artist', 'album']
+
+['label', 'conference', 'type', 'subject', 'poll', 'record', 'score', 'confrecord', 'division', 'imagesize']
+['label', 'conference', 'type', 'subject', 'poll', 'record', 'score', 'confrecord', 'division', 'imagesize']
+
+['label', 'conference', 'record', 'confrecord', 'score', 'poll', 'type', 'rank', 'imagesize']
+['label', 'conference', 'record', 'confrecord', 'score', 'poll', 'type', 'rank', 'imagesize']
+
+['label', 'conference', 'record', 'logosize', 'confrecord', 'subject', 'score', 'logo', 'type', 'rank']
+['label', 'conference', 'record', 'logosize', 'confrecord', 'subject', 'score', 'logo', 'type', 'rank']
+
+['label', 'type', 'subject', 'AST2Year', 'ba pre', 'AST1Year', 'collegiate ', 'AST3Year']
+['label', 'type', 'subject', 'AST2Year', 'ba pre', 'AST1Year', 'collegiate', 'AST3Year']
+
+['label', 'conference', 'record', 'type', 'subject', 'sport', 'score', 'rank', 'imagesize']
+['label', 'conference', 'record', 'type', 'subject', 'fun', 'score', 'rank', 'imagesize']
+
+['label', 'conference', 'record', 'type', 'subject', 'year', 'champion', 'Team']
+['label', 'conference', 'record', 'type', 'subject', 'year', 'supporter', 'team']
+
+['label', 'conference', 'record', 'type', 'subject', 'year', 'label', 'Team']
+['label', 'conference', 'record', 'type', 'subject', 'year', 'label', 'team']
+
+['label', 'conference', 'record', 'type', 'subject', 'year', 'sport', 'Team']
+['label', 'conference', 'record', 'type', 'subject', 'year', 'fun', 'team']
+
+['label', 'conference', 'record', 'type', 'subject', 'captain', 'score', 'confrecord', 'rank']
+['label', 'conference', 'record', 'type', 'subject', 'captain', 'score', 'confrecord', 'rank']
+
+['label', 'conference', 'type', 'subject', 'head coach', 'confrecord', 'imagesize']
+['label', 'conference', 'type', 'subject', 'question', 'confrecord', 'imagesize']
+
+['label', 'conference', 'record', 'type', 'subject', 'captain', 'rank']
+['label', 'conference', 'record', 'type', 'subject', 'captain', 'rank']
+
+['label', 'conference', 'type', 'subject', 'captain', 'rank', 'imagesize']
+['label', 'conference', 'type', 'subject', 'captain', 'rank', 'imagesize']
+
+['label', 'conference', 'record', 'type', 'subject', 'score', 'rank']
+['label', 'conference', 'record', 'type', 'subject', 'score', 'rank']
+
+['label', 'conference', 'record', 'type', 'subject', 'captain', 'imagesize']
+['label', 'conference', 'record', 'type', 'subject', 'captain', 'imagesize']
+
+['label', 'conference', 'type', 'subject', 'captain', 'confrecord', 'imagesize']
+['label', 'conference', 'type', 'subject', 'captain', 'confrecord', 'imagesize']
+
+['label', 'type', 'subject', 'gamehighs']
+['label', 'type', 'topic', 'gamehighs']
+
+['label', 'type', 'death date']
+['label', 'type', 'death']
+
+['label', 'name', 'nick', 'birth place', 'type', 'birth date']
+['label', 'name', 'dent', 'place', 'type', 'parentage']
+
+['label', 'record', 'type', 'subject', 'next', 'coach', 'previous']
+['label', 'record', 'type', 'subject', 'next', 'coach', 'previous']
+
+['label', 'type', 'subject', 'coach', 'logo', 'general manager']
+['label', 'type', 'subject', 'coach', 'logo', 'general']
+
+['label', 'record', 'type', 'subject', 'coach', 'stadium', 'Team']
+['label', 'record', 'type', 'subject', 'coach', 'stadium', 'team']
+
+['label', 'record', 'type', 'subject', 'coach', 'stadium']
+['label', 'record', 'type', 'subject', 'coach', 'stadium']
+
+['label', 'type', 'subject', 'coach', 'event', 'attendance']
+['label', 'type', 'subject', 'coach', 'event', 'attendance']
+
+['label', 'record', 'type', 'subject', 'coach', 'Team']
+['label', 'record', 'type', 'subject', 'coach', 'team']
+
+['label', 'type', 'subject', 'coach', 'college']
+['label', 'type', 'subject', 'coach', 'college']
+
+['label', 'type', 'subject', 'next', 'coach']
+['label', 'type', 'subject', 'following', 'coach']
+
+['label', 'type', 'subject', 'coach', 'owner']
+['label', 'character', 'subject', 'coach', 'owner']
+
+['label', 'type', 'subject', 'MOC']
+['label', 'type', 'topic', 'MOC']
+
+['label', 'type', 'subject', 'coach']
+['label', 'character', 'subject', 'coach']
+
+['label', 'type', 'subject', 'reference']
+['label', 'type', 'topic', 'reference']
+
+['label', 'latd', 'type', 'subject', 'elevation ft', 'language', 'coordinates region']
+['label', 'latd', 'type', 'subject', 'acme', 'lyric', 'region']
+
+['label', 'type', 'subject', 'features']
+['label', 'type', 'topic', 'feature']
+
+['label', 'volume (\u03bc\xb3)', 'type', 'area (m2)']
+['label', 'volume', 'character', 'area']
+
+['label', 'type', 'subject', 'comment', 'depiction', 'name', 'label', 'thumbnail']
+['label', 'type', 'subject', 'remark', 'word picture', 'name', 'label', 'thumbnail']
+
+['label', 'BranchFrom', 'type', 'subject', 'GrayPage']
+['label', 'BranchFrom', 'type', 'subject', 'GrayPage']
+
+['label', 'type', 'subject', 'editor', 'format']
+['label', 'character', 'subject', 'editor', 'format']
+
+['label', 'type', 'subject', 'current Editors']
+['label', 'type', 'subject', 'current']
+
+['label', 'region', 'type', 'purpose', 'formation', 'founder']
+['label', 'area', 'character', 'function', 'geological formation', 'laminitis']
+
+['label', 'type', 'subject', 'death place', 'birth place', 'death date', 'birth date']
+['label', 'type', 'topic', 'place', 'place', 'death', 'birth']
+
+['label', 'type', 'subject', 'event']
+['label', 'type', 'subject', 'event']
+
+['label', 'type', 'subject', 'event', 'games']
+['label', 'type', 'subject', 'event', 'game']
+
+['label', 'type', 'subject', 'RD4b-seed']
+['label', 'type', 'topic', 'RD4b-seed']
+
+['label', 'type', 'subject', 'total', 'sports', 'games', 'rank']
+['label', 'type', 'subject', 'entire', 'sports', 'games', 'rank']
+
+['label', 'type', 'subject', 'foundation', 'area served']
+['label', 'type', 'subject', 'foundation', 'area']
+
+['label', 'type', 'subject', 'day']
+['label', 'type', 'subject', 'day']
+
+['label', 'broadcast area', 'type']
+['label', 'area', 'type']
+
+['label', 'name', 'type', 'current member']
+['label', 'name', 'type', 'member']
+
+['label', 'name', 'type']
+['label', 'name', 'type']
+
+['label', 'photo', 'type', 'subject', 'display', 'photo width', 'owner', 'photo caption']
+['label', 'photograph', 'character', 'subject', 'display', 'photograph', 'owner', 'subtitle']
+
+['label', 'photo', 'type', 'subject', 'display', 'area', 'photo width', 'owner', 'photo caption']
+['label', 'photograph', 'character', 'subject', 'display', 'area', 'photograph', 'owner', 'subtitle']
+
+['label', 'status', 'type', 'subject', 'type', 'operator', 'created']
+['label', 'status', 'type', 'subject', 'type', 'operator', 'created']
+
+['label', 'status', 'type', 'subject', 'alt name', 'label']
+['label', 'status', 'type', 'subject', 'name', 'label']
+
+['label', 'type', 'subject', 'type', 'location', 'operator']
+['label', 'type', 'subject', 'type', 'localization', 'operator']
+
+['label', 'type', 'subject', 'type']
+['label', 'type', 'topic', 'type']
+
+['label', 'personName', 'type', 'title']
+['label', 'personName', 'type', 'title']
+
+['label', 'type', 'title']
+['label', 'type', 'title']
+
+['label', 'type', 'subject', 'inclination', 'eccentricity', 'dec', 'class', 'discovery date']
+['label', 'type', 'subject', 'tilt', 'eccentricity', 'declination', 'class', 'date']
+
+['label', 'type', 'subject', 'dec', 'discovery date', 'base']
+['label', 'type', 'subject', 'december', 'date', 'base']
+
+['label', 'type', 'subject', 'genus', 'binomial', 'familia', 'binomial authority']
+['label', 'type', 'subject', 'genus', 'binomial', 'familia', 'binomial']
+
+['label', 'type', 'subject', 'binomial', 'familia', 'binomial authority']
+['label', 'type', 'subject', 'binomial', 'familia', 'binomial authority']
+
+['label', 'type', 'subject', 'sub genus', 'binomial', 'binomial authority']
+['label', 'type', 'subject', 'sub genus', 'binomial', 'binomial authority']
+
+['label', 'type', 'subject', 'genus', 'familia']
+['label', 'type', 'subject', 'genus', 'familia']
+
+['label', 'type', 'subject', 'familia']
+['label', 'type', 'topic', 'familia']
+
+['label', 'type', 'subject', 'place', 'characters', 'orig lang']
+['label', 'type', 'topic', 'place', 'character', 'orig lang']
+
+['label', 'type', 'subject', 'place', 'writer']
+['label', 'character', 'subject', 'topographic point', 'writer']
+
+['label', 'type', 'subject', 'colours', 'colorcode']
+['label', 'type', 'topic', 'color', 'colorcode']
+
+['label', 'established date', 'type', 'subject', 'established title']
+['label', 'date', 'type', 'subject', 'title']
+
+['label', 'type', 'subject', 'image skyline', 'subdivision name']
+['label', 'type', 'topic', 'image', 'section']
+
+['label', 'area code', 'type', 'subject', 'area code type']
+['label', 'area', 'type', 'topic', 'area']
+
+['label', 'type', 'subject', 'construction began']
+['label', 'type', 'topic', 'construction']
+
+['label', 'opening year', 'type', 'installed capacity (W)', 'primary fuel type', 'name', 'generation units']
+['label', 'possibility', 'type', 'capacity', 'type', 'name', 'coevals']
+
+['label', 'average annual gross power generation (J)', 'type', 'long', 'name', 'geometry', 'lat']
+['label', 'ability', 'character', 'long', 'name', 'geometry', 'latissimus dorsi']
+
+['label', 'name', 'type', 'generation units', 'primary fuel type', 'installed capacity (W)']
+['label', 'name', 'type', 'unit', 'primary', 'capacity']
+
+['label', 'name', 'type', 'primary fuel type']
+['label', 'name', 'type', 'primary']
+
+['label', 'type', 'subject', 'city', 'capacity']
+['label', 'type', 'subject', 'city', 'capacity']
+
+['label', 'released', 'type', 'Website', 'paradigm', 'license']
+['label', 'released', 'type', 'web site', 'substitution class', 'license']
+
+['label', 'researchObjective', 'type', 'projectType', 'subject']
+['label', 'researchObjective', 'type', 'projectType', 'subject']
+
+['label', 'type', 'subject', 'comment', 'label', 'location', 'established', 'nearest city']
+['label', 'character', 'subject', 'remark', 'label', 'location', 'established', 'city']
+
+['label', 'type', 'subject', 'governing body']
+['label', 'type', 'topic', 'government']
+
+['label', 'type', 'Band', 'Arm', 'Chromosome']
+['label', 'character', 'band', 'arm', 'chromosome']
+
+['label', 'type', 'comment', 'label']
+['label', 'type', 'remark', 'label']
+
+['label', 'type', 'subject', 'image caption', 'hq city', 'image size']
+['label', 'character', 'subject', 'double', 'headquarters', 'double']
+
+['label', 'type', 'subject', 'end year']
+['label', 'type', 'topic', 'end']
+
+['label', 'type', 'subject', 'began operation']
+['label', 'type', 'subject', 'operation']
+
+['label', 'type', 'subject', 'location', 'opened']
+['label', 'character', 'subject', 'location', 'opened']
+
+['label', 'type', 'subject', 'presenter', 'language', 'format', 'country', 'home station']
+['label', 'type', 'subject', 'donor', 'language', 'format', 'area', 'home']
+
+['label', 'type', 'subject', 'first aired', 'audio format', 'country']
+['label', 'type', 'subject', 'beginning', 'audio', 'state']
+
+['label', 'type', 'subject', 'director', 'country']
+['label', 'character', 'subject', 'director', 'area']
+
+['label', 'type', 'subject', 'box width', 'Character']
+['label', 'type', 'subject', 'box', 'character']
+
+['label', 'type', 'subject', 'el', 'image width']
+['label', 'type', 'subject', 'elevated railway', 'image']
+
+['label', 'type', 'subject', 'end']
+['label', 'type', 'topic', 'goal']
+
+['label', 'type', 'subject', 'end', 'map state']
+['label', 'type', 'topic', 'goal', 'state']
+
+['label', 'wordnet_type', 'type']
+['label', 'wordnet_type', 'type']
+
+['label', 'name', 'genre', 'type', 'location']
+['label', 'name', 'genre', 'type', 'placement']
+
+['label', 'county', 'type', 'subject']
+['label', 'county', 'character', 'subject']
+
+['label', 'region', 'type', 'subject', 'municipality', 'building name']
+['label', 'region', 'character', 'subject', 'municipality', 'name']
+
+['label', 'type', 'subject', 'building name']
+['label', 'type', 'topic', 'building']
+
+['label', 'type', 'subject', 'architecture style']
+['label', 'type', 'topic', 'architecture']
+
+['label', 'type', 'genus', 'binomial authority', 'ordo', 'familia', 'classis', 'binomial']
+['label', 'type', 'genus', 'binomial', 'ordo', 'familia', 'classis', 'binomial']
+
+['label', 'type', 'subject', 'length km', 'country', 'maint']
+['label', 'character', 'subject', 'length', 'country', 'maint']
+
+['label', 'type', 'subject', 'state', 'route', 'length round']
+['label', 'character', 'subject', 'state', 'path', 'length']
+
+['label', 'type', 'length km', 'state', 'country', 'route']
+['label', 'character', 'length', 'state', 'country', 'path']
+
+['label', 'type', 'subject', 'destinations', 'alternate name', 'country']
+['label', 'type', 'subject', 'destination', 'name', 'nation']
+
+['label', 'type', 'subject', 'length km', 'country']
+['label', 'character', 'subject', 'length', 'country']
+
+['label', 'type', 'subject', 'county', 'route']
+['label', 'character', 'subject', 'county', 'path']
+
+['label', 'type', 'subject', 'destinations', 'country']
+['label', 'type', 'subject', 'destination', 'nation']
+
+['label', 'route number', 'type', 'route type abbreviation']
+['label', 'path', 'type', 'type']
+
+['label', 'type', 'subject', 'type', 'image caption', 'location']
+['label', 'character', 'subject', 'character', 'double', 'location']
+
+['label', 'type', 'type', 'location', 'long', 'name', 'geometry', 'lat']
+['label', 'character', 'character', 'placement', 'long', 'name', 'geometry', 'latissimus dorsi']
+
+['label', 'type', 'subject', 'map', 'type', 'country']
+['label', 'type', 'subject', 'function', 'type', 'state']
+
+['label', 'number of lanes', 'opening year', 'type', 'route start location', 'route end location', 'is part of (literal)', 'name']
+['label', 'number', 'possibility', 'type', 'beginning', 'end', 'part', 'name']
+
+['label', 'type', 'subject', 'comment', 'manufacturer', 'stages', 'country-origin', 'label']
+['label', 'type', 'subject', 'remark', 'manufacturer', 'degree', 'country-origin', 'label']
+
+['label', 'type', 'subject', 'fail']
+['label', 'type', 'topic', 'fail']
+
+['label', 'type', 'manufacturer', 'height ft', 'capacity', 'opened']
+['label', 'type', 'manufacturer', 'acme', 'capability', 'opened']
+
+['label', 'type', 'subject', 'manufacturer', 'section', 'height ft', 'opened']
+['label', 'type', 'subject', 'manufacturer', 'section', 'acme', 'opened']
+
+['label', 'type', 'subject', 'length km', 'alternate name', 'country']
+['label', 'character', 'subject', 'length', 'surrogate', 'country']
+
+['label', 'type', 'subject', 'county', 'cspan']
+['label', 'character', 'subject', 'county', 'cspan']
+
+['label', 'type', 'subject', 'alternate name', 'country']
+['label', 'type', 'subject', 'name', 'state']
+
+['label', 'type', 'open', 'end', 'subject']
+['label', 'type', 'open', 'end', 'topic']
+
+['label', 'label', 'type']
+['label', 'label', 'type']
+
+['label', 'type', 'subject', 'birth place', 'death place', 'birth place', 'death place']
+['label', 'type', 'topic', 'place', 'place', 'place', 'place']
+
+['label', 'birth place', 'type', 'subject', 'death place', 'death place']
+['label', 'position', 'type', 'topic', 'place', 'place']
+
+['label', 'type', 'champion', 'most champs']
+['label', 'type', 'champion', 'most champs']
+
+['label', 'type', 'sales', 'year']
+['label', 'type', 'sale', 'year']
+
+['label', 'type', 'death place', 'birth date', 'death place']
+['label', 'type', 'position', 'birth', 'death']
+
+['label', 'type', 'subject', 'Ship country', 'Ship launched', 'Ship laid down', 'Ship builder', 'Ship commissioned']
+['label', 'type', 'capable', 'Ship country', 'Ship launched', 'Ship laid down', 'Ship builder', 'Ship commissioned']
+
+['label', 'type', 'subject', 'Ship country', 'Ship completed', 'Ship acquired', 'Ship builder', 'label', 'Ship commissioned']
+['label', 'type', 'capable', 'Ship country', 'Ship completed', 'Ship acquired', 'Ship builder', 'label', 'Ship commissioned']
+
+['label', 'type', 'subject', 'Ship class', 'Ship aircraft', 'comment', 'Ship country', 'label', 'Ship armament']
+['label', 'type', 'capable', 'Ship class', 'Ship aircraft', 'gloss', 'Ship country', 'label', 'Ship armament']
+
+['label', 'type', 'subject', 'Ship sail plan', 'In commission range', 'Ship armament']
+['label', 'type', 'subject', 'sail', 'range', 'armament']
+
+['label', 'type', 'Ship builder', 'subject']
+['label', 'type', 'builder', 'subject']
+
+['label', 'type', 'subject', 'format', 'Artist', 'Album']
+['label', 'character', 'subject', 'format', 'artist', 'album']
+
+['label', 'type', 'subject', 'area', 'code']
+['label', 'type', 'subject', 'area', 'code']
+
+['label', 'type', 'nearest city', 'location', 'maximum elevation (\u03bc)', 'minimum elevation (\u03bc)', 'name', 'homepage']
+['label', 'character', 'city', 'location', 'natural elevation', 'natural elevation', 'name', 'home page']
+
+['label', 'type', 'subject', 'wordnet_type', 'death date', 'birth date']
+['label', 'type', 'topic', 'wordnet_type', 'death date', 'birth date']
+
+['label', 'type', 'subject', 'wordnet_type', 'birth date']
+['label', 'type', 'topic', 'wordnet_type', 'birth date']
+
+['label', 'subject', 'type', 'death']
+['label', 'subject', 'type', 'death']
+
+['label', 'type', 'death']
+['label', 'type', 'death']
+
+['label', 'club', 'type', 'subject', 'leftarm', 'league', 'manager', 'chairman', 'body']
+['label', 'club', 'character', 'subject', 'leftarm', 'league', 'director', 'chairman', 'body']
+
+['label', 'type', 'subject', 'chairman', 'BC', 'body']
+['label', 'type', 'subject', 'chairman', 'bc', 'body']
+
+['label', 'type', 'subject', 'a']
+['label', 'type', 'subject', 'angstrom']
+
+['label', 'type', 'subject', 'domest league']
+['label', 'type', 'subject', 'league']
+
+['label', 'type', 'subject', 'Composer', 'comment', 'published', 'label']
+['label', 'character', 'subject', 'composer', 'remark', 'published', 'label']
+
+['label', 'type', 'subject', 'Artist', 'genre']
+['label', 'type', 'subject', 'artist', 'writing style']
+
+['label', 'type', 'subject', 'producer', 'Artist']
+['label', 'character', 'subject', 'producer', 'artist']
+
+['label', 'type', 'subject', 'Artist', 'Album']
+['label', 'character', 'subject', 'artist', 'album']
+
+['label', 'Album', 'type', 'subject']
+['label', 'album', 'character', 'subject']
+
+['label', 'type', 'subject', 'station', 'crew']
+['label', 'type', 'subject', 'place', 'crew']
+
+['label', 'type', 'subject', 'power', 'mission type', 'mission duration', 'satellite of']
+['label', 'type', 'subject', 'power', 'mission type', 'mission duration', 'satellite']
+
+['label', 'type', 'subject', 'launch']
+['label', 'type', 'topic', 'launching']
+
+['label', 'type', 'subject', 'inclination']
+['label', 'type', 'subject', 'inclination']
+
+['label', 'type', 'subject', 'Landing']
+['label', 'type', 'topic', 'landing']
+
+['label', 'type', 'subject', 'virus group', 'comment', 'subdivision ranks', 'genus', 'familia', 'subdivision', 'label']
+['label', 'type', 'subject', 'group', 'remark', 'section', 'genus', 'familia', 'section', 'label']
+
+['label', 'type', 'subject', 'country/region', 'category', 'contact']
+['label', 'type', 'subject', 'country/region', 'class', 'contact']
+
+['label', 'type', 'subject', 'seating capacity', 'opened']
+['label', 'type', 'topic', 'capacity', 'opened']
+
+['label', 'type', 'subject', 'built', 'capacity']
+['label', 'type', 'topic', 'built', 'capacity']
+
+['label', 'type', 'subject', 'built']
+['label', 'type', 'topic', 'built']
+
+['label', 'type', 'subject', 'current season']
+['label', 'type', 'topic', 'season']
+
+['label', 'series', 'type', 'subject', 'title', 'label', 'year']
+['label', 'series', 'type', 'subject', 'title', 'label', 'year']
+
+['label', 'club', 'type', 'subject', 'l', 'BC', 'champion']
+['label', 'club', 'type', 'subject', 'l', 'bc', 'champion']
+
+['label', 'series', 'type', 'subject', 'previouslink', 'nextlink']
+['label', 'series', 'type', 'subject', 'previouslink', 'nextlink']
+
+['label', 'series', 'type', 'subject', 'previous', 'label', 'year']
+['label', 'series', 'type', 'subject', 'previous', 'label', 'year']
+
+['label', 'type', 'subject', 'next', 'coach', 'general manager']
+['label', 'type', 'subject', 'following', 'coach', 'general manager']
+
+['label', '2nd runner-up', 'type', 'subject', 'best attacking team', 'best defence team']
+['label', 'second', 'type', 'subject', 'best attacking team', 'best defence team']
+
+['label', 'type', 'subject', 'att']
+['label', 'type', 'topic', 'att']
+
+['label', 'type', 'subject', 'logo', 'image size']
+['label', 'type', 'subject', 'logo', 'image']
+
+['label', 'type', 'subject', 'colours']
+['label', 'type', 'topic', 'color']
+
+['label', 'type', 'subject', 'season', 'matches']
+['label', 'type', 'subject', 'season', 'match']
+
+['label', 'type', 'subject', 'ceotitle', 'attendance']
+['label', 'type', 'subject', 'ceotitle', 'attendance']
+
+['label', 'type', 'subject', 'captain', 'bg']
+['label', 'type', 'topic', 'captain', 'bg']
+
+['label', 'type', 'subject', 'mass', 'class', 'constell', 'epoch', 'appmag v']
+['label', 'type', 'subject', 'multitude', 'class', 'constell', 'era', 'appmag v']
+
+['label', 'type', 'subject', 'class', 'constell', 'epoch', 'appmag v']
+['label', 'type', 'subject', 'class', 'constell', 'era', 'appmag v']
+
+['label', 'type', 'subject', 'class', 'appmag v']
+['label', 'type', 'subject', 'class', 'five']
+
+['label', 'habitable zone', 'type', 'subject', 'kepler 22 Washington Foundation in 2006luminosity']
+['label', 'habitable', 'type', 'subject', 'kepler 22 Washington Foundation in 2006luminosity']
+
+['label', 'code', 'subject', 'address', 'type', 'line']
+['label', 'code', 'subject', 'address', 'type', 'line']
+
+['label', 'type', 'subject', 'label', 'auto', 'date']
+['label', 'character', 'subject', 'label', 'car', 'date']
+
+['label', 'type', 'subject', 'comment', 'date', 'label']
+['label', 'type', 'subject', 'remark', 'date', 'label']
+
+['label', 'type', 'label']
+['label', 'type', 'label']
+
+['label', 'series', 'type', 'subject', 'next', 'season', 'episode list', 'airdate', 'title']
+['label', 'series', 'type', 'subject', 'following', 'season', 'episode list', 'airdate', 'title']
+
+['label', 'production', 'type', 'subject', 'next', 'episode list', 'airdate', 'director']
+['label', 'production', 'type', 'subject', 'following', 'episode list', 'airdate', 'director']
+
+['label', 'type', 'subject', 'episode list', 'airdate', 'director']
+['label', 'character', 'subject', 'tilt', 'airdate', 'director']
+
+['label', 'Length', 'type', 'subject', 'episode list', 'airdate', 'director']
+['label', 'length', 'character', 'subject', 'tilt', 'airdate', 'director']
+
+['label', 'type', 'subject', 'next', 'airdate', 'director']
+['label', 'type', 'subject', 'following', 'airdate', 'director']
+
+['label', 'type', 'subject', 'season', 'episode list', 'director']
+['label', 'character', 'subject', 'season', 'tilt', 'director']
+
+['label', 'type', 'subject', 'editor', 'airdate', 'director']
+['label', 'character', 'subject', 'editor program', 'airdate', 'director']
+
+['label', 'Length', 'type', 'subject', 'director']
+['label', 'length', 'character', 'subject', 'director']
+
+['label', 'type', 'subject', 'airdate', 'director']
+['label', 'character', 'subject', 'airdate', 'director']
+
+['label', 'type', 'subject', 'airdate']
+['label', 'type', 'topic', 'airdate']
+
+['label', 'type', 'subject', 'bgcolour', 'first aired', 'LineColor', 'episode list', 'network', 'country']
+['label', 'type', 'subject', 'bgcolour', 'first aired', 'LineColor', 'episode list', 'network', 'state']
+
+['label', 'type', 'subject', 'first aired', 'bgcolor', 'align', 'episode list', 'country', 'direction']
+['label', 'type', 'capable', 'first aired', 'bgcolor', 'align', 'episode list', 'country', 'direction']
+
+['label', 'type', 'subject', 'last aired', 'bgcolour', 'first aired', 'EnglishTitle', 'network', 'num episodes', 'country']
+['label', 'type', 'subject', 'stopping point', 'bgcolour', 'first aired', 'EnglishTitle', 'network', 'episode', 'nation']
+
+['label', 'type', 'subject', 'num episodes', 'first aired', 'network', 'country', 'label']
+['label', 'type', 'subject', 'episode', 'beginning', 'network', 'nation', 'label']
+
+['label', 'type', 'subject', 'last aired', 'bgcolour', 'first aired', 'episode list', 'network', 'country']
+['label', 'type', 'subject', 'stopping point', 'bgcolour', 'first aired', 'episode list', 'network', 'state']
+
+['label', 'type', 'subject', 'DirectedBy', 'bgcolour', 'country']
+['label', 'type', 'subject', 'DirectedBy', 'bgcolour', 'state']
+
+['label', 'type', 'subject', 'bgcolour', 'episode list', 'network', 'country']
+['label', 'type', 'subject', 'bgcolour', 'episode list', 'network', 'state']
+
+['label', 'type', 'subject', 'bgcolour', 'first aired', 'show name', 'country', 'label']
+['label', 'type', 'subject', 'bgcolour', 'first aired', 'show name', 'state', 'label']
+
+['label', 'type', 'subject', 'episode list', 'country']
+['label', 'type', 'subject', 'list', 'state']
+
+['label', 'type', 'subject', 'bgcolour']
+['label', 'type', 'topic', 'bgcolour']
+
+['label', 'type', 'subject', 'Aux']
+['label', 'type', 'topic', 'Aux']
+
+['label', 'type', 'show name', 'network', 'language', 'genre', 'country', 'background']
+['label', 'type', 'display', 'network', 'linguistic process', 'genre', 'nation', 'background']
+
+['label', 'type', 'subject', 'creator', 'country']
+['label', 'type', 'subject', 'godhead', 'nation']
+
+['label', 'active years start date', 'type', 'active years end date', 'office']
+['label', 'active agent', 'character', 'active', 'office']
+
+['label', 'active years start date', 'type', 'office']
+['label', 'active agent', 'character', 'office']
+
+['label', 'type', 'subject', 'latNS', 'coordinates region', 'coordinates display']
+['label', 'type', 'subject', 'latNS', 'region', 'coordinates display']
+
+['label', 'area code', 'type', 'coordinates display']
+['label', 'area', 'type', 'display']
+
+['label', 'type', 'subject', 'blank info', 'blank name']
+['label', 'type', 'subject', 'information', 'name']
+
+['label', 'type', 'subject', 'country', 'colorcode']
+['label', 'type', 'subject', 'state', 'colorcode']
+
+['label', 'type', 'subject', 'manufacturer', 'formation', 'comment', 'operator', 'name', 'Caption', 'label']
+['label', 'type', 'subject', 'manufacturer', 'formation', 'remark', 'operator', 'name', 'subtitle', 'label']
+
+['label', 'type', 'subject', 'height', 'formation', 'family', 'lines', 'capacity']
+['label', 'type', 'subject', 'altitude', 'formation', 'class', 'line', 'capacity']
+
+['label', 'type', 'subject', 'manufacturer', 'lines', 'imagesize']
+['label', 'type', 'subject', 'manufacturer', 'line', 'imagesize']
+
+['label', 'type', 'subject', 'height', 'manufacturer', 'capacity', 'imagesize']
+['label', 'type', 'subject', 'acme', 'manufacturer', 'capacity', 'imagesize']
+
+['label', 'engine', 'type', 'subject', 'capacity', 'imagesize']
+['label', 'engine', 'type', 'subject', 'capacity', 'imagesize']
+
+['label', 'type', 'subject', 'formation', 'capacity', 'background']
+['label', 'type', 'subject', 'formation', 'capacity', 'background']
+
+['label', 'type', 'subject', 'formation']
+['label', 'type', 'subject', 'formation']
+
+['label', 'type', 'subject', 'manufacturer', 'imagesize']
+['label', 'type', 'subject', 'manufacturer', 'imagesize']
+
+['label', 'engine', 'type', 'subject', 'formation']
+['label', 'engine', 'character', 'subject', 'geological formation']
+
+['label', 'type', 'subject', 'capacity']
+['label', 'type', 'topic', 'capacity']
+
+['label', 'type', 'subject', 'construction']
+['label', 'type', 'subject', 'construction']
+
+['label', 'state', 'type', 'type', 'long', 'geometry', 'name', 'homepage', 'lat']
+['label', 'state', 'type', 'type', 'long', 'geometry', 'name', 'home page', 'latissimus dorsi']
+
+['label', 'Artery', 'type', 'subject', 'GraySubject', 'GrayPage']
+['label', 'artery', 'character', 'subject', 'GraySubject', 'GrayPage']
+
+['label', 'Latitude', 'type', 'subject', 'address', 'city', 'country', 'architect']
+['label', 'latitude', 'character', 'subject', 'address', 'city', 'area', 'architect']
+
+['label', 'construction cost', 'type', 'subject', 'broke ground', 'architect']
+['label', 'structure', 'type', 'subject', 'land', 'architect']
+
+['label', 'construction cost', 'type', 'subject', 'built', 'architect']
+['label', 'structure', 'type', 'subject', 'built', 'architect']
+
+['label', 'type', 'subject', 'address', 'architect', 'coordinates display']
+['label', 'character', 'subject', 'address', 'architect', 'display']
+
+['label', 'type', 'subject', 'Nickname']
+['label', 'type', 'subject', 'nickname']
+
+['label', 'type', 'subject', 'architect']
+['label', 'character', 'subject', 'architect']
+
+['label', 'type', 'subject', 'developer', 'genre', 'modes']
+['label', 'type', 'subject', 'developer', 'genre', 'manner']
+
+['label', 'developer', 'type', 'subject']
+['label', 'developer', 'character', 'subject']
+
+['label', 'blank name sec', 'type', 'subject', 'blank info sec', 'coordinates display']
+['label', 'name', 'type', 'topic', 'information', 'display']
+
+['label', 'type', 'subject', 'demographics1 info', 'demographics1 title', 'coordinates display']
+['label', 'type', 'subject', 'information', 'title', 'display']
+
+['label', 'type', 'subject', 'demographics1 info', 'demographics1 title', 'demographics type']
+['label', 'type', 'subject', 'information', 'title', 'type']
+
+['label', 'type', 'subject', 'coordinates format', 'coordinates display']
+['label', 'type', 'topic', 'coordinate', 'coordinate']
+
+['label', 'type', 'subject', 'image map']
+['label', 'type', 'topic', 'image']
+
+['label', 'type', 'area code type', 'subject']
+['label', 'type', 'area', 'topic']
+
+['label', 'type', 'subject', 'cost', 'designer']
+['label', 'character', 'subject', 'cost', 'architect']
+
+['label', 'type', 'subject', 'comment', 'depiction', 'homepage', 'label']
+['label', 'type', 'subject', 'remark', 'word picture', 'home page', 'label']
+
+['label', 'type', 'subject', 'action', 'automation', 'designer', 'mobility', 'design date', 'crew']
+['label', 'character', 'subject', 'natural process', 'automation', 'architect', 'mobility', 'design', 'crowd']
+
+['label', 'Length', 'type', 'subject', 'action', 'is ranged', 'feed', 'cartridge']
+['label', 'length', 'character', 'subject', 'natural process', 'is ranged', 'feed', 'magazine']
+
+['label', 'engine', 'type', 'subject', 'height', 'is vehicle', 'designer', 'crew']
+['label', 'engine', 'type', 'subject', 'acme', 'vehicle', 'architect', 'crowd']
+
+['label', 'type', 'subject', 'cartridge']
+['label', 'character', 'subject', 'cartridge']
+
+['label', 'type', 'subject', 'action', 'cartridge']
+['label', 'character', 'subject', 'natural process', 'cartridge']
+
+['label', 'current status', 'type', 'subject', 'type', 'commercial', 'language', 'owner']
+['label', 'status', 'type', 'subject', 'type', 'commercial', 'language', 'owner']
+
+['label', 'current status', 'type', 'subject', 'type', 'launch date', 'url', 'screenshot']
+['label', 'status', 'type', 'subject', 'type', 'date', 'url', 'screenshot']
+
+['label', 'type', 'subject', 'logo', 'launch date', 'owner', 'alexa']
+['label', 'character', 'subject', 'logo', 'date', 'owner', 'alexa']
+
+['label', 'current status', 'type', 'subject', 'language', 'launch date', 'owner']
+['label', 'status', 'type', 'subject', 'language', 'date', 'owner']
+
+['label', 'type', 'subject', 'logo', 'launch date']
+['label', 'type', 'subject', 'logo', 'date']
+
+['label', 'type', 'subject', 'commercial', 'language']
+['label', 'type', 'subject', 'commercial', 'language']
+
+['label', 'current status', 'type', 'subject', 'language', 'alexa']
+['label', 'current', 'type', 'subject', 'language', 'alexa']
+
+['label', 'type', 'subject', 'alexa']
+['label', 'type', 'topic', 'alexa']
+
+['label', 'current status', 'type', 'subject', 'commercial']
+['label', 'current status', 'type', 'subject', 'commercial']
+
+['label', 'type', 'subject', 'comment', 'type', 'Name', 'name', 'label', 'year']
+['label', 'type', 'subject', 'remark', 'type', 'name', 'name', 'label', 'year']
+
+['label', 'type', 'subject', 'Composer', 'company', 'creator']
+['label', 'character', 'subject', 'composer', 'caller', 'creator']
+
+['label', 'type', 'subject', 'developer']
+['label', 'character', 'subject', 'developer']
+
+['label', 'region', 'type', 'subject', 'State Party', 'link', 'id', 'Criteria']
+['label', 'region', 'type', 'subject', 'state', 'connection', 'id', 'standard']
+
+['label', 'homepage', 'region', 'type', 'id']
+['label', 'home page', 'region', 'type', 'id']
+
+['label', 'type', 'subject', 'venue', 'city', 'Caption']
+['label', 'character', 'subject', 'venue', 'city', 'caption']
+
+['label', 'type', 'subject', 'city']
+['label', 'character', 'subject', 'city']
+
+['label', 'type', 'subject', 'wwenlast']
+['label', 'type', 'topic', 'wwenlast']
+
+['label', 'type', 'subject', 'partial', 'retired', 'first', 'failed', 'last']
+['label', 'type', 'subject', 'partial', 'retired', 'first', 'failed', 'last']
+
+['label', 'type', 'subject', 'partial', 'first', 'ind', 'failed', 'last']
+['label', 'type', 'subject', 'partial', 'first', 'ind', 'failed', 'last']
+
+['label', 'type', 'subject', 'partial', 'first', 'failed', 'last']
+['label', 'type', 'subject', 'partial', 'first', 'failed', 'last']
+
+['label', 'type', 'subject', 'first', 'failed', 'ind', 'alias']
+['label', 'type', 'subject', 'first', 'failed', 'ind', 'alias']
+
+['label', 'type', 'subject', 'first', 'failed', 'last']
+['label', 'type', 'topic', 'beginning', 'failed', 'last']
+
+['label', 'type', 'subject', 'first', 'ind', 'failed']
+['label', 'type', 'topic', 'beginning', 'ind', 'failed']
+
+['label', 'type', 'subject', 'first', 'failed', 'retirements']
+['label', 'type', 'subject', 'beginning', 'failed', 'retirement']
+
+['label', 'type', 'subject', 'remarks', 'first', 'last']
+['label', 'type', 'subject', 'remark', 'beginning', 'stopping point']
+
+['label', 'type', 'subject', 'remarks']
+['label', 'type', 'subject', 'remark']
+

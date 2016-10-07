@@ -90,8 +90,9 @@ HEADER_ITEMS_STOP_LIST_FILE = os.path.join(
 )
 TABLE_HEADERS_FILE = os.path.join(
     DATA_FOLDER,
-    "TableHeaders.txt"
+    "TableHeadersDeduplicated.txt"
 )
 CACHE_FOLDER_LABELS = os.path.join(PROJECT_ROOT, "data", "cache", "labels")
 CACHE_FOLDER_ENTITIES = os.path.join(PROJECT_ROOT, "data", "cache", "entities")
-LOG_FILE = os.path.join(PROJECT_ROOT, "logs", "log.out")
+LOG_FOLDER = os.path.join(PROJECT_ROOT, "logs")
+LOG_FILE = os.path.join(LOG_FOLDER, "log.out")

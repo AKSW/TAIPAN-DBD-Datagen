@@ -7,6 +7,8 @@ import uuid
 from .config import CACHE_FOLDER_LABELS
 from .QueryExecutor import execute_query
 
+# TODO: get type labels from another knowledge base (LOV?)
+
 
 def get_label(subject_string):
     """Get label for subject_string from endpoint."""
