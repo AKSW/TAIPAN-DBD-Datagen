@@ -4,13 +4,12 @@ import cPickle as pickle  # pylint: disable=import-error
 import os
 import uuid
 
+from lovlabelfetcherpy.lovlabelfetcher import LOVLabelFetcher
 from .config import CACHE_FOLDER_LABELS
 from .QueryExecutor import execute_query
 
-# TODO: get type labels from another knowledge base (LOV?)
 
-
-def get_label(subject_string):
+def get_label_endpoint(subject_string):
     """Get label for subject_string from endpoint."""
     if not subject_string.startswith("http"):
         return subject_string
@@ -44,6 +43,22 @@ def get_label(subject_string):
             open(cached_label_file, "wb")
         )
         return label_uri
+
+
+def get_label_lov(subject_string):
+    lov_label_fetcher = LOVLabelFetcher()
+    return lov_label_fetcher.get_label(subject_string)
+
+
+def get_label(subject_string):
+    # TODO: test
+    # get the label from LOV by default
+    label = get_label_lov(subject_string)
+    if label is None:
+        # fall back to dbpedia SPARQL endpoint if does not exist
+        return get_label_endpoint(subject_string)
+    else:
+        return label
 
 
 def generate_label_for_uri(uri):
