@@ -46,11 +46,21 @@ def get_label_endpoint(subject_string):
 
 
 def get_label_lov(subject_string):
+    """
+    Retrieve URI label from LOV.
+
+    Use lovlabelfetcher library.
+    """
     lov_label_fetcher = LOVLabelFetcher()
     return lov_label_fetcher.get_label(subject_string)
 
 
 def get_label(subject_string):
+    """
+    Retrieve rdfs:label for a URI.
+
+    Default interface for getting URI rdfs:label.
+    """
     # TODO: test
     # get the label from LOV by default
     label = get_label_lov(subject_string)
