@@ -23,7 +23,13 @@ def get_header_synsets(header):
     for item in header:
         # if item is several words -- get synsets for all of those
         synsets = []
-        for subitem in _split_header_item(item):
+        subitems = []
+        # split by space first
+        subitems = _split_header_item_spaces(item)
+        # if empty split by camelcase
+        if len(subitems) == 1:
+            subitems = _split_header_item_camelcase(item)
+        for subitem in subitems:
             synsets.extend(wn.synsets(subitem, pos='n'))
         synsets_header_pack.append((item, synsets))
     return _prune_header_synsets(synsets_header_pack)
@@ -48,7 +54,20 @@ def _prune_header_synsets(synsets_header_pack):
     return pruned_synsets_header_pack
 
 
-def _split_header_item(string):
+def _split_header_item_camelcase(string):
+    _camel_case_regex = re.compile(r"([A-Z])")
+    _token_list = _camel_case_regex.split(string)
+
+    _word_list = [_token_list[0]]
+    for i, _ in enumerate(_token_list):
+        if i % 2 == 1:
+            word = "".join([_token_list[i], _token_list[i + 1]])
+            _word_list.append(word)
+
+    return _word_list
+
+
+def _split_header_item_spaces(string):
     """Clean and split header into an array of strings."""
     split_by_space = re.compile(r"[\s]+")
     header_items = split_by_space.split(string)
