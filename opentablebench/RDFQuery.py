@@ -8,6 +8,11 @@ from lovlabelfetcherpy.lovlabelfetcher import LOVLabelFetcher
 from .config import CACHE_FOLDER_LABELS
 from .QueryExecutor import execute_query
 
+# TODO: get label for yago categories, i.e. http://dbpedia.org/class/yago/Abstraction100002137
+# Need to look into http://www.w3.org/2002/07/owl#equivalentClass
+# and then lookup http://yago-knowledge.org/resource/wordnet_abstraction_100002137
+# make an index for this (yagolabelfetcherpy)
+
 
 def get_label_endpoint(subject_string):
     """Get label for subject_string from endpoint."""
