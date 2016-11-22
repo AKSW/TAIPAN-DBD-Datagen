@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 """EntitySelector -- getting entities from a SPARQL endpoint."""
 
-import cPickle as pickle  # pylint: disable=import-error
+import pickle
 import os
 import uuid
 
@@ -17,7 +17,7 @@ class EntitySelector(object):
         """Request number_of_entities entities for a given _class."""
         _class_hash = uuid.uuid5(
             uuid.NAMESPACE_URL,
-            _class.encode("utf-8")
+            _class
         )
         cached_entities_file = os.path.join(
             CACHE_FOLDER_ENTITIES,

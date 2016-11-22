@@ -1,9 +1,11 @@
 """Test verbalization for the header items."""
 
 import os
+
 from opentablebench.config import LOG_FOLDER
 from opentablebench.FileWriter import FileWriter
 import opentablebench.NLTKInterface as nltk
+
 import pytest
 
 

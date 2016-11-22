@@ -3,6 +3,7 @@
 import operator
 import random
 import re
+
 from nltk.corpus import wordnet as wn  # pylint: disable=import-error
 from palmettopy.palmetto import Palmetto  # pylint: disable=import-error
 
