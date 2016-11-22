@@ -1,7 +1,7 @@
 """RDFQuery queries the SPARQL endpoint."""
 
-import pickle
 import os
+import pickle
 import uuid
 
 from lovlabelfetcherpy.lovlabelfetcher import LOVLabelFetcher

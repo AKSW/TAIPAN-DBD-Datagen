@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
 """EntitySelector -- getting entities from a SPARQL endpoint."""
 
-import pickle
 import os
+import pickle
 import uuid
 
 from .config import CACHE_FOLDER_ENTITIES
