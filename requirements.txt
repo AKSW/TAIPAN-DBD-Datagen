@@ -8,3 +8,4 @@ tox
 flake8
 pytest
 pdbpp
+cPickle
