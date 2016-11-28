@@ -2,10 +2,10 @@ SPARQLWrapper
 requests
 palmettopy
 lovlabelfetcherpy
+yagolabelfetcherpy
 nltk
 numpy
 tox
 flake8
 pytest
 pdbpp
-cPickle

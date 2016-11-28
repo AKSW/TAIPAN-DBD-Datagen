@@ -5,16 +5,10 @@ import pickle
 import uuid
 
 from lovlabelfetcherpy.lovlabelfetcher import LOVLabelFetcher
+from yagolabelfetcherpy.yagolabelfetcher import YAGOLabelFetcher
 
 from .config import CACHE_FOLDER_LABELS
 from .QueryExecutor import execute_query
-
-# TODO: get label for yago categories,
-# i.e. http://dbpedia.org/class/yago/Abstraction100002137
-# Need to look into http://www.w3.org/2002/07/owl#equivalentClass
-# and then lookup
-# http://yago-knowledge.org/resource/wordnet_abstraction_100002137
-# make an index for this (yagolabelfetcherpy)
 
 
 def get_label_endpoint(subject_string):
@@ -63,17 +57,29 @@ def get_label_lov(subject_string):
     return lov_label_fetcher.get_label(subject_string)
 
 
+def get_label_yago(subject_string):
+    """
+    Retrieve URI label from YAGO.
+
+    Use yagolabelfetcher library.
+    """
+    yago_label_fetcher = YAGOLabelFetcher()
+    return yago_label_fetcher.get_label(subject_string)
+
+
 def get_label(subject_string):
     """
     Retrieve rdfs:label for a URI.
 
     Default interface for getting URI rdfs:label.
     """
-    # TODO: test
     # get the label from LOV by default
     label = get_label_lov(subject_string)
     if label is None:
-        # fall back to dbpedia SPARQL endpoint if does not exist
+        # get the label from YAGO
+        label = get_label_yago(subject_string)
+    elif label is None:
+        # fall back to dbpedia SPARQL endpoint
         return get_label_endpoint(subject_string)
     else:
         return label

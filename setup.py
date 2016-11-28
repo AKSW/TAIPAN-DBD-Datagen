@@ -12,6 +12,7 @@ setup(
         "nltk",
         "numpy",
         "palmettopy",
-        "lovlabelfetcherpy"
+        "lovlabelfetcherpy",
+        "yagolabelfetcherpy"
     ],
 )
