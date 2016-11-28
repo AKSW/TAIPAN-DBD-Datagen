@@ -42,7 +42,10 @@ def _prune_header_synsets(synsets_header_pack):
         distinct_synsets = set()
         for synset in synsets:
             synset_name = synset.name().split(".")[0]
-            distinct_synsets.add(synset_name)
+            # filtering complex synset (two and more words)
+            # palmetto can not handle them at the moment
+            if(synset_name.find("_") == -1):
+                distinct_synsets.add(synset_name)
         pruned_synsets = []
         while distinct_synsets:
             for synset in synsets:
@@ -72,9 +75,11 @@ def _split_header_item_spaces(string):
     """Clean and split header into an array of strings."""
     split_by_space = re.compile(r"[\s]+")
     header_items = split_by_space.split(string)
-    return map(
-        _filter_non_print_chars,
-        header_items
+    return list(
+        map(
+            _filter_non_print_chars,
+            header_items
+        )
     )
 
 
@@ -83,7 +88,57 @@ def _filter_non_print_chars(string):
     return pattern.sub('', string)
 
 
-def cluster_header():
+def _build_weighted_graph(synset_packs):
+    # get all document frequencies
+    # collect all terms
+    words = []
+    for i in range(0, len(synset_packs)):
+        for j in range(0, len(synset_packs[i][1])):
+            synset_packs[i][1][j] = synset_packs[i][1][j].name().split(".")[0]
+            words.append(synset_packs[i][1][j])
+        if len(synset_packs[i][1]) == 0:
+            synset_packs[i][1].append(synset_packs[i][0])
+            words.append(synset_packs[i][0])
+
+    palmetto = Palmetto()
+    doc_id_tuples = palmetto.get_df_for_words(words)
+    doc_id_tuples_dict = dict(doc_id_tuples)
+
+
+    # TODO: the below code is wrong
+    edges = []
+    for i in range(0, len(synset_packs)):
+        for this_word in synset_packs[i][1]:
+            for j in range(i + 1, len(synset_packs)):
+                edge = []
+                for that_word in synset_packs[j][1]:
+                    edge = (
+                        (
+                            this_word,
+                            that_word
+                        ),
+                        calculate_coherence(
+                            this_word,
+                            that_word,
+                            doc_id_tuples_dict
+                        )
+                    )
+                edges.append(edge)
+    import ipdb; ipdb.set_trace()
+
+
+def calculate_coherence(word_a, word_b, doc_id_tuples_dict):
+    corpus_size = 4264684
+    doc_id_set_a = doc_id_tuples_dict[word_a]
+    doc_id_set_b = doc_id_tuples_dict[word_b]
+    doc_id_set_ab = len(doc_id_set_a.intersection(doc_id_set_b))
+    coherence = \
+        (doc_id_set_ab * corpus_size) / \
+        (len(doc_id_set_a) * len(doc_id_set_b))
+    return coherence
+
+
+def cluster_header(header):
     """
     Find clusters for synsets_header_pack.
 
@@ -95,6 +150,11 @@ def cluster_header():
     In case when column has no synsets, it is not considered in clustering
     and just attached to the resulting cluster at the end of calculation.
     """
+    synset_packs = get_header_synsets(header)
+    synset_graph = _build_weighted_graph(synset_packs)
+
+            
+    import ipdb; ipdb.set_trace()
     pass
 
 
@@ -315,9 +375,9 @@ def load_test_data():
     table_headers_file = FileReader(TABLE_HEADERS_FILE)
     table_headers = table_headers_file.readlines()
     # pylint: disable=unnecessary-lambda
-    table_headers = map(lambda x: x.strip(), table_headers)
+    table_headers = list(map(lambda x: x.strip(), table_headers))
     # pylint: disable=eval-used
-    table_headers = map(lambda x: eval(x), table_headers)
+    table_headers = list(map(lambda x: eval(x), table_headers))
     return table_headers
 
 
