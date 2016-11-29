@@ -89,6 +89,16 @@ def _filter_non_print_chars(string):
 
 
 def _build_weighted_graph(synset_packs):
+    """
+        Build a weighted graph out of synset packs.
+
+        Return a list of tuples with weights such as:
+        [
+            [((item_a, item_b), 1.534), (item_a, item_c), 1.1234],
+            [((item_c, item_d), 1.34), (item_c, item_f), 1.24],
+            ...
+        ]
+    """
     # get all document frequencies
     # collect all terms
     words = []
@@ -104,15 +114,13 @@ def _build_weighted_graph(synset_packs):
     doc_id_tuples = palmetto.get_df_for_words(words)
     doc_id_tuples_dict = dict(doc_id_tuples)
 
-
-    # TODO: the below code is wrong
     edges = []
     for i in range(0, len(synset_packs)):
-        for this_word in synset_packs[i][1]:
-            for j in range(i + 1, len(synset_packs)):
-                edge = []
-                for that_word in synset_packs[j][1]:
-                    edge = (
+        for j in range(i + 1, len(synset_packs)):
+            edge = []
+            for that_word in synset_packs[j][1]:
+                for this_word in synset_packs[i][1]:
+                    edge_item = (
                         (
                             this_word,
                             that_word
@@ -123,8 +131,9 @@ def _build_weighted_graph(synset_packs):
                             doc_id_tuples_dict
                         )
                     )
-                edges.append(edge)
-    import ipdb; ipdb.set_trace()
+                    edge.append(edge_item)
+            edges.append(sorted(edge, key=lambda x: x[1], reverse=True))
+    return edges
 
 
 def calculate_coherence(word_a, word_b, doc_id_tuples_dict):
@@ -136,6 +145,45 @@ def calculate_coherence(word_a, word_b, doc_id_tuples_dict):
         (doc_id_set_ab * corpus_size) / \
         (len(doc_id_set_a) * len(doc_id_set_b))
     return coherence
+
+
+def pick_next_subgraph(synset_graph, state, edges_length_list):
+    pick = []
+    if state == []:
+        for edge in synset_graph:
+            pick.append(edge[0][0])
+            state.append(0)
+    else:
+        # Permutate the state
+        state = permutate_state(state, edges_length_list)
+
+        for index in range(0, len(state)):
+            pick.append(
+                synset_graph[index][state[index]][0]
+            )
+    return (pick, state)
+
+
+def permutate_state(state, edges_length_list):
+    # TODO: enable more sophisticated permutation based on edge score
+    while True:
+        index = random.randrange(len(state))
+        if state[index] + 1 != edges_length_list[index]:
+            break
+
+    state[index] += 1
+    return state
+
+
+def is_graph_converge(subgraph, number_of_nodes):
+    # TODO: write test for convergence
+    incoming_edges = set(map(lambda x: x[1], subgraph))
+    outcoming_edges = set(map(lambda x: x[0], subgraph))
+    all_nodes = incoming_edges.union(outcoming_edges)
+    if len(all_nodes) == number_of_nodes:
+        return True
+    else:
+        return False
 
 
 def cluster_header(header):
@@ -151,10 +199,18 @@ def cluster_header(header):
     and just attached to the resulting cluster at the end of calculation.
     """
     synset_packs = get_header_synsets(header)
+    number_of_nodes = len(synset_packs)
     synset_graph = _build_weighted_graph(synset_packs)
+    edges_length_list = list(map(lambda x: len(x), synset_graph))
+    (subgraph, state) = pick_next_subgraph(synset_graph, [], edges_length_list)
+    while not is_graph_converge(subgraph, number_of_nodes):
+        (subgraph, state) = pick_next_subgraph(
+            synset_graph,
+            state,
+            edges_length_list
+        )
+        import ipdb; ipdb.set_trace()
 
-            
-    import ipdb; ipdb.set_trace()
     pass
 
 

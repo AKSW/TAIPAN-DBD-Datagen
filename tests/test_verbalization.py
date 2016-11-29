@@ -36,6 +36,7 @@ def test_verbalize_header_naive(test_data, capsys):
     verbalization_log.close()
 
 
+@pytest.mark.skip(reason="Naive approach works fine. Skip for now.")
 def test_verbalize_header_palmetto(test_data, capsys):
     """Test verbalization from NLTKInterface."""
     verbalization_log_file = os.path.join(
