@@ -111,8 +111,13 @@ def build_weighted_graph(synset_packs):
             words.append(synset_packs[i][0])
 
     palmetto = Palmetto()
-    doc_id_tuples = palmetto.get_df_for_words(words)
-    doc_id_tuples_dict = dict(doc_id_tuples)
+    while True:
+        try:
+            doc_id_tuples = palmetto.get_df_for_words(words)
+            doc_id_tuples_dict = dict(doc_id_tuples)
+            break
+        except:
+            pass
 
     edges = []
     for i in range(0, len(synset_packs)):
@@ -278,7 +283,12 @@ def cluster_header_random(header):
     best_permutation = []
     while True:
         random_permutation = _pick_random_synset_permutation(synsets_pack)
-        coherence = palmetto.get_coherence(random_permutation)
+        while True:
+            try:
+                coherence = palmetto.get_coherence(random_permutation)
+                break
+            except:
+                pass
         window.append(
             (
                 random_permutation,
