@@ -88,7 +88,7 @@ def _filter_non_print_chars(string):
     return pattern.sub('', string)
 
 
-def _build_weighted_graph(synset_packs):
+def build_weighted_graph(synset_packs):
     """
         Build a weighted graph out of synset packs.
 
@@ -147,28 +147,48 @@ def calculate_coherence(word_a, word_b, doc_id_tuples_dict):
     return coherence
 
 
-def pick_next_subgraph(synset_graph, state, edges_length_list):
+def pick_next_subgraph(synset_graph, permutation):
     pick = []
-    if state == []:
-        for edge in synset_graph:
-            pick.append(edge[0][0])
-            state.append(0)
-    else:
-        # Permutate the state
-        state = permutate_state(state, edges_length_list)
+    for index in range(0, len(permutation)):
+        pick.append(
+            synset_graph[index][permutation[index]][0]
+        )
+    return pick
 
-        for index in range(0, len(state)):
-            pick.append(
-                synset_graph[index][state[index]][0]
-            )
-    return (pick, state)
+
+def build_permutation_tree(edges_length_list):
+    permutations = []
+    initial_value = [0] * len(edges_length_list)
+    r_edges_length_list = list(reversed(edges_length_list))
+    index = 0
+    while True:
+        if initial_value[index] < r_edges_length_list[index]:
+            if index == 0:
+                initial_value[index] += 1
+            else:
+                initial_value[index] += 1
+                for reset in range(0, index):
+                    initial_value[reset] = 0
+                index = 0
+            permutations.append(list(reversed(initial_value)))
+
+        if initial_value[index] >= r_edges_length_list[index]:
+            index += 1
+
+        if initial_value == r_edges_length_list:
+            break
+
+    return permutations
+
+
+def sort_permutation_tree(permutation_tree):
+    return sorted(permutation_tree, key=lambda x: sum(x))
 
 
 def permutate_state(state, edges_length_list):
-    # TODO: enable more sophisticated permutation based on edge score
     while True:
         index = random.randrange(len(state))
-        if state[index] + 1 != edges_length_list[index]:
+        if state[index] != edges_length_list[index]:
             break
 
     state[index] += 1
@@ -176,7 +196,6 @@ def permutate_state(state, edges_length_list):
 
 
 def is_graph_converge(subgraph, number_of_nodes):
-    # TODO: write test for convergence
     incoming_edges = set(map(lambda x: x[1], subgraph))
     outcoming_edges = set(map(lambda x: x[0], subgraph))
     all_nodes = incoming_edges.union(outcoming_edges)
@@ -199,19 +218,30 @@ def cluster_header(header):
     and just attached to the resulting cluster at the end of calculation.
     """
     synset_packs = get_header_synsets(header)
-    number_of_nodes = len(synset_packs)
-    synset_graph = _build_weighted_graph(synset_packs)
-    edges_length_list = list(map(lambda x: len(x), synset_graph))
-    (subgraph, state) = pick_next_subgraph(synset_graph, [], edges_length_list)
-    while not is_graph_converge(subgraph, number_of_nodes):
-        (subgraph, state) = pick_next_subgraph(
+    number_of_nodes = len(header)
+    synset_graph = build_weighted_graph(synset_packs)
+    edges_length_list = list(map(lambda x: len(x) - 1, synset_graph))
+    permutation_tree = build_permutation_tree(edges_length_list)
+    sorted_permutation_tree = sort_permutation_tree(permutation_tree)
+    for permutation in sorted_permutation_tree:
+        subgraph = pick_next_subgraph(
             synset_graph,
-            state,
-            edges_length_list
+            permutation
         )
-        import ipdb; ipdb.set_trace()
+        if is_graph_converge(subgraph, number_of_nodes):
+            break
 
-    pass
+    assert is_graph_converge(subgraph, number_of_nodes),\
+        "subgraph does not converge!"
+
+    _header = set(sum(list(map(lambda x: [x[0], x[1]], subgraph)), []))
+    new_header = []
+    for synset_pack in synset_packs:
+        (label, synsets) = synset_pack
+        for synset in synsets:
+            if synset.split(".")[0] in _header:
+                new_header.append(synset)
+    return new_header
 
 
 def cluster_header_random(header):
