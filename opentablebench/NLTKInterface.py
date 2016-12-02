@@ -220,7 +220,7 @@ def is_graph_converge(subgraph, number_of_nodes):
         return False
 
 
-def cluster_header(header):
+def cluster_header_palmetto(header):
     """
     Find clusters for synsets_header_pack.
 
@@ -231,6 +231,7 @@ def cluster_header(header):
     columns have > 2 synsets, there will be exactly 2 clusters.
     In case when column has no synsets, it is not considered in clustering
     and just attached to the resulting cluster at the end of calculation.
+    This calculation is using graph algorithm.
     """
     synset_packs = get_header_synsets(header)
     number_of_nodes = len(header)
@@ -306,9 +307,12 @@ def cluster_header_random(header):
 
 def _pick_random_synset_permutation(synsets_pack):
     permutation = []
-    for (_, synsets) in synsets_pack:
-        _random_element = random.choice(synsets).name().split(".")[0]
-        permutation.append(_random_element)
+    for (label, synsets) in synsets_pack:
+        if synsets == []:
+            permutation.append(label)
+        else:
+            _random_element = random.choice(synsets).name().split(".")[0]
+            permutation.append(_random_element)
 
     return permutation
 
@@ -347,7 +351,7 @@ def cluster_header_naive(header):
         )
 
         shortest_path = sorted(shortest_path, key=lambda x: x[1])
-        verbalized_header = map(lambda x: x[0], shortest_path)
+        verbalized_header = list(map(lambda x: x[0], shortest_path))
         verbalized_headers.append(
             (
                 verbalized_header,
@@ -438,13 +442,8 @@ def verbalize_header_random(header):
 
 
 def verbalize_header_palmetto(header):
-    """Verbalize header using random algorithm."""
-    return cluster_header(header)
-
-
-def verbalize_header(header):
-    """Verbalize header using default algorithm."""
-    return verbalize_header_random(header)
+    """Verbalize header using graph algorithm."""
+    return cluster_header_palmetto(header)
 
 
 def _find_closest_synsets(synsets_1, synsets_2, index):

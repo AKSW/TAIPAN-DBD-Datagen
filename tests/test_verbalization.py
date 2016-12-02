@@ -15,7 +15,6 @@ def test_data():
     return nltk.load_test_data()
 
 
-@pytest.mark.skip(reason="Naive approach works fine. Skip for now.")
 def test_verbalize_header_naive(test_data, capsys):
     """Test naive verbalization from NLTKInterface."""
     verbalization_log_file = os.path.join(
@@ -36,7 +35,26 @@ def test_verbalize_header_naive(test_data, capsys):
     verbalization_log.close()
 
 
-@pytest.mark.skip(reason="Naive approach works fine. Skip for now.")
+def test_verbalize_header_random(test_data, capsys):
+    """Test verbalization from NLTKInterface."""
+    verbalization_log_file = os.path.join(
+        LOG_FOLDER,
+        "verbalization_random.logs"
+    )
+    verbalization_log = FileWriter(verbalization_log_file)
+
+    empty_line = "\n"
+    for header in test_data:
+        verbalization_log.write(repr(header))
+        verbalization_log.write(empty_line)
+        verbalized_header = nltk.cluster_header_random(header)
+        verbalization_log.write(repr(verbalized_header))
+        verbalization_log.write(empty_line)
+        verbalization_log.write(empty_line)
+
+    verbalization_log.close()
+
+
 def test_verbalize_header_palmetto(test_data, capsys):
     """Test verbalization from NLTKInterface."""
     verbalization_log_file = os.path.join(
