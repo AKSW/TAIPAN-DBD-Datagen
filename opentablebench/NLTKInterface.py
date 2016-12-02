@@ -44,7 +44,7 @@ def _prune_header_synsets(synsets_header_pack):
             synset_name = synset.name().split(".")[0]
             # filtering complex synset (two and more words)
             # palmetto can not handle them at the moment
-            if(synset_name.find("_") == -1):
+            if synset_name.find("_") == -1:
                 distinct_synsets.add(synset_name)
         pruned_synsets = []
         while distinct_synsets:
@@ -90,14 +90,14 @@ def _filter_non_print_chars(string):
 
 def build_weighted_graph(synset_packs):
     """
-        Build a weighted graph out of synset packs.
+    Build a weighted graph out of synset packs.
 
-        Return a list of tuples with weights such as:
-        [
-            [((item_a, item_b), 1.534), (item_a, item_c), 1.1234],
-            [((item_c, item_d), 1.34), (item_c, item_f), 1.24],
-            ...
-        ]
+    Return a list of tuples with weights such as:
+    [
+        [((item_a, item_b), 1.534), (item_a, item_c), 1.1234],
+        [((item_c, item_d), 1.34), (item_c, item_f), 1.24],
+        ...
+    ]
     """
     # get all document frequencies
     # collect all terms
@@ -137,6 +137,7 @@ def build_weighted_graph(synset_packs):
 
 
 def calculate_coherence(word_a, word_b, doc_id_tuples_dict):
+    """Calculate coherence between word_a and word_b."""
     corpus_size = 4264684
     doc_id_set_a = doc_id_tuples_dict[word_a]
     doc_id_set_b = doc_id_tuples_dict[word_b]
@@ -148,6 +149,7 @@ def calculate_coherence(word_a, word_b, doc_id_tuples_dict):
 
 
 def pick_next_subgraph(synset_graph, permutation):
+    """Pick next subgraph from permutation list."""
     pick = []
     for index in range(0, len(permutation)):
         pick.append(
@@ -157,6 +159,17 @@ def pick_next_subgraph(synset_graph, permutation):
 
 
 def build_permutation_tree(edges_length_list):
+    """
+    Build permutation tree.
+
+    Given list [1,2,1] it will produce output such as:
+    [0,0,0]
+    [0,0,1]
+    [0,1,0]
+    [0,1,1]
+    ...
+    [1,2,1]
+    """
     permutations = []
     initial_value = [0] * len(edges_length_list)
     r_edges_length_list = list(reversed(edges_length_list))
@@ -182,20 +195,22 @@ def build_permutation_tree(edges_length_list):
 
 
 def sort_permutation_tree(permutation_tree):
+    """
+    Sort permutation tree.
+
+    Sorting by sum of all elements.
+    """
     return sorted(permutation_tree, key=lambda x: sum(x))
 
 
-def permutate_state(state, edges_length_list):
-    while True:
-        index = random.randrange(len(state))
-        if state[index] != edges_length_list[index]:
-            break
-
-    state[index] += 1
-    return state
-
-
 def is_graph_converge(subgraph, number_of_nodes):
+    """
+    Check if graph converge.
+
+    Basically check if graph is a complete graph,
+    as it is a required condition to have a valid header
+    on output.
+    """
     incoming_edges = set(map(lambda x: x[1], subgraph))
     outcoming_edges = set(map(lambda x: x[0], subgraph))
     all_nodes = incoming_edges.union(outcoming_edges)
@@ -237,7 +252,7 @@ def cluster_header(header):
     _header = set(sum(list(map(lambda x: [x[0], x[1]], subgraph)), []))
     new_header = []
     for synset_pack in synset_packs:
-        (label, synsets) = synset_pack
+        (_, synsets) = synset_pack
         for synset in synsets:
             if synset.split(".")[0] in _header:
                 new_header.append(synset)
@@ -424,9 +439,7 @@ def verbalize_header_random(header):
 
 def verbalize_header_palmetto(header):
     """Verbalize header using random algorithm."""
-    # TODO: https://goo.gl/d5pFtY
-    # TODO: http://palmetto.aksw.org/palmetto-webapp/service/df?words=cat+dog
-    return cluster_header_random(header)
+    return cluster_header(header)
 
 
 def verbalize_header(header):

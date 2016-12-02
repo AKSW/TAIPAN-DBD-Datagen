@@ -1,9 +1,5 @@
 """Test methods from NLTKInterface package."""
 
-import os
-
-from opentablebench.config import LOG_FOLDER
-from opentablebench.FileWriter import FileWriter
 import opentablebench.NLTKInterface as nltk
 
 import pytest
@@ -16,6 +12,7 @@ def header():
 
 
 def test_get_header_synsets(header):
+    """Test get_header_synsets method."""
     synset_packs = nltk.get_header_synsets(header)
     for index, synset_pack in enumerate(synset_packs):
         (label, synsets) = synset_pack
@@ -31,6 +28,7 @@ def synset_packs():
 
 
 def test_build_weighted_graph(synset_packs):
+    """Test build_weigthed_graph method."""
     synset_graph = nltk.build_weighted_graph(synset_packs)
     number_of_nodes = len(synset_packs)
     number_of_edges = number_of_nodes * (number_of_nodes - 1) / 2
@@ -47,19 +45,13 @@ def synset_graph():
     return nltk.build_weighted_graph(synset_packs)
 
 
-def test_pick_first_subgraph(synset_graph):
-    edges_length_list = list(map(lambda x: len(x), synset_graph))
-    (subgraph, state) = nltk.pick_next_subgraph(
-        synset_graph,
-        [],
-        edges_length_list
-    )
-    assert len(subgraph) == len(edges_length_list)
-
-
 @pytest.fixture
 def subgraph_does_not_converge():
-    """Load synset subgraph fixture."""
+    """
+    Load synset subgraph fixture.
+
+    This subgraph is not complete.
+    """
     return [('label', 'type'),
             ('label', 'topic'),
             ('label', 'homepage'),
@@ -74,7 +66,11 @@ def subgraph_does_not_converge():
 
 @pytest.fixture
 def subgraph_converge():
-    """Load synset subgraph fixture."""
+    """
+    Load synset subgraph fixture.
+
+    This subgraph is complete.
+    """
     return [('label', 'type'),
             ('label', 'subject'),
             ('label', 'homepage'),
@@ -88,22 +84,34 @@ def subgraph_converge():
 
 
 def test_is_graph_converge_fail(subgraph_does_not_converge):
+    """
+    Test is_graph_converge method.
+
+    Subgraph should not converge.
+    """
     is_converge = nltk.is_graph_converge(subgraph_does_not_converge, 5)
     assert is_converge is False
 
 
 def test_is_graph_converge_pass(subgraph_converge):
+    """
+    Test is_graph_converge method.
+
+    Subgraph should converge.
+    """
     is_converge = nltk.is_graph_converge(subgraph_converge, 5)
     assert is_converge is True
 
 
 def test_build_permutation_tree():
+    """Test build_permutation_tree method."""
     _list = [1, 2, 4]
     permutations = nltk.build_permutation_tree(_list)
     assert len(permutations) == 29
 
 
 def test_sort_permutation_tree():
+    """Test sort_permutation_tree method."""
     _list = [1, 2, 1]
     permutations = nltk.build_permutation_tree(_list)
     sorted_permutations = nltk.sort_permutation_tree(permutations)
@@ -119,30 +127,3 @@ def test_sort_permutation_tree():
               [1, 2, 0],
               [1, 2, 1]]
     assert result == sorted_permutations
-
-
-def test_pick_subgraph(synset_graph, capsys):
-    log_file = os.path.join(LOG_FOLDER, "graph.log")
-    log = FileWriter(log_file)
-
-    edges_length_list = list(map(lambda x: len(x) - 1, synset_graph))
-    (subgraph, state) = nltk.pick_next_subgraph(
-        synset_graph,
-        [],
-        edges_length_list
-    )
-    while True:
-        if nltk.is_graph_converge(subgraph, 5):
-            break
-        (subgraph, state) = nltk.pick_next_subgraph(
-            synset_graph,
-            state,
-            edges_length_list
-        )
-        log.write(repr(subgraph))
-        log.write("\n")
-        log.write(repr(state))
-        log.write("\n")
-        log.write("\n")
-        if state == edges_length_list:
-            break
