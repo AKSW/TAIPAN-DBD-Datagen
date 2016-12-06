@@ -111,13 +111,8 @@ def build_weighted_graph(synset_packs):
             words.append(synset_packs[i][0])
 
     palmetto = Palmetto()
-    while True:
-        try:
-            doc_id_tuples = palmetto.get_df_for_words(words)
-            doc_id_tuples_dict = dict(doc_id_tuples)
-            break
-        except:
-            pass
+    doc_id_tuples = palmetto.get_df_for_words(words)
+    doc_id_tuples_dict = dict(doc_id_tuples)
 
     edges = []
     for i in range(0, len(synset_packs)):
@@ -161,51 +156,6 @@ def pick_next_subgraph(synset_graph, permutation):
             synset_graph[index][permutation[index]][0]
         )
     return pick
-
-
-def build_permutation_tree(edges_length_list):
-    """
-    Build permutation tree.
-
-    Given list [1,2,1] it will produce output such as:
-    [0,0,0]
-    [0,0,1]
-    [0,1,0]
-    [0,1,1]
-    ...
-    [1,2,1]
-    """
-    permutations = []
-    initial_value = [0] * len(edges_length_list)
-    r_edges_length_list = list(reversed(edges_length_list))
-    index = 0
-    while True:
-        if initial_value[index] < r_edges_length_list[index]:
-            if index == 0:
-                initial_value[index] += 1
-            else:
-                initial_value[index] += 1
-                for reset in range(0, index):
-                    initial_value[reset] = 0
-                index = 0
-            permutations.append(list(reversed(initial_value)))
-
-        if initial_value[index] >= r_edges_length_list[index]:
-            index += 1
-
-        if initial_value == r_edges_length_list:
-            break
-
-    return permutations
-
-
-def sort_permutation_tree(permutation_tree):
-    """
-    Sort permutation tree.
-
-    Sorting by sum of all elements.
-    """
-    return sorted(permutation_tree, key=lambda x: sum(x))
 
 
 def is_graph_converge(subgraph, number_of_nodes):
@@ -283,12 +233,7 @@ def cluster_header_random(header):
     best_permutation = []
     while True:
         random_permutation = _pick_random_synset_permutation(synsets_pack)
-        while True:
-            try:
-                coherence = palmetto.get_coherence(random_permutation)
-                break
-            except:
-                pass
+        coherence = palmetto.get_coherence(random_permutation)
         window.append(
             (
                 random_permutation,
@@ -337,6 +282,7 @@ def cluster_header_naive(header):
     """
     synsets_pack = get_header_synsets(header)
     (minimal_column, minimum_synsets) = _pick_minimal_column(synsets_pack)
+    import ipdb; ipdb.set_trace()
 
     # fix the minimum column
     verbalized_headers = []

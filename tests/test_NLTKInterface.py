@@ -101,29 +101,3 @@ def test_is_graph_converge_pass(subgraph_converge):
     """
     is_converge = nltk.is_graph_converge(subgraph_converge, 5)
     assert is_converge is True
-
-
-def test_build_permutation_tree():
-    """Test build_permutation_tree method."""
-    _list = [1, 2, 4]
-    permutations = nltk.build_permutation_tree(_list)
-    assert len(permutations) == 29
-
-
-def test_sort_permutation_tree():
-    """Test sort_permutation_tree method."""
-    _list = [1, 2, 1]
-    permutations = nltk.build_permutation_tree(_list)
-    sorted_permutations = nltk.sort_permutation_tree(permutations)
-    result = [[0, 0, 1],
-              [0, 1, 0],
-              [1, 0, 0],
-              [0, 1, 1],
-              [0, 2, 0],
-              [1, 0, 1],
-              [1, 1, 0],
-              [0, 2, 1],
-              [1, 1, 1],
-              [1, 2, 0],
-              [1, 2, 1]]
-    assert result == sorted_permutations
