@@ -47,3 +47,23 @@ def sort_permutation_tree(permutations):
     This is required function for build_permutation_tree
     """
     return sorted(permutations, key=lambda x: sum(x))
+
+
+def walk_tree(tree):
+    pass
+
+
+def distribute_weight(weight, number_of_buckets):
+    if weight == 0 and number_of_buckets == 0:
+        raise Exception("number of buckets can not be 0")
+
+    i = weight
+    j = 0
+    while i:
+        zero_tuple = (0,) * number_of_buckets
+
+        i = i - 1
+        j = j + 1
+
+def number_to_sum(number, sum_length):
+    pass
