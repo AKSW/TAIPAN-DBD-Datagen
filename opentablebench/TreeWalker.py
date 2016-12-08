@@ -55,15 +55,33 @@ def walk_tree(tree):
 
 def distribute_weight(weight, number_of_buckets):
     if weight == 0 and number_of_buckets == 0:
-        raise Exception("number of buckets can not be 0")
+        raise Exception("Can not distribute 0 weight in 0 buckets")
 
-    i = weight
-    j = 0
-    while i:
-        zero_tuple = (0,) * number_of_buckets
+    if number_of_buckets == 1:
+        return set([(weight)])
 
-        i = i - 1
-        j = j + 1
+    if weight == 0:
+        return set([tuple([0]*number_of_buckets)])
 
-def number_to_sum(number, sum_length):
-    pass
+    sums = set()
+
+    state = [0] * number_of_buckets
+    state[0] = weight
+    new_states = [tuple(state)]
+    sums.add(tuple(state))
+    while True:
+        states = list(set(new_states))
+        sums_before_evaluation = len(sums)
+        while states:
+            state = list(states.pop())
+            state[0] -= 1
+            for i in range(1, number_of_buckets):
+                intermediate_state = state[:]
+                intermediate_state[i] += 1
+                intermediate_state = sorted(intermediate_state, reverse=True)
+                sums.add(tuple(intermediate_state))
+                new_states.append(tuple(intermediate_state))
+        sums_after_evaluation = len(sums)
+        if sums_before_evaluation == sums_after_evaluation:
+            break
+    return sums
