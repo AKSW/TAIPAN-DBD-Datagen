@@ -95,22 +95,25 @@ def is_permutation_fit_buckets(permutation, buckets):
     return True
 
 
-def distribute_weight_recursive(n, m):
-    """
-        Distribute weights recursively.
-
-        Implementation provided by Micha Hoffmann.
-        Can return duplicate distributions.
-    """
+def _distribute_weight_recursive(n, m):
     if m == 0:
         yield [n]
     if n == 0:
         yield m*[0]
     for i in range(n):
-        for l in distribute_weight_recursive(i, m-1):
+        for l in _distribute_weight_recursive(i, m-1):
             res = [n-i] + l
             try:
                 if n-i >= l[0] and len(res) == m:
                     yield res
             except IndexError:
                 continue
+
+def distribute_weight_recursive(n, m):
+    """
+        Distribute weights recursively.
+
+        Implementation provided by Micha Hoffmann.
+    """
+    for partition in _distribute_weight_recursive(n, m+1):
+        yield partition[:-1]

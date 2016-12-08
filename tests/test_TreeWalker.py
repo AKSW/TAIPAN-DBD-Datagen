@@ -66,7 +66,6 @@ def test_get_distribution_permutations():
     assert (0,0,0,3) in permutations
 
 
-@pytest.mark.skip(reason="Does not work as I like it")
 def test_distribute_weight_recursive():
     assert [[]] == list(tw.distribute_weight_recursive(0, 0))
     assert [[0]] == list(tw.distribute_weight_recursive(0, 1))
@@ -97,8 +96,8 @@ def test_distribute_weight_recursive():
         [4,1,1,1,1],
         [3,3,2,0,0],
         [3,3,1,1,0],
-        [3,2,1,1,1],
         [3,2,2,1,0],
+        [3,2,1,1,1],
         [2,2,2,2,0],
         [2,2,2,1,1],
         ] == list(tw.distribute_weight_recursive(8, 5))
