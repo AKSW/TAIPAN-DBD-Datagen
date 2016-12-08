@@ -7,6 +7,8 @@ import re
 from nltk.corpus import wordnet as wn  # pylint: disable=import-error
 from palmettopy.palmetto import Palmetto  # pylint: disable=import-error
 
+from .TreeWalker import distribute_weight, get_distribution_permutations, \
+    sort_permutation_tree, build_permutation_tree, is_permutation_fit_buckets
 from .config import TABLE_HEADERS_FILE
 from .FileReader import FileReader
 from .Logger import get_logger
@@ -193,7 +195,10 @@ def cluster_header_palmetto(header):
     synset_graph = build_weighted_graph(synset_packs)
     edges_length_list = list(map(lambda x: len(x) - 1, synset_graph))
     permutation_tree = build_permutation_tree(edges_length_list)
+
     sorted_permutation_tree = sort_permutation_tree(permutation_tree)
+    import ipdb; ipdb.set_trace()
+
     for permutation in sorted_permutation_tree:
         subgraph = pick_next_subgraph(
             synset_graph,
@@ -204,6 +209,55 @@ def cluster_header_palmetto(header):
 
     assert is_graph_converge(subgraph, number_of_nodes),\
         "subgraph does not converge!"
+
+    _header = set(sum(list(map(lambda x: [x[0], x[1]], subgraph)), []))
+    new_header = []
+    for synset_pack in synset_packs:
+        (_, synsets) = synset_pack
+        for synset in synsets:
+            if synset.split(".")[0] in _header:
+                new_header.append(synset)
+    return new_header
+
+
+def get_max_subgraph(max_weight, number_of_nodes,\
+    edges_length_list, synset_graph):
+    for weight in range(0, max_weight):
+        distributions = sorted(distribute_weight(weight, number_of_nodes))
+        while distributions:
+            distribution = distributions.pop()
+            for permutation in get_distribution_permutations(distribution):
+                if is_permutation_fit_buckets(permutation, edges_length_list):
+                    subgraph = pick_next_subgraph(
+                        synset_graph,
+                        permutation
+                    )
+                    if is_graph_converge(subgraph, number_of_nodes):
+                        return subgraph
+    raise Exception("subgraph does not converge!")
+
+
+def cluster_header_palmetto_walker(header):
+    """
+    Find clusters for synsets_header_pack.
+
+    Use optimized distribute_weight and get_distribution_permutations
+    functions to walk the tree.
+    """
+    synset_packs = get_header_synsets(header)
+    number_of_nodes = len(header)
+    synset_graph = build_weighted_graph(synset_packs)
+    edges_length_list = list(map(lambda x: len(x) - 1, synset_graph))
+    permutation_tree = build_permutation_tree(edges_length_list)
+
+    max_weight = sum(edges_length_list)
+
+    subgraph = get_max_subgraph(
+        max_weight,
+        number_of_nodes,
+        edges_length_list,
+        synset_graph
+    )
 
     _header = set(sum(list(map(lambda x: [x[0], x[1]], subgraph)), []))
     new_header = []
@@ -399,7 +453,7 @@ def verbalize_header_random(header):
 
 def verbalize_header_palmetto(header):
     """Verbalize header using graph algorithm."""
-    return cluster_header_palmetto(header)
+    return cluster_header_palmetto_walker(header)
 
 
 def _find_closest_synsets(synsets_1, synsets_2, index):

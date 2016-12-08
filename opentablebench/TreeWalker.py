@@ -1,5 +1,6 @@
 """TreeWalker contains functions for walking a tree. :)"""
 
+import itertools
 
 def build_permutation_tree(tree):
     """
@@ -49,8 +50,8 @@ def sort_permutation_tree(permutations):
     return sorted(permutations, key=lambda x: sum(x))
 
 
-def walk_tree(tree):
-    pass
+def get_distribution_permutations(distribution):
+    return itertools.permutations(list(distribution))
 
 
 def distribute_weight(weight, number_of_buckets):
@@ -85,3 +86,31 @@ def distribute_weight(weight, number_of_buckets):
         if sums_before_evaluation == sums_after_evaluation:
             break
     return sums
+
+
+def is_permutation_fit_buckets(permutation, buckets):
+    for i in range(0, len(permutation)):
+        if permutation[i] > buckets[i]:
+            return False
+    return True
+
+
+def distribute_weight_recursive(n, m):
+    """
+        Distribute weights recursively.
+
+        Implementation provided by Micha Hoffmann.
+        Can return duplicate distributions.
+    """
+    if m == 0:
+        yield [n]
+    if n == 0:
+        yield m*[0]
+    for i in range(n):
+        for l in distribute_weight_recursive(i, m-1):
+            res = [n-i] + l
+            try:
+                if n-i >= l[0] and len(res) == m:
+                    yield res
+            except IndexError:
+                continue
