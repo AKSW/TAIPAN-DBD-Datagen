@@ -15,9 +15,15 @@ from opentablebench.NLTKInterface import verbalize_header_palmetto
 #from opentablebench.NLTKInterface import verbalize_header_naive
 from opentablebench.NLTKInterface import load_test_data
 headers = load_test_data()
-for i in range(0, 5):
-    header = headers[i]
+for i, header in enumerate(headers):
+    if i > 5:
+        break
     print(header)
     print(verbalize_header_palmetto(header))
+    print("")
 
-import ipdb; ipdb.set_trace()
+#from opentablebench.TreeWalker import distribute_weight_recursive
+#for l in distribute_weight_recursive(60,30):
+#    pass
+
+#import ipdb; ipdb.set_trace()

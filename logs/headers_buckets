@@ -1,0 +1,2391 @@
+['label', 'type', 'subject', 'homepage', 'foundation']
+[1, 3, 0, 2, 7, 1, 5, 3, 11, 2]
+
+['label', 'type', 'subject', 'founder', 'foundation', 'area served']
+[1, 3, 1, 2, 1, 7, 3, 5, 3, 7, 11, 7, 5, 3, 5]
+
+['label', 'type', 'subject', 'assets']
+[1, 3, 1, 7, 3, 7]
+
+['label', 'type', 'subject']
+[1, 3, 7]
+
+['label', 'players', 'type', 'subject', 'manufacturer', 'image caption', 'ages']
+[2, 1, 3, 0, 8, 0, 5, 11, 2, 26, 2, 7, 1, 17, 1, 3, 35, 3, 8, 0, 8]
+
+['label', 'type', 'subject', 'designer', 'ages']
+[1, 3, 2, 0, 7, 5, 1, 11, 3, 2]
+
+['label', 'start year of sales', 'end year of sales', 'model', 'type']
+[5, 5, 2, 1, 35, 17, 11, 17, 11, 5]
+
+['label', 'start year of sales', 'model', 'type']
+[5, 2, 1, 17, 11, 5]
+
+['label', 'type', 'year']
+[1, 1, 3]
+
+['label', 'type']
+[1]
+
+['label', 'region', 'type', 'subject', 'Name', 'language', 'name', 'gender', 'label']
+[1, 1, 3, 0, 3, 0, 1, 0, 3, 7, 1, 7, 1, 3, 1, 7, 1, 7, 1, 3, 1, 3, 15, 3, 7, 3, 3, 0, 1, 0, 3, 7, 3, 1, 0, 1]
+
+['label', 'type', 'subject', 'comment', 'has abstract', 'label']
+[1, 3, 2, 1, 0, 7, 5, 3, 1, 11, 7, 3, 5, 2, 1]
+
+['label', 'origin', 'region', 'type', 'subject', 'name', 'gender', 'label', 'related names']
+[2, 1, 1, 3, 0, 1, 0, 0, 5, 5, 11, 2, 5, 2, 2, 3, 7, 1, 3, 1, 1, 7, 1, 3, 1, 1, 3, 7, 3, 3, 1, 0, 0, 1, 1, 0]
+
+['label', 'origin', 'region', 'type', 'footnotes', 'gender', 'meaning', 'pronunciation']
+[2, 1, 1, 0, 1, 0, 0, 5, 5, 2, 5, 2, 2, 3, 1, 3, 1, 1, 1, 3, 1, 1, 1, 0, 0, 1, 1, 0]
+
+['label', 'p', 'type', 'subject', 'hangul', 'mr', 'C', 'rr']
+[1, 1, 3, 0, 0, 5, 0, 3, 7, 1, 1, 11, 1, 7, 1, 1, 11, 1, 3, 3, 23, 3, 0, 5, 0, 5, 0, 5]
+
+['label', 'origin', 'type', 'subject', 'gender', 'meaning', 'related names']
+[2, 1, 3, 1, 0, 0, 5, 11, 5, 2, 2, 7, 3, 1, 1, 7, 3, 3, 1, 1, 0]
+
+['label', 'type', 'subject', 'language', 'gender']
+[1, 3, 3, 1, 7, 7, 3, 15, 7, 7]
+
+['label', 'region', 'type', 'subject', 'meaning', 'label']
+[1, 1, 3, 0, 0, 3, 7, 1, 1, 7, 1, 1, 3, 3, 0]
+
+['label', 'type', 'subject', 'gender', 'meaning', 'imagesize']
+[1, 3, 1, 0, 0, 7, 3, 1, 1, 7, 3, 3, 1, 1, 0]
+
+['label', 'type', 'subject', 'C']
+[1, 3, 5, 7, 11, 23]
+
+['label', 'type', 'birth place', 'birth place', 'birth date']
+[1, 9, 9, 3, 19, 19, 7, 99, 39, 39]
+
+['label', 'birth place', 'type', 'death place', 'death date', 'death place']
+[9, 1, 8, 2, 8, 19, 89, 29, 89, 17, 5, 17, 26, 80, 26]
+
+['label', 'birth place', 'type', 'subject', 'birth place', 'birth date']
+[9, 1, 3, 9, 3, 19, 39, 99, 39, 7, 19, 7, 39, 15, 39]
+
+['label', 'birth place', 'type', 'birth place', 'birth date']
+[9, 1, 9, 3, 19, 99, 39, 19, 7, 39]
+
+['label', 'birth place', 'type', 'subject', 'birth place']
+[9, 1, 3, 9, 19, 39, 99, 7, 19, 39]
+
+['label', 'type', 'subject', 'birth date']
+[1, 3, 3, 7, 7, 15]
+
+['label', 'birth place', 'type', 'birth date']
+[9, 1, 3, 19, 39, 7]
+
+['label', 'birth place', 'type', 'subject']
+[9, 1, 3, 19, 39, 7]
+
+['label', 'birth place', 'type']
+[9, 1, 19]
+
+['label', 'birth place', 'type', 'birth place']
+[9, 1, 9, 19, 99, 19]
+
+['label', 'type', 'death place']
+[1, 8, 17]
+
+['label', 'country', 'type']
+[3, 1, 7]
+
+['label', 'type', 'subject', 'image caption', 'entered service', 'decay date']
+[1, 3, 8, 4, 1, 7, 17, 9, 3, 35, 19, 7, 44, 17, 9]
+
+['label', 'construction cost', 'type', 'built', 'capacity']
+[3, 1, 0, 2, 7, 3, 11, 1, 5, 2]
+
+['label', 'type', 'subject', 'wind site elevation']
+[1, 3, 6, 7, 13, 27]
+
+['label', 'type', 'subject', 'founder', 'founded', 'country']
+[1, 3, 1, 0, 3, 7, 3, 1, 7, 7, 3, 15, 1, 7, 3]
+
+['label', 'color', 'type', 'subject', 'instruments', 'bgcolor']
+[1, 1, 3, 0, 0, 3, 7, 1, 1, 7, 1, 1, 3, 3, 0]
+
+['label', 'type', 'subject', 'familycolor', 'fam', 'glotto', 'isoexception']
+[1, 3, 0, 0, 0, 0, 7, 1, 1, 1, 1, 3, 3, 3, 3, 0, 0, 0, 0, 0, 0]
+
+['label', 'type', 'subject', 'familycolor', 'fam']
+[1, 3, 0, 0, 7, 1, 1, 3, 3, 0]
+
+['label', 'type', 'subject', 'fam']
+[1, 3, 0, 7, 1, 3]
+
+['label', 'latest release version', 'type', 'subject', 'family', 'logo', 'package manager', 'kernel type']
+[11, 1, 3, 3, 0, 3, 2, 23, 47, 47, 11, 47, 35, 7, 7, 1, 7, 5, 15, 3, 15, 11, 3, 15, 11, 3, 2, 11]
+
+['label', 'type', 'subject', 'developer', 'language', 'genre', 'license']
+[1, 3, 0, 3, 0, 0, 7, 1, 7, 1, 1, 3, 15, 3, 3, 3, 0, 0, 3, 3, 0]
+
+['label', 'type', 'subject', 'developer', 'genre']
+[1, 3, 0, 0, 7, 1, 1, 3, 3, 0]
+
+['label', 'type', 'subject', 'genre']
+[1, 3, 0, 7, 1, 3]
+
+['label', 'area code', 'elevation max', 'type', 'subject']
+[2, 3, 1, 3, 11, 5, 11, 7, 15, 7]
+
+['label', 'area code', 'type', 'subject', 'elevation']
+[2, 1, 3, 2, 5, 11, 8, 7, 5, 11]
+
+['label', 'type', 'subject', 'province', 'label']
+[1, 3, 1, 0, 7, 3, 1, 7, 3, 1]
+
+['label', 'type', 'subject', 'comment', 'label']
+[1, 3, 2, 0, 7, 5, 1, 11, 3, 2]
+
+['label', 'type', 'subject', 'area served']
+[1, 3, 1, 7, 3, 7]
+
+['label', 'type', 'subject', 'manufacturer', 'length m', 'eng1 number', 'endurance', 'national origin', 'crew']
+[1, 3, 0, 7, 3, 1, 3, 2, 7, 1, 15, 7, 3, 7, 5, 3, 31, 15, 7, 15, 11, 7, 3, 1, 3, 2, 31, 15, 31, 23, 7, 15, 11, 7, 5, 11]
+
+['label', 'type', 'subject', 'first flight', 'designer', 'eng1 name', 'eng1 type', 'eng1 number', 'crew']
+[1, 3, 4, 2, 0, 1, 3, 2, 7, 9, 5, 1, 3, 7, 5, 19, 11, 3, 7, 15, 11, 14, 4, 9, 19, 14, 2, 5, 11, 8, 1, 3, 2, 7, 5, 11]
+
+['label', 'type', 'subject', 'cruise speed note', 'eng1 name', 'eng1 number', 'capacity', 'crew']
+[1, 3, 5, 0, 3, 2, 2, 7, 11, 1, 7, 5, 5, 23, 3, 15, 11, 11, 5, 23, 17, 17, 3, 2, 2, 11, 11, 8]
+
+['label', 'type', 'subject', 'cruise speed note', 'designer', 'eng1 name', 'capacity', 'crew']
+[1, 3, 5, 2, 0, 2, 2, 7, 11, 5, 1, 5, 5, 23, 11, 3, 11, 11, 17, 5, 17, 17, 2, 8, 8, 2, 2, 8]
+
+['label', 'type', 'subject', 'developed from', 'eng1 name', 'capacity', 'crew']
+[1, 3, 0, 0, 2, 2, 7, 1, 1, 5, 5, 3, 3, 11, 11, 0, 2, 2, 2, 2, 8]
+
+['label', 'type', 'subject', 'cruise speed kts', 'eng1 number', 'capacity', 'crew']
+[1, 3, 3, 3, 2, 2, 7, 7, 7, 5, 5, 15, 15, 11, 11, 15, 11, 11, 11, 11, 8]
+
+['label', 'type', 'subject', 'introduced', 'manufacturer', 'developed from', 'designer']
+[1, 3, 0, 0, 0, 2, 7, 1, 1, 1, 5, 3, 3, 3, 11, 0, 0, 2, 0, 2, 2]
+
+['label', 'type', 'subject', 'capacity', 'upper span note', 'lower span note']
+[1, 3, 2, 8, 6, 7, 5, 17, 13, 11, 35, 27, 26, 20, 62]
+
+['label', 'type', 'subject', 'designer', 'crew']
+[1, 3, 2, 2, 7, 5, 5, 11, 11, 8]
+
+['label', 'type', 'subject', 'eng1 name', 'eng1 number', 'crew']
+[1, 3, 0, 3, 2, 7, 1, 7, 5, 3, 15, 11, 3, 2, 11]
+
+['label', 'type', 'subject', 'ceiling ft', 'empty weight lb', 'crew']
+[1, 3, 1, 2, 2, 7, 3, 5, 5, 7, 11, 11, 5, 5, 8]
+
+['label', 'type', 'subject', 'bombs', 'crew']
+[1, 3, 1, 2, 7, 3, 5, 7, 11, 5]
+
+['label', 'type', 'subject', 'capacity', 'crew']
+[1, 3, 2, 2, 7, 5, 5, 11, 11, 8]
+
+['label', 'type', 'subject', 'crew']
+[1, 3, 2, 7, 5, 11]
+
+['label', 'type', 'subject', 'airline', 'commenced']
+[1, 3, 0, 0, 7, 1, 1, 3, 3, 0]
+
+['label', 'type', 'subject', 'Artist']
+[1, 3, 0, 7, 1, 3]
+
+['label', 'birth date', 'birth place', 'type', 'birth place', 'death date']
+[3, 9, 1, 9, 2, 39, 7, 39, 11, 19, 99, 29, 19, 5, 29]
+
+['label', 'birth place', 'type', 'birth place', 'death date']
+[9, 1, 9, 2, 19, 99, 29, 19, 5, 29]
+
+['label', 'wordnet_type', 'type', 'subject']
+[0, 1, 3, 1, 3, 7]
+
+['label', 'type', 'death place', 'death place']
+[1, 8, 8, 17, 17, 80]
+
+['label', 'status', 'type', 'subject', 'manufacturer', 'type', 'section', 'designer', 'opened']
+[1, 1, 3, 0, 1, 3, 2, 0, 3, 7, 1, 3, 7, 5, 1, 7, 1, 3, 7, 5, 1, 3, 7, 15, 11, 3, 1, 3, 2, 0, 7, 5, 1, 11, 3, 2]
+
+['label', 'type', 'cost', 'duration', 'capacity']
+[1, 1, 0, 2, 3, 1, 5, 1, 5, 2]
+
+['label', 'type', 'subject', 'manufacturer', 'designer', 'opened']
+[1, 3, 0, 2, 0, 7, 1, 5, 1, 3, 11, 3, 2, 0, 2]
+
+['label', 'type', 'subject', 'manufacturer', 'height ft']
+[1, 3, 0, 4, 7, 1, 9, 3, 19, 4]
+
+['label', 'type', 'subject', 'comment', 'has abstract', 'Latin', 'Name', 'name', 'label']
+[1, 3, 2, 1, 0, 0, 0, 0, 7, 5, 3, 1, 1, 1, 1, 11, 7, 3, 3, 3, 3, 5, 2, 2, 2, 2, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0]
+
+['label', 'BranchFrom', 'type', 'subject', 'comment', 'Latin', 'name', 'Caption', 'label']
+[2, 1, 3, 2, 0, 0, 1, 0, 5, 11, 8, 2, 2, 5, 2, 7, 5, 1, 1, 3, 1, 11, 3, 3, 7, 3, 2, 2, 5, 2, 0, 1, 0, 1, 0, 1]
+
+['label', 'type', 'subject', 'GraySubject', 'Latin', 'GrayPage']
+[1, 3, 5, 0, 2, 7, 11, 1, 5, 23, 3, 11, 5, 17, 2]
+
+['label', 'type', 'subject', 'Latin', 'Caption']
+[1, 3, 0, 1, 7, 1, 3, 3, 7, 1]
+
+['label', 'type', 'subject', 'wordnet_type']
+[1, 3, 0, 7, 1, 3]
+
+['label', 'type', 'subject', 'genus', 'ordo', 'familia', 'classis']
+[1, 3, 0, 0, 0, 0, 7, 1, 1, 1, 1, 3, 3, 3, 3, 0, 0, 0, 0, 0, 0]
+
+['label', 'type', 'subject', 'binomial']
+[1, 3, 0, 7, 1, 3]
+
+['label', 'type', 'ja kanji', 'genre', 'first', 'director']
+[1, 0, 0, 1, 1, 1, 1, 3, 3, 0, 1, 1, 1, 1, 3]
+
+['label', 'film director', 'music composer', 'type', 'network', 'producer']
+[3, 1, 1, 1, 1, 7, 7, 7, 7, 3, 3, 3, 3, 3, 3]
+
+['label', 'film director', 'music composer', 'type', 'network']
+[3, 1, 1, 1, 7, 7, 7, 3, 3, 3]
+
+['label', 'film director', 'type', 'network']
+[3, 1, 1, 7, 7, 3]
+
+['label', 'name', 'type', 'network']
+[0, 1, 1, 1, 1, 3]
+
+['label', 'name', 'film director', 'type']
+[0, 3, 1, 3, 1, 7]
+
+['label', 'type', 'network']
+[1, 1, 3]
+
+['label', 'film director', 'type']
+[3, 1, 7]
+
+['label', 'type', 'type']
+[1, 1, 3]
+
+['label', 'type', 'subject', 'genus', 'binomial', 'classis', 'familia', 'binomial authority']
+[1, 3, 0, 0, 0, 0, 3, 7, 1, 1, 1, 1, 7, 3, 3, 3, 3, 15, 0, 0, 0, 3, 0, 0, 3, 0, 3, 3]
+
+['label', 'type', 'subject', 'binomial', 'classis', 'binomial authority']
+[1, 3, 0, 0, 3, 7, 1, 1, 7, 3, 3, 15, 0, 3, 3]
+
+['label', 'type', 'subject', 'domain', 'binomial', 'classis', 'binomial authority']
+[1, 3, 2, 0, 0, 3, 7, 5, 1, 1, 7, 11, 3, 3, 15, 2, 2, 11, 0, 3, 3]
+
+['label', 'type', 'subject', 'binomial', 'classis', 'familia', 'binomial authority']
+[1, 3, 0, 0, 0, 3, 7, 1, 1, 1, 7, 3, 3, 3, 15, 0, 0, 3, 0, 3, 3]
+
+['label', 'type', 'subject', 'familia', 'classis']
+[1, 3, 0, 0, 7, 1, 1, 3, 3, 0]
+
+['label', 'type', 'subject', 'binomial', 'binomial authority']
+[1, 3, 0, 3, 7, 1, 7, 3, 15, 3]
+
+['label', 'type', 'subject', 'domain', 'binomial', 'classis', 'familia', 'binomial authority']
+[1, 3, 2, 0, 0, 0, 3, 7, 5, 1, 1, 1, 7, 11, 3, 3, 3, 15, 2, 2, 2, 11, 0, 0, 3, 0, 3, 3]
+
+['label', 'type', 'subject', 'genus', 'domain', 'binomial', 'classis', 'familia', 'binomial authority']
+[1, 3, 0, 2, 0, 0, 0, 3, 7, 1, 5, 1, 1, 1, 7, 3, 11, 3, 3, 3, 15, 2, 0, 0, 0, 3, 2, 2, 2, 11, 0, 0, 3, 0, 3, 3]
+
+['label', 'color', 'type', 'subject', 'domain', 'familia', 'classis']
+[1, 1, 3, 2, 0, 0, 3, 7, 5, 1, 1, 7, 5, 1, 1, 11, 3, 3, 2, 2, 0]
+
+['label', 'type', 'subject', 'birth place', 'birth place', 'death date', 'birth date']
+[1, 3, 9, 9, 2, 3, 7, 19, 19, 5, 7, 39, 39, 11, 15, 99, 29, 39, 29, 39, 11]
+
+['label', 'type', 'death place', 'death date', 'death place']
+[1, 8, 2, 8, 17, 5, 17, 26, 80, 26]
+
+['label', 'type', 'subject', 'owner', 'opened']
+[1, 3, 0, 0, 7, 1, 1, 3, 3, 0]
+
+['label', 'affiliation', 'type', 'subject']
+[0, 1, 3, 1, 3, 7]
+
+['label', 'type', 'subject', 'former names']
+[1, 3, 1, 7, 3, 7]
+
+['label', 'BranchFrom', 'type', 'subject', 'GraySubject', 'Latin', 'GrayPage']
+[2, 1, 3, 5, 0, 2, 5, 11, 17, 2, 8, 7, 11, 1, 5, 23, 3, 11, 5, 17, 2]
+
+['label', 'type', 'subject', 'dimensions', 'launch mass', 'launch date']
+[1, 3, 2, 5, 2, 7, 5, 11, 5, 11, 23, 11, 17, 8, 17]
+
+['label', 'type', 'subject', 'apsis']
+[1, 3, 0, 7, 1, 3]
+
+['label', 'apsis', 'type', 'subject']
+[0, 1, 3, 1, 3, 7]
+
+['label', 'type', 'subject', 'Artist', 'Singles', 'studio', 'Compilation']
+[1, 3, 0, 2, 0, 0, 7, 1, 5, 1, 1, 3, 11, 3, 3, 2, 0, 0, 2, 2, 0]
+
+['label', 'type', 'subject', 'Compilation Album', 'Artist', 'Singles', 'HeadStyle', 'studio']
+[1, 3, 1, 0, 2, 17, 0, 7, 3, 1, 5, 35, 1, 7, 3, 11, 71, 3, 1, 5, 35, 1, 2, 17, 0, 53, 2, 17]
+
+['label', 'Live', 'type', 'subject', 'Artist', 'studio', 'Compilation', 'label']
+[0, 1, 3, 0, 0, 0, 0, 1, 3, 0, 0, 0, 0, 7, 1, 1, 1, 1, 3, 3, 3, 3, 0, 0, 0, 0, 0, 0]
+
+['label', 'type', 'studio', 'comment', 'Artist', 'label']
+[1, 0, 2, 0, 0, 1, 5, 1, 1, 2, 0, 0, 2, 2, 0]
+
+['label', 'Live', 'type', 'subject', 'Artist']
+[0, 1, 3, 0, 1, 3, 0, 7, 1, 3]
+
+['label', 'Caption', 'type', 'subject', 'Artist', 'Singles', 'studio']
+[1, 1, 3, 0, 2, 0, 3, 7, 1, 5, 1, 7, 1, 5, 1, 3, 11, 3, 2, 0, 2]
+
+['label', 'type', 'subject', 'Artist', 'Singles', 'studio', 'label']
+[1, 3, 0, 2, 0, 0, 7, 1, 5, 1, 1, 3, 11, 3, 3, 2, 0, 0, 2, 2, 0]
+
+['label', 'type', 'subject', 'comment', 'Artist', 'Singles', 'label']
+[1, 3, 2, 0, 2, 0, 7, 5, 1, 5, 1, 11, 3, 11, 3, 2, 8, 2, 2, 0, 2]
+
+['label', 'type', 'subject', 'id', 'Artist']
+[1, 3, 1, 0, 7, 3, 1, 7, 3, 1]
+
+['label', 'type', 'subject', 'Artist', 'Singles']
+[1, 3, 0, 2, 7, 1, 5, 3, 11, 2]
+
+['label', 'type', 'subject', 'Artist', 'Compilation']
+[1, 3, 0, 0, 7, 1, 1, 3, 3, 0]
+
+['label', 'type', 'subject', 'id', 'Artist', 'Compilation']
+[1, 3, 1, 0, 0, 7, 3, 1, 1, 7, 3, 3, 1, 1, 0]
+
+['label', 'type', 'subject', 'comment', 'Artist', 'label']
+[1, 3, 2, 0, 0, 7, 5, 1, 1, 11, 3, 3, 2, 2, 0]
+
+['label', 'type', 'subject', 'comment', 'city', 'material', 'title', 'Artist', 'label', 'year']
+[1, 3, 2, 0, 1, 3, 0, 0, 1, 7, 5, 1, 3, 7, 1, 1, 3, 11, 3, 7, 15, 3, 3, 7, 2, 5, 11, 2, 2, 5, 1, 3, 0, 0, 1, 7, 1, 1, 3, 3, 3, 7, 0, 1, 1]
+
+['label', 'type', 'subject', 'type', 'image file', 'title', 'Artist', 'label', 'year']
+[1, 3, 1, 7, 3, 0, 0, 1, 7, 3, 15, 7, 1, 1, 3, 7, 31, 15, 3, 3, 7, 15, 7, 1, 1, 3, 31, 7, 7, 15, 3, 3, 7, 0, 1, 1]
+
+['label', 'type', 'subject', 'align', 'Artist', 'headerimage']
+[1, 3, 0, 0, 0, 7, 1, 1, 1, 3, 3, 3, 0, 0, 0]
+
+['label', 'type', 'subject', 'type', 'Artist', 'year']
+[1, 3, 1, 0, 1, 7, 3, 1, 3, 7, 3, 7, 1, 3, 1]
+
+['label', 'type', 'subject', 'type', 'city', 'Artist', 'label', 'title']
+[1, 3, 1, 0, 0, 0, 3, 7, 3, 1, 1, 1, 7, 7, 3, 3, 3, 15, 1, 1, 1, 7, 0, 0, 3, 0, 3, 3]
+
+['label', 'type', 'subject', 'city', 'Artist', 'image size']
+[1, 3, 0, 0, 7, 7, 1, 1, 15, 3, 3, 31, 0, 7, 7]
+
+['label', 'type', 'subject', 'city', 'Artist']
+[1, 3, 0, 0, 7, 1, 1, 3, 3, 0]
+
+['label', 'type', 'subject', 'birth date', 'death date']
+[1, 3, 3, 2, 7, 7, 5, 15, 11, 11]
+
+['label', 'production', 'type', 'subject', 'manufacturer', 'comment', 'class', 'name', 'predecessor', 'label']
+[2, 1, 3, 0, 2, 1, 0, 1, 0, 5, 11, 2, 8, 5, 2, 5, 2, 7, 1, 5, 3, 1, 3, 1, 3, 11, 7, 3, 7, 3, 2, 1, 0, 1, 0, 5, 2, 5, 2, 1, 3, 1, 1, 0, 1]
+
+['label', 'engine', 'type', 'subject', 'assembly', 'body style', 'class']
+[1, 1, 3, 2, 8, 1, 3, 7, 5, 17, 3, 7, 5, 17, 3, 11, 35, 7, 26, 5, 17]
+
+['label', 'type', 'subject', 'assembly', 'body style', 'class']
+[1, 3, 2, 8, 1, 7, 5, 17, 3, 11, 35, 7, 26, 5, 17]
+
+['label', 'type', 'subject', 'body style', 'class', 'designer']
+[1, 3, 8, 1, 2, 7, 17, 3, 5, 35, 7, 11, 17, 26, 5]
+
+['label', 'type', 'subject', 'body style', 'assembly', 'AKA']
+[1, 3, 8, 2, 8, 7, 17, 5, 17, 35, 11, 35, 26, 80, 26]
+
+['label', 'cylinder bore (μ)', 'cylinder bore (mm)', 'type', 'fuel type', 'cooling system', 'power output (kW)', 'configuration', 'piston stroke (mm)', 'name', 'displacement (μ³)', 'displacement (cc)']
+[1, 2, 1, 2, 3, 7, 1, 5, 0, 3, 4, 5, 3, 5, 7, 15, 3, 11, 1, 7, 9, 5, 8, 11, 23, 5, 17, 2, 11, 14, 5, 7, 15, 3, 11, 1, 7, 9, 11, 23, 5, 17, 2, 11, 14, 31, 7, 23, 3, 15, 19, 15, 47, 7, 31, 39, 11, 1, 7, 9, 5, 23, 29, 3, 4, 19]
+
+['label', 'type', 'configuration', 'end year of insertion', 'power output (W)', 'automobile model', 'start year of insertion', 'displacement (μ³)']
+[1, 1, 6, 10, 3, 6, 3, 3, 13, 21, 7, 13, 7, 13, 21, 7, 13, 7, 76, 27, 48, 27, 43, 76, 43, 27, 15, 27]
+
+['label', 'type', 'end year of insertion', 'configuration', 'automobile model', 'start year of insertion', 'displacement (μ³)']
+[1, 6, 1, 3, 6, 3, 13, 3, 7, 13, 7, 13, 27, 48, 27, 7, 13, 7, 27, 15, 27]
+
+['label', 'torque output (Nm)', 'top speed (kmh)', 'type', 'power output (W)', 'start year of insertion']
+[2, 4, 1, 10, 6, 14, 5, 32, 20, 9, 54, 34, 21, 13, 76]
+
+['label', 'type', 'power output (W)', 'displacement (μ³)']
+[1, 10, 3, 21, 7, 43]
+
+['label', 'type', 'displacement (μ³)', 'configuration']
+[1, 3, 1, 7, 3, 7]
+
+['label', 'type', 'displacement (μ³)']
+[1, 3, 7]
+
+['label', 'type', 'configuration']
+[1, 1, 3]
+
+['label', 'Website', 'type', 'subject', 'Description', 'comment', 'presenter', 'label', 'image size', 'year']
+[0, 1, 3, 0, 2, 1, 0, 7, 1, 1, 3, 0, 2, 1, 0, 7, 1, 7, 1, 5, 3, 1, 15, 3, 3, 11, 7, 3, 31, 7, 2, 1, 0, 7, 1, 5, 2, 23, 5, 1, 15, 3, 7, 1, 15]
+
+['label', 'type', 'subject', 'Description', 'presenter', 'country', 'holder', 'imagesize', 'year']
+[1, 3, 0, 1, 3, 0, 0, 1, 7, 1, 3, 7, 1, 1, 3, 3, 7, 15, 3, 3, 7, 1, 3, 0, 0, 1, 7, 1, 1, 3, 3, 3, 7, 0, 1, 1]
+
+['label', 'Website', 'type', 'subject', 'Description', 'presenter', 'country', 'year']
+[0, 1, 3, 0, 1, 3, 1, 1, 3, 0, 1, 3, 1, 7, 1, 3, 7, 3, 3, 7, 15, 7, 1, 3, 1, 7, 3, 7]
+
+['label', 'reason', 'type', 'subject', 'Description', 'presenter', 'First Awarded', 'country']
+[2, 1, 3, 0, 1, 1, 3, 5, 11, 2, 5, 5, 11, 7, 1, 3, 3, 7, 3, 7, 7, 15, 1, 1, 3, 3, 7, 7]
+
+['label', 'type', 'subject', 'Description', 'presenter', 'country', 'holder']
+[1, 3, 0, 1, 3, 0, 7, 1, 3, 7, 1, 3, 7, 15, 3, 1, 3, 0, 7, 1, 3]
+
+['label', 'Website', 'type', 'subject', 'Description', 'presenter', 'label', 'sponsor']
+[0, 1, 3, 0, 1, 0, 1, 1, 3, 0, 1, 0, 1, 7, 1, 3, 1, 3, 3, 7, 3, 7, 1, 0, 1, 1, 3, 1]
+
+['label', 'Website', 'type', 'subject', 'next', 'previous']
+[0, 1, 3, 0, 0, 1, 3, 0, 0, 7, 1, 1, 3, 3, 0]
+
+['label', 'type', 'subject', 'Description', 'presenter', 'holder']
+[1, 3, 0, 1, 0, 7, 1, 3, 1, 3, 7, 3, 1, 0, 1]
+
+['label', 'type', 'subject', 'presenter', 'country', 'imagesize']
+[1, 3, 1, 3, 0, 7, 3, 7, 1, 7, 15, 3, 7, 1, 3]
+
+['label', 'type', 'subject', 'network', 'country']
+[1, 3, 1, 3, 7, 3, 7, 7, 15, 7]
+
+['label', 'type', 'subject', 'current awards', 'country']
+[1, 3, 3, 3, 7, 7, 7, 15, 15, 15]
+
+['label', 'type', 'subject', 'network']
+[1, 3, 1, 7, 3, 7]
+
+['label', 'Website', 'type', 'subject', 'current awards']
+[0, 1, 3, 3, 1, 3, 3, 7, 7, 15]
+
+['label', 'type', 'subject', 'genus', 'domain', 'binomial', 'ordo', 'classis', 'phylum', 'familia', 'binomial authority']
+[1, 3, 0, 2, 0, 0, 0, 0, 0, 3, 7, 1, 5, 1, 1, 1, 1, 1, 7, 3, 11, 3, 3, 3, 3, 3, 15, 2, 0, 0, 0, 0, 0, 3, 2, 2, 2, 2, 2, 11, 0, 0, 0, 0, 3, 0, 0, 0, 3, 0, 0, 3, 0, 3, 3]
+
+['label', 'color', 'type', 'subject', 'genus', 'domain', 'binomial', 'familia', 'binomial authority']
+[1, 1, 3, 0, 2, 0, 0, 3, 3, 7, 1, 5, 1, 1, 7, 7, 1, 5, 1, 1, 7, 3, 11, 3, 3, 15, 2, 0, 0, 3, 2, 2, 11, 0, 3, 3]
+
+['label', 'color', 'type', 'subject', 'domain', 'binomial', 'classis', 'binomial authority']
+[1, 1, 3, 2, 0, 0, 3, 3, 7, 5, 1, 1, 7, 7, 5, 1, 1, 7, 11, 3, 3, 15, 2, 2, 11, 0, 3, 3]
+
+['label', 'color', 'type', 'subject', 'domain', 'binomial', 'classis', 'familia', 'binomial authority']
+[1, 1, 3, 2, 0, 0, 0, 3, 3, 7, 5, 1, 1, 1, 7, 7, 5, 1, 1, 1, 7, 11, 3, 3, 3, 15, 2, 2, 2, 11, 0, 0, 3, 0, 3, 3]
+
+['label', 'type', 'subject', 'domain', 'ordo', 'phylum', 'classis']
+[1, 3, 2, 0, 0, 0, 7, 5, 1, 1, 1, 11, 3, 3, 3, 2, 2, 2, 0, 0, 0]
+
+['label', 'type', 'subject', 'domain', 'genus', 'familia', 'classis']
+[1, 3, 2, 0, 0, 0, 7, 5, 1, 1, 1, 11, 3, 3, 3, 2, 2, 2, 0, 0, 0]
+
+['label', 'birth place', 'type', 'subject', 'birth date']
+[9, 1, 3, 3, 19, 39, 39, 7, 7, 15]
+
+['label', 'type', 'area served']
+[1, 1, 3]
+
+['label', 'type', 'subject', 'death place', 'death date']
+[1, 3, 8, 2, 7, 17, 5, 35, 11, 26]
+
+['label', 'type', 'subject', 'death date']
+[1, 3, 2, 7, 5, 11]
+
+['label', 'type', 'champion']
+[1, 2, 5]
+
+['label', 'type', 'subject', 'y', 'season', 'city', 'ballpark', 'current league']
+[1, 3, 1, 0, 0, 0, 2, 7, 3, 1, 1, 1, 5, 7, 3, 3, 3, 11, 1, 1, 1, 5, 0, 0, 2, 0, 2, 2]
+
+['label', 'type', 'subject', 'season', 'city', 'ballpark', 'owners', 'current league']
+[1, 3, 0, 0, 0, 0, 2, 7, 1, 1, 1, 1, 5, 3, 3, 3, 3, 11, 0, 0, 0, 2, 0, 0, 2, 0, 2, 2]
+
+['label', 'type', 'subject', 'city', 'ballpark', 'owners', 'current league']
+[1, 3, 0, 0, 0, 2, 7, 1, 1, 1, 5, 3, 3, 3, 11, 0, 0, 2, 0, 2, 2]
+
+['label', 'type', 'subject', 'season', 'city', 'ballpark', 'current league']
+[1, 3, 0, 0, 0, 2, 7, 1, 1, 1, 5, 3, 3, 3, 11, 0, 0, 2, 0, 2, 2]
+
+['label', 'type', 'subject', 'city', 'ballpark', 'misc', 'current league']
+[1, 3, 0, 0, 0, 2, 7, 1, 1, 1, 5, 3, 3, 3, 11, 0, 0, 2, 0, 2, 2]
+
+['label', 'type', 'subject', 'city', 'ballpark', 'current league']
+[1, 3, 0, 0, 2, 7, 1, 1, 5, 3, 3, 11, 0, 2, 2]
+
+['label', 'type', 'subject', 'comment', 'homepage', 'label']
+[1, 3, 2, 0, 0, 7, 5, 1, 1, 11, 3, 3, 2, 2, 0]
+
+['label', 'type', 'subject', 'city', 'ballpark']
+[1, 3, 0, 0, 7, 1, 1, 3, 3, 0]
+
+['label', 'type', 'subject', 'conf']
+[1, 3, 0, 7, 1, 3]
+
+['label', 'type', 'subject', 'ceo']
+[1, 3, 0, 7, 1, 3]
+
+['label', 'arena', 'type', 'subject']
+[2, 1, 3, 5, 11, 7]
+
+['label', 'color', 'type', 'subject', 'comment', 'type', 'ingredients', 'name', 'Caption', 'label']
+[1, 1, 3, 2, 1, 1, 0, 1, 0, 3, 7, 5, 3, 3, 1, 3, 1, 7, 5, 3, 3, 1, 3, 1, 11, 7, 7, 3, 7, 3, 5, 5, 2, 5, 2, 3, 1, 3, 1, 1, 3, 1, 1, 0, 1]
+
+['label', 'origin', 'type', 'subject', 'founder', 'introduced']
+[2, 1, 3, 1, 0, 5, 11, 5, 2, 7, 3, 1, 7, 3, 1]
+
+['label', 'origin', 'type', 'subject', 'introduced']
+[2, 1, 3, 0, 5, 11, 2, 7, 1, 3]
+
+['label', 'color', 'type', 'subject', 'flavor', 'introduced']
+[1, 1, 3, 2, 0, 3, 7, 5, 1, 7, 5, 1, 11, 3, 2]
+
+['label', 'type', 'subject', 'distributor']
+[1, 3, 1, 7, 3, 7]
+
+['label', 'type', 'subject', 'Description']
+[1, 3, 0, 7, 1, 3]
+
+['label', 'type', 'Center']
+[1, 2, 5]
+
+['label', 'type', 'subject', 'comment', 'Pfam', 'symbol', 'InterPro', 'Name', 'label']
+[1, 3, 2, 0, 0, 1, 0, 0, 7, 5, 1, 1, 3, 1, 1, 11, 3, 3, 7, 3, 3, 2, 2, 5, 2, 2, 0, 1, 0, 0, 1, 0, 0, 1, 1, 0]
+
+['label', 'type', 'comment', 'has abstract', 'EntrezGene', 'label']
+[1, 2, 1, 0, 0, 5, 3, 1, 1, 5, 2, 2, 1, 1, 0]
+
+['label', 'type', 'subject', 'EC number', 'IUBMB EC number', 'name', 'label']
+[1, 3, 3, 3, 0, 0, 7, 7, 7, 1, 1, 15, 15, 3, 3, 15, 3, 3, 3, 3, 0]
+
+['label', 'type', 'comment', 'has abstract', 'label']
+[1, 2, 1, 0, 5, 3, 1, 5, 2, 1]
+
+['label', 'type', 'subject', 'OPM protein', 'symbol', 'OPM family']
+[1, 3, 0, 0, 3, 7, 1, 1, 7, 3, 3, 15, 0, 3, 3]
+
+['label', 'type', 'UniProt', 'EntrezGene', 'refseq protein', 'Gene Location', 'refseq mRNA', 'ensemble']
+[1, 0, 0, 0, 3, 0, 0, 1, 1, 1, 7, 1, 1, 0, 0, 3, 0, 0, 0, 3, 0, 0, 3, 0, 0, 3, 3, 0]
+
+['label', 'type', 'subject', 'Band', 'Arm']
+[1, 3, 3, 3, 7, 7, 7, 15, 15, 15]
+
+['label', 'type', 'subject', 'label']
+[1, 3, 0, 7, 1, 3]
+
+['label', 'type', 'subject', 'genus', 'binomial', 'ordo', 'familia', 'classis']
+[1, 3, 0, 0, 0, 0, 0, 7, 1, 1, 1, 1, 1, 3, 3, 3, 3, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+
+['label', 'type', 'subject', 'binomial', 'classis']
+[1, 3, 0, 0, 7, 1, 1, 3, 3, 0]
+
+['label', 'type', 'subject', 'basin countries']
+[1, 3, 5, 7, 11, 23]
+
+['label', 'name', 'volume (μ³)', 'type', 'area (m2)']
+[0, 2, 1, 2, 2, 1, 2, 5, 8, 5]
+
+['label', 'type', 'subject', 'GraySubject', 'Latin', 'image', 'Caption', 'GrayPage']
+[1, 3, 5, 0, 6, 1, 2, 7, 11, 1, 13, 3, 5, 23, 3, 27, 7, 11, 5, 41, 11, 17, 6, 1, 2, 13, 20, 5]
+
+['label', 'type', 'subject', 'GraySubject', 'GrayPage']
+[1, 3, 5, 2, 7, 11, 5, 23, 11, 17]
+
+['label', 'type', 'subject', 'country']
+[1, 3, 3, 7, 7, 15]
+
+['label', 'birth place', 'type', 'subject', 'birth place', 'death date']
+[9, 1, 3, 9, 2, 19, 39, 99, 29, 7, 19, 5, 39, 11, 29]
+
+['label', 'type', 'subject', 'death place', 'birth date', 'death place']
+[1, 3, 8, 3, 8, 7, 17, 7, 17, 35, 15, 35, 35, 80, 35]
+
+['label', 'type', 'subject', 'comment', 'Latin', 'Name', 'name', 'label']
+[1, 3, 2, 0, 0, 0, 0, 7, 5, 1, 1, 1, 1, 11, 3, 3, 3, 3, 2, 2, 2, 2, 0, 0, 0, 0, 0, 0]
+
+['label', 'type', 'subject', 'BrainInfoType', 'acronym', 'BrainInfoNumber']
+[1, 3, 5, 0, 7, 7, 11, 1, 15, 23, 3, 31, 5, 47, 7]
+
+['label', 'Artery', 'type', 'subject']
+[0, 1, 3, 1, 3, 7]
+
+['label', 'type', 'subject', 'key people']
+[1, 3, 6, 7, 13, 27]
+
+['label', 'type', 'subject', 'lat', 'crosses', 'coordinates display']
+[1, 3, 0, 4, 1, 7, 1, 9, 3, 3, 19, 7, 4, 1, 9]
+
+['label', 'established', 'type']
+[0, 1, 1]
+
+['label', 'type', 'subject', 'building type', 'architect']
+[1, 3, 3, 0, 7, 7, 1, 15, 3, 3]
+
+['label', 'type', 'headquarters', 'category', 'image caption']
+[1, 0, 1, 8, 1, 3, 17, 1, 8, 17]
+
+['label', 'type', 'birth place', 'death place', 'birth place', 'death place', 'birth date']
+[1, 9, 8, 9, 8, 3, 19, 17, 19, 17, 7, 89, 99, 89, 39, 89, 80, 35, 89, 39, 35]
+
+['label', 'label', 'type', 'subject']
+[0, 1, 3, 1, 3, 7]
+
+['label', 'nationality', 'type']
+[0, 1, 1]
+
+['label', 'years', 'number of goals scored', 'type', 'number of matches or caps', 'team']
+[2, 5, 1, 14, 0, 17, 5, 44, 2, 11, 89, 5, 29, 1, 14]
+
+['label', 'years', 'type', 'team']
+[2, 1, 0, 5, 2, 1]
+
+['label', 'type', 'team']
+[1, 0, 1]
+
+['label', 'type', 'producer', 'distributor', 'release date', 'language', 'director', 'country']
+[1, 1, 1, 7, 3, 1, 3, 3, 3, 15, 7, 3, 7, 3, 15, 7, 3, 7, 15, 7, 3, 7, 31, 15, 31, 7, 15, 7]
+
+['label', 'name', 'music composer', 'type', 'type', 'writer']
+[0, 1, 1, 1, 0, 1, 1, 1, 0, 3, 3, 1, 3, 1, 1]
+
+['label', 'type', 'type', 'network', 'producer']
+[1, 1, 1, 1, 3, 3, 3, 3, 3, 3]
+
+['label', 'name', 'type', 'type']
+[0, 1, 1, 1, 1, 3]
+
+['label', 'type', 'subject', 'reporter', 'page', 'majority', 'Fullname', 'reporter-volume']
+[1, 3, 0, 0, 0, 0, 0, 7, 1, 1, 1, 1, 1, 3, 3, 3, 3, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+
+['label', 'type', 'subject', 'majority', 'ArgueDate', 'Fullname', 'ArgueYear']
+[1, 3, 0, 0, 0, 1, 7, 1, 1, 1, 3, 3, 3, 3, 7, 0, 0, 1, 0, 1, 1]
+
+['label', 'type', 'subject', 'majority', 'ArgueDate', 'Fullname']
+[1, 3, 0, 0, 0, 7, 1, 1, 1, 3, 3, 3, 0, 0, 0]
+
+['label', 'type', 'subject', 'citation']
+[1, 3, 1, 7, 3, 7]
+
+['label', 'type', 'subject', 'built', 'condition', 'builder']
+[1, 3, 0, 1, 0, 7, 1, 3, 1, 3, 7, 3, 1, 0, 1]
+
+['label', 'type', 'subject', 'type', 'Caption']
+[1, 3, 1, 1, 7, 3, 3, 7, 7, 3]
+
+['label', 'lat d', 'type', 'subject', 'lat m', 'features']
+[0, 1, 3, 4, 0, 1, 3, 4, 0, 7, 9, 1, 19, 3, 4]
+
+['label', 'type', 'subject', 'bcra grad']
+[1, 3, 1, 7, 3, 7]
+
+['label', 'name', 'depth (μ)', 'type', 'length (μ)', 'location']
+[0, 1, 1, 2, 2, 1, 1, 2, 2, 3, 5, 5, 5, 5, 8]
+
+['label', 'type', 'subject', 'class', 'constell', 'luminosity', 'epoch', 'appmag v', 'p error']
+[1, 3, 1, 0, 0, 1, 3, 4, 7, 3, 1, 1, 3, 7, 9, 7, 3, 3, 7, 15, 19, 1, 1, 3, 7, 9, 0, 1, 3, 4, 1, 3, 4, 7, 9, 19]
+
+['label', 'type', 'subject', 'class', 'constell', 'epoch', 'appmag v', 'p error']
+[1, 3, 1, 0, 1, 3, 4, 7, 3, 1, 3, 7, 9, 7, 3, 7, 15, 19, 1, 3, 7, 9, 1, 3, 4, 7, 9, 19]
+
+['label', 'type', 'subject', 'class', 'constell', 'epoch', 'appmag v', 'equinox']
+[1, 3, 1, 0, 1, 3, 0, 7, 3, 1, 3, 7, 1, 7, 3, 7, 15, 3, 1, 3, 7, 1, 1, 3, 0, 7, 1, 3]
+
+['label', 'type', 'type', 'epoch', 'appmag v', 'names', 'size', 'Caption']
+[1, 1, 1, 3, 0, 0, 1, 3, 3, 7, 1, 1, 3, 3, 7, 1, 1, 3, 7, 1, 1, 3, 3, 3, 7, 0, 1, 1]
+
+['label', 'COSPAR ID', 'type', 'subject', 'suborbital apogee', 'disposal type', 'decay date']
+[1, 1, 3, 0, 3, 1, 3, 7, 1, 7, 3, 7, 1, 7, 3, 3, 15, 7, 3, 1, 7]
+
+['label', 'type', 'subject', 'launch date', 'mission type']
+[1, 3, 2, 3, 7, 5, 7, 11, 15, 11]
+
+['label', 'type', 'subject', 'dec', 'base']
+[1, 3, 1, 7, 7, 3, 15, 7, 31, 15]
+
+['label', 'type', 'subject', 'operator', 'launch date', 'mission type']
+[1, 3, 1, 2, 3, 7, 3, 5, 7, 7, 11, 15, 5, 7, 11]
+
+['label', 'type', 'subject', 'dist ly', 'appmag v', 'names']
+[1, 3, 0, 3, 0, 7, 1, 7, 1, 3, 15, 3, 3, 0, 3]
+
+['label', 'type', 'subject', 'epoch', 'appmag v', 'absmag v']
+[1, 3, 1, 3, 3, 7, 3, 7, 7, 7, 15, 15, 7, 7, 15]
+
+['label', 'type', 'subject', 'base']
+[1, 3, 7, 7, 15, 31]
+
+['label', 'type', 'subject', 'launch rocket', 'launch date']
+[1, 3, 3, 2, 7, 7, 5, 15, 11, 11]
+
+['label', 'type', 'birth date', 'death date']
+[1, 3, 2, 7, 5, 11]
+
+['label', 'type', 'subject', 'comment', 'has abstract', 'depiction', 'label', 'thumbnail']
+[1, 3, 2, 1, 2, 0, 0, 7, 5, 3, 5, 1, 1, 11, 7, 11, 3, 3, 5, 8, 2, 2, 5, 1, 1, 2, 2, 0]
+
+['label', 'IUPACName', 'type', 'subject', 'comment', 'depiction', 'ImageFile', 'othernames', 'label', 'imagesize']
+[18, 1, 3, 2, 2, 7, 0, 0, 0, 37, 75, 56, 56, 151, 18, 18, 18, 7, 5, 5, 15, 1, 1, 1, 11, 11, 31, 3, 3, 3, 8, 23, 2, 2, 2, 23, 2, 2, 2, 7, 7, 7, 0, 0, 0]
+
+['label', 'IUPACName', 'type', 'subject', 'comment', 'depiction', 'ImageFile', 'label', 'imagesize']
+[18, 1, 3, 2, 2, 7, 0, 0, 37, 75, 56, 56, 151, 18, 18, 7, 5, 5, 15, 1, 1, 11, 11, 31, 3, 3, 8, 23, 2, 2, 23, 2, 2, 7, 7, 0]
+
+['label', 'type', 'subject', 'comment', 'depiction', 'ImageFile', 'label', 'imagesize', 'thumbnail']
+[1, 3, 2, 2, 7, 0, 0, 0, 7, 5, 5, 15, 1, 1, 1, 11, 11, 31, 3, 3, 3, 8, 23, 2, 2, 2, 23, 2, 2, 2, 7, 7, 7, 0, 0, 0]
+
+['label', 'IUPACName', 'type', 'subject', 'comment', 'has abstract', 'othernames', 'label']
+[18, 1, 3, 2, 1, 0, 0, 37, 75, 56, 37, 18, 18, 7, 5, 3, 1, 1, 11, 7, 3, 3, 5, 2, 2, 1, 1, 0]
+
+['label', 'IUPACName', 'type', 'subject', 'comment', 'depiction', 'SystematicName', 'ImageFile', 'verifiedrevid', 'label']
+[18, 1, 3, 2, 2, 0, 7, 0, 0, 37, 75, 56, 56, 18, 151, 18, 18, 7, 5, 5, 1, 15, 1, 1, 11, 11, 3, 31, 3, 3, 8, 2, 23, 2, 2, 2, 23, 2, 2, 7, 0, 0, 7, 7, 0]
+
+['label', 'IUPACName', 'type', 'subject', 'comment', 'ImageFile', 'othernames', 'label', 'imagesize']
+[18, 1, 3, 2, 7, 0, 0, 0, 37, 75, 56, 151, 18, 18, 18, 7, 5, 15, 1, 1, 1, 11, 31, 3, 3, 3, 23, 2, 2, 2, 7, 7, 7, 0, 0, 0]
+
+['label', 'type', 'subject', 'comment', 'depiction', 'ImageFile', 'label', 'thumbnail']
+[1, 3, 2, 2, 7, 0, 0, 7, 5, 5, 15, 1, 1, 11, 11, 31, 3, 3, 8, 23, 2, 2, 23, 2, 2, 7, 7, 0]
+
+['label', 'IUPACName', 'type', 'subject', 'comment', 'ImageFile', 'othernames', 'label']
+[18, 1, 3, 2, 7, 0, 0, 37, 75, 56, 151, 18, 18, 7, 5, 15, 1, 1, 11, 31, 3, 3, 23, 2, 2, 7, 7, 0]
+
+['label', 'IUPACName', 'type', 'subject', 'ImageFile', 'othernames', 'label', 'imagesize']
+[18, 1, 3, 7, 0, 0, 0, 37, 75, 151, 18, 18, 18, 7, 15, 1, 1, 1, 31, 3, 3, 3, 7, 7, 7, 0, 0, 0]
+
+['label', 'type', 'subject', 'pin', 'ImageFile', 'othernames', 'imagesize']
+[1, 3, 3, 7, 0, 0, 7, 7, 15, 1, 1, 15, 31, 3, 3, 31, 3, 3, 7, 7, 0]
+
+['label', 'IUPACName', 'type', 'subject', 'ImageFile', 'othernames', 'imagesize']
+[18, 1, 3, 7, 0, 0, 37, 75, 151, 18, 18, 7, 15, 1, 1, 31, 3, 3, 7, 7, 0]
+
+['label', 'IUPACName', 'type', 'subject', 'imagecaption', 'ImageFile', 'imagesize']
+[18, 1, 3, 0, 7, 0, 37, 75, 18, 151, 18, 7, 1, 15, 1, 3, 31, 3, 7, 0, 7]
+
+['label', 'IUPACName', 'type', 'subject', 'ImageFile', 'othernames', 'label']
+[18, 1, 3, 7, 0, 0, 37, 75, 151, 18, 18, 7, 15, 1, 1, 31, 3, 3, 7, 7, 0]
+
+['label', 'type', 'subject', 'ImageFile', 'ImageName', 'imagesize']
+[1, 3, 7, 7, 0, 7, 15, 15, 1, 31, 31, 3, 63, 7, 7]
+
+['label', 'type', 'subject', 'ImageFile', 'ImageAlt']
+[1, 3, 7, 7, 7, 15, 15, 31, 31, 63]
+
+['label', 'type', 'subject', 'InChI', 'C', 'ChemSpiderID', 'CAS number', 'H', 'Cl']
+[1, 3, 5, 5, 4, 5, 2, 1, 7, 11, 11, 9, 11, 5, 3, 23, 23, 19, 23, 11, 7, 35, 29, 35, 17, 11, 29, 35, 17, 11, 29, 14, 9, 17, 11, 5]
+
+['label', 'IUPACName', 'type', 'subject', 'comment', 'ImageFile', 'label', 'imagesize']
+[18, 1, 3, 2, 7, 0, 0, 37, 75, 56, 151, 18, 18, 7, 5, 15, 1, 1, 11, 31, 3, 3, 23, 2, 2, 7, 7, 0]
+
+['label', 'type', 'subject', 'ImageFile', 'ImageAlt', 'imagesize']
+[1, 3, 7, 7, 0, 7, 15, 15, 1, 31, 31, 3, 63, 7, 7]
+
+['label', 'IUPAC name', 'type', 'subject', 'C', 'H', 'molecular weight']
+[0, 1, 3, 5, 2, 0, 1, 3, 5, 2, 0, 7, 11, 5, 1, 23, 11, 3, 17, 5, 2]
+
+['label', 'IUPAC name', 'type', 'subject', 'C', 'CAS number', 'H']
+[0, 1, 3, 5, 5, 2, 1, 3, 5, 5, 2, 7, 11, 11, 5, 23, 23, 11, 35, 17, 17]
+
+['label', 'type', 'subject', 'C', 'F', 'H']
+[1, 3, 5, 2, 2, 7, 11, 5, 5, 23, 11, 11, 17, 17, 8]
+
+['label', 'type', 'subject', 'C', 'Cl']
+[1, 3, 5, 1, 7, 11, 3, 23, 7, 11]
+
+['label', 'type', 'subject', 'C', 'CAS number']
+[1, 3, 5, 5, 7, 11, 11, 23, 23, 35]
+
+['label', 'birth date', 'birth place', 'type', 'death place', 'death date']
+[3, 9, 1, 8, 2, 39, 7, 35, 11, 19, 89, 29, 17, 5, 26]
+
+['label', 'birth place', 'type', 'subject', 'death place', 'death date']
+[9, 1, 3, 8, 2, 19, 39, 89, 29, 7, 17, 5, 35, 11, 26]
+
+['label', 'birth place', 'type', 'subject', 'death place']
+[9, 1, 3, 8, 19, 39, 89, 7, 17, 35]
+
+['label', 'birth place', 'type', 'death place', 'death date']
+[9, 1, 8, 2, 19, 89, 29, 17, 5, 26]
+
+['label', 'birth place', 'type', 'death place']
+[9, 1, 8, 19, 89, 17]
+
+['label', 'type', 'subject', 'demographics1 info', 'coordinates display']
+[1, 3, 0, 1, 7, 1, 3, 3, 7, 1]
+
+['label', 'type', 'birth date']
+[1, 3, 7]
+
+['label', 'type', 'subject', 'cname']
+[1, 3, 0, 7, 1, 3]
+
+['label', 'type', 'subject', 'genus', 'classis', 'genus authority']
+[1, 3, 0, 0, 3, 7, 1, 1, 7, 3, 3, 15, 0, 3, 3]
+
+['label', 'birth place', 'type', 'death place', 'death date', 'birth place']
+[9, 1, 8, 2, 9, 19, 89, 29, 99, 17, 5, 19, 26, 89, 29]
+
+['label', 'type', 'alma mater', 'birth date']
+[1, 0, 3, 1, 7, 3]
+
+['label', 'type', 'subject', 'death place']
+[1, 3, 8, 7, 17, 35]
+
+['label', 'value coordinate in the HSV colour space', 'type', 'red coordinate in the RGB space', 'hue coordinate in the HSV colour space', 'black coordinate in the CMYK space', 'yellow coordinate in the CMYK space', 'bluecoordinate in the RGB space', 'magenta coordinate in the CMYK space', 'colour hex code', 'green coordinate in the RGB space', 'name', 'saturation coordinate in the HSV colour space', 'variant or variation', 'cyanic coordinate in the CMYK space']
+[9, 1, 9, 9, 7, 7, 5, 7, 3, 10, 0, 10, 5, 6, 19, 99, 99, 79, 79, 59, 79, 39, 109, 9, 109, 59, 69, 19, 19, 15, 15, 11, 15, 7, 21, 1, 21, 11, 13, 99, 79, 79, 59, 79, 39, 109, 9, 109, 59, 69, 79, 79, 59, 79, 39, 109, 9, 109, 59, 69, 63, 47, 63, 31, 87, 7, 87, 47, 55, 47, 63, 31, 87, 7, 87, 47, 55, 47, 23, 65, 5, 65, 35, 41, 31, 87, 7, 87, 47, 55, 43, 3, 43, 23, 27, 10, 120, 65, 76, 10, 5, 6, 65, 76, 41]
+
+['label', 'type', 'subject', 'm', 'C', 'R', 'g', 'H', 'k', 'hex']
+[1, 3, 4, 5, 2, 4, 2, 4, 0, 7, 9, 11, 5, 9, 5, 9, 1, 19, 23, 11, 19, 11, 19, 3, 29, 14, 24, 14, 24, 4, 17, 29, 17, 29, 5, 14, 8, 14, 2, 14, 24, 4, 14, 2, 4]
+
+['label', 'value coordinate in the HSV colour space', 'type', 'red coordinate in the RGB space', 'hue coordinate in the HSV colour space', 'bluecoordinate in the RGB space', 'colour hex code', 'green coordinate in the RGB space', 'name', 'saturation coordinate in the HSV colour space', 'variant or variation']
+[9, 1, 9, 9, 5, 3, 10, 0, 10, 5, 19, 99, 99, 59, 39, 109, 9, 109, 59, 19, 19, 11, 7, 21, 1, 21, 11, 99, 59, 39, 109, 9, 109, 59, 59, 39, 109, 9, 109, 59, 23, 65, 5, 65, 35, 43, 3, 43, 23, 10, 120, 65, 10, 5, 65]
+
+['label', 'type', 'subject', 'C', 'g']
+[1, 3, 5, 4, 7, 11, 9, 23, 19, 29]
+
+['label', 'type', 'subject', 'quote', 'bgcolor', 'format', 'ongoing', 'issues']
+[1, 3, 0, 0, 0, 0, 6, 7, 1, 1, 1, 1, 13, 3, 3, 3, 3, 27, 0, 0, 0, 6, 0, 0, 6, 0, 6, 6]
+
+['label', 'type', 'director', 'demographic']
+[1, 1, 0, 3, 1, 1]
+
+['label', 'genre', 'type', 'subject']
+[0, 1, 3, 1, 3, 7]
+
+['label', 'type', 'subject', 'extinct', 'binomial', 'classis', 'binomial authority']
+[1, 3, 0, 0, 0, 3, 7, 1, 1, 1, 7, 3, 3, 3, 15, 0, 0, 3, 0, 3, 3]
+
+['label', 'type', 'subject', 'area']
+[1, 3, 1, 7, 3, 7]
+
+['label', 'Website', 'type', 'subject', 'genre', 'founded', 'dates']
+[0, 1, 3, 0, 0, 0, 1, 3, 0, 0, 0, 7, 1, 1, 1, 3, 3, 3, 0, 0, 0]
+
+['label', 'type', 'subject', 'frequency', 'years active', 'first', 'country', 'label']
+[1, 3, 0, 3, 1, 3, 0, 7, 1, 7, 3, 7, 1, 3, 15, 7, 15, 3, 3, 1, 3, 0, 7, 15, 3, 7, 1, 3]
+
+['label', 'type', 'subject', 'frequency', 'attendance']
+[1, 3, 0, 0, 7, 1, 1, 3, 3, 0]
+
+['label', 'type', 'subject', 'attendance', 'first', 'country']
+[1, 3, 0, 1, 3, 7, 1, 3, 7, 3, 7, 15, 1, 3, 7]
+
+['label', 'type', 'subject', 'location', 'years active', 'genre', 'dates']
+[1, 3, 2, 3, 0, 0, 7, 5, 7, 1, 1, 11, 15, 3, 3, 11, 2, 2, 3, 3, 0]
+
+['label', 'type', 'subject', 'attendance']
+[1, 3, 0, 7, 1, 3]
+
+['label', 'type', 'subject', 'area', 'begins']
+[1, 3, 1, 0, 7, 3, 1, 7, 3, 1]
+
+['label', 'type', 'subject', 'Capital', 'common languages', 'common name']
+[1, 3, 0, 4, 1, 7, 1, 9, 3, 3, 19, 7, 4, 1, 9]
+
+['label', 'Latitude', 'type', 'subject', 'Longitude', 'comment', 'Caption', 'label']
+[0, 1, 3, 0, 2, 1, 0, 1, 3, 0, 2, 1, 0, 7, 1, 5, 3, 1, 3, 11, 7, 3, 2, 1, 0, 5, 2, 1]
+
+['label', 'Latitude', 'diameter', 'type', 'subject', 'Longitude']
+[0, 0, 1, 3, 0, 0, 1, 3, 0, 1, 3, 0, 7, 1, 3]
+
+['label', 'type', 'subject', 'chairman', 'label']
+[1, 3, 0, 0, 7, 1, 1, 3, 3, 0]
+
+['label', 'subject', 'type', 'death', 'birth']
+[3, 1, 1, 2, 7, 7, 11, 3, 5, 5]
+
+['label', 'type', 'subject', 'infraordo', 'genus', 'familia', 'classis', 'genus authority']
+[1, 3, 0, 0, 0, 0, 3, 7, 1, 1, 1, 1, 7, 3, 3, 3, 3, 15, 0, 0, 0, 3, 0, 0, 3, 0, 3, 3]
+
+['label', 'type', 'subject', 'genus', 'familia', 'classis']
+[1, 3, 0, 0, 0, 7, 1, 1, 1, 3, 3, 3, 0, 0, 0]
+
+['label', 'type', 'subject', 'classis']
+[1, 3, 0, 7, 1, 3]
+
+['label', 'origin', 'type', 'subject']
+[2, 1, 3, 5, 11, 7]
+
+['label', 'type', 'subject', 'printer', 'issuing authority']
+[1, 3, 0, 3, 7, 1, 7, 3, 15, 3]
+
+['label', 'birth place', 'type', 'birth place', 'death place', 'death place']
+[9, 1, 9, 8, 8, 19, 99, 89, 89, 19, 17, 17, 89, 89, 80]
+
+['label', 'type', 'subject', 'dimensions', 'manufacturer', 'camera', 'announced', 'available', 'Input', 'USB', 'os', 'compatible network', 'Bluetooth']
+[1, 3, 2, 0, 0, 0, 0, 2, 13, 4, 1, 0, 7, 5, 1, 1, 1, 1, 5, 27, 9, 3, 1, 11, 3, 3, 3, 3, 11, 55, 19, 7, 3, 2, 2, 2, 2, 8, 41, 14, 5, 2, 0, 0, 0, 2, 13, 4, 1, 0, 0, 0, 2, 13, 4, 1, 0, 0, 2, 13, 4, 1, 0, 2, 13, 4, 1, 0, 41, 14, 5, 2, 69, 27, 13, 9, 4, 1]
+
+['label', 'type', 'subject', 'comment', 'type', 'Name', 'developer', 'name', 'releasedate', 'label']
+[1, 3, 2, 1, 0, 0, 0, 0, 0, 7, 5, 3, 1, 1, 1, 1, 1, 11, 7, 3, 3, 3, 3, 3, 5, 2, 2, 2, 2, 2, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+
+['label', 'connectivity', 'type', 'subject', 'display', 'manufacturer', 'logo', 'memory', 'gpu', 'cpu']
+[0, 1, 3, 0, 0, 0, 0, 0, 0, 1, 3, 0, 0, 0, 0, 0, 0, 7, 1, 1, 1, 1, 1, 1, 3, 3, 3, 3, 3, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+
+['label', 'type', 'subject', 'display', 'manufacturer', 'Form', 'memory', 'gpu', 'cpu']
+[1, 3, 0, 0, 5, 0, 0, 0, 7, 1, 1, 11, 1, 1, 1, 3, 3, 23, 3, 3, 3, 0, 5, 0, 0, 0, 5, 0, 0, 0, 5, 5, 5, 0, 0, 0]
+
+['label', 'origin', 'type', 'subject', 'range', 'designer', 'used by', 'crew']
+[2, 1, 3, 4, 2, 0, 2, 5, 11, 14, 8, 2, 8, 7, 9, 5, 1, 5, 19, 11, 3, 11, 14, 4, 14, 2, 8, 2]
+
+['label', 'type', 'subject', 'display', 'after', 'cpu']
+[1, 3, 0, 0, 0, 7, 1, 1, 1, 3, 3, 3, 0, 0, 0]
+
+['label', 'origin', 'type', 'design date', 'detonation', 'is explosive', 'subject', 'filling']
+[2, 1, 4, 1, 0, 3, 1, 5, 14, 5, 2, 11, 5, 9, 3, 1, 7, 3, 9, 4, 19, 9, 1, 7, 3, 3, 1, 7]
+
+['label', 'engine', 'type', 'subject', 'manufacturer', 'is vehicle', 'designer']
+[1, 1, 3, 0, 1, 2, 3, 7, 1, 3, 5, 7, 1, 3, 5, 3, 7, 11, 1, 2, 5]
+
+['label', 'type', 'subject', 'before', 'cpu']
+[1, 3, 0, 0, 7, 1, 1, 3, 3, 0]
+
+['label', 'connectivity', 'type', 'subject', 'display', 'available', 'cpu']
+[0, 1, 3, 0, 0, 0, 1, 3, 0, 0, 0, 7, 1, 1, 1, 3, 3, 3, 0, 0, 0]
+
+['label', 'connectivity', 'type', 'subject', 'Root Access']
+[0, 1, 3, 6, 1, 3, 6, 7, 13, 27]
+
+['label', 'type', 'subject', 'supported']
+[1, 3, 0, 7, 1, 3]
+
+['label', 'connectivity', 'type', 'subject']
+[0, 1, 3, 1, 3, 7]
+
+['label', 'type', 'subject', 'after']
+[1, 3, 0, 7, 1, 3]
+
+['label', 'field', 'type', 'subject', 'comment', 'has abstract', 'Name', 'name', 'label', 'ICD']
+[5, 1, 3, 2, 1, 0, 0, 0, 9, 11, 23, 17, 11, 5, 5, 5, 59, 7, 5, 3, 1, 1, 1, 19, 11, 7, 3, 3, 3, 39, 5, 2, 2, 2, 29, 1, 1, 1, 19, 0, 0, 9, 0, 9, 9]
+
+['label', 'seeAlso', 'field', 'type', 'subject', 'comment', 'Name', 'name', 'label']
+[0, 5, 1, 3, 2, 0, 0, 0, 5, 1, 3, 2, 0, 0, 0, 11, 23, 17, 5, 5, 5, 7, 5, 1, 1, 1, 11, 3, 3, 3, 2, 2, 2, 0, 0, 0]
+
+['label', 'type', 'subject', 'comment', 'depiction', 'Name', 'name', 'Caption', 'label', 'ICD']
+[1, 3, 2, 2, 0, 0, 1, 0, 9, 7, 5, 5, 1, 1, 3, 1, 19, 11, 11, 3, 3, 7, 3, 39, 8, 2, 2, 5, 2, 29, 2, 2, 5, 2, 29, 0, 1, 0, 9, 1, 0, 9, 1, 19, 9]
+
+['label', 'type', 'subject', 'eMedicineTopic', 'DiseasesDB', 'Caption', 'eMedicineSubj', 'ICD']
+[1, 3, 6, 6, 1, 4, 9, 7, 13, 13, 3, 9, 19, 27, 27, 7, 19, 39, 48, 13, 34, 69, 13, 34, 69, 9, 19, 49]
+
+['label', 'type', 'subject', 'ICDO', 'wordnet_type']
+[1, 3, 11, 0, 7, 23, 1, 47, 3, 11]
+
+['label', 'filename', 'type', 'description', 'title', 'type']
+[0, 1, 0, 3, 1, 1, 0, 3, 1, 1, 7, 3, 3, 1, 7]
+
+['label', 'type', 'description', 'title', 'filename']
+[1, 0, 3, 0, 1, 7, 1, 3, 0, 3]
+
+['label', 'IUPAC name', 'type', 'subject', 'F', 'legal status', 'C', 'drug name', 'H', 'molecular weight']
+[0, 1, 3, 2, 1, 5, 1, 2, 0, 1, 3, 2, 1, 5, 1, 2, 0, 7, 5, 3, 11, 3, 5, 1, 11, 7, 23, 7, 11, 3, 5, 17, 5, 8, 2, 11, 3, 5, 1, 11, 17, 5, 5, 1, 2]
+
+['label', 'IUPAC name', 'type', 'subject', 'legal UK', 'C', 'CAS number', 'H', 'Cl']
+[0, 1, 3, 0, 5, 5, 2, 1, 1, 3, 0, 5, 5, 2, 1, 7, 1, 11, 11, 5, 3, 3, 23, 23, 11, 7, 5, 5, 2, 1, 35, 17, 11, 17, 11, 5]
+
+['label', 'IUPAC name', 'type', 'subject', 'InChI', 'C', 'ChemSpiderID', 'H', 'InChIKey']
+[0, 1, 3, 5, 5, 4, 2, 9, 1, 3, 5, 5, 4, 2, 9, 7, 11, 11, 9, 5, 19, 23, 23, 19, 11, 39, 35, 29, 17, 59, 29, 17, 59, 14, 49, 29]
+
+['label', 'IUPAC name', 'type', 'subject', 'legal UK', 'C', 'CAS number', 'H']
+[0, 1, 3, 0, 5, 5, 2, 1, 3, 0, 5, 5, 2, 7, 1, 11, 11, 5, 3, 23, 23, 11, 5, 5, 2, 35, 17, 17]
+
+['label', 'IUPAC name', 'type', 'subject', 'C', 'ChemSpiderID', 'H', 'molecular weight']
+[0, 1, 3, 5, 4, 2, 0, 1, 3, 5, 4, 2, 0, 7, 11, 9, 5, 1, 23, 19, 11, 3, 29, 17, 5, 14, 4, 2]
+
+['label', 'type', 'subject', 'C', 'CAS number', 'F']
+[1, 3, 5, 5, 2, 7, 11, 11, 5, 23, 23, 11, 35, 17, 17]
+
+['label', 'type', 'subject', 'C', 'CAS number', 'F', 'H']
+[1, 3, 5, 5, 2, 2, 7, 11, 11, 5, 5, 23, 23, 11, 11, 35, 17, 17, 17, 17, 8]
+
+['label', 'type', 'subject', 'C', 'ChemSpiderID', 'F', 'H']
+[1, 3, 5, 4, 2, 2, 7, 11, 9, 5, 5, 23, 19, 11, 11, 29, 17, 17, 14, 14, 8]
+
+['label', 'type', 'subject', 'C', 'ATC prefix', 'CAS number', 'F']
+[1, 3, 5, 0, 5, 2, 7, 11, 1, 11, 5, 23, 3, 23, 11, 5, 35, 17, 5, 2, 17]
+
+['label', 'type', 'subject', 'ATC suffix', 'class', 'ATC prefix', 'component']
+[1, 3, 0, 1, 0, 1, 7, 1, 3, 1, 3, 3, 7, 3, 7, 1, 0, 1, 1, 3, 1]
+
+['label', 'type', 'subject', 'C', 'F']
+[1, 3, 5, 2, 7, 11, 5, 23, 11, 17]
+
+['label', 'type', 'subject', 'C', 'CAS number', 'Cl']
+[1, 3, 5, 5, 1, 7, 11, 11, 3, 23, 23, 7, 35, 11, 11]
+
+['label', 'type', 'subject', 'casualties', 'date', 'label']
+[1, 3, 0, 0, 0, 7, 1, 1, 1, 3, 3, 3, 0, 0, 0]
+
+['label', 'type', 'subject', 'candidate']
+[1, 3, 1, 7, 3, 7]
+
+['label', 'before election', 'type', 'subject', 'after election']
+[0, 1, 3, 0, 1, 3, 0, 7, 1, 3]
+
+['label', 'after party', 'type', 'subject', 'after election']
+[0, 1, 3, 0, 1, 3, 0, 7, 1, 3]
+
+['label', 'after party', 'before election', 'type', 'subject', 'after election']
+[0, 0, 1, 3, 0, 0, 1, 3, 0, 1, 3, 0, 7, 1, 3]
+
+['label', 'type', 'subject', 'after election']
+[1, 3, 0, 7, 1, 3]
+
+['label', 'before election', 'type', 'subject']
+[0, 1, 3, 1, 3, 7]
+
+['label', 'alliance', 'type', 'subject']
+[1, 1, 3, 3, 7, 7]
+
+['label', 'code', 'subject', 'GraySubject', 'image', 'type', 'GrayPage']
+[0, 3, 5, 6, 1, 2, 3, 5, 6, 1, 2, 23, 27, 7, 11, 41, 11, 17, 13, 20, 5]
+
+['label', 'type', 'subject', 'EC number', 'IUBMB EC number', 'Name', 'name', 'label']
+[1, 3, 3, 3, 0, 0, 0, 7, 7, 7, 1, 1, 1, 15, 15, 3, 3, 3, 15, 3, 3, 3, 3, 3, 3, 0, 0, 0]
+
+['label', 'type', 'subject', 'EC number', 'IUBMB EC number', 'CAS number', 'label']
+[1, 3, 3, 3, 5, 0, 7, 7, 7, 11, 1, 15, 15, 23, 3, 15, 23, 3, 23, 3, 5]
+
+['label', 'type', 'subject', 'EC number', 'IUBMB EC number', 'CAS number', 'Caption']
+[1, 3, 3, 3, 5, 1, 7, 7, 7, 11, 3, 15, 15, 23, 7, 15, 23, 7, 23, 7, 11]
+
+['label', 'type', 'subject', 'EC number', 'IUBMB EC number', 'CAS number']
+[1, 3, 3, 3, 5, 7, 7, 7, 11, 15, 15, 23, 15, 23, 23]
+
+['label', 'type', 'subject', 'EC number', 'GO code', 'CAS number']
+[1, 3, 3, 3, 5, 7, 7, 7, 11, 15, 15, 23, 15, 23, 23]
+
+['label', 'type', 'subject', 'EC number', 'GO code']
+[1, 3, 3, 3, 7, 7, 7, 15, 15, 15]
+
+['label', 'related-c', 'type', 'subject', 'comment', 'popplace', 'langs', 'group', 'name', 'label', 'poptime']
+[0, 1, 3, 2, 0, 0, 0, 0, 0, 0, 1, 3, 2, 0, 0, 0, 0, 0, 0, 7, 5, 1, 1, 1, 1, 1, 1, 11, 3, 3, 3, 3, 3, 3, 2, 2, 2, 2, 2, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+
+['label', 'Languages', 'type', 'subject', 'comment', 'population', 'group', 'name', 'religions', 'label']
+[3, 1, 3, 2, 0, 0, 0, 0, 0, 7, 15, 11, 3, 3, 3, 3, 3, 7, 5, 1, 1, 1, 1, 1, 11, 3, 3, 3, 3, 3, 2, 2, 2, 2, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+
+['label', 'rels', 'type', 'subject', 'comment', 'popplace', 'depiction', 'langs', 'group', 'name', 'label']
+[0, 1, 3, 2, 0, 2, 0, 0, 0, 0, 1, 3, 2, 0, 2, 0, 0, 0, 0, 7, 5, 1, 5, 1, 1, 1, 1, 11, 3, 11, 3, 3, 3, 3, 2, 8, 2, 2, 2, 2, 2, 0, 0, 0, 0, 2, 2, 2, 2, 0, 0, 0, 0, 0, 0]
+
+['label', 'rels', 'type', 'subject', 'related', 'population', 'langs', 'group']
+[0, 1, 3, 0, 0, 0, 0, 1, 3, 0, 0, 0, 0, 7, 1, 1, 1, 1, 3, 3, 3, 3, 0, 0, 0, 0, 0, 0]
+
+['label', 'type', 'subject', 'popplace', 'related', 'langs', 'group', 'poptime']
+[1, 3, 0, 0, 0, 0, 0, 7, 1, 1, 1, 1, 1, 3, 3, 3, 3, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+
+['label', 'rels', 'type', 'subject', 'population', 'langs', 'group']
+[0, 1, 3, 0, 0, 0, 1, 3, 0, 0, 0, 7, 1, 1, 1, 3, 3, 3, 0, 0, 0]
+
+['label', 'type', 'subject', 'related', 'langs', 'group', 'poptime']
+[1, 3, 0, 0, 0, 0, 7, 1, 1, 1, 1, 3, 3, 3, 3, 0, 0, 0, 0, 0, 0]
+
+['label', 'rels', 'type', 'subject', 'popplace', 'related', 'langs', 'group']
+[0, 1, 3, 0, 0, 0, 0, 1, 3, 0, 0, 0, 0, 7, 1, 1, 1, 1, 3, 3, 3, 3, 0, 0, 0, 0, 0, 0]
+
+['label', 'Languages', 'type', 'subject', 'popplace', 'group', 'pop']
+[3, 1, 3, 0, 0, 1, 7, 15, 3, 3, 7, 7, 1, 1, 3, 3, 3, 7, 0, 1, 1]
+
+['label', 'type', 'subject', 'popplace', 'langs', 'group', 'poptime']
+[1, 3, 0, 0, 0, 0, 7, 1, 1, 1, 1, 3, 3, 3, 3, 0, 0, 0, 0, 0, 0]
+
+['label', 'rels', 'type', 'subject', 'related', 'langs', 'group']
+[0, 1, 3, 0, 0, 0, 1, 3, 0, 0, 0, 7, 1, 1, 1, 3, 3, 3, 0, 0, 0]
+
+['label', 'type', 'subject', 'popplace', 'langs', 'group']
+[1, 3, 0, 0, 0, 7, 1, 1, 1, 3, 3, 3, 0, 0, 0]
+
+['label', 'type', 'subject', 'group']
+[1, 3, 0, 7, 1, 3]
+
+['label', 'type', 'subject', 'next', 'genre', 'country']
+[1, 3, 0, 0, 3, 7, 1, 1, 7, 3, 3, 15, 0, 3, 3]
+
+['label', 'type', 'subject', 'comment', 'depiction', 'label']
+[1, 3, 2, 2, 0, 7, 5, 5, 1, 11, 11, 3, 8, 2, 2]
+
+['label', 'foes', 'type', 'subject']
+[1, 1, 3, 3, 7, 7]
+
+['label', 'type', 'subject', 'alias']
+[1, 3, 0, 7, 1, 3]
+
+['label', 'type', 'subject', 'cinematography', 'distributor', 'director', 'country']
+[1, 3, 0, 1, 1, 3, 7, 1, 3, 3, 7, 3, 7, 7, 15, 1, 1, 3, 3, 7, 7]
+
+['label', 'type', 'subject', 'distributor', 'runtime', 'director']
+[1, 3, 1, 0, 1, 7, 3, 1, 3, 7, 3, 7, 1, 3, 1]
+
+['label', 'type', 'subject', 'founded', 'Caption']
+[1, 3, 0, 1, 7, 1, 3, 3, 7, 1]
+
+['label', 'type', 'subject', 'films']
+[1, 3, 1, 7, 3, 7]
+
+['label', 'name', 'homepage', 'type', 'location']
+[0, 0, 1, 2, 0, 1, 2, 1, 2, 5]
+
+['label', 'type', 'subject', 'image caption', 'familia', 'classis', 'familia authority']
+[1, 3, 8, 0, 0, 2, 7, 17, 1, 1, 5, 35, 3, 3, 11, 8, 8, 26, 0, 2, 2]
+
+['label', 'type', 'subject', 'binomial', 'familia', 'classis']
+[1, 3, 0, 0, 0, 7, 1, 1, 1, 3, 3, 3, 0, 0, 0]
+
+['label', 'type', 'subject', 'accessdate']
+[1, 3, 0, 7, 1, 3]
+
+['label', 'classis', 'type', 'subject']
+[0, 1, 3, 1, 3, 7]
+
+['label', 'type', 'subject', 'comment', 'label', 'depiction', 'Name', 'name', 'Caption', 'serving size', 'national cuisine']
+[1, 3, 2, 0, 2, 0, 0, 1, 2, 1, 7, 5, 1, 5, 1, 1, 3, 5, 3, 11, 3, 11, 3, 3, 7, 11, 7, 2, 8, 2, 2, 5, 8, 5, 2, 0, 0, 1, 2, 1, 2, 2, 5, 8, 5, 0, 1, 2, 1, 1, 2, 1, 5, 3, 5]
+
+['label', 'region', 'type', 'subject', 'comment', 'type', 'Caption', 'country', 'label']
+[1, 1, 3, 2, 1, 1, 3, 0, 3, 7, 5, 3, 3, 7, 1, 7, 5, 3, 3, 7, 1, 11, 7, 7, 15, 3, 5, 5, 11, 2, 3, 7, 1, 7, 1, 3]
+
+['label', 'type', 'subject', 'course', 'creator', 'country']
+[1, 3, 2, 1, 3, 7, 5, 3, 7, 11, 7, 15, 5, 11, 7]
+
+['label', 'region', 'type', 'subject', 'type', 'main ingredient', 'Caption', 'country']
+[1, 1, 3, 1, 2, 1, 3, 3, 7, 3, 5, 3, 7, 7, 3, 5, 3, 7, 7, 11, 7, 15, 5, 3, 7, 5, 11, 7]
+
+['label', 'region', 'type', 'subject', 'course', 'main ingredient']
+[1, 1, 3, 2, 2, 3, 7, 5, 5, 7, 5, 5, 11, 11, 8]
+
+['label', 'type', 'subject', 'comment', 'season', 'homepage', 'label']
+[1, 3, 2, 0, 0, 0, 7, 5, 1, 1, 1, 11, 3, 3, 3, 2, 2, 2, 0, 0, 0]
+
+['label', 'type', 'subject', 'comment', 'season', 'label']
+[1, 3, 2, 0, 0, 7, 5, 1, 1, 11, 3, 3, 2, 2, 0]
+
+['label', 'type', 'subject', 'referee', 'matches', 'score', 'round']
+[1, 3, 1, 3, 2, 5, 7, 3, 7, 5, 11, 7, 15, 11, 23, 7, 5, 11, 11, 23, 17]
+
+['label', 'type', 'subject', 'referee', 'matches']
+[1, 3, 1, 3, 7, 3, 7, 7, 15, 7]
+
+['label', 'p', 'type', 'subject', 'BC', 'l']
+[1, 1, 3, 10, 3, 3, 7, 21, 7, 7, 21, 7, 43, 15, 43]
+
+['label', 'type', 'subject', 'BC']
+[1, 3, 10, 7, 21, 43]
+
+['label', 'type', 'subject', 'city', 'attendance']
+[1, 3, 0, 0, 7, 1, 1, 3, 3, 0]
+
+['label', 'regnum', 'type', 'subject', 'genus', 'ordo', 'species', 'familia', 'classis']
+[0, 1, 3, 0, 0, 1, 0, 0, 1, 3, 0, 0, 1, 0, 0, 7, 1, 1, 3, 1, 1, 3, 3, 7, 3, 3, 0, 1, 0, 0, 1, 0, 0, 1, 1, 0]
+
+['label', 'type', 'subject', 'genus', 'binomial', 'class', 'familia', 'image width']
+[1, 3, 0, 0, 1, 0, 7, 7, 1, 1, 3, 1, 15, 3, 3, 7, 3, 31, 0, 1, 0, 7, 1, 0, 7, 1, 15, 7]
+
+['label', 'type', 'subject', 'binomial', 'class', 'familia', 'binomial authority']
+[1, 3, 0, 1, 0, 3, 7, 1, 3, 1, 7, 3, 7, 3, 15, 1, 0, 3, 1, 7, 3]
+
+['label', 'type', 'subject', 'genus', 'familia', 'classis', 'genus authority']
+[1, 3, 0, 0, 0, 3, 7, 1, 1, 1, 7, 3, 3, 3, 15, 0, 0, 3, 0, 3, 3]
+
+['label', 'type', 'subject', 'type', 'epoch', 'appmag v']
+[1, 3, 1, 1, 3, 7, 3, 3, 7, 7, 7, 15, 3, 7, 7]
+
+['label', 'complexity', 'type', 'subject', 'bggid']
+[0, 1, 3, 0, 1, 3, 0, 7, 1, 3]
+
+['label', 'OMIM', 'type', 'comment', 'path', 'symbol', 'HGNCid', 'name', 'label']
+[9, 1, 2, 1, 0, 12, 0, 0, 19, 29, 19, 9, 129, 9, 9, 5, 3, 1, 25, 1, 1, 5, 2, 38, 2, 2, 1, 25, 1, 1, 12, 0, 0, 12, 12, 0]
+
+['label', 'type', 'comment', 'path', 'symbol', 'HGNCid', 'MGIid', 'label']
+[1, 2, 1, 0, 12, 8, 0, 5, 3, 1, 25, 17, 1, 5, 2, 38, 26, 2, 1, 25, 17, 1, 12, 8, 0, 116, 12, 8]
+
+['label', 'OMIM', 'type', 'ECnumber', 'path', 'symbol', 'HGNCid', 'label']
+[9, 1, 2, 1, 0, 12, 0, 19, 29, 19, 9, 129, 9, 5, 3, 1, 25, 1, 5, 2, 38, 2, 1, 25, 1, 12, 0, 12]
+
+['label', 'OMIM', 'type', 'subject', 'symbol', 'HGNCid']
+[9, 1, 3, 0, 12, 19, 39, 9, 129, 7, 1, 25, 3, 51, 12]
+
+['label', 'type', 'ECnumber', 'function', 'MGIid']
+[1, 2, 2, 8, 5, 5, 17, 8, 26, 26]
+
+['label', 'type', 'path', 'symbol', 'HGNCid', 'label']
+[1, 1, 0, 12, 0, 3, 1, 25, 1, 1, 25, 1, 12, 0, 12]
+
+['label', 'EntrezGene', 'type', 'UniProt', 'Gene Location', 'ensemble']
+[0, 1, 0, 3, 0, 1, 0, 3, 0, 1, 7, 1, 3, 0, 3]
+
+['label', 'gene location start', 'type', 'Genome DB', 'gene location end', 'on chromosome']
+[6, 1, 2, 6, 0, 13, 20, 48, 6, 5, 13, 1, 20, 2, 6]
+
+['label', 'gene location start', 'type', 'Genome DB', 'gene location end']
+[6, 1, 2, 6, 13, 20, 48, 5, 13, 20]
+
+['label', 'gene location start', 'type', 'gene location end', 'on chromosome']
+[6, 1, 6, 0, 13, 48, 6, 13, 1, 6]
+
+['label', 'region', 'type', 'subject', 'Name', 'name', 'gender', 'label']
+[1, 1, 3, 0, 0, 1, 0, 3, 7, 1, 1, 3, 1, 7, 1, 1, 3, 1, 3, 3, 7, 3, 0, 1, 0, 1, 0, 1]
+
+['label', 'type', 'subject', 'Name', 'name', 'gender', 'label']
+[1, 3, 0, 0, 1, 0, 7, 1, 1, 3, 1, 3, 3, 7, 3, 0, 1, 0, 1, 0, 1]
+
+['label', 'origin', 'region', 'type', 'subject', 'name', 'gender', 'label']
+[2, 1, 1, 3, 0, 1, 0, 5, 5, 11, 2, 5, 2, 3, 7, 1, 3, 1, 7, 1, 3, 1, 3, 7, 3, 1, 0, 1]
+
+['label', 'region', 'type', 'subject', 'name', 'gender', 'label']
+[1, 1, 3, 0, 1, 0, 3, 7, 1, 3, 1, 7, 1, 3, 1, 3, 7, 3, 1, 0, 1]
+
+['label', 'origin', 'region', 'type', 'subject', 'gender', 'related names']
+[2, 1, 1, 3, 1, 0, 5, 5, 11, 5, 2, 3, 7, 3, 1, 7, 3, 1, 7, 3, 1]
+
+['label', 'type', 'subject', 'language', 'gender', 'image size']
+[1, 3, 3, 1, 7, 7, 7, 3, 15, 15, 7, 31, 7, 31, 15]
+
+['label', 'type', 'gender', 'meaning', 'label', 'related names']
+[1, 1, 0, 0, 0, 3, 1, 1, 1, 1, 1, 1, 0, 0, 0]
+
+['label', 'type', 'footnotes', 'gender']
+[1, 0, 1, 1, 3, 1]
+
+['label', 'type', 'subject', 'gender', 'meaning']
+[1, 3, 1, 0, 7, 3, 1, 7, 3, 1]
+
+['label', 'type', 'subject', 'gender']
+[1, 3, 1, 7, 3, 7]
+
+['label', 'type', 'subject', 'label position']
+[1, 3, 7, 7, 15, 31]
+
+['label', 'type', 'subject', 'agency name', 'chief1 name']
+[1, 3, 3, 0, 7, 7, 1, 15, 3, 3]
+
+['label', 'type', 'subject', 'federal agency']
+[1, 3, 3, 7, 7, 15]
+
+['label', 'type', 'subject', 'headquarters', 'agency name']
+[1, 3, 0, 3, 7, 1, 7, 3, 15, 3]
+
+['label', 'alias', 'type']
+[0, 1, 1]
+
+['label', 'type', 'subject', 'denomination', 'diocese']
+[1, 3, 1, 0, 7, 3, 1, 7, 3, 1]
+
+['label', 'Latitude', 'type', 'subject', 'Longitude', 'locmapin', 'designation1 free1name', 'designation1 free1value']
+[0, 1, 3, 0, 0, 0, 0, 1, 3, 0, 0, 0, 0, 7, 1, 1, 1, 1, 3, 3, 3, 3, 0, 0, 0, 0, 0, 0]
+
+['label', 'type', 'subject', 'governing body', 'added', 'architecture']
+[1, 3, 4, 0, 0, 7, 9, 1, 1, 19, 3, 3, 4, 4, 0]
+
+['label', 'type', 'subject', 'added']
+[1, 3, 0, 7, 1, 3]
+
+['label', 'type', 'subject', 'type', 'observances', 'frequency', 'holiday name', 'official name', 'imagesize']
+[1, 3, 1, 3, 0, 2, 1, 0, 7, 3, 7, 1, 5, 3, 1, 7, 15, 3, 11, 7, 3, 7, 1, 5, 3, 1, 3, 11, 7, 3, 2, 1, 0, 5, 2, 1]
+
+['label', 'type', 'subject', 'type', 'longtype', 'relatedto', 'observedby', 'holiday name']
+[1, 3, 1, 0, 0, 0, 2, 7, 3, 1, 1, 1, 5, 7, 3, 3, 3, 11, 1, 1, 1, 5, 0, 0, 2, 0, 2, 2]
+
+['label', 'type', 'subject', 'frequency', 'duration', 'celebrations']
+[1, 3, 0, 0, 0, 7, 1, 1, 1, 3, 3, 3, 0, 0, 0]
+
+['label', 'type', 'subject', 'frequency', 'duration']
+[1, 3, 0, 0, 7, 1, 1, 3, 3, 0]
+
+['label', 'type', 'subject', 'class']
+[1, 3, 1, 7, 3, 7]
+
+['label', 'type', 'subject', 'symbol', 'HGNCid']
+[1, 3, 0, 12, 7, 1, 25, 3, 51, 12]
+
+['label', 'type', 'subject', 'mestari']
+[1, 3, 0, 7, 1, 3]
+
+['label', 'type', 'rights']
+[1, 0, 1]
+
+['label', 'photo', 'type', 'os', 'page', 'day', 'developer', 'help', 'month', 'predecessor']
+[0, 1, 4, 0, 0, 0, 2, 0, 1, 1, 4, 0, 0, 0, 2, 0, 1, 9, 1, 1, 1, 5, 1, 3, 4, 4, 4, 14, 4, 9, 0, 0, 2, 0, 1, 0, 2, 0, 1, 2, 0, 1, 2, 5, 1]
+
+['label', 'type', 'subject', 'camera', 'before', 'after']
+[1, 3, 0, 0, 0, 7, 1, 1, 1, 3, 3, 3, 0, 0, 0]
+
+['label', 'connectivity', 'type', 'subject', 'controllers', 'cpu']
+[0, 1, 3, 2, 0, 1, 3, 2, 0, 7, 5, 1, 11, 3, 2]
+
+['label', 'type', 'subject', 'camera']
+[1, 3, 0, 7, 1, 3]
+
+['label', 'type', 'subject', 'address', 'code', 'coordinates']
+[1, 3, 1, 0, 0, 7, 3, 1, 1, 7, 3, 3, 1, 1, 0]
+
+['label', 'code', 'subject', 'address', 'type', 'line', 'native name']
+[0, 3, 1, 1, 10, 1, 3, 1, 1, 10, 1, 7, 7, 43, 7, 3, 21, 3, 21, 3, 21]
+
+['label', 'type', 'subject', 'comment', 'label', 'Former']
+[1, 3, 2, 0, 0, 7, 5, 1, 1, 11, 3, 3, 2, 2, 0]
+
+['label', 'type', 'subject', 'address', 'code']
+[1, 3, 1, 0, 7, 3, 1, 7, 3, 1]
+
+['label', 'type', 'subject', 'address']
+[1, 3, 1, 7, 3, 7]
+
+['label', 'type', 'subject', 'address', 'image width']
+[1, 3, 1, 7, 7, 3, 15, 7, 31, 15]
+
+['label', 'type', 'subject', 'coordinates region', 'country', 'coordinates format', 'coordinates display']
+[1, 3, 2, 3, 1, 1, 7, 5, 7, 3, 3, 11, 15, 7, 7, 11, 5, 5, 7, 7, 3]
+
+['label', 'death date', 'type', 'birth date']
+[2, 1, 3, 5, 11, 7]
+
+['label', 'type', 'subject', 'champion']
+[1, 3, 2, 7, 5, 11]
+
+['label', 'basin countries', 'type', 'subject', 'area']
+[5, 1, 3, 1, 11, 23, 11, 7, 3, 7]
+
+['label', 'type', 'subject', 'area km']
+[1, 3, 2, 7, 5, 11]
+
+['label', 'name', 'type', 'watershed (m2)']
+[0, 1, 2, 1, 2, 5]
+
+['label', 'type', 'subject', 'operator']
+[1, 3, 1, 7, 3, 7]
+
+['label', 'type', 'subject', 'coa caption', 'coa pic', 'foundation']
+[1, 3, 1, 1, 2, 7, 3, 3, 5, 7, 7, 11, 3, 5, 5]
+
+['label', 'type', 'subject', 'coa pic']
+[1, 3, 1, 7, 3, 7]
+
+['label', 'type', 'subject', 'leader']
+[1, 3, 0, 7, 1, 3]
+
+['label', 'type', 'subject', 'election']
+[1, 3, 0, 7, 1, 3]
+
+['label', 'type', 'subject', 'GraySubject', 'Latin', 'image', 'GrayPage']
+[1, 3, 5, 0, 6, 2, 7, 11, 1, 13, 5, 23, 3, 27, 11, 5, 41, 17, 6, 2, 20]
+
+['label', 'type', 'subject', 'background']
+[1, 3, 2, 7, 5, 11]
+
+['label', 'locale', 'type', 'subject', 'trucks', 'currentowner', 'operator', 'builder']
+[0, 1, 3, 0, 0, 1, 0, 1, 3, 0, 0, 1, 0, 7, 1, 1, 3, 1, 3, 3, 7, 3, 0, 1, 0, 1, 0, 1]
+
+['label', 'type', 'subject', 'builder']
+[1, 3, 0, 7, 1, 3]
+
+['label', 'type', 'subject', 'operator', 'builder']
+[1, 3, 1, 0, 7, 3, 1, 7, 3, 1]
+
+['label', 'type', 'subject', 'vavlegear']
+[1, 3, 0, 7, 1, 3]
+
+['label', 'type', 'subject', 'comment', 'Latin', 'name', 'Caption', 'label']
+[1, 3, 2, 0, 0, 1, 0, 7, 5, 1, 1, 3, 1, 11, 3, 3, 7, 3, 2, 2, 5, 2, 0, 1, 0, 1, 0, 1]
+
+['label', 'type', 'subject', 'category', 'country']
+[1, 3, 1, 3, 7, 3, 7, 7, 15, 7]
+
+['label', 'type', 'genus', 'ordo', 'phylum', 'familia', 'classis']
+[1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+
+['label', 'publisher', 'number of volumes', 'type', 'author', 'magazine', 'illustrator', 'name']
+[0, 6, 1, 1, 0, 0, 0, 6, 1, 1, 0, 0, 0, 13, 13, 6, 6, 6, 3, 1, 1, 1, 1, 1, 1, 0, 0, 0]
+
+['label', 'publisher', 'magazine', 'type', 'number of volumes', 'author']
+[0, 0, 1, 6, 1, 0, 1, 6, 1, 1, 6, 1, 13, 3, 13]
+
+['label', 'publisher', 'type', 'type', 'author']
+[0, 1, 1, 1, 1, 1, 1, 3, 3, 3]
+
+['label', 'type', 'subject', 'manufacturer', 'assembly', 'body style', 'class', 'Layout']
+[1, 3, 0, 2, 8, 1, 0, 7, 1, 5, 17, 3, 1, 3, 11, 35, 7, 3, 2, 8, 1, 0, 26, 5, 2, 17, 8, 1]
+
+['label', 'type', 'subject', 'Ship country', 'Ship fate', 'Ship builder', 'Ship flag']
+[1, 3, 4, 2, 1, 4, 7, 9, 5, 3, 9, 19, 11, 7, 19, 14, 9, 24, 5, 14, 9]
+
+['label', 'type', 'subject', 'Ship caption', 'Ship builder']
+[1, 3, 2, 1, 7, 5, 3, 11, 7, 5]
+
+['label', 'type', 'subject', 'Ship builder']
+[1, 3, 1, 7, 3, 7]
+
+['label', 'type', 'subject', 'body style']
+[1, 3, 8, 7, 17, 35]
+
+['label', 'type', 'subject', 'aspect ratio']
+[1, 3, 4, 7, 9, 19]
+
+['label', 'birth place', 'type', 'death date']
+[9, 1, 2, 19, 29, 5]
+
+['label', 'type', 'subject', 'casualties', 'combatant']
+[1, 3, 0, 0, 7, 1, 1, 3, 3, 0]
+
+['label', 'type', 'subject', 'commander', 'combatant', 'conflict']
+[1, 3, 0, 0, 2, 7, 1, 1, 5, 3, 3, 11, 0, 2, 2]
+
+['label', 'type', 'subject', 'casualties']
+[1, 3, 0, 7, 1, 3]
+
+['label', 'combatant', 'type', 'subject']
+[0, 1, 3, 1, 3, 7]
+
+['label', 'casualties', 'type', 'subject']
+[0, 1, 3, 1, 3, 7]
+
+['label', 'type', 'birth place', 'death place', 'birth place', 'death date', 'death place']
+[1, 9, 8, 9, 2, 8, 19, 17, 19, 5, 17, 89, 99, 29, 89, 89, 26, 80, 29, 89, 26]
+
+['label', 'type', 'subject', 'allegiance']
+[1, 3, 1, 7, 3, 7]
+
+['label', 'Latitude', 'map caption', 'type', 'subject', 'Longitude', 'map size']
+[0, 3, 1, 3, 0, 2, 3, 1, 3, 0, 2, 7, 15, 3, 11, 7, 1, 5, 3, 11, 2]
+
+['label', 'type', 'subject', 'built', 'battles', 'builder']
+[1, 3, 0, 2, 0, 7, 1, 5, 1, 3, 11, 3, 2, 0, 2]
+
+['label', 'type', 'subject', 'battles', 'builder']
+[1, 3, 2, 0, 7, 5, 1, 11, 3, 2]
+
+['label', 'builder', 'type', 'subject']
+[0, 1, 3, 1, 3, 7]
+
+['label', 'type', 'subject', 'command structure', 'branch']
+[1, 3, 2, 2, 7, 5, 5, 11, 11, 8]
+
+['label', 'type', 'commander1 label', 'commander2 label', 'subject', 'branch']
+[1, 0, 0, 3, 2, 1, 1, 7, 5, 0, 3, 2, 3, 2, 11]
+
+['label', 'type', 'subject', 'battles']
+[1, 3, 2, 7, 5, 11]
+
+['label', 'type', 'subject', 'branch']
+[1, 3, 2, 7, 5, 11]
+
+['label', 'type', 'subject', 'total events']
+[1, 3, 2, 7, 5, 11]
+
+['label', 'date', 'type', 'location', 'previous event', 'following event', 'name']
+[0, 1, 2, 1, 3, 0, 1, 2, 1, 3, 0, 5, 3, 7, 1, 5, 11, 2, 7, 1, 3]
+
+['label', 'type', 'subject', 'familia', 'classis', 'fossil range']
+[1, 3, 0, 0, 6, 7, 1, 1, 13, 3, 3, 27, 0, 6, 6]
+
+['label', 'type', 'subject', 'genus', 'binomial', 'familia', 'classis']
+[1, 3, 0, 0, 0, 0, 7, 1, 1, 1, 1, 3, 3, 3, 3, 0, 0, 0, 0, 0, 0]
+
+['label', 'type', 'subject', 'death place', 'death date', 'death place']
+[1, 3, 8, 2, 8, 7, 17, 5, 17, 35, 11, 35, 26, 80, 26]
+
+['label', 'latd', 'type', 'subject', 'latm', 'latNS', 'complete', 'architect']
+[0, 1, 3, 0, 10, 0, 0, 1, 3, 0, 10, 0, 0, 7, 1, 21, 1, 1, 3, 43, 3, 3, 10, 0, 0, 10, 10, 0]
+
+['label', 'type', 'subject', 'designer', 'complete']
+[1, 3, 2, 0, 7, 5, 1, 11, 3, 2]
+
+['label', 'type', 'subject', 'familia', 'classis', 'familia authority']
+[1, 3, 0, 0, 2, 7, 1, 1, 5, 3, 3, 11, 0, 2, 2]
+
+['label', 'engine', 'production', 'type', 'subject', 'manufacturer', 'class', 'transmission', 'predecessor']
+[1, 2, 1, 3, 0, 1, 2, 1, 5, 3, 7, 1, 3, 5, 3, 5, 11, 2, 5, 8, 5, 7, 1, 3, 5, 3, 3, 7, 11, 7, 1, 2, 1, 5, 3, 5]
+
+['label', 'engine', 'type', 'subject', 'assembly', 'class']
+[1, 1, 3, 2, 1, 3, 7, 5, 3, 7, 5, 3, 11, 7, 5]
+
+['label', 'engine', 'type', 'subject', 'class', 'AKA']
+[1, 1, 3, 1, 8, 3, 7, 3, 17, 7, 3, 17, 7, 35, 17]
+
+['label', 'engine', 'type', 'subject', 'manufacturer', 'class']
+[1, 1, 3, 0, 1, 3, 7, 1, 3, 7, 1, 3, 3, 7, 1]
+
+['label', 'type', 'subject', 'AKA']
+[1, 3, 8, 7, 17, 35]
+
+['label', 'type', 'death place', 'death date']
+[1, 8, 2, 17, 5, 26]
+
+['label', 'type', 'subject', 'comment', 'has abstract', 'link', 'title', 'nextlink', 'label', 'year']
+[1, 3, 2, 1, 2, 3, 0, 0, 1, 7, 5, 3, 5, 7, 1, 1, 3, 11, 7, 11, 15, 3, 3, 7, 5, 8, 11, 2, 2, 5, 5, 7, 1, 1, 3, 11, 2, 2, 5, 3, 3, 7, 0, 1, 1]
+
+['label', 'series', 'type', 'subject', 'comment', 'link', 'homepage', 'label', 'year']
+[1, 1, 3, 2, 2, 0, 0, 1, 3, 7, 5, 5, 1, 1, 3, 7, 5, 5, 1, 1, 3, 11, 11, 3, 3, 7, 8, 2, 2, 5, 2, 2, 5, 0, 1, 1]
+
+['label', 'series', 'type', 'subject', 'comment', 'title', 'label', 'year']
+[1, 1, 3, 2, 3, 0, 1, 3, 7, 5, 7, 1, 3, 7, 5, 7, 1, 3, 11, 15, 3, 7, 11, 2, 5, 3, 7, 1]
+
+['label', 'series', 'type', 'subject', 'comment', 'nextlink', 'label', 'year']
+[1, 1, 3, 2, 0, 0, 1, 3, 7, 5, 1, 1, 3, 7, 5, 1, 1, 3, 11, 3, 3, 7, 2, 2, 5, 0, 1, 1]
+
+['label', 'series', 'type', 'subject', 'comment', 'homepage', 'label', 'year']
+[1, 1, 3, 2, 0, 0, 1, 3, 7, 5, 1, 1, 3, 7, 5, 1, 1, 3, 11, 3, 3, 7, 2, 2, 5, 0, 1, 1]
+
+['label', 'series', 'type', 'subject', 'next', 'previous', 'previouslink', 'year']
+[1, 1, 3, 0, 0, 0, 1, 3, 7, 1, 1, 1, 3, 7, 1, 1, 1, 3, 3, 3, 3, 7, 0, 0, 1, 0, 1, 1]
+
+['label', 'seeAlso', 'series', 'type', 'subject', 'comment', 'title', 'label', 'year']
+[0, 1, 1, 3, 2, 3, 0, 1, 1, 1, 3, 2, 3, 0, 1, 3, 7, 5, 7, 1, 3, 7, 5, 7, 1, 3, 11, 15, 3, 7, 11, 2, 5, 3, 7, 1]
+
+['label', 'series', 'type', 'subject', 'comment', 'link', 'label', 'year']
+[1, 1, 3, 2, 2, 0, 1, 3, 7, 5, 5, 1, 3, 7, 5, 5, 1, 3, 11, 11, 3, 7, 8, 2, 5, 2, 5, 1]
+
+['label', 'series', 'type', 'subject', 'next', 'previous', 'title', 'year']
+[1, 1, 3, 0, 0, 3, 1, 3, 7, 1, 1, 7, 3, 7, 1, 1, 7, 3, 3, 3, 15, 7, 0, 3, 1, 3, 1, 7]
+
+['label', 'series', 'type', 'subject', 'label', 'year']
+[1, 1, 3, 0, 1, 3, 7, 1, 3, 7, 1, 3, 3, 7, 1]
+
+['label', 'series', 'type', 'subject', 'year', 'label', 'footer']
+[1, 1, 3, 1, 0, 2, 3, 7, 3, 1, 5, 7, 3, 1, 5, 7, 3, 11, 1, 5, 2]
+
+['label', 'series', 'type', 'subject', 'comment', 'label', 'year']
+[1, 1, 3, 2, 0, 1, 3, 7, 5, 1, 3, 7, 5, 1, 3, 11, 3, 7, 2, 5, 1]
+
+['label', 'series', 'type', 'subject', 'year']
+[1, 1, 3, 1, 3, 7, 3, 7, 3, 7]
+
+['label', 'series', 'type', 'subject', 'previous', 'footer']
+[1, 1, 3, 0, 2, 3, 7, 1, 5, 7, 1, 5, 3, 11, 2]
+
+['label', 'type', 'subject', 'link', 'year']
+[1, 3, 2, 1, 7, 5, 3, 11, 7, 5]
+
+['label', 'type', 'subject', 'footer']
+[1, 3, 2, 7, 5, 11]
+
+['label', 'photo', 'type', 'subject', 'language', 'listing']
+[0, 1, 3, 3, 1, 1, 3, 3, 1, 7, 7, 3, 15, 7, 7]
+
+['label', 'type', 'subject', 'elevation m']
+[1, 3, 7, 7, 15, 31]
+
+['label', 'type', 'subject', 'float', 'highest', 'elevation m', 'coordinates format']
+[1, 3, 0, 0, 7, 1, 7, 1, 1, 15, 3, 3, 3, 31, 7, 0, 7, 1, 7, 1, 15]
+
+['label', 'type', 'subject', 'coordinates format']
+[1, 3, 1, 7, 3, 7]
+
+['label', 'type', 'EntrezGene', 'refseq protein', 'Gene Location', 'refseq mRNA', 'ensemble']
+[1, 0, 0, 3, 0, 0, 1, 1, 7, 1, 1, 0, 3, 0, 0, 3, 0, 0, 3, 3, 0]
+
+['label', 'type', 'on chromosome']
+[1, 0, 1]
+
+['label', 'origin', 'type', 'subject', 'Latin', 'GraySubject', 'Nerve', 'image', 'Caption', 'GrayPage']
+[2, 1, 3, 0, 5, 2, 6, 1, 2, 5, 11, 2, 17, 8, 20, 5, 8, 7, 1, 11, 5, 13, 3, 5, 3, 23, 11, 27, 7, 11, 5, 2, 6, 1, 2, 17, 41, 11, 17, 20, 5, 8, 13, 20, 5]
+
+['label', 'Website', 'type', 'type', 'established']
+[0, 1, 1, 0, 1, 1, 0, 3, 1, 1]
+
+['label', 'type', 'subject', 'established']
+[1, 3, 0, 7, 1, 3]
+
+['label', 'type', 'subject', 'comment', 'first', 'label']
+[1, 3, 2, 1, 0, 7, 5, 3, 1, 11, 7, 3, 5, 2, 1]
+
+['label', 'type', 'subject', 'first']
+[1, 3, 1, 7, 3, 7]
+
+['label', 'color', 'type', 'subject', 'instruments', 'other topics', 'bgcolor', 'cultural origins']
+[1, 1, 3, 0, 1, 0, 2, 3, 7, 1, 3, 1, 5, 7, 1, 3, 1, 5, 3, 7, 3, 11, 1, 0, 2, 1, 5, 2]
+
+['label', 'type', 'music', 'book', 'lyrics']
+[1, 0, 5, 0, 1, 11, 1, 5, 0, 5]
+
+['label', 'Length', 'type', 'subject', 'Artist', 'Album']
+[2, 1, 3, 0, 0, 5, 11, 2, 2, 7, 1, 1, 3, 3, 0]
+
+['label', 'conference', 'type', 'subject', 'poll', 'record', 'score', 'confrecord', 'division', 'imagesize']
+[1, 1, 3, 1, 0, 2, 0, 2, 0, 3, 7, 3, 1, 5, 1, 5, 1, 7, 3, 1, 5, 1, 5, 1, 7, 3, 11, 3, 11, 3, 1, 5, 1, 5, 1, 2, 0, 2, 0, 2, 8, 2, 2, 0, 2]
+
+['label', 'conference', 'record', 'confrecord', 'score', 'poll', 'type', 'rank', 'imagesize']
+[1, 0, 0, 2, 1, 1, 1, 0, 1, 1, 5, 3, 3, 3, 1, 0, 2, 1, 1, 1, 0, 2, 1, 1, 1, 0, 5, 5, 5, 2, 3, 3, 1, 3, 1, 1]
+
+['label', 'conference', 'record', 'logosize', 'confrecord', 'subject', 'score', 'logo', 'type', 'rank']
+[1, 0, 0, 0, 3, 2, 0, 1, 1, 1, 1, 1, 7, 5, 1, 3, 3, 0, 0, 3, 2, 0, 1, 1, 0, 3, 2, 0, 1, 1, 3, 2, 0, 1, 1, 11, 3, 7, 7, 2, 5, 5, 1, 1, 3]
+
+['label', 'type', 'subject', 'AST2Year', 'ba pre', 'AST1Year', 'collegiate ', 'AST3Year']
+[1, 3, 11, 0, 11, 0, 11, 7, 23, 1, 23, 1, 23, 47, 3, 47, 3, 47, 11, 143, 11, 143, 11, 0, 11, 11, 143, 11]
+
+['label', 'conference', 'record', 'type', 'subject', 'sport', 'score', 'rank', 'imagesize']
+[1, 0, 1, 3, 2, 2, 1, 0, 1, 3, 7, 5, 5, 3, 1, 1, 3, 2, 2, 1, 0, 7, 5, 5, 3, 1, 11, 11, 7, 3, 8, 5, 2, 5, 2, 1]
+
+['label', 'conference', 'record', 'type', 'subject', 'year', 'champion', 'Team']
+[1, 0, 1, 3, 1, 2, 0, 1, 3, 7, 3, 5, 1, 1, 3, 1, 2, 0, 7, 3, 5, 1, 7, 11, 3, 5, 1, 2]
+
+['label', 'conference', 'record', 'type', 'subject', 'year', 'label', 'Team']
+[1, 0, 1, 3, 1, 0, 0, 1, 3, 7, 3, 1, 1, 1, 3, 1, 0, 0, 7, 3, 1, 1, 7, 3, 3, 1, 1, 0]
+
+['label', 'conference', 'record', 'type', 'subject', 'year', 'sport', 'Team']
+[1, 0, 1, 3, 1, 2, 0, 1, 3, 7, 3, 5, 1, 1, 3, 1, 2, 0, 7, 3, 5, 1, 7, 11, 3, 5, 1, 2]
+
+['label', 'conference', 'record', 'type', 'subject', 'captain', 'score', 'confrecord', 'rank']
+[1, 0, 1, 3, 1, 2, 0, 1, 1, 3, 7, 3, 5, 1, 3, 1, 3, 1, 2, 0, 1, 7, 3, 5, 1, 3, 7, 11, 3, 7, 5, 1, 3, 2, 5, 1]
+
+['label', 'conference', 'type', 'subject', 'head coach', 'confrecord', 'imagesize']
+[1, 1, 3, 14, 0, 0, 3, 7, 29, 1, 1, 7, 29, 1, 1, 59, 3, 3, 14, 14, 0]
+
+['label', 'conference', 'record', 'type', 'subject', 'captain', 'rank']
+[1, 0, 1, 3, 1, 1, 1, 3, 7, 3, 3, 1, 3, 1, 1, 7, 3, 3, 7, 7, 3]
+
+['label', 'conference', 'type', 'subject', 'captain', 'rank', 'imagesize']
+[1, 1, 3, 1, 1, 0, 3, 7, 3, 3, 1, 7, 3, 3, 1, 7, 7, 3, 3, 1, 1]
+
+['label', 'conference', 'record', 'type', 'subject', 'score', 'rank']
+[1, 0, 1, 3, 2, 1, 1, 3, 7, 5, 3, 1, 3, 2, 1, 7, 5, 3, 11, 7, 5]
+
+['label', 'conference', 'record', 'type', 'subject', 'captain', 'imagesize']
+[1, 0, 1, 3, 1, 0, 1, 3, 7, 3, 1, 1, 3, 1, 0, 7, 3, 1, 7, 3, 1]
+
+['label', 'conference', 'type', 'subject', 'captain', 'confrecord', 'imagesize']
+[1, 1, 3, 1, 0, 0, 3, 7, 3, 1, 1, 7, 3, 1, 1, 7, 3, 3, 1, 1, 0]
+
+['label', 'type', 'subject', 'gamehighs']
+[1, 3, 0, 7, 1, 3]
+
+['label', 'type', 'death date']
+[1, 2, 5]
+
+['label', 'name', 'nick', 'birth place', 'type', 'birth date']
+[0, 2, 9, 1, 3, 2, 9, 1, 3, 29, 5, 11, 19, 39, 7]
+
+['label', 'record', 'type', 'subject', 'next', 'coach', 'previous']
+[0, 1, 3, 0, 1, 0, 1, 3, 0, 1, 0, 7, 1, 3, 1, 3, 7, 3, 1, 0, 1]
+
+['label', 'type', 'subject', 'coach', 'logo', 'general manager']
+[1, 3, 1, 0, 2, 7, 3, 1, 5, 7, 3, 11, 1, 5, 2]
+
+['label', 'record', 'type', 'subject', 'coach', 'stadium', 'Team']
+[0, 1, 3, 1, 0, 0, 1, 3, 1, 0, 0, 7, 3, 1, 1, 7, 3, 3, 1, 1, 0]
+
+['label', 'record', 'type', 'subject', 'coach', 'stadium']
+[0, 1, 3, 1, 0, 1, 3, 1, 0, 7, 3, 1, 7, 3, 1]
+
+['label', 'type', 'subject', 'coach', 'event', 'attendance']
+[1, 3, 1, 1, 0, 7, 3, 3, 1, 7, 7, 3, 3, 1, 1]
+
+['label', 'record', 'type', 'subject', 'coach', 'Team']
+[0, 1, 3, 1, 0, 1, 3, 1, 0, 7, 3, 1, 7, 3, 1]
+
+['label', 'type', 'subject', 'coach', 'college']
+[1, 3, 1, 0, 7, 3, 1, 7, 3, 1]
+
+['label', 'type', 'subject', 'next', 'coach']
+[1, 3, 0, 1, 7, 1, 3, 3, 7, 1]
+
+['label', 'type', 'subject', 'coach', 'owner']
+[1, 3, 1, 0, 7, 3, 1, 7, 3, 1]
+
+['label', 'type', 'subject', 'MOC']
+[1, 3, 12, 7, 25, 51]
+
+['label', 'type', 'subject', 'coach']
+[1, 3, 1, 7, 3, 7]
+
+['label', 'type', 'subject', 'reference']
+[1, 3, 4, 7, 9, 19]
+
+['label', 'latd', 'type', 'subject', 'elevation ft', 'language', 'coordinates region']
+[0, 1, 3, 3, 3, 2, 1, 3, 3, 3, 2, 7, 7, 7, 5, 15, 15, 11, 15, 11, 11]
+
+['label', 'type', 'subject', 'features']
+[1, 3, 0, 7, 1, 3]
+
+['label', 'volume (μ³)', 'type', 'area (m2)']
+[2, 1, 2, 5, 8, 5]
+
+['label', 'type', 'subject', 'comment', 'depiction', 'name', 'label', 'thumbnail']
+[1, 3, 2, 2, 0, 0, 0, 7, 5, 5, 1, 1, 1, 11, 11, 3, 3, 3, 8, 2, 2, 2, 2, 2, 2, 0, 0, 0]
+
+['label', 'BranchFrom', 'type', 'subject', 'GrayPage']
+[2, 1, 3, 2, 5, 11, 8, 7, 5, 11]
+
+['label', 'type', 'subject', 'editor', 'format']
+[1, 3, 0, 0, 7, 1, 1, 3, 3, 0]
+
+['label', 'type', 'subject', 'current Editors']
+[1, 3, 2, 7, 5, 11]
+
+['label', 'region', 'type', 'purpose', 'formation', 'founder']
+[1, 1, 2, 1, 1, 3, 5, 3, 3, 5, 3, 3, 5, 5, 3]
+
+['label', 'type', 'subject', 'death place', 'birth place', 'death date', 'birth date']
+[1, 3, 8, 9, 2, 3, 7, 17, 19, 5, 7, 35, 39, 11, 15, 89, 26, 35, 29, 39, 11]
+
+['label', 'type', 'subject', 'event']
+[1, 3, 1, 7, 3, 7]
+
+['label', 'type', 'subject', 'event', 'games']
+[1, 3, 1, 1, 7, 3, 3, 7, 7, 3]
+
+['label', 'type', 'subject', 'RD4b-seed']
+[1, 3, 2, 7, 5, 11]
+
+['label', 'type', 'subject', 'total', 'sports', 'games', 'rank']
+[1, 3, 0, 2, 1, 1, 7, 1, 5, 3, 3, 3, 11, 7, 7, 2, 1, 1, 5, 5, 3]
+
+['label', 'type', 'subject', 'foundation', 'area served']
+[1, 3, 2, 1, 7, 5, 3, 11, 7, 5]
+
+['label', 'type', 'subject', 'day']
+[1, 3, 0, 7, 1, 3]
+
+['label', 'broadcast area', 'type']
+[2, 1, 5]
+
+['label', 'name', 'type', 'current member']
+[0, 1, 4, 1, 4, 9]
+
+['label', 'name', 'type']
+[0, 1, 1]
+
+['label', 'photo', 'type', 'subject', 'display', 'photo width', 'owner', 'photo caption']
+[0, 1, 3, 0, 1, 0, 2, 1, 3, 0, 1, 0, 2, 7, 1, 3, 1, 5, 3, 7, 3, 11, 1, 0, 2, 1, 5, 2]
+
+['label', 'photo', 'type', 'subject', 'display', 'area', 'photo width', 'owner', 'photo caption']
+[0, 1, 3, 0, 1, 1, 0, 2, 1, 3, 0, 1, 1, 0, 2, 7, 1, 3, 3, 1, 5, 3, 7, 7, 3, 11, 1, 1, 0, 2, 3, 1, 5, 1, 5, 2]
+
+['label', 'status', 'type', 'subject', 'type', 'operator', 'created']
+[1, 1, 3, 1, 1, 0, 3, 7, 3, 3, 1, 7, 3, 3, 1, 7, 7, 3, 3, 1, 1]
+
+['label', 'status', 'type', 'subject', 'alt name', 'label']
+[1, 1, 3, 1, 0, 3, 7, 3, 1, 7, 3, 1, 7, 3, 1]
+
+['label', 'type', 'subject', 'type', 'location', 'operator']
+[1, 3, 1, 2, 1, 7, 3, 5, 3, 7, 11, 7, 5, 3, 5]
+
+['label', 'type', 'subject', 'type']
+[1, 3, 1, 7, 3, 7]
+
+['label', 'personName', 'type', 'title']
+[1, 1, 3, 3, 7, 7]
+
+['label', 'type', 'title']
+[1, 3, 7]
+
+['label', 'type', 'subject', 'inclination', 'eccentricity', 'dec', 'class', 'discovery date']
+[1, 3, 3, 0, 1, 1, 1, 7, 7, 1, 3, 3, 3, 15, 3, 7, 7, 7, 3, 7, 7, 7, 1, 1, 1, 3, 3, 3]
+
+['label', 'type', 'subject', 'dec', 'discovery date', 'base']
+[1, 3, 1, 1, 7, 7, 3, 3, 15, 7, 7, 31, 3, 15, 15]
+
+['label', 'type', 'subject', 'genus', 'binomial', 'familia', 'binomial authority']
+[1, 3, 0, 0, 0, 3, 7, 1, 1, 1, 7, 3, 3, 3, 15, 0, 0, 3, 0, 3, 3]
+
+['label', 'type', 'subject', 'binomial', 'familia', 'binomial authority']
+[1, 3, 0, 0, 3, 7, 1, 1, 7, 3, 3, 15, 0, 3, 3]
+
+['label', 'type', 'subject', 'sub genus', 'binomial', 'binomial authority']
+[1, 3, 2, 0, 3, 7, 5, 1, 7, 11, 3, 15, 2, 11, 3]
+
+['label', 'type', 'subject', 'genus', 'familia']
+[1, 3, 0, 0, 7, 1, 1, 3, 3, 0]
+
+['label', 'type', 'subject', 'familia']
+[1, 3, 0, 7, 1, 3]
+
+['label', 'type', 'subject', 'place', 'characters', 'orig lang']
+[1, 3, 6, 1, 0, 7, 13, 3, 1, 27, 7, 3, 13, 6, 1]
+
+['label', 'type', 'subject', 'place', 'writer']
+[1, 3, 6, 0, 7, 13, 1, 27, 3, 6]
+
+['label', 'type', 'subject', 'colours', 'colorcode']
+[1, 3, 2, 0, 7, 5, 1, 11, 3, 2]
+
+['label', 'established date', 'type', 'subject', 'established title']
+[0, 1, 3, 3, 1, 3, 3, 7, 7, 15]
+
+['label', 'type', 'subject', 'image skyline', 'subdivision name']
+[1, 3, 8, 4, 7, 17, 9, 35, 19, 44]
+
+['label', 'area code', 'type', 'subject', 'area code type']
+[2, 1, 3, 4, 5, 11, 14, 7, 9, 19]
+
+['label', 'type', 'subject', 'construction began']
+[1, 3, 1, 7, 3, 7]
+
+['label', 'opening year', 'type', 'installed capacity (W)', 'primary fuel type', 'name', 'generation units']
+[5, 1, 6, 3, 0, 4, 11, 41, 23, 5, 29, 13, 7, 1, 9, 27, 6, 34, 3, 19, 4]
+
+['label', 'average annual gross power generation (J)', 'type', 'long', 'name', 'geometry', 'lat']
+[13, 1, 0, 0, 0, 0, 27, 13, 13, 13, 13, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0]
+
+['label', 'name', 'type', 'generation units', 'primary fuel type', 'installed capacity (W)']
+[0, 1, 4, 3, 6, 1, 4, 3, 6, 9, 7, 13, 19, 34, 27]
+
+['label', 'name', 'type', 'primary fuel type']
+[0, 1, 3, 1, 3, 7]
+
+['label', 'type', 'subject', 'city', 'capacity']
+[1, 3, 0, 2, 7, 1, 5, 3, 11, 2]
+
+['label', 'released', 'type', 'Website', 'paradigm', 'license']
+[0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 3, 1, 1, 0, 1]
+
+['label', 'researchObjective', 'type', 'projectType', 'subject']
+[3, 1, 3, 3, 7, 15, 15, 7, 7, 15]
+
+['label', 'type', 'subject', 'comment', 'label', 'location', 'established', 'nearest city']
+[1, 3, 2, 0, 2, 0, 0, 7, 5, 1, 5, 1, 1, 11, 3, 11, 3, 3, 2, 8, 2, 2, 2, 0, 0, 2, 2, 0]
+
+['label', 'type', 'subject', 'governing body']
+[1, 3, 4, 7, 9, 19]
+
+['label', 'type', 'Band', 'Arm', 'Chromosome']
+[1, 3, 3, 0, 7, 7, 1, 15, 3, 3]
+
+['label', 'type', 'comment', 'label']
+[1, 2, 0, 5, 1, 2]
+
+['label', 'type', 'subject', 'image caption', 'hq city', 'image size']
+[1, 3, 8, 1, 7, 7, 17, 3, 15, 35, 7, 31, 17, 71, 15]
+
+['label', 'type', 'subject', 'end year']
+[1, 3, 4, 7, 9, 19]
+
+['label', 'type', 'subject', 'began operation']
+[1, 3, 1, 7, 3, 7]
+
+['label', 'type', 'subject', 'location', 'opened']
+[1, 3, 2, 0, 7, 5, 1, 11, 3, 2]
+
+['label', 'type', 'subject', 'presenter', 'language', 'format', 'country', 'home station']
+[1, 3, 1, 3, 0, 3, 6, 7, 3, 7, 1, 7, 13, 7, 15, 3, 15, 27, 7, 1, 7, 13, 3, 15, 27, 3, 6, 27]
+
+['label', 'type', 'subject', 'first aired', 'audio format', 'country']
+[1, 3, 1, 1, 3, 7, 3, 3, 7, 7, 7, 15, 3, 7, 7]
+
+['label', 'type', 'subject', 'director', 'country']
+[1, 3, 1, 3, 7, 3, 7, 7, 15, 7]
+
+['label', 'type', 'subject', 'box width', 'Character']
+[1, 3, 2, 1, 7, 5, 3, 11, 7, 5]
+
+['label', 'type', 'subject', 'el', 'image width']
+[1, 3, 0, 7, 7, 1, 15, 3, 31, 7]
+
+['label', 'type', 'subject', 'end']
+[1, 3, 2, 7, 5, 11]
+
+['label', 'type', 'subject', 'end', 'map state']
+[1, 3, 2, 3, 7, 5, 7, 11, 15, 11]
+
+['label', 'wordnet_type', 'type']
+[0, 1, 1]
+
+['label', 'name', 'genre', 'type', 'location']
+[0, 0, 1, 2, 0, 1, 2, 1, 2, 5]
+
+['label', 'county', 'type', 'subject']
+[0, 1, 3, 1, 3, 7]
+
+['label', 'region', 'type', 'subject', 'municipality', 'building name']
+[1, 1, 3, 0, 2, 3, 7, 1, 5, 7, 1, 5, 3, 11, 2]
+
+['label', 'type', 'subject', 'building name']
+[1, 3, 2, 7, 5, 11]
+
+['label', 'type', 'subject', 'architecture style']
+[1, 3, 5, 7, 11, 23]
+
+['label', 'type', 'genus', 'binomial authority', 'ordo', 'familia', 'classis', 'binomial']
+[1, 0, 3, 0, 0, 0, 0, 1, 7, 1, 1, 1, 1, 3, 0, 0, 0, 0, 3, 3, 3, 3, 0, 0, 0, 0, 0, 0]
+
+['label', 'type', 'subject', 'length km', 'country', 'maint']
+[1, 3, 3, 3, 0, 7, 7, 7, 1, 15, 15, 3, 15, 3, 3]
+
+['label', 'type', 'subject', 'state', 'route', 'length round']
+[1, 3, 1, 1, 8, 7, 3, 3, 17, 7, 7, 35, 3, 17, 17]
+
+['label', 'type', 'length km', 'state', 'country', 'route']
+[1, 3, 1, 3, 1, 7, 3, 7, 3, 7, 15, 7, 7, 3, 7]
+
+['label', 'type', 'subject', 'destinations', 'alternate name', 'country']
+[1, 3, 2, 1, 3, 7, 5, 3, 7, 11, 7, 15, 5, 11, 7]
+
+['label', 'type', 'subject', 'length km', 'country']
+[1, 3, 3, 3, 7, 7, 7, 15, 15, 15]
+
+['label', 'type', 'subject', 'county', 'route']
+[1, 3, 0, 1, 7, 1, 3, 3, 7, 1]
+
+['label', 'type', 'subject', 'destinations', 'country']
+[1, 3, 2, 3, 7, 5, 7, 11, 15, 11]
+
+['label', 'route number', 'type', 'route type abbreviation']
+[5, 1, 4, 11, 29, 9]
+
+['label', 'type', 'subject', 'type', 'image caption', 'location']
+[1, 3, 1, 8, 2, 7, 3, 17, 5, 7, 35, 11, 17, 5, 26]
+
+['label', 'type', 'type', 'location', 'long', 'name', 'geometry', 'lat']
+[1, 1, 2, 0, 0, 0, 0, 3, 5, 1, 1, 1, 1, 5, 1, 1, 1, 1, 2, 2, 2, 2, 0, 0, 0, 0, 0, 0]
+
+['label', 'type', 'subject', 'map', 'type', 'country']
+[1, 3, 1, 1, 3, 7, 3, 3, 7, 7, 7, 15, 3, 7, 7]
+
+['label', 'number of lanes', 'opening year', 'type', 'route start location', 'route end location', 'is part of (literal)', 'name']
+[4, 5, 1, 7, 7, 6, 0, 29, 9, 39, 39, 34, 4, 11, 47, 47, 41, 5, 15, 15, 13, 1, 63, 55, 7, 55, 7, 6]
+
+['label', 'type', 'subject', 'comment', 'manufacturer', 'stages', 'country-origin', 'label']
+[1, 3, 2, 0, 3, 0, 0, 7, 5, 1, 7, 1, 1, 11, 3, 15, 3, 3, 2, 11, 2, 2, 3, 0, 0, 3, 3, 0]
+
+['label', 'type', 'subject', 'fail']
+[1, 3, 0, 7, 1, 3]
+
+['label', 'type', 'manufacturer', 'height ft', 'capacity', 'opened']
+[1, 0, 4, 2, 0, 1, 9, 5, 1, 4, 2, 0, 14, 4, 2]
+
+['label', 'type', 'subject', 'manufacturer', 'section', 'height ft', 'opened']
+[1, 3, 0, 3, 4, 0, 7, 1, 7, 9, 1, 3, 15, 19, 3, 3, 4, 0, 19, 3, 4]
+
+['label', 'type', 'subject', 'length km', 'alternate name', 'country']
+[1, 3, 3, 1, 3, 7, 7, 3, 7, 15, 7, 15, 7, 15, 7]
+
+['label', 'type', 'subject', 'county', 'cspan']
+[1, 3, 0, 0, 7, 1, 1, 3, 3, 0]
+
+['label', 'type', 'subject', 'alternate name', 'country']
+[1, 3, 1, 3, 7, 3, 7, 7, 15, 7]
+
+['label', 'type', 'open', 'end', 'subject']
+[1, 1, 2, 3, 3, 5, 7, 5, 7, 11]
+
+['label', 'label', 'type']
+[0, 1, 1]
+
+['label', 'type', 'subject', 'birth place', 'death place', 'birth place', 'death place']
+[1, 3, 9, 8, 9, 8, 7, 19, 17, 19, 17, 39, 35, 39, 35, 89, 99, 89, 89, 80, 89]
+
+['label', 'birth place', 'type', 'subject', 'death place', 'death place']
+[9, 1, 3, 8, 8, 19, 39, 89, 89, 7, 17, 17, 35, 35, 80]
+
+['label', 'type', 'champion', 'most champs']
+[1, 2, 0, 5, 1, 2]
+
+['label', 'type', 'sales', 'year']
+[1, 0, 1, 1, 3, 1]
+
+['label', 'type', 'death place', 'birth date', 'death place']
+[1, 8, 3, 8, 17, 7, 17, 35, 80, 35]
+
+['label', 'type', 'subject', 'Ship country', 'Ship launched', 'Ship laid down', 'Ship builder', 'Ship commissioned']
+[1, 3, 4, 0, 1, 1, 0, 7, 9, 1, 3, 3, 1, 19, 3, 7, 7, 3, 4, 9, 9, 4, 1, 1, 0, 3, 1, 1]
+
+['label', 'type', 'subject', 'Ship country', 'Ship completed', 'Ship acquired', 'Ship builder', 'label', 'Ship commissioned']
+[1, 3, 4, 0, 0, 1, 0, 0, 7, 9, 1, 1, 3, 1, 1, 19, 3, 3, 7, 3, 3, 4, 4, 9, 4, 4, 0, 1, 0, 0, 1, 0, 0, 1, 1, 0]
+
+['label', 'type', 'subject', 'Ship class', 'Ship aircraft', 'comment', 'Ship country', 'label', 'Ship armament']
+[1, 3, 2, 1, 2, 4, 0, 2, 7, 5, 3, 5, 9, 1, 5, 11, 7, 11, 19, 3, 11, 5, 8, 14, 2, 8, 5, 9, 1, 5, 14, 2, 8, 4, 14, 2]
+
+['label', 'type', 'subject', 'Ship sail plan', 'In commission range', 'Ship armament']
+[1, 3, 4, 12, 2, 7, 9, 25, 5, 19, 51, 11, 64, 14, 38]
+
+['label', 'type', 'Ship builder', 'subject']
+[1, 1, 3, 3, 7, 7]
+
+['label', 'type', 'subject', 'format', 'Artist', 'Album']
+[1, 3, 0, 0, 0, 7, 1, 1, 1, 3, 3, 3, 0, 0, 0]
+
+['label', 'type', 'subject', 'area', 'code']
+[1, 3, 1, 0, 7, 3, 1, 7, 3, 1]
+
+['label', 'type', 'nearest city', 'location', 'maximum elevation (μ)', 'minimum elevation (μ)', 'name', 'homepage']
+[1, 0, 2, 4, 3, 0, 0, 1, 5, 9, 7, 1, 1, 2, 4, 3, 0, 0, 14, 11, 2, 2, 19, 4, 4, 3, 3, 0]
+
+['label', 'type', 'subject', 'wordnet_type', 'death date', 'birth date']
+[1, 3, 0, 2, 3, 7, 1, 5, 7, 3, 11, 15, 2, 3, 11]
+
+['label', 'type', 'subject', 'wordnet_type', 'birth date']
+[1, 3, 0, 3, 7, 1, 7, 3, 15, 3]
+
+['label', 'subject', 'type', 'death']
+[3, 1, 1, 7, 7, 3]
+
+['label', 'type', 'death']
+[1, 1, 3]
+
+['label', 'club', 'type', 'subject', 'leftarm', 'league', 'manager', 'chairman', 'body']
+[2, 1, 3, 0, 0, 1, 0, 3, 5, 11, 2, 2, 5, 2, 11, 7, 1, 1, 3, 1, 7, 3, 3, 7, 3, 15, 0, 1, 0, 3, 1, 0, 3, 1, 7, 3]
+
+['label', 'type', 'subject', 'chairman', 'BC', 'body']
+[1, 3, 0, 10, 3, 7, 1, 21, 7, 3, 43, 15, 10, 3, 43]
+
+['label', 'type', 'subject', 'a']
+[1, 3, 3, 7, 7, 15]
+
+['label', 'type', 'subject', 'domest league']
+[1, 3, 0, 7, 1, 3]
+
+['label', 'type', 'subject', 'Composer', 'comment', 'published', 'label']
+[1, 3, 0, 2, 0, 0, 7, 1, 5, 1, 1, 3, 11, 3, 3, 2, 0, 0, 2, 2, 0]
+
+['label', 'type', 'subject', 'Artist', 'genre']
+[1, 3, 0, 0, 7, 1, 1, 3, 3, 0]
+
+['label', 'type', 'subject', 'producer', 'Artist']
+[1, 3, 1, 0, 7, 3, 1, 7, 3, 1]
+
+['label', 'type', 'subject', 'Artist', 'Album']
+[1, 3, 0, 0, 7, 1, 1, 3, 3, 0]
+
+['label', 'Album', 'type', 'subject']
+[0, 1, 3, 1, 3, 7]
+
+['label', 'type', 'subject', 'station', 'crew']
+[1, 3, 2, 2, 7, 5, 5, 11, 11, 8]
+
+['label', 'type', 'subject', 'power', 'mission type', 'mission duration', 'satellite of']
+[1, 3, 5, 3, 2, 0, 7, 11, 7, 5, 1, 23, 15, 11, 3, 23, 17, 5, 11, 3, 2]
+
+['label', 'type', 'subject', 'launch']
+[1, 3, 1, 7, 3, 7]
+
+['label', 'type', 'subject', 'inclination']
+[1, 3, 3, 7, 7, 15]
+
+['label', 'type', 'subject', 'Landing']
+[1, 3, 0, 7, 1, 3]
+
+['label', 'type', 'subject', 'virus group', 'comment', 'subdivision ranks', 'genus', 'familia', 'subdivision', 'label']
+[1, 3, 1, 2, 5, 0, 0, 3, 0, 7, 3, 5, 11, 1, 1, 7, 1, 7, 11, 23, 3, 3, 15, 3, 5, 11, 1, 1, 7, 1, 17, 2, 2, 11, 2, 5, 5, 23, 5, 0, 3, 0, 3, 0, 3]
+
+['label', 'type', 'subject', 'country/region', 'category', 'contact']
+[1, 3, 0, 1, 1, 7, 1, 3, 3, 3, 7, 7, 1, 1, 3]
+
+['label', 'type', 'subject', 'seating capacity', 'opened']
+[1, 3, 3, 0, 7, 7, 1, 15, 3, 3]
+
+['label', 'type', 'subject', 'built', 'capacity']
+[1, 3, 0, 2, 7, 1, 5, 3, 11, 2]
+
+['label', 'type', 'subject', 'built']
+[1, 3, 0, 7, 1, 3]
+
+['label', 'type', 'subject', 'current season']
+[1, 3, 2, 7, 5, 11]
+
+['label', 'series', 'type', 'subject', 'title', 'label', 'year']
+[1, 1, 3, 3, 0, 1, 3, 7, 7, 1, 3, 7, 7, 1, 3, 15, 3, 7, 3, 7, 1]
+
+['label', 'club', 'type', 'subject', 'l', 'BC', 'champion']
+[2, 1, 3, 3, 10, 2, 5, 11, 11, 32, 8, 7, 7, 21, 5, 15, 43, 11, 43, 11, 32]
+
+['label', 'series', 'type', 'subject', 'previouslink', 'nextlink']
+[1, 1, 3, 0, 0, 3, 7, 1, 1, 7, 1, 1, 3, 3, 0]
+
+['label', 'series', 'type', 'subject', 'previous', 'label', 'year']
+[1, 1, 3, 0, 0, 1, 3, 7, 1, 1, 3, 7, 1, 1, 3, 3, 3, 7, 0, 1, 1]
+
+['label', 'type', 'subject', 'next', 'coach', 'general manager']
+[1, 3, 0, 1, 2, 7, 1, 3, 5, 3, 7, 11, 1, 2, 5]
+
+['label', '2nd runner-up', 'type', 'subject', 'best attacking team', 'best defence team']
+[0, 1, 3, 1, 3, 1, 3, 1, 3, 7, 3, 7, 7, 15, 7]
+
+['label', 'type', 'subject', 'att']
+[1, 3, 0, 7, 1, 3]
+
+['label', 'type', 'subject', 'logo', 'image size']
+[1, 3, 0, 7, 7, 1, 15, 3, 31, 7]
+
+['label', 'type', 'subject', 'colours']
+[1, 3, 2, 7, 5, 11]
+
+['label', 'type', 'subject', 'season', 'matches']
+[1, 3, 0, 3, 7, 1, 7, 3, 15, 3]
+
+['label', 'type', 'subject', 'ceotitle', 'attendance']
+[1, 3, 0, 0, 7, 1, 1, 3, 3, 0]
+
+['label', 'type', 'subject', 'captain', 'bg']
+[1, 3, 1, 0, 7, 3, 1, 7, 3, 1]
+
+['label', 'type', 'subject', 'mass', 'class', 'constell', 'epoch', 'appmag v']
+[1, 3, 3, 1, 0, 1, 3, 7, 7, 3, 1, 3, 7, 15, 7, 3, 7, 15, 7, 3, 7, 15, 1, 3, 7, 1, 3, 7]
+
+['label', 'type', 'subject', 'class', 'constell', 'epoch', 'appmag v']
+[1, 3, 1, 0, 1, 3, 7, 3, 1, 3, 7, 7, 3, 7, 15, 1, 3, 7, 1, 3, 7]
+
+['label', 'type', 'subject', 'class', 'appmag v']
+[1, 3, 1, 3, 7, 3, 7, 7, 15, 7]
+
+['label', 'habitable zone', 'type', 'subject', 'kepler 22 Washington Foundation in 2006luminosity']
+[0, 1, 3, 9, 1, 3, 9, 7, 19, 39]
+
+['label', 'code', 'subject', 'address', 'type', 'line']
+[0, 3, 1, 1, 10, 3, 1, 1, 10, 7, 7, 43, 3, 21, 21]
+
+['label', 'type', 'subject', 'label', 'auto', 'date']
+[1, 3, 0, 0, 0, 7, 1, 1, 1, 3, 3, 3, 0, 0, 0]
+
+['label', 'type', 'subject', 'comment', 'date', 'label']
+[1, 3, 2, 0, 0, 7, 5, 1, 1, 11, 3, 3, 2, 2, 0]
+
+['label', 'type', 'label']
+[1, 0, 1]
+
+['label', 'series', 'type', 'subject', 'next', 'season', 'episode list', 'airdate', 'title']
+[1, 1, 3, 0, 0, 3, 0, 3, 3, 7, 1, 1, 7, 1, 7, 7, 1, 1, 7, 1, 7, 3, 3, 15, 3, 15, 0, 3, 0, 3, 3, 0, 3, 3, 15, 3]
+
+['label', 'production', 'type', 'subject', 'next', 'episode list', 'airdate', 'director']
+[2, 1, 3, 0, 3, 0, 1, 5, 11, 2, 11, 2, 5, 7, 1, 7, 1, 3, 3, 15, 3, 7, 3, 0, 1, 3, 7, 1]
+
+['label', 'type', 'subject', 'episode list', 'airdate', 'director']
+[1, 3, 3, 0, 1, 7, 7, 1, 3, 15, 3, 7, 3, 7, 1]
+
+['label', 'Length', 'type', 'subject', 'episode list', 'airdate', 'director']
+[2, 1, 3, 3, 0, 1, 5, 11, 11, 2, 5, 7, 7, 1, 3, 15, 3, 7, 3, 7, 1]
+
+['label', 'type', 'subject', 'next', 'airdate', 'director']
+[1, 3, 0, 0, 1, 7, 1, 1, 3, 3, 3, 7, 0, 1, 1]
+
+['label', 'type', 'subject', 'season', 'episode list', 'director']
+[1, 3, 0, 3, 1, 7, 1, 7, 3, 3, 15, 7, 3, 1, 7]
+
+['label', 'type', 'subject', 'editor', 'airdate', 'director']
+[1, 3, 0, 0, 1, 7, 1, 1, 3, 3, 3, 7, 0, 1, 1]
+
+['label', 'Length', 'type', 'subject', 'director']
+[2, 1, 3, 1, 5, 11, 5, 7, 3, 7]
+
+['label', 'type', 'subject', 'airdate', 'director']
+[1, 3, 0, 1, 7, 1, 3, 3, 7, 1]
+
+['label', 'type', 'subject', 'airdate']
+[1, 3, 0, 7, 1, 3]
+
+['label', 'type', 'subject', 'bgcolour', 'first aired', 'LineColor', 'episode list', 'network', 'country']
+[1, 3, 0, 1, 12, 3, 1, 3, 7, 1, 3, 25, 7, 3, 7, 3, 7, 51, 15, 7, 15, 1, 12, 3, 1, 3, 25, 7, 3, 7, 51, 25, 51, 7, 15, 7]
+
+['label', 'type', 'subject', 'first aired', 'bgcolor', 'align', 'episode list', 'country', 'direction']
+[1, 3, 1, 0, 0, 3, 3, 5, 7, 3, 1, 1, 7, 7, 11, 7, 3, 3, 15, 15, 23, 1, 1, 7, 7, 11, 0, 3, 3, 5, 3, 3, 5, 15, 23, 23]
+
+['label', 'type', 'subject', 'last aired', 'bgcolour', 'first aired', 'EnglishTitle', 'network', 'num episodes', 'country']
+[1, 3, 2, 0, 1, 4, 1, 1, 3, 7, 5, 1, 3, 9, 3, 3, 7, 11, 3, 7, 19, 7, 7, 15, 2, 5, 14, 5, 5, 11, 1, 4, 1, 1, 3, 9, 3, 3, 7, 9, 9, 19, 3, 7, 7]
+
+['label', 'type', 'subject', 'num episodes', 'first aired', 'network', 'country', 'label']
+[1, 3, 1, 1, 1, 3, 0, 7, 3, 3, 3, 7, 1, 7, 7, 7, 15, 3, 3, 3, 7, 1, 3, 7, 1, 7, 1, 3]
+
+['label', 'type', 'subject', 'last aired', 'bgcolour', 'first aired', 'episode list', 'network', 'country']
+[1, 3, 2, 0, 1, 3, 1, 3, 7, 5, 1, 3, 7, 3, 7, 11, 3, 7, 15, 7, 15, 2, 5, 11, 5, 11, 1, 3, 1, 3, 7, 3, 7, 7, 15, 7]
+
+['label', 'type', 'subject', 'DirectedBy', 'bgcolour', 'country']
+[1, 3, 0, 0, 3, 7, 1, 1, 7, 3, 3, 15, 0, 3, 3]
+
+['label', 'type', 'subject', 'bgcolour', 'episode list', 'network', 'country']
+[1, 3, 0, 3, 1, 3, 7, 1, 7, 3, 7, 3, 15, 7, 15, 3, 1, 3, 7, 15, 7]
+
+['label', 'type', 'subject', 'bgcolour', 'first aired', 'show name', 'country', 'label']
+[1, 3, 0, 1, 3, 3, 0, 7, 1, 3, 7, 7, 1, 3, 7, 15, 15, 3, 1, 3, 3, 0, 7, 7, 1, 15, 3, 3]
+
+['label', 'type', 'subject', 'episode list', 'country']
+[1, 3, 3, 3, 7, 7, 7, 15, 15, 15]
+
+['label', 'type', 'subject', 'bgcolour']
+[1, 3, 0, 7, 1, 3]
+
+['label', 'type', 'subject', 'Aux']
+[1, 3, 0, 7, 1, 3]
+
+['label', 'type', 'show name', 'network', 'language', 'genre', 'country', 'background']
+[1, 3, 1, 3, 0, 3, 2, 7, 3, 7, 1, 7, 5, 7, 15, 3, 15, 11, 7, 1, 7, 5, 3, 15, 11, 3, 2, 11]
+
+['label', 'type', 'subject', 'creator', 'country']
+[1, 3, 1, 3, 7, 3, 7, 7, 15, 7]
+
+['label', 'active years start date', 'type', 'active years end date', 'office']
+[7, 1, 7, 3, 15, 63, 31, 15, 7, 31]
+
+['label', 'active years start date', 'type', 'office']
+[7, 1, 3, 15, 31, 7]
+
+['label', 'type', 'subject', 'latNS', 'coordinates region', 'coordinates display']
+[1, 3, 10, 2, 1, 7, 21, 5, 3, 43, 11, 7, 32, 21, 5]
+
+['label', 'area code', 'type', 'coordinates display']
+[2, 1, 1, 5, 5, 3]
+
+['label', 'type', 'subject', 'blank info', 'blank name']
+[1, 3, 3, 3, 7, 7, 7, 15, 15, 15]
+
+['label', 'type', 'subject', 'country', 'colorcode']
+[1, 3, 3, 0, 7, 7, 1, 15, 3, 3]
+
+['label', 'type', 'subject', 'manufacturer', 'formation', 'comment', 'operator', 'name', 'Caption', 'label']
+[1, 3, 0, 1, 2, 1, 0, 1, 0, 7, 1, 3, 5, 3, 1, 3, 1, 3, 7, 11, 7, 3, 7, 3, 1, 2, 1, 0, 1, 0, 5, 3, 1, 3, 1, 5, 2, 5, 2, 1, 3, 1, 1, 0, 1]
+
+['label', 'type', 'subject', 'height', 'formation', 'family', 'lines', 'capacity']
+[1, 3, 3, 1, 3, 10, 2, 7, 7, 3, 7, 21, 5, 15, 7, 15, 43, 11, 7, 15, 43, 11, 7, 21, 5, 43, 11, 32]
+
+['label', 'type', 'subject', 'manufacturer', 'lines', 'imagesize']
+[1, 3, 0, 10, 0, 7, 1, 21, 1, 3, 43, 3, 10, 0, 10]
+
+['label', 'type', 'subject', 'height', 'manufacturer', 'capacity', 'imagesize']
+[1, 3, 3, 0, 2, 0, 7, 7, 1, 5, 1, 15, 3, 11, 3, 3, 11, 3, 2, 0, 2]
+
+['label', 'engine', 'type', 'subject', 'capacity', 'imagesize']
+[1, 1, 3, 2, 0, 3, 7, 5, 1, 7, 5, 1, 11, 3, 2]
+
+['label', 'type', 'subject', 'formation', 'capacity', 'background']
+[1, 3, 1, 2, 2, 7, 3, 5, 5, 7, 11, 11, 5, 5, 8]
+
+['label', 'type', 'subject', 'formation']
+[1, 3, 1, 7, 3, 7]
+
+['label', 'type', 'subject', 'manufacturer', 'imagesize']
+[1, 3, 0, 0, 7, 1, 1, 3, 3, 0]
+
+['label', 'engine', 'type', 'subject', 'formation']
+[1, 1, 3, 1, 3, 7, 3, 7, 3, 7]
+
+['label', 'type', 'subject', 'capacity']
+[1, 3, 2, 7, 5, 11]
+
+['label', 'type', 'subject', 'construction']
+[1, 3, 1, 7, 3, 7]
+
+['label', 'state', 'type', 'type', 'long', 'geometry', 'name', 'homepage', 'lat']
+[1, 1, 1, 0, 0, 0, 0, 0, 3, 3, 1, 1, 1, 1, 1, 3, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+
+['label', 'Artery', 'type', 'subject', 'GraySubject', 'GrayPage']
+[0, 1, 3, 5, 2, 1, 3, 5, 2, 7, 11, 5, 23, 11, 17]
+
+['label', 'Latitude', 'type', 'subject', 'address', 'city', 'country', 'architect']
+[0, 1, 3, 1, 0, 3, 0, 1, 3, 1, 0, 3, 0, 7, 3, 1, 7, 1, 7, 3, 15, 3, 1, 7, 1, 3, 0, 3]
+
+['label', 'construction cost', 'type', 'subject', 'broke ground', 'architect']
+[3, 1, 3, 5, 0, 7, 15, 23, 3, 7, 11, 1, 23, 3, 5]
+
+['label', 'construction cost', 'type', 'subject', 'built', 'architect']
+[3, 1, 3, 0, 0, 7, 15, 3, 3, 7, 1, 1, 3, 3, 0]
+
+['label', 'type', 'subject', 'address', 'architect', 'coordinates display']
+[1, 3, 1, 0, 1, 7, 3, 1, 3, 7, 3, 7, 1, 3, 1]
+
+['label', 'type', 'subject', 'Nickname']
+[1, 3, 0, 7, 1, 3]
+
+['label', 'type', 'subject', 'architect']
+[1, 3, 0, 7, 1, 3]
+
+['label', 'type', 'subject', 'developer', 'genre', 'modes']
+[1, 3, 0, 0, 3, 7, 1, 1, 7, 3, 3, 15, 0, 3, 3]
+
+['label', 'developer', 'type', 'subject']
+[0, 1, 3, 1, 3, 7]
+
+['label', 'blank name sec', 'type', 'subject', 'blank info sec', 'coordinates display']
+[5, 1, 3, 5, 1, 11, 23, 35, 11, 7, 11, 3, 23, 7, 11]
+
+['label', 'type', 'subject', 'demographics1 info', 'demographics1 title', 'coordinates display']
+[1, 3, 0, 3, 1, 7, 1, 7, 3, 3, 15, 7, 3, 1, 7]
+
+['label', 'type', 'subject', 'demographics1 info', 'demographics1 title', 'demographics type']
+[1, 3, 0, 3, 2, 7, 1, 7, 5, 3, 15, 11, 3, 2, 11]
+
+['label', 'type', 'subject', 'coordinates format', 'coordinates display']
+[1, 3, 1, 1, 7, 3, 3, 7, 7, 3]
+
+['label', 'type', 'subject', 'image map']
+[1, 3, 8, 7, 17, 35]
+
+['label', 'type', 'area code type', 'subject']
+[1, 4, 3, 9, 7, 19]
+
+['label', 'type', 'subject', 'cost', 'designer']
+[1, 3, 1, 2, 7, 3, 5, 7, 11, 5]
+
+['label', 'type', 'subject', 'comment', 'depiction', 'homepage', 'label']
+[1, 3, 2, 2, 0, 0, 7, 5, 5, 1, 1, 11, 11, 3, 3, 8, 2, 2, 2, 2, 0]
+
+['label', 'type', 'subject', 'action', 'automation', 'designer', 'mobility', 'design date', 'crew']
+[1, 3, 0, 0, 2, 0, 4, 2, 7, 1, 1, 5, 1, 9, 5, 3, 3, 11, 3, 19, 11, 0, 2, 0, 4, 2, 2, 0, 4, 2, 2, 14, 8, 4, 2, 14]
+
+['label', 'Length', 'type', 'subject', 'action', 'is ranged', 'feed', 'cartridge']
+[2, 1, 3, 0, 0, 0, 1, 5, 11, 2, 2, 2, 5, 7, 1, 1, 1, 3, 3, 3, 3, 7, 0, 0, 1, 0, 1, 1]
+
+['label', 'engine', 'type', 'subject', 'height', 'is vehicle', 'designer', 'crew']
+[1, 1, 3, 3, 1, 2, 2, 3, 7, 7, 3, 5, 5, 7, 7, 3, 5, 5, 15, 7, 11, 11, 7, 11, 11, 5, 5, 8]
+
+['label', 'type', 'subject', 'cartridge']
+[1, 3, 1, 7, 3, 7]
+
+['label', 'type', 'subject', 'action', 'cartridge']
+[1, 3, 0, 1, 7, 1, 3, 3, 7, 1]
+
+['label', 'current status', 'type', 'subject', 'type', 'commercial', 'language', 'owner']
+[3, 1, 3, 1, 0, 3, 0, 7, 15, 7, 3, 15, 3, 7, 3, 1, 7, 1, 7, 3, 15, 3, 1, 7, 1, 3, 0, 3]
+
+['label', 'current status', 'type', 'subject', 'type', 'launch date', 'url', 'screenshot']
+[3, 1, 3, 1, 2, 0, 0, 7, 15, 7, 11, 3, 3, 7, 3, 5, 1, 1, 7, 11, 3, 3, 5, 1, 1, 2, 2, 0]
+
+['label', 'type', 'subject', 'logo', 'launch date', 'owner', 'alexa']
+[1, 3, 0, 2, 0, 0, 7, 1, 5, 1, 1, 3, 11, 3, 3, 2, 0, 0, 2, 2, 0]
+
+['label', 'current status', 'type', 'subject', 'language', 'launch date', 'owner']
+[3, 1, 3, 3, 2, 0, 7, 15, 15, 11, 3, 7, 7, 5, 1, 15, 11, 3, 11, 3, 2]
+
+['label', 'type', 'subject', 'logo', 'launch date']
+[1, 3, 0, 2, 7, 1, 5, 3, 11, 2]
+
+['label', 'type', 'subject', 'commercial', 'language']
+[1, 3, 0, 3, 7, 1, 7, 3, 15, 3]
+
+['label', 'current status', 'type', 'subject', 'language', 'alexa']
+[3, 1, 3, 3, 0, 7, 15, 15, 3, 7, 7, 1, 15, 3, 3]
+
+['label', 'type', 'subject', 'alexa']
+[1, 3, 0, 7, 1, 3]
+
+['label', 'current status', 'type', 'subject', 'commercial']
+[3, 1, 3, 0, 7, 15, 3, 7, 1, 3]
+
+['label', 'type', 'subject', 'comment', 'type', 'Name', 'name', 'label', 'year']
+[1, 3, 2, 1, 0, 0, 0, 1, 7, 5, 3, 1, 1, 1, 3, 11, 7, 3, 3, 3, 7, 5, 2, 2, 2, 5, 1, 1, 1, 3, 0, 0, 1, 0, 1, 1]
+
+['label', 'type', 'subject', 'Composer', 'company', 'creator']
+[1, 3, 0, 2, 1, 7, 1, 5, 3, 3, 11, 7, 2, 1, 5]
+
+['label', 'type', 'subject', 'developer']
+[1, 3, 0, 7, 1, 3]
+
+['label', 'region', 'type', 'subject', 'State Party', 'link', 'id', 'Criteria']
+[1, 1, 3, 2, 2, 1, 1, 3, 7, 5, 5, 3, 3, 7, 5, 5, 3, 3, 11, 11, 7, 7, 8, 5, 5, 5, 5, 3]
+
+['label', 'homepage', 'region', 'type', 'id']
+[0, 1, 1, 1, 1, 1, 1, 3, 3, 3]
+
+['label', 'type', 'subject', 'venue', 'city', 'Caption']
+[1, 3, 0, 0, 1, 7, 1, 1, 3, 3, 3, 7, 0, 1, 1]
+
+['label', 'type', 'subject', 'city']
+[1, 3, 0, 7, 1, 3]
+
+['label', 'type', 'subject', 'wwenlast']
+[1, 3, 0, 7, 1, 3]
+
+['label', 'type', 'subject', 'partial', 'retired', 'first', 'failed', 'last']
+[1, 3, 0, 0, 1, 0, 2, 7, 1, 1, 3, 1, 5, 3, 3, 7, 3, 11, 0, 1, 0, 2, 1, 0, 2, 1, 5, 2]
+
+['label', 'type', 'subject', 'partial', 'first', 'ind', 'failed', 'last']
+[1, 3, 0, 1, 0, 0, 2, 7, 1, 3, 1, 1, 5, 3, 7, 3, 3, 11, 1, 0, 0, 2, 1, 1, 5, 0, 2, 2]
+
+['label', 'type', 'subject', 'partial', 'first', 'failed', 'last']
+[1, 3, 0, 1, 0, 2, 7, 1, 3, 1, 5, 3, 7, 3, 11, 1, 0, 2, 1, 5, 2]
+
+['label', 'type', 'subject', 'first', 'failed', 'ind', 'alias']
+[1, 3, 1, 0, 0, 0, 7, 3, 1, 1, 1, 7, 3, 3, 3, 1, 1, 1, 0, 0, 0]
+
+['label', 'type', 'subject', 'first', 'failed', 'last']
+[1, 3, 1, 0, 2, 7, 3, 1, 5, 7, 3, 11, 1, 5, 2]
+
+['label', 'type', 'subject', 'first', 'ind', 'failed']
+[1, 3, 1, 0, 0, 7, 3, 1, 1, 7, 3, 3, 1, 1, 0]
+
+['label', 'type', 'subject', 'first', 'failed', 'retirements']
+[1, 3, 1, 0, 0, 7, 3, 1, 1, 7, 3, 3, 1, 1, 0]
+
+['label', 'type', 'subject', 'remarks', 'first', 'last']
+[1, 3, 0, 1, 2, 7, 1, 3, 5, 3, 7, 11, 1, 2, 5]
+
+['label', 'type', 'subject', 'remarks']
+[1, 3, 0, 7, 1, 3]
+

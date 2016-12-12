@@ -7,8 +7,7 @@ import re
 from nltk.corpus import wordnet as wn  # pylint: disable=import-error
 from palmettopy.palmetto import Palmetto  # pylint: disable=import-error
 
-from .TreeWalker import distribute_weight, get_distribution_permutations, \
-    sort_permutation_tree, build_permutation_tree, is_permutation_fit_buckets
+from . import TreeWalker as tw
 from .config import TABLE_HEADERS_FILE
 from .FileReader import FileReader
 from .Logger import get_logger
@@ -144,9 +143,12 @@ def calculate_coherence(word_a, word_b, doc_id_tuples_dict):
     doc_id_set_a = doc_id_tuples_dict[word_a]
     doc_id_set_b = doc_id_tuples_dict[word_b]
     doc_id_set_ab = len(doc_id_set_a.intersection(doc_id_set_b))
-    coherence = \
-        (doc_id_set_ab * corpus_size) / \
-        (len(doc_id_set_a) * len(doc_id_set_b))
+    if len(doc_id_set_a) == 0 or len(doc_id_set_b) == 0:
+        coherence = 0
+    else:
+        coherence = \
+            (doc_id_set_ab * corpus_size) / \
+            (len(doc_id_set_a) * len(doc_id_set_b))
     return coherence
 
 
@@ -194,10 +196,9 @@ def cluster_header_palmetto(header):
     number_of_nodes = len(header)
     synset_graph = build_weighted_graph(synset_packs)
     edges_length_list = list(map(lambda x: len(x) - 1, synset_graph))
-    permutation_tree = build_permutation_tree(edges_length_list)
+    permutation_tree = tw.build_permutation_tree(edges_length_list)
 
-    sorted_permutation_tree = sort_permutation_tree(permutation_tree)
-    import ipdb; ipdb.set_trace()
+    sorted_permutation_tree = tw.sort_permutation_tree(permutation_tree)
 
     for permutation in sorted_permutation_tree:
         subgraph = pick_next_subgraph(
@@ -223,11 +224,11 @@ def cluster_header_palmetto(header):
 def get_max_subgraph(max_weight, number_of_nodes,\
     edges_length_list, synset_graph):
     for weight in range(0, max_weight):
-        distributions = sorted(distribute_weight(weight, number_of_nodes))
-        while distributions:
-            distribution = distributions.pop()
-            for permutation in get_distribution_permutations(distribution):
-                if is_permutation_fit_buckets(permutation, edges_length_list):
+        for _dist in tw.distribute_weight_recursive(weight, number_of_nodes):
+            for permutation in tw.get_distribution_permutations(_dist):
+                if tw.is_permutation_fit_buckets(
+                    permutation,
+                    edges_length_list):
                     subgraph = pick_next_subgraph(
                         synset_graph,
                         permutation
@@ -248,7 +249,6 @@ def cluster_header_palmetto_walker(header):
     number_of_nodes = len(header)
     synset_graph = build_weighted_graph(synset_packs)
     edges_length_list = list(map(lambda x: len(x) - 1, synset_graph))
-    permutation_tree = build_permutation_tree(edges_length_list)
 
     max_weight = sum(edges_length_list)
 

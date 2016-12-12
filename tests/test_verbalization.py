@@ -85,7 +85,6 @@ def test_verbalize_header_random(test_data, capsys):
     verbalization_log_time.close()
 
 
-@pytest.mark.skip(reason="skip for now, not ready to run yet")
 def test_verbalize_header_palmetto(test_data, capsys):
     """Test verbalization from NLTKInterface."""
     verbalization_log_file = os.path.join(

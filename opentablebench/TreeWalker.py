@@ -2,6 +2,7 @@
 
 import itertools
 
+
 def build_permutation_tree(tree):
     """
     Build permutation tree.
@@ -62,7 +63,7 @@ def distribute_weight(weight, number_of_buckets):
         return set([(weight)])
 
     if weight == 0:
-        return set([tuple([0]*number_of_buckets)])
+        return set([tuple([0] * number_of_buckets)])
 
     sums = set()
 
@@ -99,15 +100,16 @@ def _distribute_weight_recursive(n, m):
     if m == 0:
         yield [n]
     if n == 0:
-        yield m*[0]
+        yield m * [0]
     for i in range(n):
-        for l in _distribute_weight_recursive(i, m-1):
-            res = [n-i] + l
+        for l in _distribute_weight_recursive(i, m - 1):
+            res = [n - i] + l
             try:
-                if n-i >= l[0] and len(res) == m:
+                if n - i >= l[0] and len(res) == m:
                     yield res
             except IndexError:
                 continue
+
 
 def distribute_weight_recursive(n, m):
     """
@@ -115,5 +117,49 @@ def distribute_weight_recursive(n, m):
 
         Implementation provided by Micha Hoffmann.
     """
-    for partition in _distribute_weight_recursive(n, m+1):
+    for partition in _distribute_weight_recursive(n, m + 1):
         yield partition[:-1]
+
+
+def distribute_weight_recursive_faster(n, b, minimum=0):
+    if b == 1:
+        if n == 0:
+            return [[]]
+        else:
+            return [[n]]
+
+    partitions = []
+    for i in range(minimum, n):
+        sub_partitions = distribute_weight_recursive_faster(n - i, b - 1, i)
+        for sub_partition in sub_partitions:
+            if i <= sub_partition[-1]:
+                partitions.append(sub_partition + [i])
+    return partitions
+
+
+def get_integer_partitions(n):
+    """
+        Get integer partitions.
+
+        http://jeromekelleher.net/category/combinatorics.html
+    """
+    a = [0 for i in range(n + 1)]
+    k = 1
+    y = n - 1
+    while k != 0:
+        x = a[k - 1] + 1
+        k -= 1
+        while 2 * x <= y:
+            a[k] = x
+            y -= x
+            k += 1
+        l = k + 1
+        while x <= y:
+            a[k] = x
+            a[l] = y
+            yield a[:k + 2]
+            x += 1
+            y -= 1
+        a[k] = x + y
+        y = x + y - 1
+        yield a[:k + 1]
