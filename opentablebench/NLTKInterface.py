@@ -223,8 +223,10 @@ def cluster_header_palmetto(header):
 
 def get_max_subgraph(max_weight, number_of_nodes,\
     edges_length_list, synset_graph):
+    print(max_weight)
+    print(len(edges_length_list))
     for weight in range(0, max_weight):
-        for _dist in tw.distribute_weight_recursive(weight, number_of_nodes):
+        for _dist in tw.distribute_weight_recursive(weight, len(edges_length_list)):
             for permutation in tw.get_distribution_permutations(_dist):
                 if tw.is_permutation_fit_buckets(
                     permutation,
@@ -244,6 +246,9 @@ def cluster_header_palmetto_walker(header):
 
     Use optimized distribute_weight and get_distribution_permutations
     functions to walk the tree.
+    NP complete problem.
+    http://www.optimization-online.org/DB_FILE/2014/12/4678.pdf
+    http://www.caam.rice.edu/~yad1/miscellaneous/References/Math/Topology/Cliques/Maximal%20Clique%20Problem.pdf
     """
     synset_packs = get_header_synsets(header)
     number_of_nodes = len(header)
