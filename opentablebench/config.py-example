@@ -94,5 +94,12 @@ TABLE_HEADERS_FILE = os.path.join(
 )
 CACHE_FOLDER_LABELS = os.path.join(PROJECT_ROOT, "data", "cache", "labels")
 CACHE_FOLDER_ENTITIES = os.path.join(PROJECT_ROOT, "data", "cache", "entities")
+CACHE_FOLDER_TRIPLES = os.path.join(PROJECT_ROOT, "data", "cache", "triples")
+CACHE_FOLDER_TRIPLES_RDF = os.path.join(
+    PROJECT_ROOT,
+    "data",
+    "cache",
+    "triples_rdf"
+)
 LOG_FOLDER = os.path.join(PROJECT_ROOT, "logs")
 LOG_FILE = os.path.join(LOG_FOLDER, "log.out")

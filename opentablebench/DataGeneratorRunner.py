@@ -44,7 +44,7 @@ class DataGeneratorRunner(object):
         """Run the data generator."""
         number_of_entities = 100
         tables_per_class = 20
-        rows_per_table = number_of_entities / tables_per_class
+        rows_per_table = int(number_of_entities / tables_per_class)
 
         classes = self.class_selector.get_classes_with_entities(
             number_of_entities=number_of_entities

@@ -17,7 +17,7 @@ def get_label_endpoint(subject_string):
         return subject_string
     subject_string_hash = uuid.uuid5(
         uuid.NAMESPACE_URL,
-        subject_string.encode("utf-8")
+        subject_string
     )
     cached_label_file = os.path.join(
         CACHE_FOLDER_LABELS,
@@ -54,7 +54,8 @@ def get_label_lov(subject_string):
     Use lovlabelfetcher library.
     """
     lov_label_fetcher = LOVLabelFetcher()
-    return lov_label_fetcher.get_label(subject_string)
+    label = lov_label_fetcher.get_label(subject_string)
+    return label
 
 
 def get_label_yago(subject_string):
@@ -64,7 +65,8 @@ def get_label_yago(subject_string):
     Use yagolabelfetcher library.
     """
     yago_label_fetcher = YAGOLabelFetcher()
-    return yago_label_fetcher.get_label(subject_string)
+    label = yago_label_fetcher.get_label(subject_string)
+    return label
 
 
 def get_label(subject_string):
@@ -75,14 +77,19 @@ def get_label(subject_string):
     """
     # get the label from LOV by default
     label = get_label_lov(subject_string)
+
     if label is None:
         # get the label from YAGO
         label = get_label_yago(subject_string)
-    elif label is None:
+
+    if label is None:
         # fall back to dbpedia SPARQL endpoint
-        return get_label_endpoint(subject_string)
-    else:
-        return label
+        label = get_label_endpoint(subject_string)
+
+    if label is None:
+        raise Exception
+
+    return label
 
 
 def generate_label_for_uri(uri):

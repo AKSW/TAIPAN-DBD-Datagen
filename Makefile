@@ -7,6 +7,8 @@ folders:
 	mkdir -p data/cache
 	mkdir -p data/cache/entities
 	mkdir -p data/cache/labels
+	mkdir -p data/cache/triples
+	mkdir -p data/cache/triples_rdf
 	mkdir -p logs/
 	mkdir -p generated/tables
 	mkdir -p generated/properties
@@ -24,6 +26,8 @@ clean_generated:
 clean_cache:
 	rm -rf data/cache/entities/*
 	rm -rf data/cache/labels/*
+	rm -rf data/cache/triples/*
+	rm -rf data/cache/triples_rdf/*
 
 install:
 	pip install -r requirements.txt

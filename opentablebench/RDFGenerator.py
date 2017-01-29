@@ -1,8 +1,10 @@
 """RDFGenerator fetches and permutate RDF."""
 
+import pickle
 import os
+import uuid
 
-from .config import RDF_FOLDER
+from .config import CACHE_FOLDER_TRIPLES, CACHE_FOLDER_TRIPLES_RDF, RDF_FOLDER
 from .FileWriter import FileWriter
 from .QueryExecutor import execute_query, execute_query_rdf
 from .RDFQuery import get_label
@@ -16,13 +18,28 @@ def fetch_triples_for_entity(entity):
 
     Returns JSON.
     """
-    query = _gen_query_for_entity(
-        entity,
-        NUMBER_OF_TRIPLES_FOR_ENTITY
+    _entity_hash = uuid.uuid5(
+        uuid.NAMESPACE_URL,
+        entity
     )
-    results = execute_query(query)
-    results = results["results"]["bindings"]
-    return results
+    cached_triples_file = os.path.join(
+        CACHE_FOLDER_TRIPLES,
+        str(_entity_hash)
+    )
+    if os.path.exists(cached_triples_file):
+        return pickle.load(open(cached_triples_file, "rb"))
+    else:
+        query = _gen_query_for_entity(
+            entity,
+            NUMBER_OF_TRIPLES_FOR_ENTITY
+        )
+        results = execute_query(query)
+        results = results["results"]["bindings"]
+        pickle.dump(
+            results,
+            open(cached_triples_file, "wb")
+        )
+        return results
 
 
 def fetch_triples_for_entity_rdf(entity):
@@ -31,12 +48,27 @@ def fetch_triples_for_entity_rdf(entity):
 
     Returns Ntriples.
     """
-    query = _gen_query_for_entity_rdf(
-        entity,
-        NUMBER_OF_TRIPLES_FOR_ENTITY
+    _entity_hash = uuid.uuid5(
+        uuid.NAMESPACE_URL,
+        entity
     )
-    results = execute_query_rdf(query)
-    return results
+    cached_triples_rdf_file = os.path.join(
+        CACHE_FOLDER_TRIPLES_RDF,
+        str(_entity_hash)
+    )
+    if os.path.exists(cached_triples_rdf_file):
+        return pickle.load(open(cached_triples_rdf_file, "rb"))
+    else:
+        query = _gen_query_for_entity_rdf(
+            entity,
+            NUMBER_OF_TRIPLES_FOR_ENTITY
+        )
+        results = execute_query_rdf(query)
+        pickle.dump(
+            results,
+            open(cached_triples_rdf_file, "wb")
+        )
+        return results
 
 
 def _gen_query_for_entity(entity, number_of_triples):
