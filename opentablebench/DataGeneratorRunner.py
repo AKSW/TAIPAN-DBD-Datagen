@@ -53,7 +53,7 @@ class DataGeneratorRunner(object):
         LOGGER.info("Skipping first %s classes", classes_to_skip)
 
         for num, _class in enumerate(classes):
-            if(num < classes_to_skip):
+            if num < classes_to_skip:
                 continue
             LOGGER.info(
                 "Processing (%s out of %s): %s",

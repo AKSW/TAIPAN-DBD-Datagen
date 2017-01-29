@@ -173,10 +173,7 @@ def is_graph_converge(subgraph, number_of_nodes):
     incoming_edges = set(map(lambda x: x[1], subgraph))
     outcoming_edges = set(map(lambda x: x[0], subgraph))
     all_nodes = incoming_edges.union(outcoming_edges)
-    if len(all_nodes) == number_of_nodes:
-        return True
-    else:
-        return False
+    return len(all_nodes) == number_of_nodes
 
 
 def cluster_header_palmetto(header):
@@ -221,16 +218,21 @@ def cluster_header_palmetto(header):
     return new_header
 
 
-def get_max_subgraph(max_weight, number_of_nodes,\
-    edges_length_list, synset_graph):
+def get_max_subgraph(max_weight, number_of_nodes,
+                     edges_length_list, synset_graph):
+    """Return maximum weighted clique."""
     print(max_weight)
     print(len(edges_length_list))
     for weight in range(0, max_weight):
-        for _dist in tw.distribute_weight_recursive(weight, len(edges_length_list)):
+        for _dist in tw.distribute_weight_recursive(
+                weight,
+                len(edges_length_list)
+        ):
             for permutation in tw.get_distribution_permutations(_dist):
                 if tw.is_permutation_fit_buckets(
-                    permutation,
-                    edges_length_list):
+                        permutation,
+                        edges_length_list
+                ):
                     subgraph = pick_next_subgraph(
                         synset_graph,
                         permutation
@@ -341,7 +343,6 @@ def cluster_header_naive(header):
     """
     synsets_pack = get_header_synsets(header)
     (minimal_column, minimum_synsets) = _pick_minimal_column(synsets_pack)
-    import ipdb; ipdb.set_trace()
 
     # fix the minimum column
     verbalized_headers = []

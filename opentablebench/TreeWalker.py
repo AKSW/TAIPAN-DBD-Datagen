@@ -1,4 +1,4 @@
-"""TreeWalker contains functions for walking a tree. :)"""
+"""TreeWalker contains functions for walking a tree."""
 
 import itertools
 
@@ -48,14 +48,17 @@ def sort_permutation_tree(permutations):
     Sorting by sum of all elements.
     This is required function for build_permutation_tree
     """
+    # pylint: disable=W0108
     return sorted(permutations, key=lambda x: sum(x))
 
 
 def get_distribution_permutations(distribution):
+    """Return permutations of a list."""
     return itertools.permutations(list(distribution))
 
 
 def distribute_weight(weight, number_of_buckets):
+    """Distribute weigth in N buckets."""
     if weight == 0 and number_of_buckets == 0:
         raise Exception("Can not distribute 0 weight in 0 buckets")
 
@@ -90,76 +93,82 @@ def distribute_weight(weight, number_of_buckets):
 
 
 def is_permutation_fit_buckets(permutation, buckets):
+    """Check if permutation can be fit into buckets."""
     for i in range(0, len(permutation)):
         if permutation[i] > buckets[i]:
             return False
     return True
 
 
-def _distribute_weight_recursive(n, m):
-    if m == 0:
-        yield [n]
-    if n == 0:
-        yield m * [0]
-    for i in range(n):
-        for l in _distribute_weight_recursive(i, m - 1):
-            res = [n - i] + l
+def _distribute_weight_recursive(iter1, iter2):
+    if iter2 == 0:
+        yield [iter1]
+    if iter1 == 0:
+        yield iter2 * [0]
+    for iter3 in range(iter1):
+        for iter4 in _distribute_weight_recursive(iter3, iter2 - 1):
+            result = [iter1 - iter3] + iter4
             try:
-                if n - i >= l[0] and len(res) == m:
-                    yield res
+                if iter1 - iter3 >= iter4[0] and len(result) == iter2:
+                    yield result
             except IndexError:
                 continue
 
 
-def distribute_weight_recursive(n, m):
+def distribute_weight_recursive(iter1, iter2):
     """
-        Distribute weights recursively.
+    Distribute weights recursively.
 
-        Implementation provided by Micha Hoffmann.
+    Implementation provided by Micha Hoffmann.
     """
-    for partition in _distribute_weight_recursive(n, m + 1):
+    for partition in _distribute_weight_recursive(iter1, iter2 + 1):
         yield partition[:-1]
 
 
-def distribute_weight_recursive_faster(n, b, minimum=0):
-    if b == 1:
-        if n == 0:
+def distribute_weight_faster(iter1, buckets, minimum=0):
+    """Faster implementation of distribute_weight_recursive."""
+    if buckets == 1:
+        if iter1 == 0:
             return [[]]
         else:
-            return [[n]]
+            return [[iter1]]
 
     partitions = []
-    for i in range(minimum, n):
-        sub_partitions = distribute_weight_recursive_faster(n - i, b - 1, i)
+    for iter2 in range(minimum, iter1):
+        sub_partitions = distribute_weight_faster(
+            iter1 - iter2,
+            buckets - 1,
+            iter2
+        )
         for sub_partition in sub_partitions:
-            if i <= sub_partition[-1]:
-                partitions.append(sub_partition + [i])
+            if iter2 <= sub_partition[-1]:
+                partitions.append(sub_partition + [iter2])
     return partitions
 
 
-def get_integer_partitions(n):
+def get_integer_partitions(iter1):
     """
-        Get integer partitions.
+    Get integer partitions.
 
-        http://jeromekelleher.net/category/combinatorics.html
+    http://jeromekelleher.net/category/combinatorics.html
     """
-    a = [0 for i in range(n + 1)]
-    k = 1
-    y = n - 1
-    while k != 0:
-        x = a[k - 1] + 1
-        k -= 1
-        while 2 * x <= y:
-            a[k] = x
-            y -= x
-            k += 1
-        l = k + 1
-        while x <= y:
-            a[k] = x
-            a[l] = y
-            yield a[:k + 2]
-            x += 1
-            y -= 1
-        a[k] = x + y
-        y = x + y - 1
-        yield a[:k + 1]
+    partition = [0 for i in range(iter1 + 1)]
+    iter2 = 1
+    iter3 = iter1 - 1
+    while iter2 != 0:
+        iter4 = partition[iter2 - 1] + 1
+        iter2 -= 1
+        while 2 * iter4 <= iter3:
+            partition[iter2] = iter4
+            iter3 -= iter4
+            iter2 += 1
+        iter5 = iter2 + 1
+        while iter4 <= iter3:
+            partition[iter2] = iter4
+            partition[iter5] = iter3
+            yield partition[:iter2 + 2]
+            iter4 += 1
+            iter3 -= 1
+        partition[iter2] = iter4 + iter3
+        iter3 = iter4 + iter3 - 1
+        yield partition[:iter2 + 1]

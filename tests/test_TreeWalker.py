@@ -51,114 +51,118 @@ def test_sort_permutation_tree():
 
 
 def test_get_distribution_permutations():
+    """Test get_distribution_permutations function."""
     distributions = set([
-        (3,0,0,0),
-        (2,1,0,0),
-        (1,1,1,0)])
+        (3, 0, 0, 0),
+        (2, 1, 0, 0),
+        (1, 1, 1, 0)])
 
     distributions_sorted = sorted(distributions)
     distribution = distributions_sorted.pop()
 
     permutations = list(tw.get_distribution_permutations(distribution))
-    assert (3,0,0,0) in permutations
-    assert (0,3,0,0) in permutations
-    assert (0,0,3,0) in permutations
-    assert (0,0,0,3) in permutations
+    assert (3, 0, 0, 0) in permutations
+    assert (0, 3, 0, 0) in permutations
+    assert (0, 0, 3, 0) in permutations
+    assert (0, 0, 0, 3) in permutations
 
 
 def test_distribute_weight_recursive():
+    """Test distribute_weight_recursive function."""
     assert [[]] == list(tw.distribute_weight_recursive(0, 0))
     assert [[0]] == list(tw.distribute_weight_recursive(0, 1))
-    assert [[0,0]] == list(tw.distribute_weight_recursive(0, 2))
+    assert [[0, 0]] == list(tw.distribute_weight_recursive(0, 2))
     assert [
-        [3,0,0,0],
-        [2,1,0,0],
-        [1,1,1,0]] == list(tw.distribute_weight_recursive(3, 4))
+        [3, 0, 0, 0],
+        [2, 1, 0, 0],
+        [1, 1, 1, 0]] == list(tw.distribute_weight_recursive(3, 4))
     assert [
-        [5,0,0,0],
-        [4,1,0,0],
-        [3,2,0,0],
-        [3,1,1,0],
-        [2,2,1,0],
-        [2,1,1,1]] == list(tw.distribute_weight_recursive(5, 4))
+        [5, 0, 0, 0],
+        [4, 1, 0, 0],
+        [3, 2, 0, 0],
+        [3, 1, 1, 0],
+        [2, 2, 1, 0],
+        [2, 1, 1, 1]] == list(tw.distribute_weight_recursive(5, 4))
     assert [
-        [8,0,0,0,0],
-        [7,1,0,0,0],
-        [6,2,0,0,0],
-        [6,1,1,0,0],
-        [5,3,0,0,0],
-        [5,2,1,0,0],
-        [5,1,1,1,0],
-        [4,4,0,0,0],
-        [4,3,1,0,0],
-        [4,2,2,0,0],
-        [4,2,1,1,0],
-        [4,1,1,1,1],
-        [3,3,2,0,0],
-        [3,3,1,1,0],
-        [3,2,2,1,0],
-        [3,2,1,1,1],
-        [2,2,2,2,0],
-        [2,2,2,1,1],
-        ] == list(tw.distribute_weight_recursive(8, 5))
+        [8, 0, 0, 0, 0],
+        [7, 1, 0, 0, 0],
+        [6, 2, 0, 0, 0],
+        [6, 1, 1, 0, 0],
+        [5, 3, 0, 0, 0],
+        [5, 2, 1, 0, 0],
+        [5, 1, 1, 1, 0],
+        [4, 4, 0, 0, 0],
+        [4, 3, 1, 0, 0],
+        [4, 2, 2, 0, 0],
+        [4, 2, 1, 1, 0],
+        [4, 1, 1, 1, 1],
+        [3, 3, 2, 0, 0],
+        [3, 3, 1, 1, 0],
+        [3, 2, 2, 1, 0],
+        [3, 2, 1, 1, 1],
+        [2, 2, 2, 2, 0],
+        [2, 2, 2, 1, 1],
+    ] == list(tw.distribute_weight_recursive(8, 5))
     assert [
-        [5,0,0],
-        [4,1,0],
-        [3,2,0],
-        [3,1,1],
-        [2,2,1],
-        ] == list(tw.distribute_weight_recursive(5, 3))
+        [5, 0, 0],
+        [4, 1, 0],
+        [3, 2, 0],
+        [3, 1, 1],
+        [2, 2, 1],
+    ] == list(tw.distribute_weight_recursive(5, 3))
     assert [
-        [5,0],
-        [4,1],
-        [3,2]
-        ] == list(tw.distribute_weight_recursive(5, 2))
+        [5, 0],
+        [4, 1],
+        [3, 2]
+    ] == list(tw.distribute_weight_recursive(5, 2))
+
 
 def test_distribute_weight():
+    """Test distribute_weight function."""
     with pytest.raises(Exception):
         tw.distribute_weight(0, 0)
     assert set([(0)]) == tw.distribute_weight(0, 1)
-    assert set([(0,0)]) == tw.distribute_weight(0, 2)
+    assert set([(0, 0)]) == tw.distribute_weight(0, 2)
     assert set([
-        (3,0,0,0),
-        (2,1,0,0),
-        (1,1,1,0)]) == tw.distribute_weight(3, 4)
+        (3, 0, 0, 0),
+        (2, 1, 0, 0),
+        (1, 1, 1, 0)]) == tw.distribute_weight(3, 4)
     assert set([
-        (5,0,0,0),
-        (4,1,0,0),
-        (3,2,0,0),
-        (3,1,1,0),
-        (2,2,1,0),
-        (2,1,1,1)]) == tw.distribute_weight(5, 4)
+        (5, 0, 0, 0),
+        (4, 1, 0, 0),
+        (3, 2, 0, 0),
+        (3, 1, 1, 0),
+        (2, 2, 1, 0),
+        (2, 1, 1, 1)]) == tw.distribute_weight(5, 4)
     assert set([
-        (8,0,0,0,0),
-        (7,1,0,0,0),
-        (6,2,0,0,0),
-        (6,1,1,0,0),
-        (5,3,0,0,0),
-        (5,2,1,0,0),
-        (5,1,1,1,0),
-        (4,4,0,0,0),
-        (4,3,1,0,0),
-        (4,2,2,0,0),
-        (4,2,1,1,0),
-        (4,1,1,1,1),
-        (3,3,2,0,0),
-        (3,3,1,1,0),
-        (3,2,1,1,1),
-        (3,2,2,1,0),
-        (2,2,2,2,0),
-        (2,2,2,1,1),
-        ]) == tw.distribute_weight(8, 5)
+        (8, 0, 0, 0, 0),
+        (7, 1, 0, 0, 0),
+        (6, 2, 0, 0, 0),
+        (6, 1, 1, 0, 0),
+        (5, 3, 0, 0, 0),
+        (5, 2, 1, 0, 0),
+        (5, 1, 1, 1, 0),
+        (4, 4, 0, 0, 0),
+        (4, 3, 1, 0, 0),
+        (4, 2, 2, 0, 0),
+        (4, 2, 1, 1, 0),
+        (4, 1, 1, 1, 1),
+        (3, 3, 2, 0, 0),
+        (3, 3, 1, 1, 0),
+        (3, 2, 1, 1, 1),
+        (3, 2, 2, 1, 0),
+        (2, 2, 2, 2, 0),
+        (2, 2, 2, 1, 1),
+    ]) == tw.distribute_weight(8, 5)
     assert set([
-        (5,0,0),
-        (4,1,0),
-        (3,2,0),
-        (3,1,1),
-        (2,2,1),
-        ]) == tw.distribute_weight(5, 3)
+        (5, 0, 0),
+        (4, 1, 0),
+        (3, 2, 0),
+        (3, 1, 1),
+        (2, 2, 1),
+    ]) == tw.distribute_weight(5, 3)
     assert set([
-        (5,0),
-        (4,1),
-        (3,2)
-        ]) == tw.distribute_weight(5, 2)
+        (5, 0),
+        (4, 1),
+        (3, 2)
+    ]) == tw.distribute_weight(5, 2)
