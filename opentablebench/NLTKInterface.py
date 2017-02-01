@@ -1,6 +1,7 @@
 """NLTKInterface for NLP related tasks."""
 
 import operator
+import os
 import random
 import re
 
@@ -8,7 +9,7 @@ from nltk.corpus import wordnet as wn  # pylint: disable=import-error
 from palmettopy.palmetto import Palmetto  # pylint: disable=import-error
 
 from . import TreeWalker as tw
-from .config import TABLE_HEADERS_FILE
+from .config import TABLE_HEADERS_FILE, DATA_FOLDER
 from .FileReader import FileReader
 from .Logger import get_logger
 
@@ -454,7 +455,38 @@ def verbalize_header_naive(header):
 
 def verbalize_header_random(header):
     """Verbalize header using random algorithm."""
-    return cluster_header_random(header)
+    _header = _verbalize_header_random(header)
+    if _header is None:
+        print(header)
+        _header = cluster_header_random(header)
+    return _header
+
+
+def _verbalize_header_random(header):
+    """
+    Verbalize header using random algorithm.
+
+    From precomputed index.
+    """
+    # Search the line number for the header
+    _file = open(os.path.join(DATA_FOLDER, "verbalization_random.before"))
+    index = None
+    for num, line in enumerate(_file.readlines()):
+        if eval(line) == header:
+            index = num
+            break
+
+    if index is None:
+        return None
+
+    # Get the verbalized header from another file
+    _file = open(os.path.join(DATA_FOLDER, "verbalization_random.after"))
+    for num, line in enumerate(_file.readlines()):
+        if num == index:
+            return eval(line)
+
+    return None
+
 
 
 def verbalize_header_palmetto(header):
