@@ -3,6 +3,7 @@ import os
 
 DBPEDIA_SPARQL_ENDPOINT = "http://dbpedia.org/sparql"
 DBPEDIA_DEFAULT_GRAPH = "http://dbpedia.org"
+WIKIDATA_SPARQL_ENDPOINT = "https://query.wikidata.org/bigdata/namespace/wdq/sparql"
 RANDOM_CLASS_SELECTION = [
     234, 152, 122, 402,
     150, 404, 379, 264,
@@ -93,6 +94,12 @@ TABLE_HEADERS_FILE = os.path.join(
     "TableHeadersDeduplicated.txt"
 )
 CACHE_FOLDER_LABELS = os.path.join(PROJECT_ROOT, "data", "cache", "labels")
+CACHE_FOLDER_LABELS_WIKIDATA = os.path.join(
+    PROJECT_ROOT,
+    "data",
+    "cache",
+    "labels_wikidata"
+)
 CACHE_FOLDER_ENTITIES = os.path.join(PROJECT_ROOT, "data", "cache", "entities")
 CACHE_FOLDER_TRIPLES = os.path.join(PROJECT_ROOT, "data", "cache", "triples")
 CACHE_FOLDER_TRIPLES_RDF = os.path.join(

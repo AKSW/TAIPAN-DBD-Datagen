@@ -7,6 +7,7 @@ folders:
 	mkdir -p data/cache
 	mkdir -p data/cache/entities
 	mkdir -p data/cache/labels
+	mkdir -p data/cache/labels_wikidata
 	mkdir -p data/cache/triples
 	mkdir -p data/cache/triples_rdf
 	mkdir -p logs/

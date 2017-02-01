@@ -5,7 +5,8 @@ import requests
 
 from SPARQLWrapper import JSON, SPARQLWrapper
 
-from .config import DBPEDIA_DEFAULT_GRAPH, DBPEDIA_SPARQL_ENDPOINT
+from .config import DBPEDIA_DEFAULT_GRAPH, DBPEDIA_SPARQL_ENDPOINT, \
+        WIKIDATA_SPARQL_ENDPOINT
 
 
 def execute_query(query):
@@ -15,17 +16,31 @@ def execute_query(query):
     Returns JSON.
     """
     return _execute_query(
+        query,
         DBPEDIA_SPARQL_ENDPOINT,
         JSON,
-        DBPEDIA_DEFAULT_GRAPH,
-        query
+        DBPEDIA_DEFAULT_GRAPH
     ).convert()
 
 
-def _execute_query(endpoint, return_format, default_graph, query):
+def execute_query_wikidata(query):
+    """
+    Execute a query against wikidata endpoint.
+
+    Returns JSON.
+    """
+    return _execute_query(
+        query,
+        WIKIDATA_SPARQL_ENDPOINT,
+        JSON
+    ).convert()
+
+
+def _execute_query(query, endpoint, return_format=JSON, default_graph=None):
     dbpedia_endpoint = SPARQLWrapper(endpoint)
     dbpedia_endpoint.setReturnFormat(return_format)
-    dbpedia_endpoint.addDefaultGraph(default_graph)
+    if default_graph is not None:
+        dbpedia_endpoint.addDefaultGraph(default_graph)
     dbpedia_endpoint.setQuery(query)
     results = dbpedia_endpoint.query()
     return results

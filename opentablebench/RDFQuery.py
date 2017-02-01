@@ -7,8 +7,8 @@ import uuid
 from lovlabelfetcherpy.lovlabelfetcher import LOVLabelFetcher
 from yagolabelfetcherpy.yagolabelfetcher import YAGOLabelFetcher
 
-from .config import CACHE_FOLDER_LABELS
-from .QueryExecutor import execute_query
+from .config import CACHE_FOLDER_LABELS, CACHE_FOLDER_LABELS_WIKIDATA
+from .QueryExecutor import execute_query, execute_query_wikidata
 
 
 def get_label_endpoint(subject_string):
@@ -37,7 +37,47 @@ def get_label_endpoint(subject_string):
         results = results["results"]["bindings"]
         if len(results) == 0 or\
                 results[0]["label"]["value"] is None:
-            label_uri = generate_label_for_uri(subject_string)
+            label_uri = None
+        else:
+            label_uri = results[0]["label"]["value"]
+        pickle.dump(
+            label_uri,
+            open(cached_label_file, "wb")
+        )
+        return label_uri
+
+
+def get_label_wikidata(subject_string):
+    """
+    Retrieve URI label from wikidata.
+
+    Use wikidata endpoint
+    """
+    if not subject_string.startswith("http"):
+        return subject_string
+    subject_string_hash = uuid.uuid5(
+        uuid.NAMESPACE_URL,
+        subject_string
+    )
+    cached_label_file = os.path.join(
+        CACHE_FOLDER_LABELS_WIKIDATA,
+        str(subject_string_hash)
+    )
+    if os.path.exists(cached_label_file):
+        return pickle.load(open(cached_label_file, "rb"))
+    else:
+        results = execute_query_wikidata(u"""
+            SELECT DISTINCT ?label
+            WHERE {
+                <%s> rdfs:label ?label .
+                FILTER( lang(?label) = "en")
+            }
+            LIMIT 1
+        """ % (subject_string,))
+        results = results["results"]["bindings"]
+        if len(results) == 0 or\
+                results[0]["label"]["value"] is None:
+            label_uri = None
         else:
             label_uri = results[0]["label"]["value"]
         pickle.dump(
@@ -87,7 +127,11 @@ def get_label(subject_string):
         label = get_label_endpoint(subject_string)
 
     if label is None:
-        raise Exception
+        label = get_label_wikidata(subject_string)
+
+    if label is None:
+        label = generate_label_for_uri(subject_string)
+        # raise Exception
 
     return label
 
