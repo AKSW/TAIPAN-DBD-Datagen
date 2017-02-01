@@ -11,7 +11,7 @@ import uuid
 from .config import CLASSES_FOLDER, PROPERTIES_FOLDER, \
     SUBJECT_COLUMN_FOLDER, TABLE_FOLDER
 from .CsvWriter import CsvWriter
-from .NLTKInterface import verbalize_header_naive
+from .NLTKInterface import verbalize_header_random
 from .RDFFilter import get_labels_for_all_objects
 from .RDFGenerator import convert_dict_to_rdf, save_rdf
 from .RDFQuery import get_label
@@ -55,7 +55,7 @@ class TableGenerator(object):
 
         rows = self._get_rows(triples_tuples, permutate_columns=False)
         header = self.generate_header(rows[0])
-        verbalized_header = verbalize_header_naive(header)
+        verbalized_header = verbalize_header_random(header)
         csv_filename = str(table_id) + ".csv"
         csv_filepath = os.path.join(TABLE_FOLDER, csv_filename)
 

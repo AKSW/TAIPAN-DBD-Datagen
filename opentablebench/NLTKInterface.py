@@ -457,7 +457,6 @@ def verbalize_header_random(header):
     """Verbalize header using random algorithm."""
     _header = _verbalize_header_random(header)
     if _header is None:
-        print(header)
         _header = cluster_header_random(header)
     return _header
 
