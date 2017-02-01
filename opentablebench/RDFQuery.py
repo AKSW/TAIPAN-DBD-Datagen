@@ -123,14 +123,16 @@ def get_label(subject_string):
         label = get_label_yago(subject_string)
 
     if label is None:
-        # fall back to dbpedia SPARQL endpoint
+        # dbpedia SPARQL endpoint
         label = get_label_endpoint(subject_string)
 
     if label is None:
+        # wikidata SPARQL endpoint
         label = get_label_wikidata(subject_string)
 
     if label is None:
-        label = generate_label_for_uri(subject_string)
+        # empty value for everything what is left
+        label = ""
         # raise Exception
 
     return label

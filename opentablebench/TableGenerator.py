@@ -1,8 +1,11 @@
 # -*- coding: utf-8 -*-
 """TableGenerator -- generate the tables out of RDF from a SPARQL endpoint."""
 
+import math
 import os
 import random
+import re
+import string
 import uuid
 
 from .config import CLASSES_FOLDER, PROPERTIES_FOLDER, \
@@ -20,6 +23,12 @@ class TableGenerator(object):
 
     Generate the tables out of RDF from a SPARQL endpoint.
     """
+
+    CHAR_REGEX = re.compile("[a-z]|[A-Z]")
+    NUM_REGEX = re.compile("[0-9]")
+
+    CELL_IS_TEXT = 0
+    CELL_IS_NUM = 1
 
     def generate_tables_of_length(
             self,
@@ -60,10 +69,73 @@ class TableGenerator(object):
         for row_entity_tuple in rows:
             (_, row) = row_entity_tuple
             row = self._unpack_row(row)
+            row = self.introduce_errors_row(row)
             aligned_row = self._align_row_with_header(row, header)
             csv_writer.write_row(aligned_row)
 
         csv_writer.close()
+
+
+    def introduce_errors_row(self, row):
+        """
+        Introduce errors to a row with 10% probability.
+        """
+        #if random.randint(0,100) > 10:
+        #    return row
+
+        for header_label in row:
+            cell = row[header_label]
+            cell_type = self.classify_cell(cell)
+            if cell_type is self.CELL_IS_TEXT:
+                row[header_label] = self.introduce_errors_text(cell)
+            elif cell_type is self.CELL_IS_NUM:
+                row[header_label] = self.introduce_errors_num(cell)
+
+        return row
+
+
+    def classify_cell(self, cell):
+        """Classify cell as a text or number."""
+        char_count = len(re.findall(self.CHAR_REGEX, cell))
+        char_percentage = char_count / len(cell)
+        if char_percentage > 0.75:
+            return self.CELL_IS_TEXT
+
+        num_count = len(re.findall(self.NUM_REGEX, cell))
+        num_percentage = num_count / len(cell)
+        if num_percentage > 0.6:
+            return self.CELL_IS_NUM
+
+        return None
+
+    @staticmethod
+    def introduce_errors_text(_string):
+        """
+        Add errors to the text.
+
+        Add error every 20 characters
+        """
+        errors_per_char = 20
+        errors_count = math.ceil(len(_string) / errors_per_char)
+        for _ in range(0, errors_count):
+            #Remove character
+            position = random.randint(1, len(_string) - 1)
+            _string = _string[:position] + _string[(position+1):]
+            #Insert random character
+            _char = random.choice(string.ascii_letters)
+            position = random.randint(1, len(_string) - 1)
+            _string = _string[:position] + _char + _string[position:]
+        return _string
+
+
+    @staticmethod
+    def introduce_errors_num(_string):
+        #Insert random character
+        _char = random.choice(string.digits)
+        position = random.randint(1, len(_string) - 1)
+        _string = _string[:position] + _char + _string[(position - 1):]
+        return _string
+
 
     @staticmethod
     def _unpack_row(row):
