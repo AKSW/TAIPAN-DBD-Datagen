@@ -457,7 +457,8 @@ def verbalize_header_random(header):
     """Verbalize header using random algorithm."""
     _header = _verbalize_header_random(header)
     if _header is None:
-        _header = cluster_header_random(header)
+        # Using naive if the cache is not available for speed-up
+        _header = cluster_header_naive(header)
     return _header
 
 
