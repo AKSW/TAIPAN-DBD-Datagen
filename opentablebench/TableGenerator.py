@@ -115,6 +115,9 @@ class TableGenerator(object):
 
         Add error every 20 characters
         """
+        if len(_string) <= 2:
+            # ignore short strings
+            return _string
         errors_per_char = 20
         errors_count = math.ceil(len(_string) / errors_per_char)
         for _ in range(0, errors_count):
@@ -130,6 +133,9 @@ class TableGenerator(object):
 
     @staticmethod
     def introduce_errors_num(_string):
+        if len(_string) <= 1:
+            # ignore one digit numbers
+            return _string
         #Insert random character
         _char = random.choice(string.digits)
         position = random.randint(1, len(_string) - 1)
