@@ -49,7 +49,8 @@ class DataGeneratorRunner(object):
         classes = self.class_selector.get_classes_with_entities(
             number_of_entities=number_of_entities
         )
-        classes_to_skip = self.get_classes_to_skip(tables_per_class)
+        #classes_to_skip = self.get_classes_to_skip(tables_per_class)
+        classes_to_skip = 342
         LOGGER.info("Skipping first %s classes", classes_to_skip)
 
         for num, _class in enumerate(classes):
