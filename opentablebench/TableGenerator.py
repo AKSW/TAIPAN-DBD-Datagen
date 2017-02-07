@@ -78,8 +78,8 @@ class TableGenerator(object):
 
     def introduce_errors_row(self, row):
         """Introduce errors to a row with 10% probability."""
-        if random.randint(0,100) > 10:
-            return row
+        #if random.randint(0,100) > 10:
+        #    return row
 
         for header_label in row:
             cell = row[header_label]

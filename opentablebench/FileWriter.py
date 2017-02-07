@@ -11,13 +11,16 @@ LOGGER = get_logger(__name__)
 class FileWriter(object):
     """FileWriter for writing strings to files in utf-8."""
 
-    def __init__(self, filepath):
+    def __init__(self, filepath, append=False):
         """
         Initialize FileWriter with filepath.
 
         Will write to the file located at filepath.
         """
-        self.file = codecs.open(filepath, "w", "utf-8")
+        if append:
+            self.file = codecs.open(filepath, "a+", "utf-8")
+        else:
+            self.file = codecs.open(filepath, "w", "utf-8")
 
     def write(self, string):
         """Write string to the file."""

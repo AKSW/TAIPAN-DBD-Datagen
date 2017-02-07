@@ -4,8 +4,10 @@
 import os
 
 from .ClassSelector import ClassSelector
-from .config import TABLE_FOLDER
+from .config import TABLE_FOLDER, GENERATED_CLASS_FILE
 from .EntitySelector import EntitySelector
+from .FileReader import FileReader
+from .FileWriter import FileWriter
 from .Logger import get_logger
 from .RDFFilter import get_distinct_properties_triples
 from .RDFGenerator import fetch_triples_for_entities
@@ -27,11 +29,11 @@ class DataGeneratorRunner(object):
         self.entity_selector = EntitySelector()
         self.table_generator = TableGenerator()
 
-    @staticmethod
-    def get_classes_to_skip(tables_per_class):
+
+    def get_classes_to_skip(self, tables_per_class):
         """Get amount of classes to skip."""
-        generated_tables_count = DataGeneratorRunner.get_number_of_tables()
-        classes_to_skip = int(float(generated_tables_count) / tables_per_class)
+        _classes = self.get_generated_class_list()
+        classes_to_skip = len(_classes)
         return classes_to_skip
 
     @staticmethod
@@ -39,6 +41,24 @@ class DataGeneratorRunner(object):
         """Get number of tables from TABLE_FOLDER."""
         _, _, files = next(os.walk(TABLE_FOLDER))
         return len(files)
+
+    @staticmethod
+    def get_generated_class_list():
+        """Get the list of generated classes."""
+        try:
+            file_reader = FileReader(GENERATED_CLASS_FILE)
+            _classes = file_reader.readlines()
+        except:
+            _classes = []
+        return _classes
+
+    @staticmethod
+    def add_class_to_the_list(class_name):
+        """Add generated class to the list."""
+        file_writer = FileWriter(GENERATED_CLASS_FILE, append=True)
+        line = "%s\n" %(class_name,)
+        file_writer.write(line)
+        file_writer.close()
 
     def run(self):
         """Run the data generator."""
@@ -49,8 +69,7 @@ class DataGeneratorRunner(object):
         classes = self.class_selector.get_classes_with_entities(
             number_of_entities=number_of_entities
         )
-        #classes_to_skip = self.get_classes_to_skip(tables_per_class)
-        classes_to_skip = 342
+        classes_to_skip = self.get_classes_to_skip(tables_per_class)
         LOGGER.info("Skipping first %s classes", classes_to_skip)
 
         for num, _class in enumerate(classes):
@@ -81,3 +100,4 @@ class DataGeneratorRunner(object):
                 "Generated table count: %s",
                 DataGeneratorRunner.get_number_of_tables()
             )
+            self.add_class_to_the_list(_class)

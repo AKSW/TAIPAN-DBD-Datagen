@@ -110,3 +110,4 @@ CACHE_FOLDER_TRIPLES_RDF = os.path.join(
 )
 LOG_FOLDER = os.path.join(PROJECT_ROOT, "logs")
 LOG_FILE = os.path.join(LOG_FOLDER, "log.out")
+GENERATED_CLASS_FILE = os.path.join(LOG_FOLDER, "generated_classes.log")
