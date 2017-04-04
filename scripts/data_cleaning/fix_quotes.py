@@ -2,8 +2,8 @@ import os
 from os import listdir
 from os.path import isfile, join
 
-triples_folder = "./triples_fixed"
-output_folder = "./triples_unquoted"
+triples_folder = "./rdf_fixed"
+output_folder = "./rdf_unquoted"
 triple_files = [f for f in listdir(triples_folder) if isfile(join(triples_folder, f))]
 
 for _file in triple_files:
